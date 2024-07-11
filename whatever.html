@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Random Website Opener</title>
+  <link rel="stylesheet" href="random.css">
+</head>
+<body>
+  <h1>Random Website Opener</h1>
+  <button onclick="openRandomWebsite()">Open a Random Website!</button>
+  <script>
+
+const websites = [
+  "https://www.google.com",
+  "https://www.youtube.com",
+  "https://www.github.com",
+  "https://www.stackoverflow.com",
+  "https://www.wikipedia.org",
+  // Add more websites to the array as needed
+];
+
+function openRandomWebsite() {
+  const randomIndex = Math.floor(Math.random() * websites.length);
+  const randomWebsite = websites[randomIndex];
+  window.open(randomWebsite, "_blank");
+}
+</script>
+</body>
+</html>
