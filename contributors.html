@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="styles2.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <title>Contributors</title>
+</head>
+<style>
+    .big-container {
+        /* border: 1px red solid; */
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin: 1vh 3vw;
+        padding: 3%;
+
+    }
+
+    .contributors-container {
+        width: 100%;
+        background-color: #ffff;
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+        /* border: 2px black solid; */
+    }
+
+    .contributors-container>* {
+        width: 28vw;
+        height: auto;
+        padding: 1em;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    img {
+        width: 9vw;
+        height: 9vw;
+        border-radius: 50%;
+    }
+
+    /* media query */
+    @media screen and (max-width:480px) {
+        .contributors-container>* {
+            width: 25vw;
+            height: auto;
+        }
+
+        img {
+            width: 15vw;
+            height: 15vw;
+
+        }
+    }
+</style>
+
+<body>
+    <nav>
+    
+        <div class="nav-elements">
+            <img src="pictures/cmatPrep.webp" onclick="window.location.href='index.html'">
+        </div>
+        <div class="nav-elements"><a href="prospectus.html">prospectus</a></div>
+        <div class="nav-elements"><a href="About_page.html">About Us</a></div>
+        <div class="nav-elements"><a href="contact.html">Contact</a></div>
+
+
+</nav>
+    <div class="big-container">
+        <div class="contributors-container">
+
+            <div>
+                <a href=""> <img src="pictures/prajwalPic.webp"></a>
+                <br>
+                <h3>Prajwal Kunwar</h3>
+            </div>
+
+            <div>
+                <a href="">
+                    <img src="pictures/vinayPic.webp"> </a>
+                <br>
+                <h3>Vinay Poudel</h3>
+            </div>
+
+            <div>
+                <a href="">
+                    <img src="pictures/sujitPic.webp"> </a>
+                    <br>
+                <h3>Sujit Kumar Shah</h1>
+
+
+            </div>
+            <div>
+                <a href="">
+                    <img src="pictures/kushalPic.webp"> </a>
+                <br>
+                <h3>Kushal Kafle</h3>
+
+
+            </div>
+            <div>
+                <a href="">
+                    <img src="pictures/sugamPic.webp"> </a>
+                <br>
+                <h3>Sugam Bista</h3>
+
+
+            </div>
+            <div>
+                <a href="">
+                    <img src="pictures/sauravPic.webp"> </a>
+                <br>
+                <h3>Saurav Uchiha</h3>
+
+
+            </div>
+            <div>
+                <a href="">
+                    <img src="pictures/sovanPic.webp"> </a>
+                <br>
+                <h3>Sovan Soren</h3>
+
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <footer>
+        <div>Follow us on&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.facebook.com/profile.php?id=61562056574128" target="_blank">
+            <i style="color:blue; transform: scale(2);"
+                    class="fa-brands fa-facebook">
+                </i>
+            </a> </a>&nbsp;&nbsp; or&nbsp;&nbsp; <a target="_blank" href="mailto:cmatprep1@gmail.com"><i
+                    style="color:red; transform: scale(2);" class="fa-brands fa-instagram"></i></a><br>
+            <a href="contributors.html" style="color:lightblue;">Our Contributors</a><br>
+            <p>&copy; 2024 CMAT Prep.<br> All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

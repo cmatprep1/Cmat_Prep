@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="styles2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+        .prospectus-container {
+            margin: auto;
+            margin-top:10vh;
+            margin-left:10vh;
+            /* border: 1px solid red; */
+            display: flex;
+            gap:10rem;
+            /* justify-content: center; */
+        }
+
+        .prospectus-container>* {
+            border: 2px blueviolet solid;
+            padding: 1vh 2vw;
+        }
+
+        footer{
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+        }
+
+        /*meia query*/
+        @media all and (max-width:480px) {
+            .prospectus-container {
+                gap:1rem;
+                margin-left:5vh;
+                margin-right:5vh;
+                margin-top:1vh;
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+    
+        <div class="nav-elements">
+            <img src="pictures/cmatPrep.webp" onclick="window.location.href='index.html'">
+        </div>
+        <div class="nav-elements"><a href="prospectus.html">prospectus</a></div>
+        <div class="nav-elements"><a href="About_page.html">About Us</a></div>
+        <div class="nav-elements"><a href="contact.html">Contact</a></div>
+
+
+</nav>
+    <div class="prospectus-container">
+        <div>
+            <h3>BIM</h3>
+            <a target="_blank" href="https://drive.google.com/file/d/1pSJkngYBKKYDLCi9cPih4uB67R5UMYeJ/view?usp=drivesdk"> <img src="pictures/bim.webp"></a>
+
+        </div>
+
+        <div>
+            <h3>BBA</h3>
+            <a target="_blank" href="pdfs/Bba-prospectus.pdf">
+                <img src="pictures/bbaPic.webp"> </a>
+            <br>
+            
+        </div>
+
+    </div>
+    <footer>
+        <div>Follow us on&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.facebook.com/profile.php?id=61562056574128" target="_blank">
+            <i style="color:blue; transform: scale(2);"
+                    class="fa-brands fa-facebook">
+                </i>
+            </a> </a>&nbsp;&nbsp; or&nbsp;&nbsp; <a target="_blank" href="mailto:cmatprep1@gmail.com"><i
+                    style="color:red; transform: scale(2);" class="fa-brands fa-instagram"></i></a><br>
+            <a href="contributors.html" style="color:lightblue;">Our Contributors</a><br>
+            <p>&copy; 2024 CMAT Prep.<br> All rights reserved.
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>

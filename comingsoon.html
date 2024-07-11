@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Coming Soon</title>
+	<style>
+		body {
+			background-color: #f2f2f2;
+			font-family: Arial, sans-serif;
+		}
+		.container {
+			width: 80%;
+			margin: 40px auto;
+			text-align: center;
+		}
+		.logo {
+			width: 100px;
+			height: 100px;
+			border-radius: 50%;
+			margin: 20px auto;
+		}
+		.tagline {
+			font-size: 24px;
+			font-weight: bold;
+			margin: 20px auto;
+		}
+		.email-form {
+			margin: 20px auto;
+		}
+		.email-form input[type="email"] {
+			width: 50%;
+			padding: 10px;
+			margin: 10px auto;
+			border: none;
+			border-radius: 5px;
+		}
+		.email-form button[type="submit"] {
+			background-color: #4CAF50;
+			color: #ffffff;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+		.email-form button[type="submit"]:hover {
+			background-color: #3e8e41;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<img src="comingsoon.webp" alt="Logo" class="logo">
+		<h1>We're launching more sets!</h1>
+		<p class="tagline">Stay tuned...</p>
+		<div class="email-form">
+			<input type="email" placeholder="Enter your email address">
+			<button type="submit" onclick="window.location.href='index.html'">Get Notified</button>
+		</div>
+	</div>
+	
+	<!-- Add funny animations script here -->
+	<script>
+		// Example animation script
+		const logo = document.querySelector('.logo');
+		logo.addEventListener('mouseover', () => {
+			logo.classList.add('spin');
+		});
+		logo.addEventListener('mouseout', () => {
+			logo.classList.remove('spin');
+		});
+	</script>
+	<style>
+		.logo.spin {
+			animation: spin 2s linear infinite;
+		}
+		@keyframes spin {
+			0% {
+				transform: rotate(0deg);
+			}
+			100% {
+				transform: rotate(360deg);
+			}
+		}
+	</style>
+</body>
+</html>

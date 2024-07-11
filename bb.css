@@ -1,0 +1,239 @@
+/* styles2.css */
+
+body {
+    font-family: sans-serif;
+    /* margin: 1px;
+    padding: 0; */
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  .images{
+    width: 80px;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 5px;
+}
+.qimages{
+  width: 290px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+  nav {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+}
+
+
+nav ul li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #444;
+    min-width: 200px;
+}
+
+nav ul li ul li {
+    border-bottom: 1px solid #555;
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+
+nav ul li:hover > a {
+    background-color: #444;
+}
+
+
+
+
+  main {
+    padding: 20px;
+    background-color: #fff;
+    margin-bottom: 20px;
+    box-shadow: 5px 2px 4px 0px rgba(0, 0, 0, 0.1);
+  }
+  
+  .question {
+    padding: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .English, .Quantitative, .Logical, .GK {
+    margin-bottom: 20px;
+    position: relative;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  
+  input[type=radio]{
+    position: absolute;
+    right: 10px;
+  }
+
+
+  h1 {
+    font-size: 24px;
+    margin-top: 0;
+  }
+  
+  p {
+    margin-bottom: 10px;
+    line-height: 1.5;
+  }
+  
+  #direction {
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+/* when cursor reaches the radio button make it pointer */
+input[type=radio],label{
+  cursor: pointer;
+}
+
+label{
+  margin:50px 0;
+  /* margin: */
+}
+
+  .questions {
+    font-weight: bold;
+  }
+  
+  .passage {
+    font-style: italic;
+    margin-bottom: 20px;
+  }
+  
+  .correct {
+    background-color: #90ee90;
+    font-weight: bolder;
+  }
+  
+  .incorrect {
+    background-color: #ffb6c1;
+    font-style: italic;
+  }
+  
+  button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  
+  .timer {
+    padding: 10px;
+    background-color: #ffcc00;
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: bolder;
+  }
+  
+  
+  #container {
+    text-align: justify;
+    margin: 0px 5px;
+    height: fit-content;
+  }
+
+  
+  #score{
+    font-weight: bold;
+    animation:step-start;
+    font-weight: bold;
+  }
+
+  .buttons{
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+  }
+
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+
+
+
+  /* responsive desining from ipad size */
+  @media (max-width: 768px) {
+    /* #container {
+      text-align: justify;
+      margin: 0px 5px;
+      } */
+      .timer {
+        margin-top: 1px;
+      }
+      nav ul {
+        flex-direction: row;
+    }
+
+    nav ul li ul {
+        /* position: static; */
+        width: 100%
+    }
+  main section {
+      width: 95%;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+    .question {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    .images {
+        width: 100px;
+    }
+
+    .qimages {
+        width: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .images {
+        width: 40px;
+    }
+
+    .qimages {
+        width: 200px;
+    }
+}

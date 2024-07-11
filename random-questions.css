@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+    background-color: aliceblue;
+    min-height: 100vh;
+}
+
+
+#random-generation {
+    width: 25vw;
+    height: 4.7vh;
+    font-size: 2vh;
+    border-radius: 5px;
+    color: red;
+    background-color: #191030;
+}
+
+.result {
+    color: blueviolet;
+    font-size: 5em;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    /* background-color: black; */
+}
+
+.big-container {
+    /* border: 1px red solid; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.main-container2 {
+    visibility: hidden;
+    /* border: 2px black solid; */
+    width: 100%;
+    height: 100%;
+
+
+}
+
+.slider {
+    /* border: 1px green solid; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.slider>* {
+    width: 45%;
+    /* border: 1px black solid; */
+    padding: 5%;
+}
+
+
+/* those that are one question containers */
+.question {
+    /* border:1px blue solid;  */
+    line-height: 170%;
+    width: 100%;
+    position: relative;
+}
+
+hr {
+    background-color: black;
+}
+
+
+.btn {
+    visibility: hidden;
+    position: absolute;
+    background: transparent;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+#submit-button {
+    width: 30vw;
+    height: 5vh;
+    background-color: cornflowerblue;
+    visibility: hidden;
+    border-radius: 10px;
+}
+
+input {
+    position: absolute;
+    right: 10px;
+    transform: scale(2);
+
+
+}
+
+/* From here are MEDIA QUERIRES */
+@media all and (max-width:400px) {
+
+    .result {
+        font-size: 1.7em;
+    }
+
+    .main-container2 {
+        visibility: hidden;
+        /* border: 2px black solid; */
+        width: 90vw;
+        height: 100vh;
+        align-items: center;
+        overflow: hidden;
+    }
+
+
+    .slider {
+        display: flex;
+        gap: 0rem;
+        flex-wrap: nowrap;
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .section {
+        min-width: 90vw;
+        height: 100%;
+        box-sizing: border-box;
+        overflow: scroll;
+    }
+
+    .verbal-questions {
+        border: 1px red solid;
+    }
+
+    .quantitative-questions {
+        border: 1px cornflowerblue solid;
+    }
+
+    .logical-questions {
+        border: 1px greenyellow solid;
+    }
+
+    .gk-questions {
+        border: 1px palevioletred solid;
+    }
+
+
+
+    .btn {
+        position: absolute;
+        visibility: hidden;
+        top: 50%;
+        transform: translateY(-50%);
+        background: transparent;
+        border: 1px solid black;
+        padding: 10px;
+        cursor: pointer;
+    }
+
+    .prev {
+        left: 0;
+        z-index: 2;
+    }
+
+    .next {
+        right: 0;
+        z-index: 2;
+    }
+
+    input {
+        transform: scale(1.5);
+
+    }
+}
