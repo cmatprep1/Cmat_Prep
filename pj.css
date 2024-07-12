@@ -122,19 +122,20 @@
         transform: translateY(-50%);
         background: transparent;
         border: 1px solid black;
-        padding: 10px;
         cursor: pointer;
     }
 
     .prev {
         left: 0;
-        background-color: rgba(178, 180, 181, 0.686);
+         border:0px;
+        transform:scale(2) ;
         z-index: 2;
         width: 5vh;
     }
 
     .next {
-        background-color: rgba(178, 180, 181, 0.686);
+         border:0px;
+        transform:scale(2) ;
         right: 0;
         z-index: 2;
         width: 5vh;
