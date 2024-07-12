@@ -6,48 +6,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="nav.css">
-    <link rel="stylesheet" href="styles2.css">
+    <!-- <link rel="stylesheet" href="styles2.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <style>
-        .prospectus-container {
-            margin: auto;
-            margin-top:10vh;
-            margin-left:10vh;
-            /* border: 1px solid red; */
-            display: flex;
-            gap:10rem;
-            /* justify-content: center; */
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
-
+        .prospectus-container {
+            margin-top: 1vh;
+            display: flex;
+            flex-wrap: wrap;
+            flex-shrink: 1;
+            text-align: center;
+            gap: 10px;
+        }
+        
         .prospectus-container>* {
+            border-radius: 10px;
             border: 2px blueviolet solid;
             padding: 1vh 2vw;
         }
-    a>div>h3{
-color:black;
-    }
-        footer{
-            position: absolute;
-            width: 100%;
-            bottom: 0;
+
+        a>div>h3 {
+            color: black;
         }
 
-        /*meia query*/
-        @media all and (max-width:480px) {
-            .prospectus-container {
-                gap:1rem;
-                margin-left:5vh;
-                margin-right:5vh;
-                margin-top:1vh;
-                flex-direction: column;
+        a {
+            text-decoration: none;
+        }
+
+        footer {
+            position: absolute;
+            margin-top: 2%;
+            line-height: 180%;
+            font-size: 1em;
+            height: auto;
+            display: flex wrap;
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 2vh 0;
+            width: 100%;
+            bottom: 0;
+            overflow: hidden;
+
+        }
+
+        @media all and (max-width:650px) {
+            footer{
+                position:sticky;
             }
+            
         }
     </style>
 </head>
 
 <body>
     <nav>
-    
         <div class="nav-elements">
             <img src="pictures/cmatPrep.webp" onclick="window.location.href='index.html'">
         </div>
@@ -56,36 +73,37 @@ color:black;
         <div class="nav-elements"><a href="contact.html">Contact</a></div>
 
 
-</nav>
-    <div class="prospectus-container">
-        <a target="_blank" href="https://drive.google.com/file/d/1-JARoYl0EEwUDiR68FE2FGec8jSjpct6/view?usp=sharing">
-        <div>
-            <h3>BIM</h3>
-             <img src="pictures/bim.webp">
+    </nav>
 
-        </div>
-</a>
-        <a target="_blank" href="https://drive.google.com/file/d/1-HU5tLrwIpOaG3H55jJEVjSwb9_u4gZ7/view?usp=sharing"> 
-        <div>
-            <h3>BBA</h3>
+    <div class="prospectus-container">
+        <a target="_blank" href="https://drive.google.com/file/d/1pSJkngYBKKYDLCi9cPih4uB67R5UMYeJ/view?usp=drivesdk">
+            <div>
+                <h3>BIM</h3>
+                <img src="pictures/bim.webp">
+
+            </div>
+        </a>
+        <a target="_blank" href="https://drive.google.com/file/d/1-HU5tLrwIpOaG3H55jJEVjSwb9_u4gZ7/view?usp=drivesdk">
+            <div>
+                <h3>BBA</h3>
                 <img src="pictures/bbaPic.webp">
-            <br>
-            
-        </div>
- </a>
+                <br>
+
+            </div>
+        </a>
     </div>
-    <footer>
-        <div>Follow us on&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.facebook.com/profile.php?id=61562056574128" target="_blank">
-            <i style="color:blue; transform: scale(2);"
-                    class="fa-brands fa-facebook">
-                </i>
-            </a> </a>&nbsp;&nbsp; or&nbsp;&nbsp; <a target="_blank" href="mailto:cmatprep1@gmail.com"><i
-                    style="color:red; transform: scale(2);" class="fa-solid fa-envelope"></i></a><br>
-            <a href="contributors.html" style="color:lightblue;">Our Contributors</a><br>
-            <p>&copy; 2024 CMAT Prep.<br> All rights reserved.
-            </p>
-        </div>
-    </footer>
+        <footer>
+            <div>Follow us on&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.facebook.com/profile.php?id=61562056574128"
+                    target="_blank">
+                    <i style="color:blue; transform: scale(2);" class="fa-brands fa-facebook">
+                    </i>
+                </a> </a>&nbsp;&nbsp; or&nbsp;&nbsp; <a target="_blank" href="mailto:cmatprep1@gmail.com"><i
+                        style="color:red; transform: scale(2);" class="fa-solid fa-envelope"></i></a><br>
+                <a href="contributors.html" style="color:lightblue;">Our Contributors</a><br>
+                <p>&copy; 2024 CMAT Prep.<br> All rights reserved.
+                </p>
+            </div>
+        </footer>
 </body>
 
 </html>
