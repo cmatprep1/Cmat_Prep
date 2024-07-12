@@ -8,7 +8,7 @@ nav {
     color: white;
     display: flex;
     justify-content: space-around;
-    padding-top: 2vh;
+    padding: 2vh;
     overflow: hidden;
 }
 
