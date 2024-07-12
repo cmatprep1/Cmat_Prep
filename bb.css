@@ -226,6 +226,12 @@ label{
     .qimages {
         width: 300px;
     }
+
+      .qmathphoto{
+  width:10vw;
+  display: inline-block;
+  vertical-align: middle;
+}
 }
 
 @media (max-width: 480px) {
@@ -235,5 +241,10 @@ label{
 
     .qimages {
         width: 200px;
+    }
+    .qmathphoto{
+      width:30vw;
+      display: inline-block;
+      vertical-align: middle;
     }
 }
