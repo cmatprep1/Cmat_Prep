@@ -108,7 +108,7 @@ input {
 }
 
 /* From here are MEDIA QUERIRES */
-@media all and (max-width:400px) {
+@media all and (max-width:500px) {
 
     .result {
         font-size: 1.7em;
