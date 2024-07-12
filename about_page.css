@@ -69,17 +69,6 @@ main a {
     text-decoration: none;
 }
 
-/* section{
-    
-    display: flex;
-    flex-direction: column;
-    background-color: gray;
-    gap:1rem;
-}
-section>*{
-   
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-} */
 
 footer {
     width: 100%;
