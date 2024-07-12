@@ -19,6 +19,11 @@ body {
   display: inline-block;
   vertical-align: middle;
 }
+.qmathphoto{
+  width:10vw;
+  display: inline-block;
+  vertical-align: middle;
+}
 
   nav {
     background-color: #333;
