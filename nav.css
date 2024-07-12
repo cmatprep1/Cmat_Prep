@@ -9,7 +9,7 @@ nav {
     display: flex;
     justify-content: space-around;
     padding-top: 2vh;
-/*     overflow: hidden; */
+    overflow: hidden;
 }
 
 nav div {
@@ -24,7 +24,7 @@ nav div img {
     top: 8px;
     left: 100px;
     width: 60px;
-    height: 50px;
+    height: 40px;
     border-radius: 50%;
     object-fit: cover;
     object-position: top bottom;
