@@ -185,7 +185,7 @@ body {
 }
 
 /* from here starts media query */
-@media all and (max-width:400px) {
+@media all and (max-width:500px) {
     .contact-container {
         display: flex;
         flex-direction: column;
