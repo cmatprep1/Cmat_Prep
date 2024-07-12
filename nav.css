@@ -42,7 +42,7 @@ nav div:hover>a {
     background-color: #444
 }
 
-@media screen and (max-width:480px) {
+@media screen and (max-width:580px) {
     
     nav{
         height: 7vh;
