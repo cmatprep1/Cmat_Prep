@@ -28,6 +28,7 @@ nav div img {
     border-radius: 50%;
     object-fit: cover;
     object-position: top bottom;
+    cursor: pointer;
 
 }
 
