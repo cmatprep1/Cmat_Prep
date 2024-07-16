@@ -1,0 +1,148 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.question {
+    /* border: 2px red solid; */
+    width: 100%;
+    /* height:80vh; */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.question>* {
+    /* border:2px yellow solid; */
+    width: 49%;
+    padding: 1% 1%;
+}
+
+
+
+/* New pj code */
+.main-container2 {
+    width: 100%;
+    height: 100%;
+}
+
+.slider {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 0%;
+}
+
+.slider>* {
+    width: 45%;
+    padding: 5%;
+}
+
+
+/* those that are one question containers */
+
+.btn {
+    visibility: hidden;
+    position: absolute;
+    background: transparent;
+    color: black;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+.label-container{
+    text-align: justify;
+    margin-right:5vw;
+}
+
+
+/* end code not satyanas chitikkka*/
+
+
+/* From here are MEDIA QUERIRES */
+@media all and (max-width:480px) {
+
+
+    .main-container2 {
+        width: 90vw;
+        height: 100vh;
+        align-items: center;
+        overflow: hidden;
+    }
+
+
+    .slider {
+        min-width: 90vw;
+        display: flex;
+        gap: 0rem;
+        flex-wrap: nowrap;
+        transition: transform 0.5s ease-in-out;
+    }
+   
+
+    .section {
+        margin: 0;
+        min-width: 90vw;
+        height: 100%;
+        box-sizing: border-box;
+        overflow: scroll;
+    }
+
+    .English {
+        border: 3px red solid;
+    }
+
+    .Quantitative {
+        border: 3px cornflowerblue solid;
+    }
+
+    .Logical {
+        border: 3px greenyellow solid;
+    }
+
+    .GK {
+        border: 3px palevioletred solid;
+    }
+
+
+
+    .btn {
+        position: absolute;
+        visibility: visible;
+        top: 50%;
+        transform: translateY(-50%);
+        background: transparent;
+        border: 1px solid black;
+        cursor: pointer;
+    }
+
+    .prev {
+        left: 0;
+         border:0px;
+        transform:scale(2) ;
+        z-index: 2;
+        width: 5vh;
+    }
+
+    .next {
+         border:0px;
+        transform:scale(2) ;
+        right: 0;
+        z-index: 2;
+        width: 5vh;
+    }
+
+    input {
+        transform: scale(1.5);
+
+    }
+}

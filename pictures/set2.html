@@ -1,0 +1,3645 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CMAT 2024</title>
+    <link rel="stylesheet" href="pj.css">
+    <link rel="stylesheet" href="bb.css">
+    <script src="swiping.js" defer></script>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a id="home" class="nv" href="index.html">Home</a></li>
+            <li><a href="About_page.html" class="nv">About Us</a></li>
+            <li><a href="contact.html" class="nv">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="timer">
+        Time Remaining:
+        <span id="time">
+            90:00
+            <!-- hide timer? -->
+        </span>
+    </div>
+    <script>
+        let dec = document.getElementById("time");
+        let m = 90;
+        let s = 0;
+        let intervalId = setInterval(() => {
+            if (s === 0) {
+                if (m === 0) {
+                    clearInterval(intervalId);
+                    // alert("Time up");
+                    document.querySelector('.timer').style.display = 'none';
+                    submitQuiz();
+                } else {
+                    m--;
+                    s = 59;
+                }
+            } else {
+                s--;
+            }
+            dec.innerHTML = m + ":" + (s < 10 ? "0" + s : s);
+        }, 1000);
+    </script>
+
+    <main class="question">
+        <button class="btn prev"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i></button><!--Yaha class add xa   -->
+        <div class="main-container2"><!--Yaha class add xa   -->
+            <div class="slider">
+                <section class="section English">
+                    <h1 id="section_title">Verbal Ability</h1>
+                    <p id="direction"> Direction: Read the passage and tick the correct answer</p>
+                    <p class="passage">
+                    <p>
+                        What it means to "explain" something in science often comes down to the application of
+                        mathematics. Some
+                        thinkers hold that mathematics is a kind of language-a systematic contrivance of signs, the
+                        criteria for
+                        the
+                        authority of which are internal coherence, elegance, and depth. The application of such a highly
+                        artificial
+                        system to the physical world, they claim, results in the creation of a kind of statement about
+                        the
+                        world.
+                        Accordingly, what matters in the sciences is finding a mathematical concept that attempts, as
+                        other
+                        language
+                        does, to accurately describe the functioning of some aspect of the world.</p>
+                    <p>
+                        At the center of the issue of scientific knowledge can thus be found questions about the
+                        relationship
+                        between language and what it refers to. A discussion about the role played by language in the
+                        pursuit of
+                        knowledge has been going on among linguists for several decades. The debate centers on whether
+                        language
+                        corresponds in some essential way to objects and behaviors, making knowledge a solid and
+                        reliable
+                        commodity;
+                        or, on the other hand, whether the relationship between language and things is purely a matter
+                        of
+                        agreed-upon conventions, making knowledge tenuous, relative, and inexact.
+
+                    </p>
+                    <!-- Add passage content here -->
+                    </p>
+
+                    <p id="direction"> Direction: Select the correct answer based on the passage.</p>
+
+                    <!-- Questions for Verbal Ability -->
+                    <!-- Question 1 -->
+                    <p class="questions" id="1">1.
+                        What is used to explain things in science?
+
+                        <!-- Question text here -->
+
+
+
+                    </p>
+                    <input type="radio" id="q1a" name="q1" value="a" required>
+                    <label for="q1a">a.
+                        Physics
+
+                    </label><br>
+                    <input type="radio" id="q1b" name="q1" value="b">
+                    <label for="q1b">b.
+                        Mathematics
+
+                    </label><br>
+                    <input type="radio" id="q1c" name="q1" value="c">
+                    <label for="q1c">c.
+                        Logic
+
+                    </label><br>
+                    <input type="radio" id="q1d" name="q1" value="d">
+                    <label for="q1d">d.
+                        Knowledge
+
+                    </label><br>
+                    <!-- Answer: [Correct answer] -->
+
+                    <!-- Question 2 -->
+                    <p class="questions" id="2">2.
+                        What is mathematics?
+                        <!-- Question text here -->
+
+
+
+                    </p>
+                    <input type="radio" id="q2a" name="q2" value="a" required>
+                    <label for="q2a">a.
+                        Numbers
+
+                    </label><br>
+                    <input type="radio" id="q2b" name="q2" value="b">
+                    <label for="q2b">b.
+                        Language
+
+                    </label><br>
+                    <input type="radio" id="q2c" name="q2" value="c">
+                    <label for="q2c">c.
+                        Formulas
+
+                    </label><br>
+                    <input type="radio" id="q2d" name="q2" value="d">
+                    <label for="q2d">d.
+                        Difficult to solve
+
+                    </label><br>
+                    <!-- Answer: [Correct answer] -->
+
+                    <!-- Question 3 -->
+                    <p class="questions" id="3">3.
+
+                        <!-- Question text here -->
+                        What type of system is mathematics?
+
+
+
+                    </p>
+                    <input type="radio" id="q3a" name="q3" value="a" required>
+                    <label for="q3a">a.
+                        Real
+
+                    </label><br>
+                    <input type="radio" id="q3b" name="q3" value="b">
+                    <label for="q3b">b.
+                        Group of numbers
+
+                    </label><br>
+                    <input type="radio" id="q3c" name="q3" value="c">
+                    <label for="q3c">c.
+
+                        Very difficult to understand
+                    </label><br>
+                    <input type="radio" id="q3d" name="q3" value="d">
+                    <label for="q3d">d.
+
+                        Artificial
+                    </label><br>
+                    <!-- Answer: [Correct answer] -->
+
+                    <!-- Question 4 -->
+                    <p class="questions" id="4">4.
+                        Who is a linguist?
+
+                        <!-- Question text here -->
+
+
+
+                    </p>
+                    <input type="radio" id="q4a" name="q4" value="a" required>
+                    <label for="q4a">a.
+                        A professor
+
+                    </label><br>
+                    <input type="radio" id="q4b" name="q4" value="b">
+                    <label for="q4b">b.
+
+                        Expert in science of language
+                    </label><br>
+                    <input type="radio" id="q4c" name="q4" value="c">
+                    <label for="q4c">c.
+                        Expert in mathematics
+
+                    </label><br>
+                    <input type="radio" id="q4d" name="q4" value="d">
+                    <label for="q4d">d.
+                        One who knows several language
+
+                    </label><br>
+                    <!-- Answer: [Correct answer] -->
+
+                    <!-- Question 5 -->
+                    <p class="questions" id="5">5.
+                        What is the debate about?
+                        <!-- Question text here -->
+
+
+
+                    </p>
+                    <input type="radio" id="q5a" name="q5" value="a" required>
+                    <label for="q5a">a.
+
+                        Weakness of language
+                    </label><br>
+
+                    <input type="radio" id="q5b" name="q5" value="b">
+                    <label for="q5b">b.
+                        Weakness of mathematics
+
+                    </label><br>
+                    <input type="radio" id="q5c" name="q5" value="c">
+                    <label for="q5c">c.
+                        Relationship of language
+
+                    </label><br>
+                    <input type="radio" id="q5d" name="q5" value="d">
+                    <label for="q5d">d.
+                        Language and mathematics
+
+                    </label><br>
+                    <!-- Answer: [Correct answer] -->
+                    <p id="direction"> Direction: Select the word/words which is/are closest to the meaning of the word:
+                    </p>
+                    <!-- Question 6 -->
+                    <p class="questions" id="6">6.
+
+                        <!-- Question text here -->
+                        Quota
+
+
+
+                    </p>
+                    <input type="radio" id="q6a" name="q6" value="a" required>
+                    <label for="q6a">a.
+
+                        Quotation
+                    </label><br>
+                    <input type="radio" id="q6b" name="q6" value="b">
+                    <label for="q6b">b.
+                        Quote
+
+                    </label><br>
+                    <input type="radio" id="q6c" name="q6" value="c">
+                    <label for="q6c">c.
+                        Limited number
+
+                    </label><br>
+                    <input type="radio" id="q6d" name="q6" value="d">
+                    <label for="q6d">d.
+                        Unlimited quantity
+
+                    </label><br>
+                    <!-- Answer: [Correct answer] -->
+
+                    <!-- Question 7 -->
+                    <p class="questions" id="7">7.
+
+                        2 Plump
+                        <!-- Question text here -->
+
+
+
+                    </p>
+                    <input type="radio" id="q7a" name="q7" value="a" required>
+                    <label for="q7a">a.
+                        Thin
+
+                    </label><br>
+                    <input type="radio" id="q7b" name="q7" value="b">
+                    <label for="q7b">b.
+
+                        Fat
+                    </label><br>
+                    <input type="radio" id="q7c" name="q7" value="c">
+                    <label for="q7c">c.
+                        Chubby
+
+                    </label><br>
+                    <input type="radio" id="q7d" name="q7" value="d">
+                    <label for="q7d">d.
+                        Plumber
+
+                    </label><br>
+                    <!-- Answer: [Correct answer] -->
+
+                    <!-- Question 8 -->
+                    <p class="questions" id="8">8.
+                        3. Visualize
+
+                        <!-- Question text here -->
+
+
+
+                    </p>
+                    <input type="radio" id="q8a" name="q8" value="a" required>
+                    <label for="q8a">a.
+                        To see future
+
+                    </label><br>
+                    <input type="radio" id="q8b" name="q8" value="b">
+                    <label for="q8b">b.
+                        Vision
+
+                    </label><br>
+                    <input type="radio" id="q8c" name="q8" value="c">
+                    <label for="q8c">c.
+                        Void
+
+                    </label><br>
+                    <input type="radio" id="q8d" name="q8" value="d">
+                    <label for="q8d">d.
+                        Vector
+
+                    </label><br>
+                    <!-- Answer: [Correct answer] -->
+
+                    <!-- Question 9 -->
+                    <p class="questions" id="9">9.
+
+                        4. Compassion
+                        <!-- Question text here -->
+
+
+
+                    </p>
+                    <input type="radio" id="q9a" name="q9" value="a" required>
+                    <label for="q9a">a.
+                        Comparison
+
+                    </label><br>
+                    <input type="radio" id="q9b" name="q9" value="b">
+                    <label for="q9b">b.
+                        Cost
+
+                    </label><br>
+                    <input type="radio" id="q9c" name="q9" value="c">
+                    <label for="q9c">c.
+                        Love
+
+                    </label><br>
+                    <input type="radio" id="q9d" name="q9" value="d">
+                    <label for="q9d">d.
+                        Hate
+
+                    </label><br>
+                    <!-- Answer: [Correct answer] -->
+
+                    <!-- Question 10 -->
+                    <p class="questions" id="10">10.
+
+                        5.Unison
+                        <!-- Question text here -->
+
+
+
+                    </p>
+                    <input type="radio" id="q10a" name="q10" value="a" required>
+                    <label for="q10a">a.
+                        Union
+
+                    </label><br>
+                    <input type="radio" id="q10b" name="q10" value="b">
+                    <label for="q10b">b.
+
+                        Complete
+                    </label><br>
+                    <input type="radio" id="q10c" name="q10" value="c">
+                    <label for="q10c">c.
+                        Care
+
+                    </label><br>
+                    <input type="radio" id="q10d" name="q10" value="d">
+                    <label for="q10d">d.
+                        Universal
+
+                    </label><br>
+                    <!-- Answer: [Correct answer] -->
+
+                    <!-- Question 11 -->
+                    <p id="direction"> Direction: Complete the following sentences with the appropriate choice from
+                        among the options that
+                        follow:</p>
+                    <p class="questions" id="11" id="1">11.
+                        <!-- Question text here -->
+                        All the following are sedimentary rocks except
+
+
+                    </p>
+                    <input type="radio" id="q11a" name="q11" value="a" required>
+                    <label for="q11a">a.
+                        Mica
+
+                    </label><br>
+                    <input type="radio" id="q11b" name="q11" value="b">
+                    <label for="q11b">b.
+                        Gravel
+
+                    </label><br>
+                    <input type="radio" id="q11c" name="q11" value="c">
+                    <label for="q11c">c.
+                        Sand
+
+                    </label><br>
+                    <input type="radio" id="q11d" name="q11" value="d">
+                    <label for="q11d">d.
+                        Lay soil
+
+                    </label><br>
+                    <!-- Answer: [Correct answer] -->
+
+                    <!-- Question 12 -->
+                    <p class="questions" id="12">12.
+
+                        <!-- Question text here -->
+                        We lost confidence in him because he never...............the grandiose promises he made
+
+
+
+                    </p>
+                    <input type="radio" id="q12a" name="q12" value="a" required>
+                    <label for="q12a">a.
+
+                        Forgot
+                    </label><br>
+                    <input type="radio" id="q12b" name="q12" value="b">
+                    <label for="q12b">b.
+                        Tried
+
+                    </label><br>
+                    <input type="radio" id="q12c" name="q12" value="c">
+                    <label for="q12c">c.
+
+                        Delivered on
+                    </label><br>
+                    <input type="radio" id="q12d" name="q12" value="d">
+                    <label for="q12d">d.
+
+                        Relied upon
+                    </label><br>
+                    <!-- Answer: [Correct answer] -->
+
+                    <!-- Question 13 -->
+                    <p class="questions" id="13">13.
+                        Some very durable plastics when exposed to sunlight.
+
+                        <!-- Question text here -->
+
+
+
+                    </p>
+                    <input type="radio" id="q13a" name="q13" value="a" required>
+                    <label for="q13a">a.
+
+                        Harden
+                    </label><br>
+                    <input type="radio" id="q13b" name="q13" value="b">
+                    <label for="q13b">b.
+
+                        Stagnate
+
+                    </label><br>
+                    <input type="radio" id="q13c" name="q13" value="c">
+                    <label for="q13c">c.
+
+                        Decay
+
+                    </label><br>
+                    <input type="radio" id="q13d" name="q13" value="d">
+                    <label for="q13d">d.
+
+                        Decompose
+
+                    </label><br>
+                    <!-- Answer: [Correct answer] -->
+
+                    <!-- Question 14 -->
+                    <p class="questions" id="14">14.
+
+                        When Hari left the cocktail party, he
+                        was quite..
+
+                        <!-- Question text here -->
+
+
+                    </p>
+                    <input type="radio" id="q14a" name="q14" value="a" required>
+                    <label for="q14a">a.
+                        Drunk
+
+
+                    </label><br>
+                    <input type="radio" id="q14b" name="q14" value="b">
+                    <label for="q14b">b.
+
+                        Driving
+
+                    </label><br>
+                    <input type="radio" id="q14c" name="q14" value="c">
+                    <label for="q14c">c.
+                        Amazed
+
+
+                    </label><br>
+                    <input type="radio" id="q14d" name="q14" value="d">
+                    <label for="q14d">d.
+                        Lofty
+
+                    </label><br>
+                    <!-- Answer: [Correct answer] -->
+
+                    <!-- Question 15 -->
+                    <p class="questions" id="15">15.
+
+                        We had to pay more taxi fare because the taxi driver brought us by
+                        the................route.
+                        <!-- Question text here -->
+
+
+
+                    </p>
+                    <input type="radio" id="q15a" name="q15" value="a" required>
+                    <label for="q15a">a.
+                        short
+
+
+                    </label><br>
+                    <input type="radio" id="q15b" name="q15" value="b">
+                    <label for="q15b">b.
+                        Longest
+
+                    </label><br>
+                    <input type="radio" id="q15c" name="q15" value="c">
+                    <label for="q15c">c.
+                        Alternative
+
+                    </label><br>
+                    <input type="radio" id="q15d" name="q15" value="d">
+                    <label for="q15d">d.
+                        High speed
+
+                    </label><br>
+                    <!-- Answer: [Correct answer] -->
+                    <p id="direction"> Direction: Each question below consists of an idiom or phrase followed by four
+                        lettered expression.
+                        Choose the lettered expressions that most nearly express the meaning of the idiom or phrase.</p>
+                    <!-- Question 16 -->
+                    <p class="questions" id="16">16.
+                        Throw party
+
+
+                        <!-- Question text here -->
+
+
+
+                    </p>
+                    <input type="radio" id="q16a" name="q16" value="a" required>
+                    <label for="q16a">a.
+
+                        Leave the party
+
+                    </label><br>
+                    <input type="radio" id="q16b" name="q16" value="b">
+                    <label for="q16b">b.
+                        Celebrate
+
+
+                    </label><br>
+                    <input type="radio" id="q16c" name="q16" value="c">
+                    <label for="q16c">c.
+                        Throw food in the party
+
+                    </label><br>
+                    <input type="radio" id="q16d" name="q16" value="d">
+                    <label for="q16d">d.
+                        Start conflict in the party
+
+
+
+                    </label><br>
+                    <!-- Answer: [Correct answer] -->
+
+                    <!-- Question 17 -->
+                    <p class="questions" id="17">17.
+                        The rest is history
+
+
+                        <!-- Question text here -->
+
+
+
+                    </p>
+                    <input type="radio" id="q17a" name="q17" value="a" required>
+                    <label for="q17a">a.
+                        History takes rest
+
+
+                    </label><br>
+                    <input type="radio" id="q17b" name="q17" value="b">
+                    <label for="q17b">b.
+                        Known to everyone
+
+                    </label><br>
+                    <input type="radio" id="q17c" name="q17" value="c">
+                    <label for="q17c">c.
+
+                        To avoid historical facts
+
+                    </label><br>
+                    <input type="radio" id="q17d" name="q17" value="d">
+                    <label for="q17d">d.
+                        History repeats itself
+
+
+
+                    </label><br>
+                    <!-- Answer: [Correct answer] -->
+
+                    <!-- Question 18 -->
+                    <p class="questions" id="18">18.
+                        Live like a king
+
+
+                        <!-- Question text here -->
+
+
+
+                    </p>
+                    <input type="radio" id="q18a" name="q18" value="a" required>
+                    <label for="q18a">a.
+                        Live a very high quality life
+
+
+                    </label><br>
+                    <input type="radio" id="q18b" name="q18" value="b">
+                    <label for="q18b">b.
+
+                        Live like king of Nepal
+
+                    </label><br>
+                    <input type="radio" id="q18c" name="q18" value="c">
+                    <label for="q18c">c.
+
+                        Live the life of a saint
+                    </label><br>
+                    <input type="radio" id="q18d" name="q18" value="d">
+                    <label for="q18d">d.
+
+                        Live like Indra, the king of Heaven
+
+
+                    </label><br>
+                    <!-- Answer: [Correct answer] -->
+
+                    <!-- Question 19 -->
+                    <p class="questions" id="19">19.
+                        Warm as toast
+
+
+                        <!-- Question text here -->
+
+
+
+                    </p>
+                    <input type="radio" id="q19a" name="q19" value="a" required>
+                    <label for="q19a">a.
+                        Very hot
+
+
+                    </label><br>
+                    <input type="radio" id="q19b" name="q19" value="b">
+                    <label for="q19b">b.
+
+                        Very fresh
+
+                    </label><br>
+                    <input type="radio" id="q19c" name="q19" value="c">
+                    <label for="q19c">c.
+                        Lukewarm
+
+
+                    </label><br>
+                    <input type="radio" id="q19d" name="q19" value="d">
+                    <label for="q19d">d.
+                        Cold
+
+
+                    </label><br>
+                    <!-- Answer: [Correct answer] -->
+
+                    <!-- Question 20 -->
+                    <p class="questions" id="20">20.
+                        Ride out the storm
+
+
+                        <!-- Question text here -->
+
+
+
+                    </p>
+                    <input type="radio" id="q20a" name="q20" value="a" required>
+                    <label for="q20a">a.
+                        To overcome difficulty
+
+
+                    </label><br>
+                    <input type="radio" id="q20b" name="q20" value="b">
+                    <label for="q20b">b.
+
+                        To come out in the storm
+
+                    </label><br>
+                    <input type="radio" id="q20c" name="q20" value="c">
+                    <label for="q20c">c.
+
+                        To play in the storm
+
+                    </label><br>
+                    <input type="radio" id="q20d" name="q20" value="d">
+                    <label for="q20d">d.
+                        Ride a horse
+
+                    </label><br>
+                    <!-- Answer: [Correct answer] -->
+                    <p id="direction"> Direction: The following paragraph has a number of blanks marked 21-25 followed
+                        by a set of options.
+                        Mark the options that best complete the blanks.
+                    </p>
+                    <p id="passage" class="questions">
+                    <p class="questions">
+                        Rarely in life, there is a ... 21... where only one answer is...22... In fact, even... 23...
+                        there is
+                        only one right...23... often .. 24... to an ill thought out...25...
+
+                    </p>
+
+                    </p>
+                    <!-- Question 21 -->
+                    <p class="questions" id="21">21.
+
+                        <!-- Question text here -->
+                        Select the best answer for 21.
+
+
+
+
+                    </p>
+                    <input type="radio" id="q21a" name="q21" value="a" required>
+                    <label for="q21a">a.
+
+                        Situation
+
+                    </label><br>
+                    <input type="radio" id="q21b" name="q21" value="b">
+                    <label for="q21b">b.
+
+                        State
+
+                    </label><br>
+                    <input type="radio" id="q21c" name="q21" value="c">
+                    <label for="q21c">c.
+                        Time
+
+
+                    </label><br>
+                    <input type="radio" id="q21d" name="q21" value="d">
+                    <label for="q21d">d.
+                        Opportunity
+
+
+                    </label><br>
+                    <!-- Answer: [Correct answer] -->
+
+                    <!-- Question 22 -->
+                    <p class="questions" id="22">22.
+
+                        Select the best answer for 22
+                        <!-- Question text here -->
+
+
+
+                    </p>
+                    <input type="radio" id="q22a" name="q22" value="a" required>
+                    <label for="q22a">a.
+
+                        Wrong
+
+                    </label><br>
+                    <input type="radio" id="q22b" name="q22" value="b">
+                    <label for="q22b">b.
+
+                        Correct
+
+                    </label><br>
+                    <input type="radio" id="q22c" name="q22" value="c">
+                    <label for="q22c">c.
+
+                        Inaccurate
+
+                    </label><br>
+                    <input type="radio" id="q22d" name="q22" value="d">
+                    <label for="q22d">d.
+                        Approximate
+
+
+                    </label><br>
+                    <!-- Answer: [Correct answer] -->
+
+                    <!-- Question 23 -->
+                    <p class="questions" id="23">23.
+                        Select the best answer for 23
+
+
+                        <!-- Question text here -->
+
+
+
+                    </p>
+                    <input type="radio" id="q23a" name="q23" value="a" required>
+                    <label for="q23a">a.
+                        Taking
+
+
+                    </label><br>
+                    <input type="radio" id="q23b" name="q23" value="b">
+                    <label for="q23b">b.
+                        Assuming
+
+                    </label><br>
+                    <input type="radio" id="q23c" name="q23" value="c">
+                    <label for="q23c">c.
+
+
+                        Repeating
+
+                    </label><br>
+                    <input type="radio" id="q23d" name="q23" value="d">
+                    <label for="q23d">d.
+
+                        Reading
+
+                    </label><br>
+                    <!-- Answer: [Correct answer] -->
+
+                    <!-- Question 24 -->
+                    <p class="questions" id="24">24.
+
+                        Select the best answer for 24
+
+                        <!-- Question text here -->
+
+
+
+                    </p>
+                    <input type="radio" id="q24a" name="q24" value="a" required>
+                    <label for="q24a">a.
+                        Leads
+
+
+                    </label><br>
+                    <input type="radio" id="q24b" name="q24" value="b">
+                    <label for="q24b">b.
+
+                        Backs
+
+                    </label><br>
+                    <input type="radio" id="q24c" name="q24" value="c">
+                    <label for="q24c">c.
+
+                        Begins
+
+                    </label><br>
+                    <input type="radio" id="q24d" name="q24" value="d">
+                    <label for="q24d">d.
+
+                        Ends
+
+                    </label><br>
+                    <!-- Answer: [Correct answer] -->
+
+                    <!-- Question 25 -->
+                    <p class="questions" id="25">25.
+
+                        Select the best answer for 25
+
+                        <!-- Question text here -->
+
+
+
+                    </p>
+                    <input type="radio" id="q25a" name="q25" value="a" required>
+                    <label for="q25a">a.
+                        Decision
+
+
+                    </label><br>
+                    <input type="radio" id="q25b" name="q25" value="b">
+                    <label for="q25b">b.
+                        Dream
+
+
+                    </label><br>
+                    <input type="radio" id="q25c" name="q25" value="c">
+                    <label for="q25c">c.
+                        City
+
+
+                    </label><br>
+                    <input type="radio" id="q25d" name="q25" value="d">
+                    <label for="q25d">d.
+                        Story
+
+                    </label><br>
+                    <!-- Answer: [Correct answer] -->
+                </section>
+
+                <section class="section Quantitative">
+                    <h1 id="section_title">Quantitative Ability</h1>
+                    <p id="direction"> Direction: Solve the following problems and select the correct answer.</p>
+
+                    <!-- Questions for Quantitative Ability -->
+                    <!-- Question 26 -->
+                    <p class="questions" id="26">26.
+                        On my sister's 15th birthday. she was
+                        159 cm in height, having grown 6%
+                        since the year before. How tall was
+                        she the previous year?
+                        <!-- Question text here -->
+
+
+
+                    </p>
+                    <input type="radio" id="q26a" name="q26" value="a" required>
+                    <label for="q26a">a.
+                        140
+
+                    </label><br>
+                    <input type="radio" id="q26b" name="q26" value="b">
+                    <label for="q26b">b.
+                        150
+
+                    </label><br>
+                    <input type="radio" id="q26c" name="q26" value="c">
+                    <label for="q26c">c.
+                        160
+
+                    </label><br>
+                    <input type="radio" id="q26d" name="q26" value="d">
+                    <label for="q26d">d.
+                        165
+
+                    </label><br>
+                    <!-- Answer: [Correct answer] -->
+
+                    <!-- Question 27 -->
+                    <p class="questions" id="27">27.
+
+                        <!-- Question text here -->
+                        Arun spent 25% of his pocket money,
+                        and has Rs. 125 left. How much had
+                        he at first ?
+
+
+                    </p>
+                    <input type="radio" id="q27a" name="q27" value="a" required>
+                    <label for="q27a">a.
+                        120
+
+                    </label><br>
+                    <input type="radio" id="q27b" name="q27" value="b">
+                    <label for="q27b">b.
+                        144.45
+
+                    </label><br>
+                    <input type="radio" id="q27c" name="q27" value="c">
+                    <label for="q27c">c.
+                        166.66
+
+                    </label><br>
+                    <input type="radio" id="q27d" name="q27" value="d">
+                    <label for="q27d">d.
+                        175.67
+
+                    </label><br>
+                    <!-- Answer: [Correct answer] -->
+
+                    <!-- Question 28 -->
+                    <p class="questions" id="28">28.
+
+                        <!-- Question text here -->
+                        If the cost of electricity increases by
+                        30%, by what percent one should
+                        reduce his spend in order that spent
+                        on electricity stays the same ?
+
+
+                    </p>
+                    <input type="radio" id="q28a" name="q28" value="a" required>
+                    <label for="q28a">a.
+                        23.07%
+
+                    </label><br>
+                    <input type="radio" id="q28b" name="q28" value="b">
+                    <label for="q28b">b.
+                        25.5%
+
+                    </label><br>
+                    <input type="radio" id="q28c" name="q28" value="c">
+                    <label for="q28c">c.
+                        26%
+
+                    </label><br>
+                    <input type="radio" id="q28d" name="q28" value="d">
+                    <label for="q28d">d.
+                        33.33%
+
+                    </label><br>
+                    <!-- Answer: [Correct answer] -->
+
+                    <!-- Question 29 -->
+                    <p class="questions" id="29">29.
+
+                        <!-- Question text here -->
+                        If the price of petrol increases by 25%
+                        and Rajesh intends to spend only 15%
+                        more on petrol, by how much %
+                        should he reduce the quantity of petrol
+                        that he buys ?
+
+
+
+                    </p>
+                    <input type="radio" id="q29a" name="q29" value="a" required>
+                    <label for="q29a">a.
+                        5%
+
+                    </label><br>
+                    <input type="radio" id="q29b" name="q29" value="b">
+                    <label for="q29b">b.
+                        8%
+                    </label><br>
+                    <input type="radio" id="q29c" name="q29" value="c">
+                    <label for="q29c">c.
+                        9%
+                    </label><br>
+                    <input type="radio" id="q29d" name="q29" value="d">
+                    <label for="q29d">d.
+                        10%
+                    </label><br>
+                    <!-- Answer: [Correct answer] -->
+
+                    <!-- Question 30 -->
+                    <p class="questions" id="30">30.
+
+                        <!-- Question text here -->
+
+                        In an election, Congress secured 10%
+                        of the total votes more than None
+                        Congress (consider only many votes
+                        did it lose the election )?
+
+                    </p>
+                    <input type="radio" id="q30a" name="q30" value="a" required>
+                    <label for="q30a">a.
+                        20.000
+
+                    </label><br>
+                    <input type="radio" id="q30b" name="q30" value="b">
+                    <label for="q30b">b.
+                        22.000
+
+                    </label><br>
+                    <input type="radio" id="q30c" name="q30" value="c">
+                    <label for="q30c">c.
+                        25.000
+
+                    </label><br>
+                    <input type="radio" id="q30d" name="q30" value="d">
+                    <label for="q30d">d.
+                        28,000
+
+                    </label><br>
+                    <!-- Answer: [Correct answer] -->
+
+                    <!-- Question 31 -->
+                    <p class="questions" id="31">31.
+
+                        <!-- Question text here -->
+
+                        If the populations is and the
+                        expected birth rate is 50%. while the
+                        expected death rate is 31% what will
+                        be the net change in the in the
+                        population at the end of the one year.
+
+                    </p>
+                    <input type="radio" id="q31a" name="q31" value="a" required>
+                    <label for="q31a">a.
+                        285.000
+
+                    </label><br>
+                    <input type="radio" id="q31b" name="q31" value="b">
+                    <label for="q31b">b.
+                        250.000
+
+                    </label><br>
+                    <input type="radio" id="q31c" name="q31" value="c">
+                    <label for="q31c">c.
+                        244.000
+
+                    </label><br>
+                    <input type="radio" id="q31d" name="q31" value="d">
+                    <label for="q31d">d.
+                        200.000
+
+                    </label><br>
+                    <!-- Answer: [Correct answer] -->
+
+                    <!-- Question 32 -->
+                    <p class="questions" id="32">32.What is the % change jn the area of a
+                        square (Which will become rectangle
+                        If Its length Side is increased by 10%
+                        and Its width side is decreased by
+                        10%?) <br> <mark>Answers in these types of
+                            problems, assume a percent (100)
+                            base and then move forward.</mark>
+
+                        <!-- Question text here -->
+
+
+
+                    </p>
+                    <input type="radio" id="q32a" name="q32" value="a" required>
+                    <label for="q32a">a.5%
+
+                    </label><br>
+                    <input type="radio" id="q32b" name="q32" value="b">
+                    <label for="q32b">b.3%
+
+                    </label><br>
+                    <input type="radio" id="q32c" name="q32" value="c">
+                    <label for="q32c">c.2%
+
+                    </label><br>
+                    <input type="radio" id="q32d" name="q32" value="d">
+                    <label for="q32d">d.1%
+
+                    </label><br>
+                    <!-- Answer: [Correct answer] -->
+
+                    <!-- Question 33 -->
+                    <p class="questions" id="33">33.
+                        Ram obtains 40% of the marks in a
+                        paper of 200 marks. Shyam is ahead
+                        of Ram by 25% of Ram's marks. while
+                        Bhuvan is ahead of Shyam by one
+                        month of his own marks. How many
+                        marks does Bhuvan get ?
+                        <!-- Question text here -->
+
+
+
+                    </p>
+                    <input type="radio" id="q33a" name="q33" value="a" required>
+                    <label for="q33a">a.
+                        112.5
+
+                    </label><br>
+                    <input type="radio" id="q33b" name="q33" value="b">
+                    <label for="q33b">b.
+                        115
+
+                    </label><br>
+                    <input type="radio" id="q33c" name="q33" value="c">
+                    <label for="q33c">c.
+                        120
+
+                    </label><br>
+                    <input type="radio" id="q33d" name="q33" value="d">
+                    <label for="q33d">d.
+                        125.25
+
+                    </label><br>
+                    <!-- Answer: [Correct answer] -->
+
+                    <!-- Question 34 -->
+                    <p class="questions" id="34">34.
+                        Three Englishmen
+                        and three
+                        Frenchmen work for the same
+                        company. Each of them knows a
+                        secret not known to others. They need
+                        exchange these secrets over person-
+                        to —person phone calls so that
+                        eventually each person knows all six
+                        secrets. None of the Frenchmen
+                        knows English. and only one
+                        Englishman knows French. What is
+                        the minimum number of phone calls
+                        needed for the above purpose ?
+
+                        <!-- Question text here -->
+
+
+
+                    </p>
+                    <input type="radio" id="q34a" name="q34" value="a" required>
+                    <label for="q34a">a.
+
+                        5
+                    </label><br>
+                    <input type="radio" id="q34b" name="q34" value="b">
+                    <label for="q34b">b.
+                        10
+
+                    </label><br>
+                    <input type="radio" id="q34c" name="q34" value="c">
+                    <label for="q34c">c.
+                        9
+
+                    </label><br>
+                    <input type="radio" id="q34d" name="q34" value="d">
+                    <label for="q34d">d.
+                        15
+
+                    </label><br>
+                    <!-- Answer: [Correct answer] -->
+
+                    <!-- Question 35 -->
+                    <p class="questions" id="35">35.
+
+                        <!-- Question text here -->
+                        Suppose you have a currency, named
+                        Miso. in three denominations: 1 Miso.
+                        10 Misos and 50 Misos, In how many
+                        ways can you pay a bill of 107 Misos ?
+
+
+                    </p>
+                    <input type="radio" id="q35a" name="q35" value="a" required>
+                    <label for="q35a">a.
+                        19
+
+                    </label><br>
+                    <input type="radio" id="q35b" name="q35" value="b">
+                    <label for="q35b">b.
+                        17
+
+                    </label><br>
+                    <input type="radio" id="q35c" name="q35" value="c">
+                    <label for="q35c">c.
+                        16
+
+                    </label><br>
+                    <input type="radio" id="q35d" name="q35" value="d">
+                    <label for="q35d">d.
+                        18
+
+                    </label><br>
+                    <!-- Answer: [Correct answer] -->
+
+                    <!-- Question 36 -->
+                    <p class="questions" id="36">36.
+                        A confused bank teller transposed the
+                        rupees and paisa when he cashed
+                        cheque for Shailaja, giving her rupees
+                        instead of paisa and paisa instead of
+                        rupees. After buying a toffee for 50
+                        paisa, Shailaja noticed that she was
+                        left with exactly three times as much
+                        as the amount on the cheque. Which
+                        of the following is a valid statement
+                        about the cheque amount ?
+
+                        <!-- Question text here -->
+
+
+
+                    </p>
+                    <input type="radio" id="q36a" name="q36" value="a" required>
+                    <label for="q36a">a.
+                        Over Rupees 4 but less than Rupees 5
+
+                    </label><br>
+                    <input type="radio" id="q36b" name="q36" value="b">
+                    <label for="q36b">b.
+                        Over Rupees 13 but less than
+                        Rupees 14
+
+                    </label><br>
+                    <input type="radio" id="q36c" name="q36" value="c">
+                    <label for="q36c">c.
+                        Over Rupees 7 but less than Rupees 8
+
+                    </label><br>
+                    <input type="radio" id="q36d" name="q36" value="d">
+                    <label for="q36d">d.
+
+                        Over Rupees 18 but less than Rupees 19
+                    </label><br>
+                    <!-- Answer: [Correct answer] -->
+
+                    <!-- Question 37 -->
+                    <p class="questions" id="37">37.
+                        Ten years ago. the ages of the
+                        members Of a joint family of eight
+                        people added up to 231 years. Three
+                        years later. one member died at the
+                        age Of 60 years and a child was born
+                        during the same year. After another
+                        three years. one more member died.
+                        again at 60, and a child was born
+                        during the same year. The current
+                        average age of this eight-member joint
+                        family is nearest to
+                        <!-- Question text here -->
+
+
+
+                    </p>
+                    <input type="radio" id="q37a" name="q37" value="a" required>
+                    <label for="q37a">a.
+                        24 years
+
+                    </label><br>
+                    <input type="radio" id="q37b" name="q37" value="b">
+                    <label for="q37b">b.
+                        23 years
+
+                    </label><br>
+                    <input type="radio" id="q37c" name="q37" value="c">
+                    <label for="q37c">c.
+                        22 years
+
+                    </label><br>
+                    <input type="radio" id="q37d" name="q37" value="d">
+                    <label for="q37d">d.
+                        21 years
+
+                    </label><br>
+                    <!-- Answer: [Correct answer] -->
+                    <!-- Question 38 -->
+                    <p class="questions" id="38">38.
+                        In certain zoo, there are 42 animals in one sector, 34 in the second sector and 20 in the third
+                        sector.
+                        Out of this, 24 graze in sector one. Out of this, 24 graze in sector one and also in sector two.
+                        10
+                        graze in sector two and sector three. These figures also include four animals grazing in all the
+                        three
+                        sectors are now transported to another zoo, find the total number of animals.
+
+                        <!-- Question text here -->
+
+
+
+                    </p>
+                    <input type="radio" id="q38a" name="q38" value="a" required>
+                    <label for="q38a">a.
+                        38
+
+                    </label><br>
+                    <input type="radio" id="q38b" name="q38" value="b">
+                    <label for="q38b">b.
+                        56
+
+                    </label><br>
+                    <input type="radio" id="q38c" name="q38" value="c">
+                    <label for="q38c">c.
+                        54
+
+                    </label><br>
+                    <input type="radio" id="q38d" name="q38" value="d">
+                    <label for="q38d">d.
+                        None Of the above
+
+                    </label><br>
+                    <!-- Answer: [Correct answer] -->
+
+                    <!-- Question 39 -->
+                    <p class="questions" id="39">39.
+                        10% of the voters did not cast their vote in an election between two candidates. 10% of the
+                        votes polled
+                        were found invalid. The successful candidate got 54% valid votes
+                        and won by a majority of 1620 votes. The number of voters enrolled on the voters list was:
+
+                        <!-- Question text here -->
+
+
+
+                    </p>
+                    <input type="radio" id="q39a" name="q39" value="a" required>
+                    <label for="q39a">a.
+                        25,000
+                    </label><br>
+                    <input type="radio" id="q39b" name="q39" value="b">
+                    <label for="q39b">b.
+                        33,000
+                    </label><br>
+                    <input type="radio" id="q39c" name="q39" value="c">
+                    <label for="q39c">c.
+                        35,000
+                    </label><br>
+                    <input type="radio" id="q39d" name="q39" value="d">
+                    <label for="q39d">d.
+                        40,000
+                    </label><br>
+                    <!-- Answer: [Correct answer] -->
+
+                    <!-- Question 40 -->
+                    <p class="questions" id="40">40.
+
+                        A person closes his account in an investment scheme by withdrawing Rs 10,000. One year ago he
+                        had
+                        withdrawn rs. 6,000. Two years ago he had withdrawn rs. 5,000. Three years ago he had not
+                        withdrawn any
+                        money. How much money had he deposited approximately at the time of opening the account 4 years
+                        ago, if
+                        the annual simple interest is 10%.
+
+                        <!-- Question text here -->
+
+
+
+                    </p>
+                    <input type="radio" id="q40a" name="q40" value="a" required>
+                    <label for="q40a">a.Rs. 15,600
+
+                    </label><br>
+                    <input type="radio" id="q40b" name="q40" value="b">
+                    <label for="q40b">b.Rs. 16,500
+
+                    </label><br>
+                    <input type="radio" id="q40c" name="q40" value="c">
+                    <label for="q40c">c.
+                        Rs. 17,280
+                    </label><br>
+                    <input type="radio" id="q40d" name="q40" value="d">
+                    <label for="q40d">d.
+                        None of these
+                    </label><br>
+                    <!-- Answer: [Correct answer] -->
+
+
+                    <!-- Question 41 -->
+                    <p class="questions" id="41">41.It takes 6 technicians a total a total of 10
+                        hours to build a new server from direct
+                        computer, with each working at the
+                        same rate. if six technicians start to
+                        build the server at 11:00 am and one
+                        technician per hour is added beginning
+                        at 5:00 pm, at what time will the server be completed ?
+
+
+                        <!-- Question text here -->
+
+
+
+                    </p>
+                    <input type="radio" id="q41a" name="q41" value="a" required>
+                    <label for="q41a">a.
+                        6:40 pm
+
+                    </label><br>
+                    <input type="radio" id="q41b" name="q41" value="b">
+                    <label for="q41b">b.
+
+                        7:00 pm
+                    </label><br>
+                    <input type="radio" id="q41c" name="q41" value="c">
+                    <label for="q41c">c.
+
+                        7:20 pm
+                    </label><br>
+                    <input type="radio" id="q41d" name="q41" value="d">
+                    <label for="q41d">d.
+                        8:00 pm
+
+                    </label><br>
+                    <!-- Answer: [Correct answer] -->
+
+                    <!-- Question 42 -->
+                    <p class="questions" id="42">42.
+                        In ammeter race around a circular
+                        stadium having a circumference of
+                        1000 meters, the fastest runner and
+                        the slowest runner reach the same
+                        point at the end of 5th minute, for the
+                        first time after the start of the race. All
+                        the runners have the same starting
+                        point and each runner maintains a
+                        uniform speed throughout the race. If
+                        the fastest runner runs at twice the
+                        speed of the lowest runner, what is the
+                        time taken by the fastest runner to
+                        finish the race ?
+
+                        <!-- Question text here -->
+
+
+
+                    </p>
+                    <input type="radio" id="q42a" name="q42" value="a" required>
+                    <label for="q42a">a.
+                        20mins
+
+                    </label><br>
+                    <input type="radio" id="q42b" name="q42" value="b">
+                    <label for="q42b">b.
+                        15mins
+
+                    </label><br>
+                    <input type="radio" id="q42c" name="q42" value="c">
+                    <label for="q42c">c.
+                        10 mins
+
+                    </label><br>
+                    <input type="radio" id="q42d" name="q42" value="d">
+                    <label for="q42d">d.
+
+                        5 mins
+                    </label><br>
+                    <!-- Answer: [Correct answer] -->
+
+                    <!-- Question 43 -->
+                    <p class="questions" id="43">43.
+                        A train crosses a platform 100 metres
+                        long in 60 seconds at a speed of 45
+                        km per hour. The time taken by the
+                        train to cross an electric pole, is
+
+                        <!-- Question text here -->
+
+
+
+                    </p>
+                    <input type="radio" id="q43a" name="q43" value="a" required>
+                    <label for="q43a">a.
+                        8 seconds
+
+                    </label><br>
+                    <input type="radio" id="q43b" name="q43" value="b">
+                    <label for="q43b">b.
+                        1 minute
+
+                    </label><br>
+                    <input type="radio" id="q43c" name="q43" value="c">
+                    <label for="q43c">c.
+                        52 seconds
+
+                    </label><br>
+                    <input type="radio" id="q43d" name="q43" value="d">
+                    <label for="q43d">d.
+                        20 seconds
+
+                    </label><br>
+                    <!-- Answer: [Correct answer] -->
+
+                    <!-- Question 44 -->
+                    <p class="questions" id="44">44.
+                        P, Q and R are three consecutive odd
+                        numbers in ascending order. If the
+                        value of three times P is three less
+                        than two times R. find the value of R.
+
+
+                        <!-- Question text here -->
+
+
+
+                    </p>
+                    <input type="radio" id="q44a" name="q44" value="a" required>
+                    <label for="q44a">a.
+                        5
+
+                    </label><br>
+                    <input type="radio" id="q44b" name="q44" value="b">
+                    <label for="q44b">b. 7
+
+                    </label><br>
+                    <input type="radio" id="q44c" name="q44" value="c">
+                    <label for="q44c">c. 9
+
+                    </label><br>
+                    <input type="radio" id="q44d" name="q44" value="d">
+                    <label for="q44d">d. 11
+
+                    </label><br>
+                    <!-- Answer: [Correct answer] -->
+
+                    <!-- Question 45 -->
+                    <p class="questions" id="45">45.
+                        A shop sells floor tiles at Rs. 48 per
+                        square meter. A building contractor
+                        employs a machine that polishes the
+                        tiles that damages 10% of the total
+                        number of tiles which cannot be used
+                        any more. Calculate the amount that
+                        needs to bp paid by contractor to tile
+                        shop owner, if the hall is of a square
+                        shape and has a perimeter of 400
+                        meters ?
+
+                        <!-- Question text here -->
+
+
+
+                    </p>
+                    <input type="radio" id="q45a" name="q45" value="a" required>
+                    <label for="q45a">a.
+
+                        Rs. 400,000
+                    </label><br>
+                    <input type="radio" id="q45b" name="q45" value="b">
+                    <label for="q45b">b.
+                        Rs. 500,000
+
+                    </label><br>
+                    <input type="radio" id="q45c" name="q45" value="c">
+                    <label for="q45c">c.
+                        Rs. 528,000
+
+                    </label><br>
+                    <input type="radio" id="q45d" name="q45" value="d">
+                    <label for="q45d">d.
+                        Rs. 365,000
+
+                    </label><br>
+                    <!-- Answer: [Correct answer] -->
+
+                    <!-- Question 46 -->
+                    <p class="questions" id="46">46.
+
+                        A batsman makes a score of 87 runs
+                        in the 17 inning and thus increases his
+                        average by 3. Find his average after
+                        17th inning.
+
+                        <!-- Question text here -->
+
+
+
+                    </p>
+                    <input type="radio" id="q46a" name="q46" value="a" required>
+                    <label for="q46a">a.
+                        39
+
+                    </label><br>
+                    <input type="radio" id="q46b" name="q46" value="b">
+                    <label for="q46b">b.
+                        38.5
+
+                    </label><br>
+                    <input type="radio" id="q46c" name="q46" value="c">
+                    <label for="q46c">c.
+                        38
+
+                    </label><br>
+                    <input type="radio" id="q46d" name="q46" value="d">
+                    <label for="q46d">d.
+                        39.5
+
+                    </label><br>
+                    <!-- Answer: [Correct answer] -->
+
+                    <!-- Question 47 -->
+                    <p class="questions" id="47">47.
+
+                        Out of four numbers, the average of
+                        first three is 16 and that of the last
+                        three is 15. If the last number is 18.
+                        the first number is:
+                        <!-- Question text here -->
+
+
+
+                    </p>
+                    <input type="radio" id="q47a" name="q47" value="a" required>
+                    <label for="q47a">a.
+                        20
+
+                    </label><br>
+                    <input type="radio" id="q47b" name="q47" value="b">
+                    <label for="q47b">b.
+                        21
+
+                    </label><br>
+                    <input type="radio" id="q47c" name="q47" value="c">
+                    <label for="q47c">c.
+
+                        23
+                    </label><br>
+                    <input type="radio" id="q47d" name="q47" value="d">
+                    <label for="q47d">d.
+
+                        25
+                    </label><br>
+                    <!-- Answer: [Correct answer] -->
+
+                    <!-- Question 48 -->
+                    <p class="questions" id="48">48.
+
+                        Narasimha, Madhu and Pavan started
+                        a business by investing Rs. 120, 000.
+                        Rs. 135. 000 and Rs. 150.000
+                        respectively. Find the share of Pavan,
+                        out of an annual profit of Rs. 56,700.
+
+                        <!-- Question text here -->
+
+
+
+                    </p>
+                    <input type="radio" id="q48a" name="q48" value="a" required>
+                    <label for="q48a">a.
+                        Rs. 16,800
+
+                    </label><br>
+                    <input type="radio" id="q48b" name="q48" value="b">
+                    <label for="q48b">b.
+                        Rs 18,900
+
+                    </label><br>
+                    <input type="radio" id="q48c" name="q48" value="c">
+                    <label for="q48c">c.
+                        Rs 21,000
+
+                    </label><br>
+                    <input type="radio" id="q48d" name="q48" value="d">
+                    <label for="q48d">d.
+                        None of these
+
+                    </label><br>
+                    <!-- Answer: [Correct answer] -->
+
+                    <!-- Question 49 -->
+                    <p class="questions" id="49">49.
+                        The ratio of Rita's age to her mother's
+                        age is 3:8. The difference of their ages
+                        is 35 years. The ratio of their ages
+                        after 4 years will be .
+
+                        <!-- Question text here -->
+
+
+
+                    </p>
+                    <input type="radio" id="q49a" name="q49" value="a" required>
+                    <label for="q49a">a.
+                        7:12
+
+                    </label><br>
+                    <input type="radio" id="q49b" name="q49" value="b">
+                    <label for="q49b">b. 5:12
+
+                    </label><br>
+                    <input type="radio" id="q49c" name="q49" value="c">
+                    <label for="q49c">c.
+                        38: 43
+
+                    </label><br>
+                    <input type="radio" id="q49d" name="q49" value="d">
+                    <label for="q49d">d.
+                        42: 47
+
+                    </label><br>
+                    <!-- Answer: [Correct answer] -->
+
+                    <!-- Question 50 -->
+                    <p class="questions" id="50">50.
+
+                        A stars business with Rs. 35,000 and
+                        after 5 months, B joins with A as his
+                        partner. After a year. the profit is
+                        divided in the ratio 3:3. mat is B's
+                        contribution in the capital ?
+                        <!-- Question text here -->
+
+
+
+                    </p>
+                    <input type="radio" id="q50a" name="q50" value="a" required>
+                    <label for="q50a">a.
+                        Rs. 7.500
+
+                    </label><br>
+                    <input type="radio" id="q50b" name="q50" value="b">
+                    <label for="q50b">b.
+
+                        Rs. 8,000
+                    </label><br>
+                    <input type="radio" id="q50c" name="q50" value="c">
+                    <label for="q50c">c.
+                        Rs. 8.500
+
+                    </label><br>
+                    <input type="radio" id="q50d" name="q50" value="d">
+                    <label for="q50d">d.
+                        Rs. 9,000
+
+                    </label><br>
+                    <!-- Answer: [Correct answer] -->
+                </section>
+
+                <section class="section Logical">
+                    <h1 id="section_title">Logical Reasoning</h1>
+                    <p id="direction"> Direction: Answer the following questions based on logical reasoning.</p>
+                    <p id="direction"> Direction: Select logically the best answer:</p>
+                    <!-- Questions for Logical Reasoning -->
+                    <!-- Question 51 -->
+                    <p class="questions" id="5">51.
+
+                        <!-- Question text here -->
+
+                        Nepal will not manufacture unclear bomb because it is a peace-loving
+                        country.
+
+
+
+                    </p>
+                    <input type="radio" id="q51a" name="q51" value="a" required>
+                    <label for="q51a">a.
+
+                        Some peace-loving countries do not manufacture nuclear bomb.
+
+
+                    </label><br>
+                    <input type="radio" id="q51b" name="q51" value="b">
+                    <label for="q51b">b.
+
+                        No peace-loving country will manufacture a nuclear bomb.
+
+                    </label><br>
+                    <input type="radio" id="q51c" name="q51" value="c">
+                    <label for="q51c">c.
+
+                        All peace-loving countries manufacture nuclear bomb.
+
+                    </label><br>
+                    <input type="radio" id="q51d" name="q51" value="d">
+                    <label for="q51d">d.
+
+                        Nuclear bomb is manufactured for peaceful purposes.
+
+
+                    </label><br>
+                    <!-- Answer: [Correct answer] -->
+
+                    <!-- Question 52 -->
+                    <p class="questions" id="5">52.
+                        She felt the book is bad because it was sad.
+
+                        <!-- Question text here -->
+
+
+
+                    </p>
+                    <input type="radio" id="q52a" name="q52" value="a" required>
+                    <label for="q52a">a.
+
+
+                        All sad books are bad
+
+
+                    </label><br>
+                    <input type="radio" id="q52b" name="q52" value="b">
+                    <label for="q52b">b.
+
+                        Some people do not like to read sad books.
+
+                    </label><br>
+                    <input type="radio" id="q52c" name="q52" value="c">
+                    <label for="q52c">c.
+
+                        Bad books are all sad
+
+                    </label><br>
+                    <input type="radio" id="q52d" name="q52" value="d">
+                    <label for="q52d">d.
+
+                        Sad books have sad endings.
+
+
+                    </label><br>
+                    <!-- Answer: [Correct answer] -->
+
+                    <!-- Question 53 -->
+                    <p class="questions" id="53">53.
+
+                        Brittle things break easily.
+
+
+                        <!-- Question text here -->
+
+
+
+                    </p>
+                    <input type="radio" id="q53a" name="q53" value="a" required>
+                    <label for="q53a">a.
+                        All hard things are brittle.
+
+
+                    </label><br>
+                    <input type="radio" id="q53b" name="q53" value="b">
+                    <label for="q53b">b.
+                        Some hard things break easily.
+
+
+                    </label><br>
+                    <input type="radio" id="q53c" name="q53" value="c">
+                    <label for="q53c">c.
+
+                        Some hard things are brittle and can be broken.
+
+                    </label><br>
+                    <input type="radio" id="q53d" name="q53" value="d">
+                    <label for="q53d">d.
+                        Steel is unbreakable because it is very hard.
+
+
+
+                    </label><br>
+                    <!-- Answer: [Correct answer] -->
+
+                    <!-- Question 54 -->
+                    <p class="questions" id="54">54.
+                        Most of the employees who work hard get bonus.
+
+
+                        <!-- Question text here -->
+
+
+
+                    </p>
+                    <input type="radio" id="q54a" name="q54" value="a" required>
+                    <label for="q54a">a.
+                        All hard working employees get bonus.
+
+
+                    </label><br>
+                    <input type="radio" id="q54b" name="q54" value="b">
+                    <label for="q54b">b.
+
+                        Some employees who are hard working get bonus
+
+                    </label><br>
+                    <input type="radio" id="q54c" name="q54" value="c">
+                    <label for="q54c">c.
+
+                        None of the hard working employees get bonus.
+
+                    </label><br>
+                    <input type="radio" id="q54d" name="q54" value="d">
+                    <label for="q54d">d.
+
+                        All employees get bonus.
+
+
+                    </label><br>
+                    <!-- Answer: [Correct answer] -->
+                    <!-- Make website responsive? -->
+                    <!-- Question 55 -->
+                    <p class="questions" id="55">55.
+
+                        One takes medicines because one is sick.
+
+
+                        <!-- Question text here -->
+
+
+
+                    </p>
+                    <input type="radio" id="q55a" name="q55" value="a" required>
+                    <label for="q55a">a.
+                        Sick people take medicines.
+
+                    </label><br>
+                    <input type="radio" id="q55b" name="q55" value="b">
+                    <label for="q55b">b.
+                        Medicines cure sickness.
+
+
+                    </label><br>
+                    <input type="radio" id="q55c" name="q55" value="c">
+                    <label for="q55c">c.
+
+                        All people take medicines
+
+                    </label><br>
+                    <input type="radio" id="q55d" name="q55" value="d">
+                    <label for="q55d">d.
+                        All medicines make people sick.
+
+                    </label><br>
+                    <!-- Answer: [Correct answer] -->
+                    <p id="direction"> Direction: Two statements are followed by two possible inferences. You are
+                        required to identify the
+                        answer choice that applies the question no 56 to 60. Assume the statements to be correct even if
+                        they
+                        may vary with the facts.
+                        <br>
+                        a. Only inference 1 follow
+                        <br>
+                        b. Only inference II follow
+                        <br>
+
+                        c. Both inferences I and II follow
+                        <br>
+
+                        d. Neither inference I nor inference II follows.
+                        <br>
+                    </p>
+                    <!-- Question 56 -->
+                    <p class="questions" id="56">56.
+                        All horses are donkeys; all donkeys
+                        are monkeys. So:
+                        <br>(i) All horses are monkey
+                        <br>(ii) All monkeys are horses
+
+                        <!-- Question text here -->
+
+
+
+                    </p>
+                    <input type="radio" id="q56a" name="q56" value="a" required>
+                    <label for="q56a">a.
+
+                    </label><br>
+                    <input type="radio" id="q56b" name="q56" value="b">
+                    <label for="q56b">b.
+
+                    </label><br>
+                    <input type="radio" id="q56c" name="q56" value="c">
+                    <label for="q56c">c.
+
+                    </label><br>
+                    <input type="radio" id="q56d" name="q56" value="d">
+                    <label for="q56d">d.
+
+                    </label><br>
+                    <!-- Answer: [Correct answer] -->
+
+                    <!-- Question 57 -->
+                    <p class="questions" id="57">57.
+                        No flower is plant; no plant is tree. So:
+                        <br>(i) No trees is flower
+                        <br>(ii) No flower is tree
+
+                        <!-- Question text here -->
+
+
+
+                    </p>
+                    <input type="radio" id="q57a" name="q57" value="a" required>
+                    <label for="q57a">a.
+
+                    </label><br>
+                    <input type="radio" id="q57b" name="q57" value="b">
+                    <label for="q57b">b.
+
+                    </label><br>
+                    <input type="radio" id="q57c" name="q57" value="c">
+                    <label for="q57c">c.
+
+                    </label><br>
+                    <input type="radio" id="q57d" name="q57" value="d">
+                    <label for="q57d">d.
+
+                    </label><br>
+                    <!-- Answer: [Correct answer] -->
+
+                    <!-- Question 58 -->
+                    <p class="questions" id="58">58.
+                        All cars are scooters; all scooters are
+                        trucks. So:
+                        <br>(i) Some trucks are cars.
+                        <br>(ii) All cars are trucks.
+
+                        <!-- Question text here -->
+
+
+
+                    </p>
+                    <input type="radio" id="q58a" name="q58" value="a" required>
+                    <label for="q58a">a.
+
+                    </label><br>
+                    <input type="radio" id="q58b" name="q58" value="b">
+                    <label for="q58b">b.
+
+                    </label><br>
+                    <input type="radio" id="q58c" name="q58" value="c">
+                    <label for="q58c">c.
+
+                    </label><br>
+                    <input type="radio" id="q58d" name="q58" value="d">
+                    <label for="q58d">d.
+
+                    </label><br>
+                    <!-- Answer: [Correct answer] -->
+
+                    <!-- Question 59 -->
+                    <p class="questions" id="59">59.
+                        Every ink is red; rose is red. So:
+                        <br>(i) Rose is ink.
+                        <br>(ii) Ink is rose.
+                        <!-- Question text here -->
+
+
+
+                    </p>
+                    <input type="radio" id="q59a" name="q59" value="a" required>
+                    <label for="q59a">a.
+
+                    </label><br>
+                    <input type="radio" id="q59b" name="q59" value="b">
+                    <label for="q59b">b.
+
+                    </label><br>
+                    <input type="radio" id="q59c" name="q59" value="c">
+                    <label for="q59c">c.
+
+                    </label><br>
+                    <input type="radio" id="q59d" name="q59" value="d">
+                    <label for="q59d">d.
+
+                    </label><br>
+                    <!-- Answer: [Correct answer] -->
+
+                    <!-- Question 60 -->
+                    <p class="questions" id="60">60.
+                        No drug is a tonic; some tonics are
+                        beneficial. So:
+                        <br>(i) No drug is beneficial
+                        <br>(ii) Some drugs are beneficial
+
+                        <!-- Question text here -->
+
+
+
+                    </p>
+                    <input type="radio" id="q60a" name="q60" value="a" required>
+                    <label for="q60a">a.
+
+                    </label><br>
+                    <input type="radio" id="q60b" name="q60" value="b">
+                    <label for="q60b">b.
+
+                    </label><br>
+                    <input type="radio" id="q60c" name="q60" value="c">
+                    <label for="q60c">c.
+
+                    </label><br>
+                    <input type="radio" id="q60d" name="q60" value="d">
+                    <label for="q60d">d.
+
+                    </label><br>
+                    <!-- Answer: [Correct answer] -->
+                    <p id="direction"> Direction: Find the odd-one out.</p>
+                    <!-- Question 61 -->
+                    <p class="questions" id="61">61.
+
+                        Select the odd one
+
+
+                        <!-- Question text here -->
+
+
+
+                    </p>
+                    <input type="radio" id="q61a" name="q61" value="a" required>
+                    <label for="q61a">a.
+                        Monitor
+
+                    </label><br>
+                    <input type="radio" id="q61b" name="q61" value="b">
+                    <label for="q61b">b.
+
+                        Printer
+                    </label><br>
+                    <input type="radio" id="q61c" name="q61" value="c">
+                    <label for="q61c">c.
+
+                        Zip-driver
+                    </label><br>
+                    <input type="radio" id="q61d" name="q61" value="d">
+                    <label for="q61d">d.
+
+                        Steering
+
+
+                    </label><br>
+                    <!-- Answer: [Correct answer] -->
+
+                    <!-- Question 62 -->
+                    <p class="questions" id="62">62.
+                        Select the odd one
+                        <!-- Question text here -->
+
+
+
+                    </p>
+                    <input type="radio" id="q62a" name="q62" value="a" required>
+                    <label for="q62a">a.
+
+                        Aunt
+
+                    </label><br>
+                    <input type="radio" id="q62b" name="q62" value="b">
+                    <label for="q62b">b.
+                        Mother
+
+
+                    </label><br>
+                    <input type="radio" id="q62c" name="q62" value="c">
+                    <label for="q62c">c.
+                        Brother
+
+
+                    </label><br>
+                    <input type="radio" id="q62d" name="q62" value="d">
+                    <label for="q62d">d.
+                        Sister
+
+
+
+                    </label><br>
+                    <!-- Answer: [Correct answer] -->
+
+                    <!-- Question 63 -->
+                    <p class="questions" id="63">63.
+                        Select the odd one
+                        <!-- Question text here -->
+
+
+
+                    </p>
+                    <input type="radio" id="q63a" name="q63" value="a" required>
+                    <label for="q63a">a.
+                        Piano
+
+
+                    </label><br>
+                    <input type="radio" id="q63b" name="q63" value="b">
+                    <label for="q63b">b.
+
+                        Guitar
+
+                    </label><br>
+                    <input type="radio" id="q63c" name="q63" value="c">
+                    <label for="q63c">c.
+                        Banjo
+
+
+                    </label><br>
+                    <input type="radio" id="q63d" name="q63" value="d">
+                    <label for="q63d">d.
+                        Harmonium
+
+
+                    </label><br>
+                    <!-- Answer: [Correct answer] -->
+
+                    <!-- Question 64 -->
+                    <p class="questions" id="64">64.
+                        Select the odd one
+                        <!-- Question text here -->
+
+
+
+                    </p>
+                    <input type="radio" id="q64a" name="q64" value="a" required>
+                    <label for="q64a">a.
+
+                        Train
+
+                    </label><br>
+                    <input type="radio" id="q64b" name="q64" value="b">
+                    <label for="q64b">b.
+
+                        Truck
+
+                    </label><br>
+                    <input type="radio" id="q64c" name="q64" value="c">
+                    <label for="q64c">c.
+
+                        Car
+
+                    </label><br>
+                    <input type="radio" id="q64d" name="q64" value="d">
+                    <label for="q64d">d.
+                        Cart
+
+
+                    </label><br>
+                    <!-- Answer: [Correct answer] -->
+
+                    <!-- Question 65 -->
+                    <p class="questions" id="65">65.Select the odd one
+
+                        <!-- Question text here -->
+
+
+
+                    </p>
+                    <input type="radio" id="q65a" name="q65" value="a" required>
+                    <label for="q65a">a.
+                        Nylon
+
+
+                    </label><br>
+                    <input type="radio" id="q65b" name="q65" value="b">
+                    <label for="q65b">b.
+
+                        Fur
+
+                    </label><br>
+                    <input type="radio" id="q65c" name="q65" value="c">
+                    <label for="q65c">c.
+
+                        Wool
+
+                    </label><br>
+                    <input type="radio" id="q65d" name="q65" value="d">
+                    <label for="q65d">d.
+
+                        Cotton
+                    </label><br>
+                    <!-- Answer: [Correct answer] -->
+                    <p id="direction"> Direction: Two words on the left side of the sign (:) bears the same
+                        relationships. The same
+                        relationship exists between the third word and the word provided in the answer choices.
+                        Select the logically best word.</p>
+                    <!-- Question 66 -->
+                    <p class="questions" id="66">66.
+                        Run: Walk :: shout: ?
+
+                        <!-- Question text here -->
+
+
+
+                    </p>
+                    <input type="radio" id="q66a" name="q66" value="a" required>
+                    <label for="q66a">a.
+                        Cry
+
+
+                    </label><br>
+                    <input type="radio" id="q66b" name="q66" value="b">
+                    <label for="q66b">b.
+
+                        Call
+
+                    </label><br>
+                    <input type="radio" id="q66c" name="q66" value="c">
+                    <label for="q66c">c.
+                        Whisper
+
+
+                    </label><br>
+                    <input type="radio" id="q66d" name="q66" value="d">
+                    <label for="q66d">d.
+                        Scream
+
+
+                    </label><br>
+                    <!-- Answer: [Correct answer] -->
+
+                    <!-- Question 67 -->
+                    <p class="questions" id="67">67.
+
+                        Caste: Class:: Appointed : ?
+                        <!-- Question text here -->
+
+
+
+                    </p>
+                    <input type="radio" id="q67a" name="q67" value="a" required>
+                    <label for="q67a">a.
+                        Status
+
+
+                    </label><br>
+                    <input type="radio" id="q67b" name="q67" value="b">
+                    <label for="q67b">b.
+
+                        Ignorance
+
+                    </label><br>
+                    <input type="radio" id="q67c" name="q67" value="c">
+                    <label for="q67c">c.
+                        Job
+
+
+                    </label><br>
+                    <input type="radio" id="q67d" name="q67" value="d">
+                    <label for="q67d">d.
+
+                        Genius
+
+                    </label><br>
+                    <!-- Answer: [Correct answer] -->
+
+                    <!-- Question 68 -->
+                    <p class="questions" id="68">68.
+                        Do: Undo :: Reason: ?
+
+                        <!-- Question text here -->
+
+
+
+                    </p>
+                    <input type="radio" id="q68a" name="q68" value="a" required>
+                    <label for="q68a">a.
+                        Intelligence
+
+
+                    </label><br>
+                    <input type="radio" id="q68b" name="q68" value="b">
+                    <label for="q68b">b.
+                        Achieved
+
+
+                    </label><br>
+                    <input type="radio" id="q68c" name="q68" value="c">
+                    <label for="q68c">c.
+                        Learning
+
+
+                    </label><br>
+                    <input type="radio" id="q68d" name="q68" value="d">
+                    <label for="q68d">d.
+                        Employment
+
+
+                    </label><br>
+                    <!-- Answer: [Correct answer] -->
+
+                    <!-- Question 69 -->
+                    <p class="questions" id="69">69.
+
+                        Faulty: Useless :: Slow :?
+                        <!-- Question text here -->
+
+
+
+                    </p>
+                    <input type="radio" id="q69a" name="q69" value="a" required>
+                    <label for="q69a">a.
+
+                        Moronic
+                    </label><br>
+                    <input type="radio" id="q69b" name="q69" value="b">
+                    <label for="q69b">b.
+
+                        Intelligent
+
+                    </label><br>
+                    <input type="radio" id="q69c" name="q69" value="c">
+                    <label for="q69c">c.
+
+                        Fast
+
+
+                    </label><br>
+                    <input type="radio" id="q69d" name="q69" value="d">
+                    <label for="q69d">d.
+
+                        Worry
+
+                    </label><br>
+                    <!-- Answer: [Correct answer] -->
+
+                    <!-- Question 70 -->
+                    <p class="questions" id="70">70.
+
+                        Foundation: Structure :: Cylinder: ?
+                        <!-- Question text here -->
+
+
+
+                    </p>
+                    <input type="radio" id="q70a" name="q70" value="a" required>
+                    <label for="q70a">a.
+                        Plan
+
+
+                    </label><br>
+                    <input type="radio" id="q70b" name="q70" value="b">
+                    <label for="q70b">b.
+
+                        Instrument
+
+                    </label><br>
+                    <input type="radio" id="q70c" name="q70" value="c">
+                    <label for="q70c">c.
+                        Transport
+
+
+                    </label><br>
+                    <input type="radio" id="q70d" name="q70" value="d">
+                    <label for="q70d">d.
+                        Motor
+
+                    </label><br>
+                    <!-- Answer: [Correct answer] -->
+                    <p id="direction"> Direction: Questions 71-75 are based
+                        on visual analogy. There are two sets
+                        of figures: problem figures and
+                        answer figures. The problem figures
+                        bear some relationships. One of the
+                        answer figures is also based on the
+                        same relationships. You are required
+                        to identify the figure that would fit
+                        the question mark.. </p>
+                    <!-- Question 71 -->
+                    <p class="questions" id="71">71.Problem Figure<br>
+                        <img src="pictures/q71prob.webp" alt="Problem figure 1" class="qimages">
+
+                        <!-- Question text here -->
+
+
+
+                    </p>
+                    <input type="radio" id="q71a" name="q71" value="a" required>
+                    <label for="q71a">a.
+                        <img src="pictures/q71_ans_a.webp" alt="" id="q71a" class="images">
+
+
+                    </label><br>
+                    <input type="radio" id="q71b" name="q71" value="b">
+                    <label for="q71b">b.
+                        <img src="pictures/q71_ans_b.webp" alt="" id="q71b" class="images">
+
+                    </label><br>
+                    <input type="radio" id="q71c" name="q71" value="c">
+                    <label for="q71c">c.
+                        <img src="pictures/q71_ans_c.webp" alt="" id="q71c" class="images">
+
+                    </label><br>
+                    <input type="radio" id="q71d" name="q71" value="d">
+                    <label for="q71d">d.
+                        <img src="pictures/q71_ans_d.webp" alt="" id="q71d" class="images">
+
+                    </label><br>
+                    <!-- Answer: [Correct answer] -->
+
+                    <!-- Question 72 -->
+                    <p class="questions" id="72">72.Problem figure<br>
+                        <img src="pictures/q72prob.webp" alt="Problem figure" class="qimages">
+
+                        <!-- Question text here -->
+
+
+
+                    </p>
+                    <input type="radio" id="q72a" name="q72" value="a" required>
+                    <label for="q72a">a.
+                        <img src="pictures/q72_ans_a.webp" alt="" id="q71a" class="images">
+
+                    </label><br>
+                    <input type="radio" id="q72b" name="q72" value="b">
+                    <label for="q72b">b.
+                        <img src="pictures/q72_ans_b.webp" alt="" id="q71a" class="images">
+
+                    </label><br>
+                    <input type="radio" id="q72c" name="q72" value="c">
+                    <label for="q72c">c.
+                        <img src="pictures/q72_ans_c.webp" alt="" id="q71a" class="images">
+
+                    </label><br>
+                    <input type="radio" id="q72d" name="q72" value="d">
+                    <label for="q72d">d.
+                        <img src="pictures/q72_ans_d.webp" alt="" id="q71a" class="images">
+
+                    </label><br>
+                    <!-- Answer: [Correct answer] -->
+
+                    <!-- Question 73 -->
+                    <p class="questions" id="73">73. Problem Figure
+                        <br>
+                        <img src="pictures/q73prob.webp" alt="Problem figure" class="qimages">
+
+                        <!-- Question text here -->
+
+
+
+                    </p>
+                    <input type="radio" id="q73a" name="q73" value="a" required>
+                    <label for="q73a">a.
+                        <img src="pictures/q73_ans_a.webp" alt="" id="q71a" class="images">
+
+                    </label><br>
+                    <input type="radio" id="q73b" name="q73" value="b">
+                    <label for="q73b">b.
+                        <img src="pictures/q73_ans_b.webp" alt="" id="q71a" class="images">
+
+                    </label><br>
+                    <input type="radio" id="q73c" name="q73" value="c">
+                    <label for="q73c">c.
+                        <img src="pictures/q73_ans_c.webp" alt="" id="q71a" class="images">
+
+                    </label><br>
+                    <input type="radio" id="q73d" name="q73" value="d">
+                    <label for="q73d">d.
+                        <img src="pictures/q73_ans_d.webp" alt="" id="q71a" class="images">
+
+                    </label><br>
+                    <!-- Answer: [Correct answer] -->
+
+                    <!-- Question 74 -->
+                    <p class="questions" id="74">74. Problem Figure
+                        <br>
+                        <img src="pictures/q74prob.webp" alt="Problem figure" class="qimages">
+
+                        <!-- Question text here -->
+
+
+
+                    </p>
+                    <input type="radio" id="q74a" name="q74" value="a" required>
+                    <label for="q74a">a.
+                        <img src="pictures/q74_ans_a.webp" alt="" id="q71a" class="images">
+
+                    </label><br>
+                    <input type="radio" id="q74b" name="q74" value="b">
+                    <label for="q74b">b.
+                        <img src="pictures/q74_ans_b.webp" alt="" id="q71a" class="images">
+
+                    </label><br>
+                    <input type="radio" id="q74c" name="q74" value="c">
+                    <label for="q74c">c.
+                        <img src="pictures/q74_ans_c.webp" alt="" id="q71a" class="images">
+
+                    </label><br>
+                    <input type="radio" id="q74d" name="q74" value="d">
+                    <label for="q74d">d.
+                        <img src="pictures/q74_ans_d.webp" alt="" id="q71a" class="images">
+
+                    </label><br>
+                    <!-- Answer: [Correct answer] -->
+
+                    <!-- Question 75 -->
+                    <p class="questions" id="75">75. Problem Figure
+                        <br>
+                        <img src="pictures/q75prob.webp" alt="Problem figure" class="qimages">
+
+                        <!-- Question text here -->
+
+
+
+                    </p>
+                    <input type="radio" id="q75a" name="q75" value="a" required>
+                    <label for="q75a">a.
+                        <img src="pictures/q75_ans_a.webp" alt="" id="q71a" class="images">
+
+                    </label><br>
+                    <input type="radio" id="q75b" name="q75" value="b">
+                    <label for="q75b">b.
+                        <img src="pictures/q75_ans_b.webp" alt="" id="q71a" class="images">
+
+                    </label><br>
+                    <input type="radio" id="q75c" name="q75" value="c">
+                    <label for="q75c">c.
+                        <img src="pictures/q75_ans_c.webp" alt="" id="q71a" class="images">
+
+                    </label><br>
+                    <input type="radio" id="q75d" name="q75" value="d">
+                    <label for="q75d">d.
+                        <img src="pictures/q75_ans_d.webp" alt="" id="q71a" class="images">
+
+                    </label><br>
+                    <!-- Answer: [Correct answer] -->
+
+                </section>
+
+                <section class="section GK">
+                    <h1 id="section_title">General Awareness</h1>
+                    <p id="direction"> Direction: Answer the following questions related to general awareness.</p>
+
+                    <!-- Question 76 -->
+                    <p class="questions" id="76">76.
+                        G-7 is the organization of
+                        <!-- Question text here -->
+
+
+
+                    </p>
+                    <input type="radio" id="q76a" name="q76" value="a" required>
+                    <label for="q76a">a.The largest industrial democracies
+
+                    </label><br>
+                    <input type="radio" id="q76b" name="q76" value="b">
+                    <label for="q76b">b.The nations having atomic power
+
+                    </label><br>
+                    <input type="radio" id="q76c" name="q76" value="c">
+                    <label for="q76c">c.
+                        the developed nations of Europe
+
+                    </label><br>
+                    <input type="radio" id="q76d" name="q76" value="d">
+                    <label for="q76d">d.
+                        Countries With Veto power in the UNO
+
+                    </label><br>
+                    <!-- Answer: [Correct answer] -->
+
+                    <!-- Question 77 -->
+                    <p class="questions" id="77">77.
+                        A large retail outlet operated by one
+                        agency selling
+                        variety of
+                        a
+                        commodities and services under one
+                        roof is known as:
+                        <!-- Question text here -->
+
+
+
+                    </p>
+                    <input type="radio" id="q77a" name="q77" value="a" required>
+                    <label for="q77a">a.
+                        Departmentat store
+
+                    </label><br>
+                    <input type="radio" id="q77b" name="q77" value="b">
+                    <label for="q77b">b.
+                        Super market
+
+                    </label><br>
+                    <input type="radio" id="q77c" name="q77" value="c">
+                    <label for="q77c">c.
+                        Shopping mall
+
+                    </label><br>
+                    <input type="radio" id="q77d" name="q77" value="d">
+                    <label for="q77d">d.
+                        Chain store
+
+                    </label><br>
+                    <!-- Answer: [Correct answer] -->
+
+                    <!-- Question 78 -->
+                    <p class="questions" id="78">78.
+                        The term •penalty comer' is associated with
+
+                        <!-- Question text here -->
+
+
+
+                    </p>
+                    <input type="radio" id="q78a" name="q78" value="a" required>
+                    <label for="q78a">a.
+                        Foot ball
+
+                    </label><br>
+                    <input type="radio" id="q78b" name="q78" value="b">
+                    <label for="q78b">b.
+                        Hockey
+
+                    </label><br>
+                    <input type="radio" id="q78c" name="q78" value="c">
+                    <label for="q78c">c.
+                        Basket ball
+
+                    </label><br>
+                    <input type="radio" id="q78d" name="q78" value="d">
+                    <label for="q78d">d.
+                        Volley ball
+
+                    </label><br>
+                    <!-- Answer: [Correct answer] -->
+
+                    <!-- Question 79 -->
+                    <p class="questions" id="79">79.
+                        The unofficial winner of Beijing
+                        Olympics occupied the following
+                        position in 2012 London Olympics.
+
+                        <!-- Question text here -->
+
+
+
+                    </p>
+                    <input type="radio" id="q79a" name="q79" value="a" required>
+                    <label for="q79a">a.
+                        O winner
+
+                    </label><br>
+                    <input type="radio" id="q79b" name="q79" value="b">
+                    <label for="q79b">b.
+                        Second position
+
+                    </label><br>
+                    <input type="radio" id="q79c" name="q79" value="c">
+                    <label for="q79c">c.
+                        Third position
+
+                    </label><br>
+                    <input type="radio" id="q79d" name="q79" value="d">
+                    <label for="q79d">d.
+                        Fourth position
+
+                    </label><br>
+                    <!-- Answer: [Correct answer] -->
+
+                    <!-- Question 80 -->
+                    <p class="questions" id="80">80.
+                        2012 T-20 World Cricket cup is being
+                        organized at:
+                        <!-- Question text here -->
+
+
+
+                    </p>
+                    <input type="radio" id="q80a" name="q80" value="a" required>
+                    <label for="q80a">a.
+                        India
+
+                    </label><br>
+                    <input type="radio" id="q80b" name="q80" value="b">
+                    <label for="q80b">b.
+                        Australia
+
+                    </label><br>
+                    <input type="radio" id="q80c" name="q80" value="c">
+                    <label for="q80c">c.
+                        Great Britain
+
+                    </label><br>
+                    <input type="radio" id="q80d" name="q80" value="d">
+                    <label for="q80d">d.
+
+                        .Sri-Lanka
+                    </label><br>
+                    <!-- Answer: [Correct answer] -->
+
+                    <!-- Question 81 -->
+                    <p class="questions" id="81">81.
+                        Remittance in Nepal is generally included at
+
+                        <!-- Question text here -->
+
+
+
+                    </p>
+                    <input type="radio" id="q81a" name="q81" value="a" required>
+                    <label for="q81a">a.
+                        Gross Domestic Product
+                    </label><br>
+                    <input type="radio" id="q81b" name="q81" value="b">
+                    <label for="q81b">b.
+                        Gross National Product
+
+                    </label><br>
+                    <input type="radio" id="q81c" name="q81" value="c">
+                    <label for="q81c">c.
+                        Gross Disposable income
+
+                    </label><br>
+                    <input type="radio" id="q81d" name="q81" value="d">
+                    <label for="q81d">d.
+                        None of the above
+
+                    </label><br>
+                    <!-- Answer: [Correct answer] -->
+
+                    <!-- Question 82 -->
+                    <p class="questions" id="82">82.
+                        Nepal's economic growth rate for 2011-12 is estimated at
+
+                        <!-- Question text here -->
+
+
+
+                    </p>
+                    <input type="radio" id="q82a" name="q82" value="a" required>
+                    <label for="q82a">a.
+                        4.3%
+
+                    </label><br>
+                    <input type="radio" id="q82b" name="q82" value="b">
+                    <label for="q82b">b.
+                        460/0
+
+                    </label><br>
+                    <input type="radio" id="q82c" name="q82" value="c">
+                    <label for="q82c">c.
+                        49/0
+
+                    </label><br>
+                    <input type="radio" id="q82d" name="q82" value="d">
+                    <label for="q82d">d.
+                        -46%
+
+                    </label><br>
+                    <!-- Answer: [Correct answer] -->
+
+                    <!-- Question 83 -->
+                    <p class="questions" id="83">83.
+                        Premium offering of shares mean
+                        face value
+                        <!-- Question text here -->
+
+
+
+                    </p>
+                    <input type="radio" id="q83a" name="q83" value="a" required>
+                    <label for="q83a">a.
+                        Offering of shares value
+
+                    </label><br>
+                    <input type="radio" id="q83b" name="q83" value="b">
+                    <label for="q83b">b.
+                        Offering at book value
+
+                    </label><br>
+                    <input type="radio" id="q83c" name="q83" value="c">
+                    <label for="q83c">c.
+                        Offenng at market value
+
+                    </label><br>
+                    <input type="radio" id="q83d" name="q83" value="d">
+                    <label for="q83d">d.
+                        Offering at prices higher than the
+
+                    </label><br>
+                    <!-- Answer: [Correct answer] -->
+
+                    <!-- Question 84 -->
+                    <p class="questions" id="84">84.
+                        Micro enterprises as per the offcsal
+                        definition of Nepal means.
+                        <!-- Question text here -->
+
+
+
+                    </p>
+                    <input type="radio" id="q84a" name="q84" value="a" required>
+                    <label for="q84a">a.
+                        Small domestic actmtjes
+
+                    </label><br>
+                    <input type="radio" id="q84b" name="q84" value="b">
+                    <label for="q84b">b.
+                        Cottage Industries
+
+                    </label><br>
+                    <input type="radio" id="q84c" name="q84" value="c">
+                    <label for="q84c">c.
+                        Industries employing one or two persons With Rs. 100,000 or less investment
+
+                    </label><br>
+                    <input type="radio" id="q84d" name="q84" value="d">
+                    <label for="q84d">d.
+                        Enterpnses employing less than to persons With up to Rs. 200,000 investment
+
+                    </label><br>
+                    <!-- Answer: [Correct answer] -->
+
+                    <!-- Question 85 -->
+                    <p class="questions" id="85">85.
+
+                        <!-- Question text here -->
+                        Nepal's largest export destination is:
+
+
+                    </p>
+                    <input type="radio" id="q85a" name="q85" value="a" required>
+                    <label for="q85a">a.
+                        India
+
+                    </label><br>
+                    <input type="radio" id="q85b" name="q85" value="b">
+                    <label for="q85b">b.
+                        China
+
+                    </label><br>
+                    <input type="radio" id="q85c" name="q85" value="c">
+                    <label for="q85c">c.
+                        USA
+
+                    </label><br>
+                    <input type="radio" id="q85d" name="q85" value="d">
+                    <label for="q85d">d.
+                        Germany
+
+                    </label><br>
+                    <!-- Answer: [Correct answer] -->
+
+                    <!-- Question 86 -->
+                    <p class="questions" id="86">86.
+                        Barter trade means
+
+                        <!-- Question text here -->
+
+
+
+                    </p>
+                    <input type="radio" id="q86a" name="q86" value="a" required>
+                    <label for="q86a">a.
+                        Exchange of goods with money
+
+                    </label><br>
+                    <input type="radio" id="q86b" name="q86" value="b">
+                    <label for="q86b">b.
+                        Exchange of goods with services
+
+                    </label><br>
+                    <input type="radio" id="q86c" name="q86" value="c">
+                    <label for="q86c">c.
+                        Exchange of goods With goods
+
+                    </label><br>
+                    <input type="radio" id="q86d" name="q86" value="d">
+                    <label for="q86d">d.
+                        Exchange of goods in ancient times
+
+                    </label><br>
+                    <!-- Answer: [Correct answer] -->
+
+                    <!-- Question 87 -->
+                    <p class="questions" id="87">87.
+                        DRUIC Air is the flag carrier of
+                        <!-- Question text here -->
+
+
+
+                    </p>
+                    <input type="radio" id="q87a" name="q87" value="a" required>
+                    <label for="q87a">a.
+                        Laos
+
+                    </label><br>
+                    <input type="radio" id="q87b" name="q87" value="b">
+                    <label for="q87b">b.
+                        Cambodia
+
+                    </label><br>
+                    <input type="radio" id="q87c" name="q87" value="c">
+                    <label for="q87c">c.
+                        Myanmar
+
+                    </label><br>
+                    <input type="radio" id="q87d" name="q87" value="d">
+                    <label for="q87d">d.
+                        Bhutan
+
+                    </label><br>
+                    <!-- Answer: [Correct answer] -->
+
+                    <!-- Question 88 -->
+                    <p class="questions" id="88">88.
+                        A tax that is levied on the turnover of
+                        goods is called
+                        <!-- Question text here -->
+
+
+
+                    </p>
+                    <input type="radio" id="q88a" name="q88" value="a" required>
+                    <label for="q88a">a.
+                        Income tax
+
+                    </label><br>
+                    <input type="radio" id="q88b" name="q88" value="b">
+                    <label for="q88b">b.
+                        Excise duty
+
+                    </label><br>
+                    <input type="radio" id="q88c" name="q88" value="c">
+                    <label for="q88c">c.
+
+                        Tariff
+                    </label><br>
+                    <input type="radio" id="q88d" name="q88" value="d">
+                    <label for="q88d">d.
+                        Value added tax
+
+                    </label><br>
+                    <!-- Answer: [Correct answer] -->
+
+                    <!-- Question 89 -->
+                    <p class="questions" id="89">89.
+
+                        <!-- Question text here -->
+                        Thailand is Bhat as Indonesia is to,
+
+
+                    </p>
+                    <input type="radio" id="q89a" name="q89" value="a" required>
+                    <label for="q89a">a.
+                        Dollar
+
+                    </label><br>
+                    <input type="radio" id="q89b" name="q89" value="b">
+                    <label for="q89b">b.
+                        Pound
+
+                    </label><br>
+                    <input type="radio" id="q89c" name="q89" value="c">
+                    <label for="q89c">c.
+                        Dirham
+
+                    </label><br>
+                    <input type="radio" id="q89d" name="q89" value="d">
+                    <label for="q89d">d.
+                        Rupiyah,
+
+                    </label><br>
+                    <!-- Answer: [Correct answer] -->
+                    <!-- Question 90 -->
+                    <p class="questions" id="90">90.
+
+                        <!-- Question text here -->
+
+
+
+                        SBI Bank Nepal is
+                    </p>
+                    <input type="radio" id="q90a" name="q90" value="a" required>
+                    <label for="q90a">a.
+
+                        A subsidiary unit of State Bank of
+                        India
+                    </label><br>
+                    <input type="radio" id="q90b" name="q90" value="b">
+                    <label for="q90b">b.
+                        A branch of State Bank of India
+
+                    </label><br>
+                    <input type="radio" id="q90c" name="q90" value="c">
+                    <label for="q90c">c.
+                        A joint venture bank with State Bank
+                        of India
+
+                    </label><br>
+                    <input type="radio" id="q90d" name="q90" value="d">
+                    <label for="q90d">d.
+                        A bank with no relationship with
+                        State Bank of India
+
+                    </label><br>
+                    <!-- Answer: [Correct answer] -->
+
+                    <!-- Question 91 -->
+                    <p class="questions" id="91">91.
+                        'Global 500' Award is associated with
+                        <!-- Question text here -->
+
+
+                    </p>
+                    <input type="radio" id="q91a" name="q91" value="a" required>
+                    <label for="q91a">a.
+                        (a) Human Rights
+
+                    </label><br>
+                    <input type="radio" id="q91b" name="q91" value="b">
+                    <label for="q91b">b.
+                        (b) Peace Promotion
+
+                    </label><br>
+                    <input type="radio" id="q91c" name="q91" value="c">
+                    <label for="q91c">c.
+                        (c) Environmental protection
+
+                    </label><br>
+                    <input type="radio" id="q91d" name="q91" value="d">
+                    <label for="q91d">d.
+
+                        (d) Successful entrepreneurs
+                    </label><br>
+                    <!-- Answer: [Correct answer] -->
+
+                    <!-- Question 92 -->
+                    <p class="questions" id="92">92.
+
+                        <!-- Question text here -->
+                        Which of the following countries is not
+                        completely located inside a single
+                        country?
+
+
+                    </p>
+                    <input type="radio" id="q92a" name="q92" value="a" required>
+                    <label for="q92a">a.
+                        Lesotho
+
+                    </label><br>
+                    <input type="radio" id="q92b" name="q92" value="b">
+                    <label for="q92b">b.
+                        Vatican
+
+                    </label><br>
+                    <input type="radio" id="q92c" name="q92" value="c">
+                    <label for="q92c">c.
+                        San Manon
+
+                    </label><br>
+                    <input type="radio" id="q92d" name="q92" value="d">
+                    <label for="q92d">d.
+                        Andorra
+
+                    </label><br>
+                    <!-- Answer: [Correct answer] -->
+
+                    <!-- Question 93 -->
+                    <p class="questions" id="93">93.
+
+                        <!-- Question text here -->
+                        The historical silk route links
+
+
+                    </p>
+                    <input type="radio" id="q93a" name="q93" value="a" required>
+                    <label for="q93a">a.
+                        Asta and Europe
+
+                    </label><br>
+                    <input type="radio" id="q93b" name="q93" value="b">
+                    <label for="q93b">b.
+                        China and Iran
+
+                    </label><br>
+                    <input type="radio" id="q93c" name="q93" value="c">
+                    <label for="q93c">c.
+                        Mongolia and Hungary
+
+                    </label><br>
+                    <input type="radio" id="q93d" name="q93" value="d">
+                    <label for="q93d">d.
+                        China and Turkey
+
+                    </label><br>
+                    <!-- Answer: [Correct answer] -->
+
+                    <!-- Question 94 -->
+                    <p class="questions" id="94">94.
+                        The district with the highest number of
+                        over 8.000 meter peaks in Nepal is
+                        <!-- Question text here -->
+
+
+
+                    </p>
+                    <input type="radio" id="q94a" name="q94" value="a" required>
+                    <label for="q94a">a.
+                        Sankhuwasabha
+
+                    </label><br>
+                    <input type="radio" id="q94b" name="q94" value="b">
+                    <label for="q94b">b.
+                        Solukhumbu
+
+                    </label><br>
+                    <input type="radio" id="q94c" name="q94" value="c">
+                    <label for="q94c">c.
+                        Taplejung
+
+                    </label><br>
+                    <input type="radio" id="q94d" name="q94" value="d">
+                    <label for="q94d">d.
+                        Gorkha
+
+                    </label><br>
+                    <!-- Answer: [Correct answer] -->
+
+                    <!-- Question 95 -->
+                    <p class="questions" id="95">95.
+
+                        <!-- Question text here -->
+                        Hangseng is the stock exchange index of:
+
+
+                    </p>
+                    <input type="radio" id="q95a" name="q95" value="a" required>
+                    <label for="q95a">a.
+                        Singapore
+
+                    </label><br>
+                    <input type="radio" id="q95b" name="q95" value="b">
+                    <label for="q95b">b.
+                        Hong Kong
+
+                    </label><br>
+                    <input type="radio" id="q95c" name="q95" value="c">
+                    <label for="q95c">c.
+
+                        Taiwan
+                    </label><br>
+                    <input type="radio" id="q95d" name="q95" value="d">
+                    <label for="q95d">d.
+
+                        Japan
+                    </label><br>
+                    <!-- Answer: [Correct answer] -->
+
+                    <!-- Question 96 -->
+                    <p class="questions" id="96">96.
+                        Who is the current Chieg Secretary of Nepal?
+                        <!-- Question text here -->
+
+
+
+                    </p>
+                    <input type="radio" id="q96a" name="q96" value="a" required>
+                    <label for="q96a">a.
+                        Madhav Ghimire
+                    </label><br>
+                    <input type="radio" id="q96b" name="q96" value="b">
+                    <label for="q96b">b.Shanker Koirala
+
+                    </label><br>
+                    <input type="radio" id="q96c" name="q96" value="c">
+                    <label for="q96c">c.Leeta Mani Poudel
+
+                    </label><br>
+                    <input type="radio" id="q96d" name="q96" value="d">
+                    <label for="q96d">d.
+                        Yubraj Bhusal
+                    </label><br>
+                    <!-- Answer: [Correct answer] -->
+
+                    <!-- Question 97 -->
+                    <p class="questions" id="97">97.
+
+                        <!-- Question text here -->
+                        According to the astronauts, the only
+                        visible physical structure on earth from
+                        the moon is,
+
+
+                    </p>
+                    <input type="radio" id="q97a" name="q97" value="a" required>
+                    <label for="q97a">a.
+                        Vatican Palace
+
+                    </label><br>
+                    <input type="radio" id="q97b" name="q97" value="b">
+                    <label for="q97b">b.
+                        Temple of Rhode Island
+
+                    </label><br>
+                    <input type="radio" id="q97c" name="q97" value="c">
+                    <label for="q97c">c.
+
+                        Sun Francisco Bndge
+                    </label><br>
+                    <input type="radio" id="q97d" name="q97" value="d">
+                    <label for="q97d">d.
+
+                        the Great wall of China
+                    </label><br>
+                    <!-- Answer: [Correct answer] -->
+
+                    <!-- Question 98 -->
+                    <p class="questions" id="98">98.
+                        The tallest building in the world at
+                        present is located at
+                        <!-- Question text here -->
+
+
+
+                    </p>
+                    <input type="radio" id="q98a" name="q98" value="a" required>
+                    <label for="q98a">a.
+                        UAE
+
+                    </label><br>
+                    <input type="radio" id="q98b" name="q98" value="b">
+                    <label for="q98b">b.
+                        USA
+
+                    </label><br>
+                    <input type="radio" id="q98c" name="q98" value="c">
+                    <label for="q98c">c.
+                        Malaysia
+
+                    </label><br>
+                    <input type="radio" id="q98d" name="q98" value="d">
+                    <label for="q98d">d.
+                        Taiwan
+
+                    </label><br>
+                    <!-- Answer: [Correct answer] -->
+
+                    <!-- Question 99 -->
+                    <p class="questions" id="99">99.
+                        The current chair person of the
+                        SAARC is from:
+
+                        <!-- Question text here -->
+
+
+
+                    </p>
+                    <input type="radio" id="q99a" name="q99" value="a" required>
+                    <label for="q99a">a.
+                        Nepal
+
+                    </label><br>
+                    <input type="radio" id="q99b" name="q99" value="b">
+                    <label for="q99b">b.
+                        India
+
+                    </label><br>
+                    <input type="radio" id="q99c" name="q99" value="c">
+                    <label for="q99c">c.
+                        Maldives
+
+                    </label><br>
+                    <input type="radio" id="q99d" name="q99" value="d">
+                    <label for="q99d">d.
+                        Sri-Lanka
+
+                    </label><br>
+                    <!-- Answer: [Correct answer] -->
+
+                    <!-- Question 100 -->
+                    <p class="questions" id="1">100.
+                        Tertiary education is
+
+                        <!-- Question text here -->
+
+
+
+                    </p>
+                    <input type="radio" id="q100a" name="q100" value="a" required>
+                    <label for="q100a">a.
+                        Basic Education
+
+                    </label><br>
+                    <input type="radio" id="q100b" name="q100" value="b">
+                    <label for="q100b">b.
+                        Primary education
+
+                    </label><br>
+                    <input type="radio" id="q100c" name="q100" value="c">
+                    <label for="q100c">c.
+
+                        Secondary Education
+                    </label><br>
+                    <input type="radio" id="q100d" name="q100" value="d">
+                    <label for="q100d">d.
+                        - Higher Education
+
+                    </label><br>
+                    <!-- Answer: [Correct answer] -->
+                    <!-- Repeat for 24 more questions -->
+
+                </section>
+                </div>
+                </div>
+                <button class="btn next"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></button>
+    </main>
+    <div id="container" style="display: none;">
+        <p id="instructions">
+            <mark>
+                Green highlights indicate correct answers, and red highlights indicate incorrect answers.
+            </mark>
+        </p>
+        <p id="score"></p>
+    </div>
+    <button type="button" onclick="submitQuiz()">Submit</button>
+    <button type="button" onclick="window.location.href = 'index.html'">Restart</button>
+
+
+    </section>
+
+    <script>
+        const answers = {
+            q1: 'a',
+            q2: 'b',
+            q3: 'c',
+            q4: 'c',
+            q5: 'c',
+            q6: 'b',
+            q7: 'a',
+            q8: 'a',
+            q9: 'a',
+            q10: 'c',
+            q11: 'b',
+            q12: 'a',
+            q13: 'b',
+            q14: 'd',
+            q15: 'b',
+            q16: 'b',
+            q17: 'd',
+            q18: 'a',
+            q19: 'b',
+            q20: 'b',
+            q21: 'd',
+            q22: 'c',
+            q23: 'c',
+            q24: 'd',
+            q25: 'a',
+            q26: 'c',
+            q27: 'c',
+            q28: 'a',
+            q29: 'b',
+            q30: 'c',
+            q31: 'a',
+            q32: 'c',
+            q33: 'a',
+            q34: 'b',
+            q35: 'b',
+            q36: 'a',
+            q37: 'a',
+            q38: 'b',
+            q39: 'a',
+            q40: 'c',
+            q41: 'd',
+            q42: 'd',
+            q43: 'c',
+            q44: 'd',
+            q45: 'c',
+            q46: 'b',
+            q47: 'a',
+            q48: 'd',
+            q49: 'c',
+            q50: 'b',
+            q51: 'd',
+            q52: 'a',
+            q53: 'a',
+            q54: 'b',
+            q55: 'b',
+            q56: 'c',
+            q57: 'b',
+            q58: 'b',
+            q59: 'b',
+            q60: 'a',
+            q61: 'd',
+            q62: 'b',
+            q63: 'a',
+            q64: 'a',
+            q65: 'c',
+            q66: 'c',
+            q67: 'a',
+            q68: 'b',
+            q69: 'b',
+            q70: 'b',
+            q71: 'c',
+            q72: 'd',
+            q73: 'b',
+            q74: 'd',
+            q75: 'b',
+            q76: 'b',
+            q77: 'a',
+            q78: 'c',
+            q79: 'd',
+            q80: 'c',
+            q81: 'c',
+            q82: 'c',
+            q83: 'c',
+            q84: 'b',
+            q85: 'a',
+            q86: 'a',
+            q87: 'c',
+            q88: 'b',
+            q89: 'd',
+            q90: 'd',
+            q91: 'a',
+            q92: 'b',
+            q93: 'c',
+            q94: 'd',
+            q95: 'c',
+            q96: 'c',
+            q97: 'a',
+            q98: 'b',
+            q99: 'a',
+            q100: 'd',
+        };
+
+        function submitQuiz() {
+            let score = 0;
+            let totalQuestions = 100;
+            document.querySelectorAll('input[type="radio"]').forEach(radio => radio.disabled = true);
+            for (let question in answers) {
+                const selected = document.querySelector(`input[name="${question}"]:checked`);
+                const correctAnswer = answers[question];
+
+                const correctLabel = document.querySelector(`label[for="${question}${correctAnswer}"]`);
+
+                if (selected) {
+                    const selectedLabel = document.querySelector(`label[for="${selected.id}"]`);
+                    if (selected.value === correctAnswer) {
+                        score++;
+                        if (selectedLabel) {
+                            selectedLabel.classList.add('correct');
+                        }
+                    } else {
+                        if (selectedLabel) {
+                            selectedLabel.classList.add('incorrect');
+                        }
+                        if (correctLabel) {
+                            correctLabel.classList.add('correct');
+                        }
+                    }
+                } else {
+                    if (correctLabel) {
+                        correctLabel.classList.add('correct');
+                    }
+                }
+            }
+
+            document.getElementById('score').textContent = `Your score is ${score} out of ${totalQuestions}.`;
+            document.getElementById('container').style.display = 'block';
+        }
+    </script>
+
+    <footer>
+        <p>&copy; 2024 CMAT Prep. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random-Questions</title>
+    <link rel="stylesheet" href="nav.css">
+    <!-- <link rel="stylesheet" href="pjcodecss.css"> -->
+    <!-- <link rel="stylesheet" href="styles2.css"> -->
+    <link rel="stylesheet" href="random-questions.css">
+
+</head>
+
+<body>
+    <nav>
+    
+        <div class="nav-elements">
+            <img src="pictures/cmatPrep.webp" onclick="window.location.href='index.html'">
+        </div>
+        <div class="nav-elements"><a href="prospectus.html">Prospectus</a></div>
+        <div class="nav-elements"><a href="About_page.html">About Us</a></div>
+        <div class="nav-elements"><a href="contact.html">Contact</a></div>
+
+
+</nav>
+    <button id="random-generation">Loading Questions.....</button>
+    <div class="result"></div>
+    <div class="big-container">
+        <button class="btn prev">PREV</button>
+        <div class="main-container2">
+            <div class="slider">
+                <div class="section verbal-questions"></div>
+                <div class="section quantitative-questions"></div>
+                <div class="section logical-questions"></div>
+                <div class="section gk-questions"></div>
+            </div>
+        </div>
+        <button class="btn next">NEXT</button>
+    </div>
+
+    <button id="submit-button" onclick="window.scrollTo(0, 0);" onclick="screen.scrollTo(0, 0);">SUBMIT</button>
+
+
+    <script src="random-verbal-questions.js"></script>
+    <script src="random-quantitative-questions.js"></script>
+    <script src="random-logical-questions.js"></script>
+    <script src="random-gk-questions.js"></script>
+    <script src="swiping.js"></script>
+    <script src="random-questions.js"></script>
+
+
+</body>
+
+</html>

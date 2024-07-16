@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Past Questions</title>
+    <link rel="icon" href="pictures/cmatPrep.webp" type="image/x-icon"/>
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="styles2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+        .big-container {
+            display: flex;
+            justify-content: center;
+            width: 95%;
+            margin: auto;
+            margin-top: 3%;
+        }
+
+        .past-questions-container {
+
+            width: 100%;
+            background-color: #ffff;
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            /* border: 2px black solid; */
+        }
+
+        .past-questions-container>* {
+            width: 28vw;
+            height: auto;
+            padding: 1em;
+            /* border: 2px red solid; */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            display: flex;
+            gap: 1em;
+            flex-direction: column;
+            align-items: center;
+            font-size: 3em;
+
+        }
+
+        span {
+            font-weight: bolder;
+            font-size: 2.3em;
+            margin: 0vh 20vw;
+        }
+
+        /*media query*/
+        @media screen and (max-width:480px) {
+            .past-questions-container>* {
+                font-size: 1em;
+            }
+
+            span {
+                font-weight: bolder;
+                font-size: 1.3em;
+                margin: 10vh 20vw;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+    
+        <div class="nav-elements">
+            <img src="pictures/cmatPrep.webp" onclick="window.location.href='index.html'">
+        </div>
+        <div class="nav-elements"><a href="prospectus.html">Prospectus</a></div>
+        <div class="nav-elements"><a href="About_page.html">About Us</a></div>
+        <div class="nav-elements"><a href="contact.html">Contact</a></div>
+
+
+</nav>
+    <!-- <span>PAST QUESTIONS</span> -->
+    <div class="big-container">
+
+        <div class="past-questions-container">
+            <div class="model-question">Model 
+                <button onclick="window.location.href='Model_set.html'">BEGIN TEST</button>
+            </div>
+            <div class="set-2012"> Set 2012
+                <button onclick="window.location.href='set_2012.html'">BEGIN TEST</button>
+            </div>
+            <div class="set-2013"> Set 2013
+                <button onclick="window.location.href='comingsoon.html'">BEGIN TEST</button>
+            </div>
+            <div class="set-2014"> Set 2014
+                <button onclick="window.location.href='set_2014.html'">BEGIN TEST</button>
+            </div>
+            <div class="set-2015"> Set 2015
+                <button onclick="window.location.href='comingsoon.html'">BEGIN TEST</button>
+            </div>
+            <div class="set-2016"> Set 2016
+                <button onclick="window.location.href='set_2016.html'">BEGIN TEST</button>
+            </div>
+            <div class="set-2017"> Set 2017
+                <button onclick="window.location.href='set_2017.html'">BEGIN TEST</button>
+            </div>
+            <div class="set-2018"> Set 2018
+                <button onclick="window.location.href='set_2018.html'">BEGIN TEST</button>
+            </div>
+            <div class="set-2019"> Set 2019
+                <button onclick="window.location.href='set_2020.html'">BEGIN TEST</button>
+            </div>
+            <div class="set-2020"> Set 2020
+                <button onclick="window.location.href='set_2020.html'">BEGIN TEST</button>
+            </div>
+            <div class="practice-set1">Practice-I
+                <button onclick="window.location.href='comingsoon.html'">BEGIN TEST</button>
+            </div>
+            <div class="practice-set2"> Practice-II
+                <button onclick="window.location.href='comingsoon.html'">BEGIN TEST</button>
+            </div>
+        </div>
+
+
+    </div>
+    <footer>
+        <div>Follow us on&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.facebook.com/profile.php?id=61562056574128" target="_blank">
+            <i style="color:blue; transform: scale(2);"
+                    class="fa-brands fa-facebook">
+                </i>
+            </a> </a>&nbsp;&nbsp; or&nbsp;&nbsp; <a target="_blank" href="mailto:cmatprep1@gmail.com"><i
+                    style="color:red; transform: scale(2);" class="fa-solid fa-envelope"></i></a><br>
+            <a href="contributors.html" style="color:lightblue;">Our Contributors</a><br>
+            <p>&copy; 2024 CMAT Prep.<br> All rights reserved.
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>
