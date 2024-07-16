@@ -2,7 +2,7 @@
 
 /* General styling for the main section */
 body{
-    background-color: antiquewhite;
+    background-color:f4f4f4;
     position: relative;
 }
 .about-container{
@@ -16,7 +16,7 @@ main {
     width: 100%;
     height: 100%;
     font-family: 'Helvetica Neue', Arial, sans-serif;
-    background-color: #ded7d7;
+    background-color: f4f4f4;
 
     display: flex;
     flex-direction: column;
@@ -69,19 +69,44 @@ main a {
     text-decoration: none;
 }
 
+/* section{
+    
+    display: flex;
+    flex-direction: column;
+    background-color: gray;
+    gap:1rem;
+}
+section>*{
+   
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+} */
 
 footer {
-    width: 100%;
+    background-color: white;
+    margin: 20px 0;
+    padding: 20px;
+    width: 98%;
+    height: auto;
+    box-shadow: 5px -5px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 1%;
+    /* position: relative; */
     margin-top: 2%;
     line-height: 180%;
     font-size: 2em;
-    height: auto;
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 1vh 0;
+    /* height: auto; */
+    /* background-color: #ffffff; */
+    color: #5c48ee;
+    /* text-align: center; */
+    /* padding: 5vh 0; */
     overflow: hidden;
 }
+
 
 .footer-img>img {
     border: 1px white solid;

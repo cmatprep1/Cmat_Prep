@@ -72,6 +72,22 @@ async function fetchgks() {
         });
 }
 
+function recallgks() {
+    if (selectedgkQuestions.length == 0) {
+       
+       return;
+    }
+    else
+        displaygks();
+}
+const gktimer=setInterval(()=>{
+    if (selectedgkQuestions.length != 0){
+        clearInterval(gktimer);
+        }
+    recallgks();
+},500);
+
+
 // Function to get random questions without repetition
 function getRandomQuestions(allQuestions, count) {
     const shuffled = allQuestions.sort(() => 0.5 - Math.random());

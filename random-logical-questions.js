@@ -12,7 +12,7 @@ async function displaylogicals() {
     let i = 0;
     correctlogicalAnswers = [];
 
-    logicalQuestionsContainer.innerHTML = "<h1 class='logical-ques-type-shower'>LOGICAL QUESTIONS </h1><br><br>";
+    logicalQuestionsContainer.innerHTML = "<h1 class='logical-ques-type-shower'>LOGICAL </h1><br><br>";
     selectedlogicalQuestions.forEach((obj, index) => {
 
         let optionIndexCounter=0;
@@ -69,6 +69,24 @@ async function fetchlogicals() {
             throw new Error('Failed to fetch questions');
         });
 }
+
+
+function recalllogicals() {
+    if (selectedlogicalQuestions.length == 0) {
+       
+       return;
+    }
+    else
+        displaylogicals();
+}
+const logicalstimer=setInterval(()=>{
+
+    if (selectedlogicalQuestions.length != 0){
+        clearInterval(logicalstimer);
+        }
+    recalllogicals();
+},500);
+
 
 // Function to get random questions without repetition
 function getRandomQuestions(allQuestions, count) {

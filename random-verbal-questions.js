@@ -5,10 +5,12 @@ let button = document.querySelector("#random-generation");
 
 let submitButton = document.querySelector("#submit-button");
 let selectedVerbalQuestions = [];
+
 let correctVerbalAnswers = [];
-let verbalQsNos=[];
+let verbalQsNos = [];
 document.addEventListener('DOMContentLoaded', fetchverbals);
 let correctanswers = [];
+
 
 async function displayverbals() {
     button.style.display = "none";
@@ -54,12 +56,13 @@ async function displayverbals() {
         questionDiv.appendChild(correctAns);
         verbalQuestionsContainer.appendChild(questionDiv);
         questionDiv.appendChild(document.createElement('hr'));
-        verbalQsNos[i]=obj.questionNumber;
+        verbalQsNos[i] = obj.questionNumber;
         i++;
 
     });
 
 }
+
 
 
 // Function to fetch questions data from GitHub Gist
@@ -81,6 +84,27 @@ async function fetchverbals() {
             throw new Error('Failed to fetch questions');
         });
 }
+
+// fetchverbals();
+function recall() {
+    if (selectedVerbalQuestions.length == 0) {
+       
+       return;
+    }
+    else
+        displayverbals();
+}
+const verbalstimer=setInterval(()=>{
+    if (selectedVerbalQuestions.length != 0){
+        clearInterval(verbalstimer);
+        }
+
+    recall();
+},500);
+
+
+
+
 
 // Function to get random questions without repetition
 function getRandomQuestions(allQuestions, count) {

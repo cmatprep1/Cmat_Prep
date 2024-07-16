@@ -11,7 +11,7 @@ async function displayquantitatives() {
     correctquantitativeAnswers = [];
     let optionIndex=['a','b','c','d'];
 
-    quantitativeQuestionsContainer.innerHTML = "<h1 class='quantitative-ques-type-shower'>QUANTITATIVE QUESTIONS</h1> <br><br>";
+    quantitativeQuestionsContainer.innerHTML = "<h1 class='quantitative-ques-type-shower'>QUANTITATIVE</h1> <br><br>";
 
     selectedquantitativeQuestions.forEach((obj, index) => {
         let optionIndexCounter=0;
@@ -69,6 +69,24 @@ async function fetchquantitatives() {
             throw new Error('Failed to fetch questions');
         });
 }
+function recallquantitative() {
+    if (selectedquantitativeQuestions.length == 0) {
+       
+       return;
+    }
+    else{
+        displayquantitatives();
+        return;
+    }
+
+}
+const quantitativetimer=setInterval(()=>{
+    if (selectedquantitativeQuestions.length != 0){
+        clearInterval(quantitativetimer);
+        }
+
+    recallquantitative();
+},500);
 
 // Function to get random questions without repetition
 function getRandomQuestions(allQuestions, count) {

@@ -17,6 +17,7 @@ let correctGkAnswersCounter = 0;
 let totalMarks;
 
     button.style.display = "";
+    button.innerHTML="Restart";
     let VerbalDisplay = document.querySelector(".verbal-ques-type-shower");
     let QuantitativeDisplay = document.querySelector(".quantitative-ques-type-shower");
     let LogicalDisplay = document.querySelector(".logical-ques-type-shower");
