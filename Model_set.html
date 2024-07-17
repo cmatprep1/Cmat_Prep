@@ -34,7 +34,18 @@
             90:00
         </span>
     </div>
+<!--     function to make sound on click -->
+<script>
+            function play() {
+            var sound = document.getElementById("tick-sound");
+            sound.play();
+            }
+        </script>
+        <audio id="tick-sound" src="click.wav" preload="auto"></audio>
 
+<!--     ends here -->
+
+    
     <!-- timer chalaune code -->
     <script>
         let dec = document.getElementById("time");
@@ -100,7 +111,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q1a" name="q1" value="a">
+                        <input type="radio" onlcick="play()" id="q1a" name="q1" value="a">
                         <div class="label-container">
                             <label for="q1a"> a. A tourist attraction </label>
                         </div>
@@ -110,7 +121,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q1b" name="q1" value="b">
+                        <input type="radio" onlcick="play()" id="q1b" name="q1" value="b">
                         <div class="label-container">
                             <label for="q1b"> b. A source of timber </label>
                         </div>
@@ -120,7 +131,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q1c" name="q1" value="c">
+                        <input type="radio" onlcick="play()" id="q1c" name="q1" value="c">
                         <div class="label-container">
                             <label for="q1c"> c. A crucial regulator of the global climate </label>
                         </div>
@@ -129,7 +140,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q1d" name="q1" value="d">
+                        <input type="radio" onlcick="play()" id="q1d" name="q1" value="d">
                         <div class="label-container">
                             <label for="q1d"> d. A mining area </label>
                         </div>
@@ -141,7 +152,7 @@
                         rainforest?</p>
 
                     <div class="line">
-                        <input type="radio" id="q2a" name="q2" value="a">
+                        <input type="radio" onlcick="play()" id="q2a" name="q2" value="a">
                         <div class="label-container">
                             <label for="q2a">a. Tourism and urban development </label>
                         </div>
@@ -150,7 +161,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q2b" name="q2" value="b">
+                        <input type="radio" onlcick="play()" id="q2b" name="q2" value="b">
                         <div class="label-container">
                             <label for="q2b">b. Logging, agriculture, and mining </label>
                         </div>
@@ -159,7 +170,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q2c" name="q2" value="c">
+                        <input type="radio" onlcick="play()" id="q2c" name="q2" value="c">
                         <div class="label-container">
                             <label for="q2c">c. Fishing and hunting </label>
                         </div>
@@ -168,7 +179,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q2d" name="q2" value="d">
+                        <input type="radio" onlcick="play()" id="q2d" name="q2" value="d">
                         <div class="label-container">
                             <label for="q2d"> d. Natural disasters </label>
                         </div>
@@ -181,7 +192,7 @@
                     </p>
 
                     <div class="line">
-                        <input type="radio" id="q3a" name="q3" value="a">
+                        <input type="radio" onlcick="play()" id="q3a" name="q3" value="a">
                         <div class="label-container">
                             <label for="q3a">a. By producing fossil fuels </label>
                         </div>
@@ -190,7 +201,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q3b" name="q3" value="b">
+                        <input type="radio" onlcick="play()" id="q3b" name="q3" value="b">
                         <div class="label-container">
                             <label for="q3b">b. By absorbing oxygen and producing carbon dioxide </label>
                         </div>
@@ -199,7 +210,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q3c" name="q3" value="c">
+                        <input type="radio" onlcick="play()" id="q3c" name="q3" value="c">
                         <div class="label-container">
                             <label for="q3c">c. By absorbing carbon dioxide and producing oxygen </label>
                         </div>
@@ -208,7 +219,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q3d" name="q3" value="d">
+                        <input type="radio" onlcick="play()" id="q3d" name="q3" value="d">
                         <div class="label-container">
                             <label for="q3d"> d. By providing fresh water </label>
                         </div>
@@ -219,7 +230,7 @@
                     <p class="questions" id="q4">4. What measures are being taken to protect the Amazon rainforest?</p>
 
                     <div class="line">
-                        <input type="radio" id="q4a" name="q4" value="a">
+                        <input type="radio" onlcick="play()" id="q4a" name="q4" value="a">
                         <div class="label-container">
                             <label for="q4a">a. Increasing tourism </label>
                         </div>
@@ -228,7 +239,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q4b" name="q4" value="b">
+                        <input type="radio" onlcick="play()" id="q4b" name="q4" value="b">
                         <div class="label-container">
                             <label for="q4b">b. Promoting unsustainable practices </label>
                         </div>
@@ -237,7 +248,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q4c" name="q4" value="c">
+                        <input type="radio" onlcick="play()" id="q4c" name="q4" value="c">
                         <div class="label-container">
                             <label for="q4c">c. Establishing protected areas and supporting indigenous
                                 communities </label>
@@ -247,7 +258,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q4d" name="q4" value="d">
+                        <input type="radio" onlcick="play()" id="q4d" name="q4" value="d">
                         <div class="label-container">
                             <label for="q4d">d. Expanding logging and mining activities </label>
                         </div>
@@ -258,7 +269,7 @@
                     <p class="questions" id="q5">5. What is the Amazon rainforest often referred to as?</p>
 
                     <div class="line">
-                        <input type="radio" id="q5a" name="q5" value="a">
+                        <input type="radio" onlcick="play()" id="q5a" name="q5" value="a">
                         <div class="label-container">
                             <label for="q5a">a. The heart of South America </label>
                         </div>
@@ -267,7 +278,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q5b" name="q5" value="b">
+                        <input type="radio" onlcick="play()" id="q5b" name="q5" value="b">
                         <div class="label-container">
                             <label for="q5b">b. The green paradise </label>
                         </div>
@@ -276,7 +287,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q5c" name="q5" value="c">
+                        <input type="radio" onlcick="play()" id="q5c" name="q5" value="c">
                         <div class="label-container">
                             <label for="q5c">c. The lungs of the Earth </label>
                         </div>
@@ -285,7 +296,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q5d" name="q5" value="d">
+                        <input type="radio" onlcick="play()" id="q5d" name="q5" value="d">
                         <div class="label-container">
                             <label for="q5d">d. The biodiversity hotspot </label>
                         </div>
@@ -300,7 +311,7 @@
                     </p>
 
                     <div class="line">
-                        <input type="radio" id="q6a" name="q6" value="a">
+                        <input type="radio" onlcick="play()" id="q6a" name="q6" value="a">
                         <div class="label-container">
                             <label for="q6a">a. preface </label>
                         </div>
@@ -309,7 +320,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q6b" name="q6" value="b">
+                        <input type="radio" onlcick="play()" id="q6b" name="q6" value="b">
                         <div class="label-container">
                             <label for="q6b">b. climax </label>
                         </div>
@@ -318,7 +329,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q6c" name="q6" value="c">
+                        <input type="radio" onlcick="play()" id="q6c" name="q6" value="c">
                         <div class="label-container">
                             <label for="q6c">c. index </label>
                         </div>
@@ -327,7 +338,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q6d" name="q6" value="d">
+                        <input type="radio" onlcick="play()" id="q6d" name="q6" value="d">
                         <div class="label-container">
                             <label for="q6d">d. appendix </label>
                         </div>
@@ -341,7 +352,7 @@
                         than the last.</p>
 
                     <div class="line">
-                        <input type="radio" id="q7a" name="q7" value="a">
+                        <input type="radio" onlcick="play()" id="q7a" name="q7" value="a">
                         <div class="label-container">
                             <label for="q7a">a. collection </label>
                         </div>
@@ -350,7 +361,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q7b" name="q7" value="b">
+                        <input type="radio" onlcick="play()" id="q7b" name="q7" value="b">
                         <div class="label-container">
                             <label for="q7b"> b. compilation </label>
                         </div>
@@ -359,7 +370,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q7c" name="q7" value="c">
+                        <input type="radio" onlcick="play()" id="q7c" name="q7" value="c">
                         <div class="label-container">
                             <label for="q7c">c. directory </label>
                         </div>
@@ -368,7 +379,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q7d" name="q7" value="d">
+                        <input type="radio" onlcick="play()" id="q7d" name="q7" value="d">
                         <div class="label-container">
                             <label for="q7d">d. glossary </label>
                         </div>
@@ -381,7 +392,7 @@
                     </p>
 
                     <div class="line">
-                        <input type="radio" id="q8a" name="q8" value="a">
+                        <input type="radio" onlcick="play()" id="q8a" name="q8" value="a">
                         <div class="label-container">
                             <label for="q8a"> a. assortment </label>
                         </div>
@@ -390,7 +401,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q8b" name="q8" value="b">
+                        <input type="radio" onlcick="play()" id="q8b" name="q8" value="b">
                         <div class="label-container">
                             <label for="q8b"> b. anthology </label>
                         </div>
@@ -399,7 +410,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q8c" name="q8" value="c">
+                        <input type="radio" onlcick="play()" id="q8c" name="q8" value="c">
                         <div class="label-container">
                             <label for="q8c"> c. bibliography </label>
                         </div>
@@ -408,7 +419,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q8d" name="q8" value="d">
+                        <input type="radio" onlcick="play()" id="q8d" name="q8" value="d">
                         <div class="label-container">
                             <label for="q8d"> d. syllabus </label>
                         </div>
@@ -422,7 +433,7 @@
                         audience in awe.</p>
 
                     <div class="line">
-                        <input type="radio" id="q9a" name="q9" value="a">
+                        <input type="radio" onlcick="play()" id="q9a" name="q9" value="a">
                         <div class="label-container">
                             <label for="q9a">a. chord </label>
                         </div>
@@ -431,7 +442,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q9b" name="q9" value="b">
+                        <input type="radio" onlcick="play()" id="q9b" name="q9" value="b">
                         <div class="label-container">
                             <label for="q9b"> b. melody </label>
                         </div>
@@ -440,7 +451,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q9c" name="q9" value="c">
+                        <input type="radio" onlcick="play()" id="q9c" name="q9" value="c">
                         <div class="label-container">
                             <label for="q9c">c. refrain </label>
                         </div>
@@ -449,7 +460,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q9d" name="q9" value="d">
+                        <input type="radio" onlcick="play()" id="q9d" name="q9" value="d">
                         <div class="label-container">
                             <label for="q9d">d. stanza </label>
                         </div>
@@ -462,7 +473,7 @@
                         to analyze genetic data.</p>
 
                     <div class="line">
-                        <input type="radio" id="q10a" name="q10" value="a">
+                        <input type="radio" onlcick="play()" id="q10a" name="q10" value="a">
                         <div class="label-container">
                             <label for="q10a"> a. dissertation </label>
                         </div>
@@ -471,7 +482,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q10b" name="q10" value="b">
+                        <input type="radio" onlcick="play()" id="q10b" name="q10" value="b">
                         <div class="label-container">
                             <label for="q10b"> b. narrative </label>
                         </div>
@@ -480,7 +491,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q10c" name="q10" value="c">
+                        <input type="radio" onlcick="play()" id="q10c" name="q10" value="c">
                         <div class="label-container">
                             <label for="q10c"> c. description </label>
                         </div>
@@ -489,7 +500,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q10d" name="q10" value="d">
+                        <input type="radio" onlcick="play()" id="q10d" name="q10" value="d">
                         <div class="label-container">
                             <label for="q10d">d. exposition </label>
                         </div>
@@ -500,7 +511,7 @@
                     <p class="questions" id="q11">11. He <u>framed the person</u> means </p>
 
                     <div class="line">
-                        <input type="radio" id="q11a" name="q11" value="a">
+                        <input type="radio" onlcick="play()" id="q11a" name="q11" value="a">
                         <div class="label-container">
                             <label for="q11a"> a. asked him to sit idle </label>
                         </div>
@@ -509,7 +520,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q11b" name="q11" value="b">
+                        <input type="radio" onlcick="play()" id="q11b" name="q11" value="b">
                         <div class="label-container">
                             <label for="q11b"> b. tried to cheat him </label>
                         </div>
@@ -518,7 +529,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q11c" name="q11" value="c">
+                        <input type="radio" onlcick="play()" id="q11c" name="q11" value="c">
                         <div class="label-container">
                             <label for="q11c"> c. made him feel guilty </label>
                         </div>
@@ -527,7 +538,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q11d" name="q11" value="d">
+                        <input type="radio" onlcick="play()" id="q11d" name="q11" value="d">
                         <div class="label-container">
                             <label for="q11d"> d. flattered him </label>
                         </div>
@@ -537,7 +548,7 @@
                     <p class="questions" id="q12">12. The experimental <u>get on my nerves</u> means</p>
 
                     <div class="line">
-                        <input type="radio" id="q12a" name="q12" value="a">
+                        <input type="radio" onlcick="play()" id="q12a" name="q12" value="a">
                         <div class="label-container">
                             <label for="q12a">a. disappoints </label>
                         </div>
@@ -546,7 +557,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q12b" name="q12" value="b">
+                        <input type="radio" onlcick="play()" id="q12b" name="q12" value="b">
                         <div class="label-container">
                             <label for="q12b"> b. get worried </label>
                         </div>
@@ -555,7 +566,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q12c" name="q12" value="c">
+                        <input type="radio" onlcick="play()" id="q12c" name="q12" value="c">
                         <div class="label-container">
                             <label for="q12c">c.made him feel guilty </label>
                         </div>
@@ -564,7 +575,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q12d" name="q12" value="d">
+                        <input type="radio" onlcick="play()" id="q12d" name="q12" value="d">
                         <div class="label-container">
                             <label for="q12d"> d. flattered him </label>
                         </div>
@@ -574,7 +585,7 @@
                     <p class="questions" id="q13">13. <u>Red-handed</u> means</p>
 
                     <div class="line">
-                        <input type="radio" id="q13a" name="q13" value="a">
+                        <input type="radio" onlcick="play()" id="q13a" name="q13" value="a">
                         <div class="label-container">
                             <label for="q13a">a. Quickly </label>
                         </div>
@@ -583,7 +594,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q13b" name="q13" value="b">
+                        <input type="radio" onlcick="play()" id="q13b" name="q13" value="b">
                         <div class="label-container">
                             <label for="q13b"> b. Caught in the act </label>
                         </div>
@@ -592,7 +603,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q13c" name="q13" value="c">
+                        <input type="radio" onlcick="play()" id="q13c" name="q13" value="c">
                         <div class="label-container">
                             <label for="q13c">c. Caught with dirty hands </label>
                         </div>
@@ -601,7 +612,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q13d" name="q13" value="d">
+                        <input type="radio" onlcick="play()" id="q13d" name="q13" value="d">
                         <div class="label-container">
                             <label for="q13d"> d. Caught with his hands tied </label>
                         </div>
@@ -613,7 +624,7 @@
                     <!-- Correct answer: d -->
 
                     <div class="line">
-                        <input type="radio" id="q14a" name="q14" value="a">
+                        <input type="radio" onlcick="play()" id="q14a" name="q14" value="a">
                         <div class="label-container">
                             <label for="q14a">a. Dishonestly </label>
                         </div>
@@ -622,7 +633,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q14b" name="q14" value="b">
+                        <input type="radio" onlcick="play()" id="q14b" name="q14" value="b">
                         <div class="label-container">
                             <label for="q14b"> b. Lazily </label>
                         </div>
@@ -631,7 +642,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q14c" name="q14" value="c">
+                        <input type="radio" onlcick="play()" id="q14c" name="q14" value="c">
                         <div class="label-container">
                             <label for="q14c">c. Casually </label>
                         </div>
@@ -640,7 +651,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q14d" name="q14" value="d">
+                        <input type="radio" onlcick="play()" id="q14d" name="q14" value="d">
                         <div class="label-container">
                             <label for="q14d">d. Sincerity </label>
                         </div>
@@ -652,7 +663,7 @@
                     <!-- Correct answer: b -->
 
                     <div class="line">
-                        <input type="radio" id="q15a" name="q15" value="a">
+                        <input type="radio" onlcick="play()" id="q15a" name="q15" value="a">
                         <div class="label-container">
                             <label for="q15a"> a. A bad smell </label>
                         </div>
@@ -661,7 +672,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q15b" name="q15" value="b">
+                        <input type="radio" onlcick="play()" id="q15b" name="q15" value="b">
                         <div class="label-container">
                             <label for="q15b"> b. To suspect </label>
                         </div>
@@ -670,7 +681,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q15c" name="q15" value="c">
+                        <input type="radio" onlcick="play()" id="q15c" name="q15" value="c">
                         <div class="label-container">
                             <label for="q15c">c. To misunderstand </label>
                         </div>
@@ -679,7 +690,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q15d" name="q15" value="d">
+                        <input type="radio" onlcick="play()" id="q15d" name="q15" value="d">
                         <div class="label-container">
                             <label for="q15d">d. To hide </label>
                         </div>
@@ -693,7 +704,7 @@
                     <!-- Correct answer: b -->
 
                     <div class="line">
-                        <input type="radio" id="q16a" name="q16" value="a">
+                        <input type="radio" onlcick="play()" id="q16a" name="q16" value="a">
                         <div class="label-container">
                             <label for="q16a"> a. to </label>
                         </div>
@@ -702,7 +713,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q16b" name="q16" value="b">
+                        <input type="radio" onlcick="play()" id="q16b" name="q16" value="b">
                         <div class="label-container">
                             <label for="q16b"> b. on </label>
                         </div>
@@ -711,7 +722,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q16c" name="q16" value="c">
+                        <input type="radio" onlcick="play()" id="q16c" name="q16" value="c">
                         <div class="label-container">
                             <label for="q16c">c. with </label>
                         </div>
@@ -720,7 +731,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q16d" name="q16" value="d">
+                        <input type="radio" onlcick="play()" id="q16d" name="q16" value="d">
                         <div class="label-container">
                             <label for="q16d">d. by </label>
                         </div>
@@ -732,7 +743,7 @@
                     <!-- Correct answer: d -->
 
                     <div class="line">
-                        <input type="radio" id="q17a" name="q17" value="a">
+                        <input type="radio" onlcick="play()" id="q17a" name="q17" value="a">
                         <div class="label-container">
                             <label for="q17a"> a. down </label>
                         </div>
@@ -741,7 +752,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q17b" name="q17" value="b">
+                        <input type="radio" onlcick="play()" id="q17b" name="q17" value="b">
                         <div class="label-container">
                             <label for="q17b"> b. at </label>
                         </div>
@@ -750,7 +761,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q17c" name="q17" value="c">
+                        <input type="radio" onlcick="play()" id="q17c" name="q17" value="c">
                         <div class="label-container">
                             <label for="q17c">c. of </label>
                         </div>
@@ -759,7 +770,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q17d" name="q17" value="d">
+                        <input type="radio" onlcick="play()" id="q17d" name="q17" value="d">
                         <div class="label-container">
                             <label for="q17d">d. after </label>
                         </div>
@@ -771,7 +782,7 @@
                     <!-- Correct answer: a -->
 
                     <div class="line">
-                        <input type="radio" id="q18a" name="q18" value="a">
+                        <input type="radio" onlcick="play()" id="q18a" name="q18" value="a">
                         <div class="label-container">
                             <label for="q18a"> a. for </label>
                         </div>
@@ -780,7 +791,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q18b" name="q18" value="b">
+                        <input type="radio" onlcick="play()" id="q18b" name="q18" value="b">
                         <div class="label-container">
                             <label for="q18b"> b. with </label>
                         </div>
@@ -789,7 +800,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q18c" name="q18" value="c">
+                        <input type="radio" onlcick="play()" id="q18c" name="q18" value="c">
                         <div class="label-container">
                             <label for="q18c"> c. against </label>
                         </div>
@@ -798,7 +809,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q18d" name="q18" value="d">
+                        <input type="radio" onlcick="play()" id="q18d" name="q18" value="d">
                         <div class="label-container">
                             <label for="q18d"> d. by </label>
                         </div>
@@ -810,7 +821,7 @@
                     <!-- Correct answer: b -->
 
                     <div class="line">
-                        <input type="radio" id="q19a" name="q19" value="a">
+                        <input type="radio" onlcick="play()" id="q19a" name="q19" value="a">
                         <div class="label-container">
                             <label for="q19a"> a. to </label>
                         </div>
@@ -819,7 +830,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q19b" name="q19" value="b">
+                        <input type="radio" onlcick="play()" id="q19b" name="q19" value="b">
                         <div class="label-container">
                             <label for="q19b"> b. at </label>
                         </div>
@@ -828,7 +839,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q19c" name="q19" value="c">
+                        <input type="radio" onlcick="play()" id="q19c" name="q19" value="c">
                         <div class="label-container">
                             <label for="q19c">c. with </label>
                         </div>
@@ -837,7 +848,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q19d" name="q19" value="d">
+                        <input type="radio" onlcick="play()" id="q19d" name="q19" value="d">
                         <div class="label-container">
                             <label for="q19d">d. by </label>
                         </div>
@@ -849,7 +860,7 @@
                     <!-- Correct answer: d -->
 
                     <div class="line">
-                        <input type="radio" id="q20a" name="q20" value="a">
+                        <input type="radio" onlcick="play()" id="q20a" name="q20" value="a">
                         <div class="label-container">
                             <label for="q20a"> a. to </label>
                         </div>
@@ -858,7 +869,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q20b" name="q20" value="b">
+                        <input type="radio" onlcick="play()" id="q20b" name="q20" value="b">
                         <div class="label-container">
                             <label for="q20b"> b. of </label>
                         </div>
@@ -867,7 +878,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q20c" name="q20" value="c">
+                        <input type="radio" onlcick="play()" id="q20c" name="q20" value="c">
                         <div class="label-container">
                             <label for="q20c"> c. for </label>
                         </div>
@@ -876,7 +887,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q20d" name="q20" value="d">
+                        <input type="radio" onlcick="play()" id="q20d" name="q20" value="d">
                         <div class="label-container">
                             <label for="q20d">d. with </label>
                         </div>
@@ -890,7 +901,7 @@
                     <!-- Correct answer: d -->
 
                     <div class="line">
-                        <input type="radio" id="q21a" name="q21" value="a">
+                        <input type="radio" onlcick="play()" id="q21a" name="q21" value="a">
                         <div class="label-container">
                             <label for="q21."> a. did he </label>
                         </div>
@@ -899,7 +910,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q21b" name="q21" value="b">
+                        <input type="radio" onlcick="play()" id="q21b" name="q21" value="b">
                         <div class="label-container">
                             <label for="q21."> b. can't he </label>
                         </div>
@@ -908,7 +919,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q21c" name="q21" value="c">
+                        <input type="radio" onlcick="play()" id="q21c" name="q21" value="c">
                         <div class="label-container">
                             <label for="q21."> c. didn't he </label>
                         </div>
@@ -917,7 +928,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q21d" name="q21" value="d">
+                        <input type="radio" onlcick="play()" id="q21d" name="q21" value="d">
                         <div class="label-container">
                             <label for="q21d"> d. doesn't he </label>
                         </div>
@@ -929,7 +940,7 @@
                     <!-- Correct answer: c -->
 
                     <div class="line">
-                        <input type="radio" id="q22a" name="q22" value="a">
+                        <input type="radio" onlcick="play()" id="q22a" name="q22" value="a">
                         <div class="label-container">
                             <label for="q22a"> a. can you </label>
                         </div>
@@ -938,7 +949,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q22b" name="q22" value="b">
+                        <input type="radio" onlcick="play()" id="q22b" name="q22" value="b">
                         <div class="label-container">
                             <label for="q22b"> b. will you </label>
                         </div>
@@ -947,7 +958,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q22c" name="q22" value="c">
+                        <input type="radio" onlcick="play()" id="q22c" name="q22" value="c">
                         <div class="label-container">
                             <label for="q22c">c. shall we </label>
                         </div>
@@ -956,7 +967,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q22d" name="q22" value="d">
+                        <input type="radio" onlcick="play()" id="q22d" name="q22" value="d">
                         <div class="label-container">
                             <label for="q22d"> d. haven't we </label>
                         </div>
@@ -968,7 +979,7 @@
                     <!-- Correct answer: c -->
 
                     <div class="line">
-                        <input type="radio" id="q23a" name="q23" value="a">
+                        <input type="radio" onlcick="play()" id="q23a" name="q23" value="a">
                         <div class="label-container">
                             <label for="q23a"> a. did he </label>
                         </div>
@@ -977,7 +988,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q23b" name="q23" value="b">
+                        <input type="radio" onlcick="play()" id="q23b" name="q23" value="b">
                         <div class="label-container">
                             <label for="q23b"> b. can't he </label>
                         </div>
@@ -986,7 +997,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q23c" name="q23" value="c">
+                        <input type="radio" onlcick="play()" id="q23c" name="q23" value="c">
                         <div class="label-container">
                             <label for="q23c">c. didn't he </label>
                         </div>
@@ -995,7 +1006,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q23d" name="q23" value="d">
+                        <input type="radio" onlcick="play()" id="q23d" name="q23" value="d">
                         <div class="label-container">
                             <label for="q23d"> d. doesn't he </label>
                         </div>
@@ -1007,7 +1018,7 @@
                     <!-- Correct answer: d -->
 
                     <div class="line">
-                        <input type="radio" id="q24a" name="q24" value="a">
+                        <input type="radio" onlcick="play()" id="q24a" name="q24" value="a">
                         <div class="label-container">
                             <label for="q24a"> a. weren't they </label>
                         </div>
@@ -1016,7 +1027,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q24b" name="q24" value="b">
+                        <input type="radio" onlcick="play()" id="q24b" name="q24" value="b">
                         <div class="label-container">
                             <label for="q24b"> b. are they </label>
                         </div>
@@ -1025,7 +1036,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q24c" name="q24" value="c">
+                        <input type="radio" onlcick="play()" id="q24c" name="q24" value="c">
                         <div class="label-container">
                             <label for="q24c">c. wasn't they </label>
                         </div>
@@ -1034,7 +1045,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q24d" name="q24" value="d">
+                        <input type="radio" onlcick="play()" id="q24d" name="q24" value="d">
                         <div class="label-container">
                             <label for="q24d">d. were they </label>
                         </div>
@@ -1046,7 +1057,7 @@
                     <!-- Correct answer: a -->
 
                     <div class="line">
-                        <input type="radio" id="q25a" name="q25" value="a">
+                        <input type="radio" onlcick="play()" id="q25a" name="q25" value="a">
                         <div class="label-container">
                             <label for="q25a"> a. aren't they </label>
                         </div>
@@ -1055,7 +1066,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q25b" name="q25" value="b">
+                        <input type="radio" onlcick="play()" id="q25b" name="q25" value="b">
                         <div class="label-container">
                             <label for="q25b"> b. is it </label>
                         </div>
@@ -1064,7 +1075,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q25c" name="q25" value="c">
+                        <input type="radio" onlcick="play()" id="q25c" name="q25" value="c">
                         <div class="label-container">
                             <label for="q25c">c. are there </label>
                         </div>
@@ -1073,7 +1084,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q25d" name="q25" value="d">
+                        <input type="radio" onlcick="play()" id="q25d" name="q25" value="d">
                         <div class="label-container">
                             <label for="q25d">d. wasn't there </label>
                         </div>
@@ -1090,7 +1101,7 @@
                     <p id="q26" class="questions">26. Which of the following is not a measure of dispersion?</p>
 
                     <div class="line">
-                        <input type="radio" id="q26a" name="q26" value="a">
+                        <input type="radio" onlcick="play()" id="q26a" name="q26" value="a">
                         <div class="label-container">
                             <label for="q26a">a. Range </label>
                         </div>
@@ -1099,7 +1110,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q26b" name="q26" value="b">
+                        <input type="radio" onlcick="play()" id="q26b" name="q26" value="b">
                         <div class="label-container">
                             <label for="q26b">b. Standard deviation </label>
                         </div>
@@ -1108,7 +1119,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q26c" name="q26" value="c">
+                        <input type="radio" onlcick="play()" id="q26c" name="q26" value="c">
                         <div class="label-container">
                             <label for="q26c">c. Arithmetic mean </label>
                         </div>
@@ -1117,7 +1128,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q26d" name="q26" value="d">
+                        <input type="radio" onlcick="play()" id="q26d" name="q26" value="d">
                         <div class="label-container">
                             <label for="q26d">d. Variance </label>
                         </div>
@@ -1128,7 +1139,7 @@
                     <p id="q27" class="questions">27. The sum of all deviations of the data from its mean is</p>
 
                     <div class="line">
-                        <input type="radio" id="q27a" name="q27" value="a">
+                        <input type="radio" onlcick="play()" id="q27a" name="q27" value="a">
                         <div class="label-container">
                             <label for="q27a"> a. always positive </label>
                         </div>
@@ -1137,7 +1148,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q27b" name="q27" value="b">
+                        <input type="radio" onlcick="play()" id="q27b" name="q27" value="b">
                         <div class="label-container">
                             <label for="q27b"> b. always negative </label>
                         </div>
@@ -1146,7 +1157,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q27c" name="q27" value="c">
+                        <input type="radio" onlcick="play()" id="q27c" name="q27" value="c">
                         <div class="label-container">
                             <label for="q27c">c. zero </label>
                         </div>
@@ -1155,7 +1166,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q27d" name="q27" value="d">
+                        <input type="radio" onlcick="play()" id="q27d" name="q27" value="d">
                         <div class="label-container">
                             <label for="q27d">d. non-zero integer </label>
                         </div>
@@ -1166,7 +1177,7 @@
                     <p id="q28" class="questions">28. Which of the following is incorrect?</p>
 
                     <div class="line">
-                        <input type="radio" id="q28a" name="q28" value="a">
+                        <input type="radio" onlcick="play()" id="q28a" name="q28" value="a">
                         <div class="label-container">
                             <label for="q28a"> a. P(A) > 1 </label>
                         </div>
@@ -1175,7 +1186,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q28b" name="q28" value="b">
+                        <input type="radio" onlcick="play()" id="q28b" name="q28" value="b">
                         <div class="label-container">
                             <label for="q28b"> b. 0 <= P(A) <=1 </label>
                         </div>
@@ -1184,7 +1195,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q28c" name="q28" value="c">
+                        <input type="radio" onlcick="play()" id="q28c" name="q28" value="c">
                         <div class="label-container">
                             <label for="q28c"> c. P(A) = 0 </label>
                         </div>
@@ -1193,7 +1204,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q28d" name="q28" value="d">
+                        <input type="radio" onlcick="play()" id="q28d" name="q28" value="d">
                         <div class="label-container">
                             <label for="q28d"> d. P(A) + P(~A) = 1 </label>
                         </div>
@@ -1206,7 +1217,7 @@
                         and r green marbles is</p>
 
                     <div class="line">
-                        <input type="radio" id="q29a" name="q29" value="a">
+                        <input type="radio" onlcick="play()" id="q29a" name="q29" value="a">
                         <div class="label-container">
                             <label for="q29a"> a. q/(p+q+r) </label>
                         </div>
@@ -1215,7 +1226,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q29b" name="q29" value="b">
+                        <input type="radio" onlcick="play()" id="q29b" name="q29" value="b">
                         <div class="label-container">
                             <label for="q29b"> b. p/(p+q+r) </label>
                         </div>
@@ -1224,7 +1235,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q29c" name="q29" value="c">
+                        <input type="radio" onlcick="play()" id="q29c" name="q29" value="c">
                         <div class="label-container">
                             <label for="q29c">c. (p+q)/(p+q+r) </label>
                         </div>
@@ -1233,7 +1244,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q29d" name="q29" value="d">
+                        <input type="radio" onlcick="play()" id="q29d" name="q29" value="d">
                         <div class="label-container">
                             <label for="q29d">d. (p+r)/(p+q+r) </label>
                         </div>
@@ -1247,7 +1258,7 @@
                     </p>
 
                     <div class="line">
-                        <input type="radio" id="q30a" name="q30" value="a">
+                        <input type="radio" onlcick="play()" id="q30a" name="q30" value="a">
                         <div class="label-container">
                             <label for="q30a"> a. 5 </label>
                         </div>
@@ -1256,7 +1267,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q30b" name="q30" value="b">
+                        <input type="radio" onlcick="play()" id="q30b" name="q30" value="b">
                         <div class="label-container">
                             <label for="q30b"> b. 10 </label>
                         </div>
@@ -1265,7 +1276,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q30c" name="q30" value="c">
+                        <input type="radio" onlcick="play()" id="q30c" name="q30" value="c">
                         <div class="label-container">
                             <label for="q30c"> c. 15 </label>
                         </div>
@@ -1274,7 +1285,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q30d" name="q30" value="d">
+                        <input type="radio" onlcick="play()" id="q30d" name="q30" value="d">
                         <div class="label-container">
                             <label for="q30d">d. 20 </label>
                         </div>
@@ -1289,7 +1300,7 @@
                     </p>
 
                     <div class="line">
-                        <input type="radio" id="q31a" name="q31" value="a">
+                        <input type="radio" onlcick="play()" id="q31a" name="q31" value="a">
                         <div class="label-container">
                             <label for="q31a"> a. maximize the total profit </label>
                         </div>
@@ -1298,7 +1309,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q31b" name="q31" value="b">
+                        <input type="radio" onlcick="play()" id="q31b" name="q31" value="b">
                         <div class="label-container">
                             <label for="q31b"> b. minimize the total loss </label>
                         </div>
@@ -1307,7 +1318,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q31c" name="q31" value="c">
+                        <input type="radio" onlcick="play()" id="q31c" name="q31" value="c">
                         <div class="label-container">
                             <label for="q31c"> c. neither maximize nor minimize </label>
                         </div>
@@ -1316,7 +1327,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q31d" name="q31" value="d">
+                        <input type="radio" onlcick="play()" id="q31d" name="q31" value="d">
                         <div class="label-container">
                             <label for="q31d"> d. optimal cost </label>
                         </div>
@@ -1327,7 +1338,7 @@
                     <p id="q32" class="questions">32. Cramer's rule is also known as</p>
 
                     <div class="line">
-                        <input type="radio" id="q32a" name="q32" value="a">
+                        <input type="radio" onlcick="play()" id="q32a" name="q32" value="a">
                         <div class="label-container">
                             <label for="q32a"> a. inverse matrix method </label>
                         </div>
@@ -1336,7 +1347,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q32b" name="q32" value="b">
+                        <input type="radio" onlcick="play()" id="q32b" name="q32" value="b">
                         <div class="label-container">
                             <label for="q32b"> b. matrix method </label>
                         </div>
@@ -1345,7 +1356,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q32c" name="q32" value="c">
+                        <input type="radio" onlcick="play()" id="q32c" name="q32" value="c">
                         <div class="label-container">
                             <label for="q32c">c. determinant method </label>
                         </div>
@@ -1354,7 +1365,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q32d" name="q32" value="d">
+                        <input type="radio" onlcick="play()" id="q32d" name="q32" value="d">
                         <div class="label-container">
                             <label for="q32d"> d. inverse method </label>
                         </div>
@@ -1365,7 +1376,7 @@
                     <p id="q33" class="questions">33. The lenders are also known as</p>
 
                     <div class="line">
-                        <input type="radio" id="q33a" name="q33" value="a">
+                        <input type="radio" onlcick="play()" id="q33a" name="q33" value="a">
                         <div class="label-container">
                             <label for="q33a"> a. creditors </label>
                         </div>
@@ -1374,7 +1385,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q33b" name="q33" value="b">
+                        <input type="radio" onlcick="play()" id="q33b" name="q33" value="b">
                         <div class="label-container">
                             <label for="q33b"> b. debtors </label>
                         </div>
@@ -1383,7 +1394,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q33c" name="q33" value="c">
+                        <input type="radio" onlcick="play()" id="q33c" name="q33" value="c">
                         <div class="label-container">
                             <label for="q33c">c. buyers </label>
                         </div>
@@ -1392,7 +1403,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q33d" name="q33" value="d">
+                        <input type="radio" onlcick="play()" id="q33d" name="q33" value="d">
                         <div class="label-container">
                             <label for="q33d"> d. none of the above </label>
                         </div>
@@ -1405,7 +1416,7 @@
                         determinant is</p>
 
                     <div class="line">
-                        <input type="radio" id="q34a" name="q34" value="a">
+                        <input type="radio" onlcick="play()" id="q34a" name="q34" value="a">
                         <div class="label-container">
                             <label for="q34a"> a. 1 </label>
                         </div>
@@ -1414,7 +1425,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q34b" name="q34" value="b">
+                        <input type="radio" onlcick="play()" id="q34b" name="q34" value="b">
                         <div class="label-container">
                             <label for="q34b"> b. 0 </label>
                         </div>
@@ -1423,7 +1434,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q34c" name="q34" value="c">
+                        <input type="radio" onlcick="play()" id="q34c" name="q34" value="c">
                         <div class="label-container">
                             <label for="q34c">c. -1 </label>
                         </div>
@@ -1432,7 +1443,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q34d" name="q34" value="d">
+                        <input type="radio" onlcick="play()" id="q34d" name="q34" value="d">
                         <div class="label-container">
                             <label for="q34d">d. unaltered </label>
                         </div>
@@ -1443,7 +1454,7 @@
                     <p id="q35" class="questions">35. 51 - 46 + 3(5) =</p>
 
                     <div class="line">
-                        <input type="radio" id="q35a" name="q35" value="a">
+                        <input type="radio" onlcick="play()" id="q35a" name="q35" value="a">
                         <div class="label-container">
                             <label for="q35a"> a. 40 </label>
                         </div>
@@ -1452,7 +1463,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q35b" name="q35" value="b">
+                        <input type="radio" onlcick="play()" id="q35b" name="q35" value="b">
                         <div class="label-container">
                             <label for="q35b"> b. 20 </label>
                         </div>
@@ -1461,7 +1472,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q35c" name="q35" value="c">
+                        <input type="radio" onlcick="play()" id="q35c" name="q35" value="c">
                         <div class="label-container">
                             <label for="q35c">c. 41 </label>
                         </div>
@@ -1470,7 +1481,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q35d" name="q35" value="d">
+                        <input type="radio" onlcick="play()" id="q35d" name="q35" value="d">
                         <div class="label-container">
                             <label for="q35d">d. 52 </label>
                         </div>
@@ -1484,7 +1495,7 @@
                     </p>
 
                     <div class="line">
-                        <input type="radio" id="q36a" name="q36" value="a">
+                        <input type="radio" onlcick="play()" id="q36a" name="q36" value="a">
                         <div class="label-container">
                             <label for="q36a"> a. -0.204 </label>
                         </div>
@@ -1493,7 +1504,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q36b" name="q36" value="b">
+                        <input type="radio" onlcick="play()" id="q36b" name="q36" value="b">
                         <div class="label-container">
                             <label for="q36b"> b. 1 </label>
                         </div>
@@ -1502,7 +1513,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q36c" name="q36" value="c">
+                        <input type="radio" onlcick="play()" id="q36c" name="q36" value="c">
                         <div class="label-container">
                             <label for="q36c">c. 2 </label>
                         </div>
@@ -1511,7 +1522,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q36d" name="q36" value="d">
+                        <input type="radio" onlcick="play()" id="q36d" name="q36" value="d">
                         <div class="label-container">
                             <label for="q36d">d. 3 </label>
                         </div>
@@ -1525,7 +1536,7 @@
                         earning profit is known as</p>
 
                     <div class="line">
-                        <input type="radio" id="q37a" name="q37" value="a">
+                        <input type="radio" onlcick="play()" id="q37a" name="q37" value="a">
                         <div class="label-container">
                             <label for="q37a"> a. partnership </label>
                         </div>
@@ -1534,7 +1545,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q37b" name="q37" value="b">
+                        <input type="radio" onlcick="play()" id="q37b" name="q37" value="b">
                         <div class="label-container">
                             <label for="q37b"> b. insurance </label>
                         </div>
@@ -1543,7 +1554,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q37c" name="q37" value="c">
+                        <input type="radio" onlcick="play()" id="q37c" name="q37" value="c">
                         <div class="label-container">
                             <label for="q37c">c. legal entity </label>
                         </div>
@@ -1552,7 +1563,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q37d" name="q37" value="d">
+                        <input type="radio" onlcick="play()" id="q37d" name="q37" value="d">
                         <div class="label-container">
                             <label for="q37d">d. none of the above </label>
                         </div>
@@ -1563,7 +1574,7 @@
                     <p id="q38" class="questions">38. The factors of 4a^2 - 16 are</p>
 
                     <div class="line">
-                        <input type="radio" id="q38a" name="q38" value="a">
+                        <input type="radio" onlcick="play()" id="q38a" name="q38" value="a">
                         <div class="label-container">
                             <label for="q38a"> a. 4(a-2)(a-2) </label>
                         </div>
@@ -1572,7 +1583,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q38b" name="q38" value="b">
+                        <input type="radio" onlcick="play()" id="q38b" name="q38" value="b">
                         <div class="label-container">
                             <label for="q38b"> b. 4(a-2)(a+2) </label>
                         </div>
@@ -1581,7 +1592,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q38c" name="q38" value="c">
+                        <input type="radio" onlcick="play()" id="q38c" name="q38" value="c">
                         <div class="label-container">
                             <label for="q38c"> c. (a-2)(a+2) </label>
                         </div>
@@ -1590,7 +1601,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q38d" name="q38" value="d">
+                        <input type="radio" onlcick="play()" id="q38d" name="q38" value="d">
                         <div class="label-container">
                             <label for="q38d"> d. 4(a+2)(a+2) </label>
                         </div>
@@ -1604,7 +1615,7 @@
                         series is</p>
 
                     <div class="line">
-                        <input type="radio" id="q39a" name="q39" value="a">
+                        <input type="radio" onlcick="play()" id="q39a" name="q39" value="a">
                         <div class="label-container">
                             <label for="q39a"> a. 10 </label>
                         </div>
@@ -1613,7 +1624,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q39b" name="q39" value="b">
+                        <input type="radio" onlcick="play()" id="q39b" name="q39" value="b">
                         <div class="label-container">
                             <label for="q39b"> b. 15 </label>
                         </div>
@@ -1622,7 +1633,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q39c" name="q39" value="c">
+                        <input type="radio" onlcick="play()" id="q39c" name="q39" value="c">
                         <div class="label-container">
                             <label for="q39c">c. 25 </label>
                         </div>
@@ -1631,7 +1642,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q39d" name="q39" value="d">
+                        <input type="radio" onlcick="play()" id="q39d" name="q39" value="d">
                         <div class="label-container">
                             <label for="q39d">d. 35 </label>
                         </div>
@@ -1645,7 +1656,7 @@
                         other two sides, then the triangle is</p>
 
                     <div class="line">
-                        <input type="radio" id="q40a" name="q40" value="a">
+                        <input type="radio" onlcick="play()" id="q40a" name="q40" value="a">
                         <div class="label-container">
                             <label for="q40a"> a. isosceles triangle </label>
                         </div>
@@ -1654,7 +1665,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q40b" name="q40" value="b">
+                        <input type="radio" onlcick="play()" id="q40b" name="q40" value="b">
                         <div class="label-container">
                             <label for="q40b"> b. scalene triangle </label>
                         </div>
@@ -1663,7 +1674,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q40c" name="q40" value="c">
+                        <input type="radio" onlcick="play()" id="q40c" name="q40" value="c">
                         <div class="label-container">
                             <label for="q40c"> c. right angle triangle </label>
                         </div>
@@ -1672,7 +1683,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q40d" name="q40" value="d">
+                        <input type="radio" onlcick="play()" id="q40d" name="q40" value="d">
                         <div class="label-container">
                             <label for="q40d">d. reflective triangle </label>
                         </div>
@@ -1683,7 +1694,7 @@
                     <p id="q41" class="questions">41. Unbounded solution in an LPP is</p>
 
                     <div class="line">
-                        <input type="radio" id="q41a" name="q41" value="a">
+                        <input type="radio" onlcick="play()" id="q41a" name="q41" value="a">
                         <div class="label-container">
                             <label for="q41a"> a. where the objective function can be decreased indefinitely </label>
                         </div>
@@ -1692,7 +1703,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q41b" name="q41" value="b">
+                        <input type="radio" onlcick="play()" id="q41b" name="q41" value="b">
                         <div class="label-container">
                             <label for="q41b"> b. which maximizes the objective function </label>
                         </div>
@@ -1701,7 +1712,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q41c" name="q41" value="c">
+                        <input type="radio" onlcick="play()" id="q41c" name="q41" value="c">
                         <div class="label-container">
                             <label for="q41c"> c. where the objective function can be increased or decreased
                                 indefinitely </label>
@@ -1711,7 +1722,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q41d" name="q41" value="d">
+                        <input type="radio" onlcick="play()" id="q41d" name="q41" value="d">
                         <div class="label-container">
                             <label for="q41d"> d. where the objective function can be increased
                                 indefinitely </label>
@@ -1723,7 +1734,7 @@
                     <p id="q42" class="questions">42. If log x - 5 log 3 = -2, then x equals</p>
 
                     <div class="line">
-                        <input type="radio" id="q42a" name="q42" value="a">
+                        <input type="radio" onlcick="play()" id="q42a" name="q42" value="a">
                         <div class="label-container">
                             <label for="q42a"> a. 0.8 </label>
                         </div>
@@ -1732,7 +1743,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q42b" name="q42" value="b">
+                        <input type="radio" onlcick="play()" id="q42b" name="q42" value="b">
                         <div class="label-container">
                             <label for="q42b"> b. 0.81 </label>
                         </div>
@@ -1741,7 +1752,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q42c" name="q42" value="c">
+                        <input type="radio" onlcick="play()" id="q42c" name="q42" value="c">
                         <div class="label-container">
                             <label for="q42c">c. 1.23 </label>
                         </div>
@@ -1750,7 +1761,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q42d" name="q42" value="d">
+                        <input type="radio" onlcick="play()" id="q42d" name="q42" value="d">
                         <div class="label-container">
                             <label for="q42d"> d. 2.43 </label>
                         </div>
@@ -1765,7 +1776,7 @@
                         year, find B's share in it.</p>
 
                     <div class="line">
-                        <input type="radio" id="q43a" name="q43" value="a">
+                        <input type="radio" onlcick="play()" id="q43a" name="q43" value="a">
                         <div class="label-container">
                             <label for="q43a"> a. Rs. 4,000 </label>
                         </div>
@@ -1774,7 +1785,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q43b" name="q43" value="b">
+                        <input type="radio" onlcick="play()" id="q43b" name="q43" value="b">
                         <div class="label-container">
                             <label for="q43b"> b. Rs. 5,000 </label>
                         </div>
@@ -1783,7 +1794,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q43c" name="q43" value="c">
+                        <input type="radio" onlcick="play()" id="q43c" name="q43" value="c">
                         <div class="label-container">
                             <label for="q43c">c. Rs. 6,000 </label>
                         </div>
@@ -1792,7 +1803,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q43d" name="q43" value="d">
+                        <input type="radio" onlcick="play()" id="q43d" name="q43" value="d">
                         <div class="label-container">
                             <label for="q43d"> d. Rs. 7,000 </label>
                         </div>
@@ -1804,7 +1815,7 @@
                         there?</p>
 
                     <div class="line">
-                        <input type="radio" id="q44a" name="q44" value="a">
+                        <input type="radio" onlcick="play()" id="q44a" name="q44" value="a">
                         <div class="label-container">
                             <label for="q44a"> a. 600 </label>
                         </div>
@@ -1813,7 +1824,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q44b" name="q44" value="b">
+                        <input type="radio" onlcick="play()" id="q44b" name="q44" value="b">
                         <div class="label-container">
                             <label for="q44b"> b. 120 </label>
                         </div>
@@ -1822,7 +1833,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q44c" name="q44" value="c">
+                        <input type="radio" onlcick="play()" id="q44c" name="q44" value="c">
                         <div class="label-container">
                             <label for="q44c">c. 240 </label>
                         </div>
@@ -1831,7 +1842,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q44d" name="q44" value="d">
+                        <input type="radio" onlcick="play()" id="q44d" name="q44" value="d">
                         <div class="label-container">
                             <label for="q44d">d. 60 </label>
                         </div>
@@ -1847,7 +1858,7 @@
                         reach the point (5, 6), covering the shortest possible distance.</p>
 
                     <div class="line">
-                        <input type="radio" id="q45a" name="q45" value="a">
+                        <input type="radio" onlcick="play()" id="q45a" name="q45" value="a">
                         <div class="label-container">
                             <label for="q45a"> a. 252 </label>
                         </div>
@@ -1856,7 +1867,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q45b" name="q45" value="b">
+                        <input type="radio" onlcick="play()" id="q45b" name="q45" value="b">
                         <div class="label-container">
                             <label for="q45b"> b. 432 </label>
                         </div>
@@ -1865,7 +1876,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q45c" name="q45" value="c">
+                        <input type="radio" onlcick="play()" id="q45c" name="q45" value="c">
                         <div class="label-container">
                             <label for="q45c">c. 462 </label>
                         </div>
@@ -1874,7 +1885,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q45d" name="q45" value="d">
+                        <input type="radio" onlcick="play()" id="q45d" name="q45" value="d">
                         <div class="label-container">
                             <label for="q45d">d. 504 </label>
                         </div>
@@ -1888,7 +1899,7 @@
                         investment of</p>
 
                     <div class="line">
-                        <input type="radio" id="q46a" name="q46" value="a">
+                        <input type="radio" onlcick="play()" id="q46a" name="q46" value="a">
                         <div class="label-container">
                             <label for="q46a"> a. Rs. 3,100 </label>
                         </div>
@@ -1897,7 +1908,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q46b" name="q46" value="b">
+                        <input type="radio" onlcick="play()" id="q46b" name="q46" value="b">
                         <div class="label-container">
                             <label for="q46b"> b. Rs. 6,240 </label>
                         </div>
@@ -1906,7 +1917,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q46c" name="q46" value="c">
+                        <input type="radio" onlcick="play()" id="q46c" name="q46" value="c">
                         <div class="label-container">
                             <label for="q46c">c. Rs. 6,500 </label>
                         </div>
@@ -1915,7 +1926,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q46d" name="q46" value="d">
+                        <input type="radio" onlcick="play()" id="q46d" name="q46" value="d">
                         <div class="label-container">
                             <label for="q46d">d. Rs. 9,600 </label>
                         </div>
@@ -1929,7 +1940,7 @@
                         the age of the youngest child?</p>
 
                     <div class="line">
-                        <input type="radio" id="q47a" name="q47" value="a">
+                        <input type="radio" onlcick="play()" id="q47a" name="q47" value="a">
                         <div class="label-container">
                             <label for="q47a"> a. 4 years </label>
                         </div>
@@ -1938,7 +1949,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q47b" name="q47" value="b">
+                        <input type="radio" onlcick="play()" id="q47b" name="q47" value="b">
                         <div class="label-container">
                             <label for="q47b"> b. 8 years </label>
                         </div>
@@ -1947,7 +1958,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q47c" name="q47" value="c">
+                        <input type="radio" onlcick="play()" id="q47c" name="q47" value="c">
                         <div class="label-container">
                             <label for="q47c">c. 10 years </label>
                         </div>
@@ -1956,7 +1967,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q47d" name="q47" value="d">
+                        <input type="radio" onlcick="play()" id="q47d" name="q47" value="d">
                         <div class="label-container">
                             <label for="q47d">d. None of these </label>
                         </div>
@@ -1970,7 +1981,7 @@
                         hour hand rotate when the clock shows 2 o'clock in the afternoon?</p>
 
                     <div class="line">
-                        <input type="radio" id="q48a" name="q48" value="a">
+                        <input type="radio" onlcick="play()" id="q48a" name="q48" value="a">
                         <div class="label-container">
                             <label for="q48a"> a. 144 degrees </label>
                         </div>
@@ -1979,7 +1990,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q48b" name="q48" value="b">
+                        <input type="radio" onlcick="play()" id="q48b" name="q48" value="b">
                         <div class="label-container">
                             <label for="q48b"> b. 150 degrees </label>
                         </div>
@@ -1988,7 +1999,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q48c" name="q48" value="c">
+                        <input type="radio" onlcick="play()" id="q48c" name="q48" value="c">
                         <div class="label-container">
                             <label for="q48c"> c. 168 degrees </label>
                         </div>
@@ -1997,7 +2008,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q48d" name="q48" value="d">
+                        <input type="radio" onlcick="play()" id="q48d" name="q48" value="d">
                         <div class="label-container">
                             <label for="q48d"> d. 180 degrees </label>
                         </div>
@@ -2011,7 +2022,7 @@
                         during their motion from 1:00 PM to 10:00 PM?</p>
 
                     <div class="line">
-                        <input type="radio" id="q49a" name="q49" value="a">
+                        <input type="radio" onlcick="play()" id="q49a" name="q49" value="a">
                         <div class="label-container">
                             <label for="q49a"> a. 9 </label>
                         </div>
@@ -2020,7 +2031,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q49b" name="q49" value="b">
+                        <input type="radio" onlcick="play()" id="q49b" name="q49" value="b">
                         <div class="label-container">
                             <label for="q49b"> b. 10 </label>
                         </div>
@@ -2029,7 +2040,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q49c" name="q49" value="c">
+                        <input type="radio" onlcick="play()" id="q49c" name="q49" value="c">
                         <div class="label-container">
                             <label for="q49c">c. 18 </label>
                         </div>
@@ -2038,7 +2049,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q49d" name="q49" value="d">
+                        <input type="radio" onlcick="play()" id="q49d" name="q49" value="d">
                         <div class="label-container">
                             <label for="q49d">d. 20 </label>
                         </div>
@@ -2052,7 +2063,7 @@
                         to 8%, then the selling price will be</p>
 
                     <div class="line">
-                        <input type="radio" id="q50a" name="q50" value="a">
+                        <input type="radio" onlcick="play()" id="q50a" name="q50" value="a">
                         <div class="label-container">
                             <label for="q50a"> a. Rs. 2,600 </label>
                         </div>
@@ -2061,7 +2072,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q50b" name="q50" value="b">
+                        <input type="radio" onlcick="play()" id="q50b" name="q50" value="b">
                         <div class="label-container">
                             <label for="q50b"> b. Rs. 2,700 </label>
                         </div>
@@ -2070,7 +2081,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q50c" name="q50" value="c">
+                        <input type="radio" onlcick="play()" id="q50c" name="q50" value="c">
                         <div class="label-container">
                             <label for="q50c"> c. Rs. 2,800 </label>
                         </div>
@@ -2079,7 +2090,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q50d" name="q50" value="d">
+                        <input type="radio" onlcick="play()" id="q50d" name="q50" value="d">
                         <div class="label-container">
                             <label for="q50d">d. Rs. 3,000 </label>
                         </div>
@@ -2099,7 +2110,7 @@
                         the code for CARE</p>
 
                     <div class="line">
-                        <input type="radio" id="q51a" name="q51" value="a">
+                        <input type="radio" onlcick="play()" id="q51a" name="q51" value="a">
                         <div class="label-container">
                             <label for="q51a"> a. 1247 </label>
                         </div>
@@ -2108,7 +2119,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q51b" name="q51" value="b">
+                        <input type="radio" onlcick="play()" id="q51b" name="q51" value="b">
                         <div class="label-container">
                             <label for="q51b"> b. 4847 </label>
                         </div>
@@ -2117,7 +2128,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q51c" name="q51" value="c">
+                        <input type="radio" onlcick="play()" id="q51c" name="q51" value="c">
                         <div class="label-container">
                             <label for="q51c"> c. 5247 </label>
                         </div>
@@ -2126,7 +2137,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q51d" name="q51" value="d">
+                        <input type="radio" onlcick="play()" id="q51d" name="q51" value="d">
                         <div class="label-container">
                             <label for="q51d"> d. 2847 </label>
                         </div>
@@ -2137,7 +2148,7 @@
                     <p id="q52" class="questions">52. In a code sign DRLAL is coded as 62014314. How CAMEL is coded?</p>
 
                     <div class="line">
-                        <input type="radio" id="q52a" name="q52" value="a">
+                        <input type="radio" onlcick="play()" id="q52a" name="q52" value="a">
                         <div class="label-container">
                             <label for="q52a"> a. 5315714 </label>
                         </div>
@@ -2146,7 +2157,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q52b" name="q52" value="b">
+                        <input type="radio" onlcick="play()" id="q52b" name="q52" value="b">
                         <div class="label-container">
                             <label for="q52b"> b. 35729310 </label>
                         </div>
@@ -2155,7 +2166,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q52c" name="q52" value="c">
+                        <input type="radio" onlcick="play()" id="q52c" name="q52" value="c">
                         <div class="label-container">
                             <label for="q52c">c. 5313613 </label>
                         </div>
@@ -2164,7 +2175,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q52d" name="q52" value="d">
+                        <input type="radio" onlcick="play()" id="q52d" name="q52" value="d">
                         <div class="label-container">
                             <label for="q52d"> d. None of these </label>
                         </div>
@@ -2178,7 +2189,7 @@
                         respectively. F is the maternal aunt of E and G. How is B related to E?</p>
 
                     <div class="line">
-                        <input type="radio" id="q53a" name="q53" value="a">
+                        <input type="radio" onlcick="play()" id="q53a" name="q53" value="a">
                         <div class="label-container">
                             <label for="q53a"> a. Uncle </label>
                         </div>
@@ -2187,7 +2198,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q53b" name="q53" value="b">
+                        <input type="radio" onlcick="play()" id="q53b" name="q53" value="b">
                         <div class="label-container">
                             <label for="q53b"> b. Nephew </label>
                         </div>
@@ -2196,7 +2207,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q53c" name="q53" value="c">
+                        <input type="radio" onlcick="play()" id="q53c" name="q53" value="c">
                         <div class="label-container">
                             <label for="q53c">c. Niece </label>
                         </div>
@@ -2205,7 +2216,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q53d" name="q53" value="d">
+                        <input type="radio" onlcick="play()" id="q53d" name="q53" value="d">
                         <div class="label-container">
                             <label for="q53d"> d. Aunt </label>
                         </div>
@@ -2223,7 +2234,7 @@
                         plays Hockey here?</p>
 
                     <div class="line">
-                        <input type="radio" id="q54a" name="q54" value="a">
+                        <input type="radio" onlcick="play()" id="q54a" name="q54" value="a">
                         <div class="label-container">
                             <label for="q54a"> a. A </label>
                         </div>
@@ -2232,7 +2243,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q54b" name="q54" value="b">
+                        <input type="radio" onlcick="play()" id="q54b" name="q54" value="b">
                         <div class="label-container">
                             <label for="q54b"> b. B </label>
                         </div>
@@ -2241,7 +2252,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q54c" name="q54" value="c">
+                        <input type="radio" onlcick="play()" id="q54c" name="q54" value="c">
                         <div class="label-container">
                             <label for="q54c">c. C </label>
                         </div>
@@ -2250,7 +2261,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q54d" name="q54" value="d">
+                        <input type="radio" onlcick="play()" id="q54d" name="q54" value="d">
                         <div class="label-container">
                             <label for="q54d">d. D </label>
                         </div>
@@ -2264,7 +2275,7 @@
                         E are ambitious. Who is neither laborious nor honest?</p>
 
                     <div class="line">
-                        <input type="radio" id="q55a" name="q55" value="a">
+                        <input type="radio" onlcick="play()" id="q55a" name="q55" value="a">
                         <div class="label-container">
                             <label for="q55a"> a. A and D </label>
                         </div>
@@ -2273,7 +2284,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q55b" name="q55" value="b">
+                        <input type="radio" onlcick="play()" id="q55b" name="q55" value="b">
                         <div class="label-container">
                             <label for="q55b"> b. B only </label>
                         </div>
@@ -2282,7 +2293,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q55c" name="q55" value="c">
+                        <input type="radio" onlcick="play()" id="q55c" name="q55" value="c">
                         <div class="label-container">
                             <label for="q55c">c. E only </label>
                         </div>
@@ -2291,7 +2302,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q55d" name="q55" value="d">
+                        <input type="radio" onlcick="play()" id="q55d" name="q55" value="d">
                         <div class="label-container">
                             <label for="q55d">d. C only </label>
                         </div>
@@ -2308,7 +2319,7 @@
                         Inference: My son is a boy under 18 years of age.</p>
 
                     <div class="line">
-                        <input type="radio" id="q56a" name="q56" value="a">
+                        <input type="radio" onlcick="play()" id="q56a" name="q56" value="a">
                         <div class="label-container">
                             <label for="q56a"> a. The inference is definitely true. </label>
                         </div>
@@ -2317,7 +2328,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q56b" name="q56" value="b">
+                        <input type="radio" onlcick="play()" id="q56b" name="q56" value="b">
                         <div class="label-container">
                             <label for="q56b"> b. The inference is definitely false </label>
                         </div>
@@ -2326,7 +2337,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q56c" name="q56" value="c">
+                        <input type="radio" onlcick="play()" id="q56c" name="q56" value="c">
                         <div class="label-container">
                             <label for="q56c">The inference is neither true nor false. </label>
                         </div>
@@ -2335,7 +2346,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q56d" name="q56" value="d">
+                        <input type="radio" onlcick="play()" id="q56d" name="q56" value="d">
                         <div class="label-container">
                             <label for="q56d">d. Inference cannot be drawn. </label>
                         </div>
@@ -2348,7 +2359,7 @@
                         Inference: All the professors of the university have beard.</p>
 
                     <div class="line">
-                        <input type="radio" id="q57a" name="q57" value="a">
+                        <input type="radio" onlcick="play()" id="q57a" name="q57" value="a">
                         <div class="label-container">
                             <label for="q57a"> a. The inference is definitely true. </label>
                         </div>
@@ -2357,7 +2368,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q57b" name="q57" value="b">
+                        <input type="radio" onlcick="play()" id="q57b" name="q57" value="b">
                         <div class="label-container">
                             <label for="q57b"> b. The inference is definitely false </label>
                         </div>
@@ -2366,7 +2377,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q57c" name="q57" value="c">
+                        <input type="radio" onlcick="play()" id="q57c" name="q57" value="c">
                         <div class="label-container">
                             <label for="q57c">The inference is neither true nor false. </label>
                         </div>
@@ -2375,7 +2386,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q57d" name="q57" value="d">
+                        <input type="radio" onlcick="play()" id="q57d" name="q57" value="d">
                         <div class="label-container">
                             <label for="q57d">d. Inference cannot be drawn. </label>
                         </div>
@@ -2388,7 +2399,7 @@
                         Inference: Bread is liked by cats.</p>
 
                     <div class="line">
-                        <input type="radio" id="q58a" name="q58" value="a">
+                        <input type="radio" onlcick="play()" id="q58a" name="q58" value="a">
                         <div class="label-container">
                             <label for="q58a"> a. The inference is definitely true. </label>
                         </div>
@@ -2397,7 +2408,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q58b" name="q58" value="b">
+                        <input type="radio" onlcick="play()" id="q58b" name="q58" value="b">
                         <div class="label-container">
                             <label for="q58b"> b. The inference is definitely false </label>
                         </div>
@@ -2406,7 +2417,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q58c" name="q58" value="c">
+                        <input type="radio" onlcick="play()" id="q58c" name="q58" value="c">
                         <div class="label-container">
                             <label for="q58c"> c. The inference is neither true nor false. </label>
                         </div>
@@ -2415,7 +2426,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q58d" name="q58" value="d">
+                        <input type="radio" onlcick="play()" id="q58d" name="q58" value="d">
                         <div class="label-container">
                             <label for="q58d"> d. Inference cannot be drawn. </label>
                         </div>
@@ -2437,7 +2448,7 @@
                         statement that:</p>
 
                     <div class="line">
-                        <input type="radio" id="q59a" name="q59" value="a">
+                        <input type="radio" onlcick="play()" id="q59a" name="q59" value="a">
                         <div class="label-container">
                             <label for="q59a"> a. During the winter months, the prices of single-family homes the
                                 lowest. </label>
@@ -2447,7 +2458,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q59b" name="q59" value="b">
+                        <input type="radio" onlcick="play()" id="q59b" name="q59" value="b">
                         <div class="label-container">
                             <label for="q59b"> b. Warm winter weather is likely to affect the rate of home
                                 sales. </label>
@@ -2457,7 +2468,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q59c" name="q59" value="c">
+                        <input type="radio" onlcick="play()" id="q59c" name="q59" value="c">
                         <div class="label-container">
                             <label for="q59c">c. Consumer spending will be higher thirteen years from now than it is
                                 today </label>
@@ -2467,7 +2478,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q59d" name="q59" value="d">
+                        <input type="radio" onlcick="play()" id="q59d" name="q59" value="d">
                         <div class="label-container">
                             <label for="q59d">d. There were about 5 million homes for sale during the month of
                                 January. </label>
@@ -2485,7 +2496,7 @@
                         paragraph best supports the statement that:</p>
 
                     <div class="line">
-                        <input type="radio" id="q60a" name="q60" value="a">
+                        <input type="radio" onlcick="play()" id="q60a" name="q60" value="a">
                         <div class="label-container">
                             <label for="q60a"> a. Figures are sometimes used to deceive people. </label>
                         </div>
@@ -2494,7 +2505,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q60b" name="q60" value="b">
+                        <input type="radio" onlcick="play()" id="q60b" name="q60" value="b">
                         <div class="label-container">
                             <label for="q60b"> b. The study of mathematics is dangerous. </label>
                         </div>
@@ -2503,7 +2514,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q60c" name="q60" value="c">
+                        <input type="radio" onlcick="play()" id="q60c" name="q60" value="c">
                         <div class="label-container">
                             <label for="q60c"> c.The power of numbers is that they cannot lie </label>
                         </div>
@@ -2512,7 +2523,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q60d" name="q60" value="d">
+                        <input type="radio" onlcick="play()" id="q60d" name="q60" value="d">
                         <div class="label-container">
                             <label for="q60d">d. Words are more truthful than figures. </label>
                         </div>
@@ -2524,7 +2535,7 @@
                     <p class="questions" id="q61">61.Soldier: Gun :: Blacksmith: ?</p>
 
                     <div class="line">
-                        <input type="radio" id="q61a" name="q61" value="a">
+                        <input type="radio" onlcick="play()" id="q61a" name="q61" value="a">
                         <div class="label-container">
                             <label for="q61a">a. Wood </label>
                         </div>
@@ -2533,7 +2544,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q61b" name="q61" value="b">
+                        <input type="radio" onlcick="play()" id="q61b" name="q61" value="b">
                         <div class="label-container">
                             <label for="q61b">b. Sword </label>
                         </div>
@@ -2542,7 +2553,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q61c" name="q61" value="c">
+                        <input type="radio" onlcick="play()" id="q61c" name="q61" value="c">
                         <div class="label-container">
                             <label for="q61c">c. Iron </label>
                         </div>
@@ -2551,7 +2562,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q61d" name="q61" value="d">
+                        <input type="radio" onlcick="play()" id="q61d" name="q61" value="d">
                         <div class="label-container">
                             <label for="q61d">d. Hammer </label>
                         </div>
@@ -2562,7 +2573,7 @@
                     <p class="questions" id="q62">62.Petal: Flower </p>
 
                     <div class="line">
-                        <input type="radio" id="q62a" name="q62" value="a">
+                        <input type="radio" onlcick="play()" id="q62a" name="q62" value="a">
                         <div class="label-container">
                             <label for="q62a">a. Salt: pepper </label>
                         </div>
@@ -2571,7 +2582,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q62b" name="q62" value="b">
+                        <input type="radio" onlcick="play()" id="q62b" name="q62" value="b">
                         <div class="label-container">
                             <label for="q62b">b. Tire: bicycle </label>
                         </div>
@@ -2580,7 +2591,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q62c" name="q62" value="c">
+                        <input type="radio" onlcick="play()" id="q62c" name="q62" value="c">
                         <div class="label-container">
                             <label for="q62c">c. Base: ball </label>
                         </div>
@@ -2589,7 +2600,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q62d" name="q62" value="d">
+                        <input type="radio" onlcick="play()" id="q62d" name="q62" value="d">
                         <div class="label-container">
                             <label for="q62d">d. Sandals: shoes </label>
                         </div>
@@ -2600,7 +2611,7 @@
                     <p class="questions" id="q63">63. Odometer: distance</p>
 
                     <div class="line">
-                        <input type="radio" id="q63a" name="q63" value="a">
+                        <input type="radio" onlcick="play()" id="q63a" name="q63" value="a">
                         <div class="label-container">
                             <label for="q63a">a. Scale: weight </label>
                         </div>
@@ -2609,7 +2620,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q63b" name="q63" value="b">
+                        <input type="radio" onlcick="play()" id="q63b" name="q63" value="b">
                         <div class="label-container">
                             <label for="q63">b. Length: width </label>
                         </div>
@@ -2618,7 +2629,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q63c" name="q63" value="c">
+                        <input type="radio" onlcick="play()" id="q63c" name="q63" value="c">
                         <div class="label-container">
                             <label for="q63c">c. Inch: foot </label>
                         </div>
@@ -2627,7 +2638,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q63d" name="q63" value="d">
+                        <input type="radio" onlcick="play()" id="q63d" name="q63" value="d">
                         <div class="label-container">
                             <label for="q63d">d. Mileage: speed </label>
                         </div>
@@ -2638,7 +2649,7 @@
                     <p class="questions" id="q64">64.Fish: School </p>
 
                     <div class="line">
-                        <input type="radio" id="q64a" name="q64" value="a">
+                        <input type="radio" onlcick="play()" id="q64a" name="q64" value="a">
                         <div class="label-container">
                             <label for="q64a">a. Wolf: pack </label>
                         </div>
@@ -2647,7 +2658,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q64b" name="q64" value="b">
+                        <input type="radio" onlcick="play()" id="q64b" name="q64" value="b">
                         <div class="label-container">
                             <label for="q64b">b. Cow: farm </label>
                         </div>
@@ -2656,7 +2667,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q64c" name="q64" value="c">
+                        <input type="radio" onlcick="play()" id="q64c" name="q64" value="c">
                         <div class="label-container">
                             <label for="q64c">c. Herd: peacock </label>
                         </div>
@@ -2665,7 +2676,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q64d" name="q64" value="d">
+                        <input type="radio" onlcick="play()" id="q64d" name="q64" value="d">
                         <div class="label-container">
                             <label for="q64d">d. Elephant: jungle </label>
                         </div>
@@ -2676,7 +2687,7 @@
                     <p class="questions" id="q65">65. Sound: cacophony</p>
 
                     <div class="line">
-                        <input type="radio" id="q65a" name="q65" value="a">
+                        <input type="radio" onlcick="play()" id="q65a" name="q65" value="a">
                         <div class="label-container">
                             <label for="q65a">a. Speech: oration </label>
                         </div>
@@ -2685,7 +2696,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q65b" name="q65" value="b">
+                        <input type="radio" onlcick="play()" id="q65b" name="q65" value="b">
                         <div class="label-container">
                             <label for="q65b">b. Touch: massage </label>
                         </div>
@@ -2694,7 +2705,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q65c" name="q65" value="c">
+                        <input type="radio" onlcick="play()" id="q65c" name="q65" value="c">
                         <div class="label-container">
                             <label for="q65c">c. Smell: stench </label>
                         </div>
@@ -2703,7 +2714,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q65d" name="q65" value="d">
+                        <input type="radio" onlcick="play()" id="q65d" name="q65" value="d">
                         <div class="label-container">
                             <label for="q65d">d. Taste: style </label>
                         </div>
@@ -2720,7 +2731,7 @@
                     </p>
 
                     <div class="line">
-                        <input type="radio" id="q66a" name="q66" value="a">
+                        <input type="radio" onlcick="play()" id="q66a" name="q66" value="a">
                         <div class="label-container">
                             <label for="q66a">a. I is strong </label>
                         </div>
@@ -2729,7 +2740,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q66b" name="q66" value="b">
+                        <input type="radio" onlcick="play()" id="q66b" name="q66" value="b">
                         <div class="label-container">
                             <label for="q66b">b. Only argument II is strong </label>
                         </div>
@@ -2738,7 +2749,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q66c" name="q66" value="c">
+                        <input type="radio" onlcick="play()" id="q66c" name="q66" value="c">
                         <div class="label-container">
                             <label for="q66c">c. Both arguments are strong </label>
                         </div>
@@ -2747,7 +2758,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q66d" name="q66" value="d">
+                        <input type="radio" onlcick="play()" id="q66d" name="q66" value="d">
                         <div class="label-container">
                             <label for="q66d">d. Neither I nor II is strong </label>
                         </div>
@@ -2761,7 +2772,7 @@
                     </p>
 
                     <div class="line">
-                        <input type="radio" id="q67a" name="q67" value="a">
+                        <input type="radio" onlcick="play()" id="q67a" name="q67" value="a">
                         <div class="label-container">
                             <label for="q67a">a. I is strong </label>
                         </div>
@@ -2770,7 +2781,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q67b" name="q67" value="b">
+                        <input type="radio" onlcick="play()" id="q67b" name="q67" value="b">
                         <div class="label-container">
                             <label for="q67b">b. only argument II IS strong </label>
                         </div>
@@ -2779,7 +2790,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q67c" name="q67" value="c">
+                        <input type="radio" onlcick="play()" id="q67c" name="q67" value="c">
                         <div class="label-container">
                             <label for="q67c">c. both the arguments are strong </label>
                         </div>
@@ -2788,7 +2799,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q67d" name="q67" value="d">
+                        <input type="radio" onlcick="play()" id="q67d" name="q67" value="d">
                         <div class="label-container">
                             <label for="q67d">d. neither I nor II IS strong </label>
                         </div>
@@ -2804,7 +2815,7 @@
                     </p>
 
                     <div class="line">
-                        <input type="radio" id="q68a" name="q68" value="a">
+                        <input type="radio" onlcick="play()" id="q68a" name="q68" value="a">
                         <div class="label-container">
                             <label for="q68a">a. I IS strong </label>
                         </div>
@@ -2813,7 +2824,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q68b" name="q68" value="b">
+                        <input type="radio" onlcick="play()" id="q68b" name="q68" value="b">
                         <div class="label-container">
                             <label for="q68b">b. only argument II IS strong </label>
                         </div>
@@ -2822,7 +2833,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q68c" name="q68" value="c">
+                        <input type="radio" onlcick="play()" id="q68c" name="q68" value="c">
                         <div class="label-container">
                             <label for="q68c">c. both the arguments are strong </label>
                         </div>
@@ -2831,7 +2842,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q68d" name="q68" value="d">
+                        <input type="radio" onlcick="play()" id="q68d" name="q68" value="d">
                         <div class="label-container">
                             <label for="q68d">d. neither I nor II IS strong </label>
                         </div>
@@ -2844,7 +2855,7 @@
                     </p>
 
                     <div class="line">
-                        <input type="radio" id="q69a" name="q69" value="a">
+                        <input type="radio" onlcick="play()" id="q69a" name="q69" value="a">
                         <div class="label-container">
                             <label for="q69a">a. Herb </label>
                         </div>
@@ -2853,7 +2864,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q69b" name="q69" value="b">
+                        <input type="radio" onlcick="play()" id="q69b" name="q69" value="b">
                         <div class="label-container">
                             <label for="q69b">b. Flower </label>
                         </div>
@@ -2862,7 +2873,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q69c" name="q69" value="c">
+                        <input type="radio" onlcick="play()" id="q69c" name="q69" value="c">
                         <div class="label-container">
                             <label for="q69c">c. Tree </label>
                         </div>
@@ -2871,7 +2882,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q69d" name="q69" value="d">
+                        <input type="radio" onlcick="play()" id="q69d" name="q69" value="d">
                         <div class="label-container">
                             <label for="q69d">d. Shrub </label>
                         </div>
@@ -2883,7 +2894,7 @@
                         alternatives. </p>
 
                     <div class="line">
-                        <input type="radio" id="q70a" name="q70" value="a">
+                        <input type="radio" onlcick="play()" id="q70a" name="q70" value="a">
                         <div class="label-container">
                             <label for="q70a">a. Pen </label>
                         </div>
@@ -2892,7 +2903,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q70b" name="q70" value="b">
+                        <input type="radio" onlcick="play()" id="q70b" name="q70" value="b">
                         <div class="label-container">
                             <label for="q70b">b. Paper </label>
                         </div>
@@ -2901,7 +2912,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q70c" name="q70" value="c">
+                        <input type="radio" onlcick="play()" id="q70c" name="q70" value="c">
                         <div class="label-container">
                             <label for="q70c">c. Marker </label>
                         </div>
@@ -2910,7 +2921,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q70d" name="q70" value="d">
+                        <input type="radio" onlcick="play()" id="q70d" name="q70" value="d">
                         <div class="label-container">
                             <label for="q70d">d. Highlighter </label>
                         </div>
@@ -2924,7 +2935,7 @@
                         doesn’t belong to that group? </p>
 
                     <div class="line">
-                        <input type="radio" id="q71a" name="q71" value="a">
+                        <input type="radio" onlcick="play()" id="q71a" name="q71" value="a">
                         <div class="label-container">
                             <label for="q71a">a. 125 </label>
                         </div>
@@ -2933,7 +2944,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q71b" name="q71" value="b">
+                        <input type="radio" onlcick="play()" id="q71b" name="q71" value="b">
                         <div class="label-container">
                             <label for="q71b">b. 130 </label>
                         </div>
@@ -2942,7 +2953,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q71c" name="q71" value="c">
+                        <input type="radio" onlcick="play()" id="q71c" name="q71" value="c">
                         <div class="label-container">
                             <label for="q71c">c. 131 </label>
                         </div>
@@ -2951,7 +2962,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q71d" name="q71" value="d">
+                        <input type="radio" onlcick="play()" id="q71d" name="q71" value="d">
                         <div class="label-container">
                             <label for="q71d">d.138 </label>
                         </div>
@@ -2963,7 +2974,7 @@
                         alternatives. </p>
 
                     <div class="line">
-                        <input type="radio" id="q72a" name="q72" value="a">
+                        <input type="radio" onlcick="play()" id="q72a" name="q72" value="a">
                         <div class="label-container">
                             <label for="q72a">a. Petrol-car </label>
                         </div>
@@ -2972,7 +2983,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q72b" name="q72" value="b">
+                        <input type="radio" onlcick="play()" id="q72b" name="q72" value="b">
                         <div class="label-container">
                             <label for="q72b">b. Oil-lamp </label>
                         </div>
@@ -2981,7 +2992,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q72c" name="q72" value="c">
+                        <input type="radio" onlcick="play()" id="q72c" name="q72" value="c">
                         <div class="label-container">
                             <label for="q72c">c. Coal-engine </label>
                         </div>
@@ -2990,7 +3001,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q72d" name="q72" value="d">
+                        <input type="radio" onlcick="play()" id="q72d" name="q72" value="d">
                         <div class="label-container">
                             <label for="q72d">d. Smoke-fire </label>
                         </div>
@@ -3008,7 +3019,7 @@
                     </p>
 
                     <div class="line">
-                        <input type="radio" id="q73a" name="q73" value="a">
+                        <input type="radio" onlcick="play()" id="q73a" name="q73" value="a">
                         <div class="label-container">
                             <label for="q73a">a. Only I is true </label>
                         </div>
@@ -3017,7 +3028,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q73b" name="q73" value="b">
+                        <input type="radio" onlcick="play()" id="q73b" name="q73" value="b">
                         <div class="label-container">
                             <label for="q73b">b. Only II is true </label>
                         </div>
@@ -3026,7 +3037,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q73c" name="q73" value="c">
+                        <input type="radio" onlcick="play()" id="q73c" name="q73" value="c">
                         <div class="label-container">
                             <label for="q73c">c. Either I or II is true </label>
                         </div>
@@ -3035,7 +3046,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q73d" name="q73" value="d">
+                        <input type="radio" onlcick="play()" id="q73d" name="q73" value="d">
                         <div class="label-container">
                             <label for="q73d">d. Neither I nor II is true </label>
                         </div>
@@ -3048,7 +3059,7 @@
                         ii. P % M </p>
 
                     <div class="line">
-                        <input type="radio" id="q74a" name="q74" value="a">
+                        <input type="radio" onlcick="play()" id="q74a" name="q74" value="a">
                         <div class="label-container">
                             <label for="q74a">a. Only I is true </label>
                         </div>
@@ -3057,7 +3068,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q74b" name="q74" value="b">
+                        <input type="radio" onlcick="play()" id="q74b" name="q74" value="b">
                         <div class="label-container">
                             <label for="q74b">b. Only II is true </label>
                         </div>
@@ -3066,7 +3077,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q74c" name="q74" value="c">
+                        <input type="radio" onlcick="play()" id="q74c" name="q74" value="c">
                         <div class="label-container">
                             <label for="q74c">c. Either I or II is true </label>
                         </div>
@@ -3075,7 +3086,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q74d" name="q74" value="d">
+                        <input type="radio" onlcick="play()" id="q74d" name="q74" value="d">
                         <div class="label-container">
                             <label for="q74d">d. Neither I nor II is true </label>
                         </div>
@@ -3088,7 +3099,7 @@
                         ii. B % C </p>
 
                     <div class="line">
-                        <input type="radio" id="q75a" name="q75" value="a">
+                        <input type="radio" onlcick="play()" id="q75a" name="q75" value="a">
                         <div class="label-container">
                             <label for="q75a">a. Only I is true </label>
                         </div>
@@ -3097,7 +3108,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q75b" name="q75" value="b">
+                        <input type="radio" onlcick="play()" id="q75b" name="q75" value="b">
                         <div class="label-container">
                             <label for="q75b">b. Only II is true </label>
                         </div>
@@ -3106,7 +3117,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q75c" name="q75" value="c">
+                        <input type="radio" onlcick="play()" id="q75c" name="q75" value="c">
                         <div class="label-container">
                             <label for="q75c">c. Either I or II is true </label>
                         </div>
@@ -3115,7 +3126,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q75d" name="q75" value="d">
+                        <input type="radio" onlcick="play()" id="q75d" name="q75" value="d">
                         <div class="label-container">
                             <label for="q75d">d. Neither I nor II is true </label>
                         </div>
@@ -3132,7 +3143,7 @@
                         form is<!--add question--></p>
 
                     <div class="line">
-                        <input type="radio" id="q76a" name="q76" value="a">
+                        <input type="radio" onlcick="play()" id="q76a" name="q76" value="a">
                         <div class="label-container">
                             <label for="q76a">a. Keyboard </label>
                         </div>
@@ -3141,7 +3152,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q76b" name="q76" value="b">
+                        <input type="radio" onlcick="play()" id="q76b" name="q76" value="b">
                         <div class="label-container">
                             <label for="q76b">b.Scanner </label>
                         </div>
@@ -3150,7 +3161,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q76c" name="q76" value="c">
+                        <input type="radio" onlcick="play()" id="q76c" name="q76" value="c">
                         <div class="label-container">
                             <label for="q76c">c. OMR </label>
                         </div>
@@ -3159,7 +3170,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q76d" name="q76" value="d">
+                        <input type="radio" onlcick="play()" id="q76d" name="q76" value="d">
                         <div class="label-container">
                             <label for="q76d">d. None of these </label>
                         </div>
@@ -3171,7 +3182,7 @@
                         by<!--add question--></p>
 
                     <div class="line">
-                        <input type="radio" id="q77a" name="q77" value="a">
+                        <input type="radio" onlcick="play()" id="q77a" name="q77" value="a">
                         <div class="label-container">
                             <label for="q77a">a. John Von Neumann </label>
                         </div>
@@ -3180,7 +3191,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q77b" name="q77" value="b">
+                        <input type="radio" onlcick="play()" id="q77b" name="q77" value="b">
                         <div class="label-container">
                             <label for="q77b">b. Charles Babbage </label>
                         </div>
@@ -3189,7 +3200,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q77c" name="q77" value="c">
+                        <input type="radio" onlcick="play()" id="q77c" name="q77" value="c">
                         <div class="label-container">
                             <label for="q77c">c. Blaise Pascal </label>
                         </div>
@@ -3198,7 +3209,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q77d" name="q77" value="d">
+                        <input type="radio" onlcick="play()" id="q77d" name="q77" value="d">
                         <div class="label-container">
                             <label for="q77d">d. Garden Moore </label>
                         </div>
@@ -3212,7 +3223,7 @@
                         Which of the following was not one of them?<!--add question--></p>
 
                     <div class="line">
-                        <input type="radio" id="q78a" name="q78" value="a">
+                        <input type="radio" onlcick="play()" id="q78a" name="q78" value="a">
                         <div class="label-container">
                             <label for="q78a"> a. Tubby </label>
                         </div>
@@ -3221,7 +3232,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q78b" name="q78" value="b">
+                        <input type="radio" onlcick="play()" id="q78b" name="q78" value="b">
                         <div class="label-container">
                             <label for="q78b"> b. Stodge </label>
                         </div>
@@ -3230,7 +3241,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q78c" name="q78" value="c">
+                        <input type="radio" onlcick="play()" id="q78c" name="q78" value="c">
                         <div class="label-container">
                             <label for="q78c"> c. Helium Bat </label>
                         </div>
@@ -3239,7 +3250,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q78d" name="q78" value="d">
+                        <input type="radio" onlcick="play()" id="q78d" name="q78" value="d">
                         <div class="label-container">
                             <label for="q78d"> d. Stumpy </label>
                         </div>
@@ -3251,7 +3262,7 @@
                         basketball?<!--add question--></p>
 
                     <div class="line">
-                        <input type="radio" id="q79a" name="q79" value="a">
+                        <input type="radio" onlcick="play()" id="q79a" name="q79" value="a">
                         <div class="label-container">
                             <label for="q79a">a. 6 </label>
                         </div>
@@ -3260,7 +3271,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q79b" name="q79" value="b">
+                        <input type="radio" onlcick="play()" id="q79b" name="q79" value="b">
                         <div class="label-container">
                             <label for="q79b">b. 7 </label>
                         </div>
@@ -3269,7 +3280,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q79c" name="q79" value="c">
+                        <input type="radio" onlcick="play()" id="q79c" name="q79" value="c">
                         <div class="label-container">
                             <label for="q79c">c. 4 </label>
                         </div>
@@ -3278,7 +3289,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q79d" name="q79" value="d">
+                        <input type="radio" onlcick="play()" id="q79d" name="q79" value="d">
                         <div class="label-container">
                             <label for="q79d">d. 5 </label>
                         </div>
@@ -3289,7 +3300,7 @@
                     <p id="q80" class="questions">80. When is the international Worker's day?<!--add question--></p>
 
                     <div class="line">
-                        <input type="radio" id="q80a" name="q80" value="a">
+                        <input type="radio" onlcick="play()" id="q80a" name="q80" value="a">
                         <div class="label-container">
                             <label for="q80a"> a. 15<sup>th</sup> April </label>
                         </div>
@@ -3298,7 +3309,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q80b" name="q80" value="b">
+                        <input type="radio" onlcick="play()" id="q80b" name="q80" value="b">
                         <div class="label-container">
                             <label for="q80b"> b. 12<sup>th</sup>December </label>
                         </div>
@@ -3307,7 +3318,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q80c" name="q80" value="c">
+                        <input type="radio" onlcick="play()" id="q80c" name="q80" value="c">
                         <div class="label-container">
                             <label for="q80c"> c. 1<sup>st</sup> May </label>
                         </div>
@@ -3316,7 +3327,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q80d" name="q80" value="d">
+                        <input type="radio" onlcick="play()" id="q80d" name="q80" value="d">
                         <div class="label-container">
                             <label for="q80d">d. 1<sup>st</sup> August </label>
                         </div>
@@ -3327,7 +3338,7 @@
                     <p id="q81" class="questions">81. 4<sup>th</sup> Feb is celebrated as<!--add question--></p>
 
                     <div class="line">
-                        <input type="radio" id="q81a" name="q81" value="a">
+                        <input type="radio" onlcick="play()" id="q81a" name="q81" value="a">
                         <div class="label-container">
                             <label for="q81a"> a. Thinking Day </label>
                         </div>
@@ -3336,7 +3347,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q81b" name="q81" value="b">
+                        <input type="radio" onlcick="play()" id="q81b" name="q81" value="b">
                         <div class="label-container">
                             <label for="q81b"> b. World Radio Day </label>
                         </div>
@@ -3345,7 +3356,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q81c" name="q81" value="c">
+                        <input type="radio" onlcick="play()" id="q81c" name="q81" value="c">
                         <div class="label-container">
                             <label for="q81c"> c. World Cancer Day </label>
                         </div>
@@ -3354,7 +3365,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q81d" name="q81" value="d">
+                        <input type="radio" onlcick="play()" id="q81d" name="q81" value="d">
                         <div class="label-container">
                             <label for="q81d"> d. World Wild Life Day </label>
                         </div>
@@ -3365,7 +3376,7 @@
                     <p id="q82" class="questions">82. 'OS' computer abbreviation usually means?<!--add question--></p>
 
                     <div class="line">
-                        <input type="radio" id="q82a" name="q82" value="a">
+                        <input type="radio" onlcick="play()" id="q82a" name="q82" value="a">
                         <div class="label-container">
                             <label for="q82a">a. Order of Significance </label>
                         </div>
@@ -3374,7 +3385,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q82b" name="q82" value="b">
+                        <input type="radio" onlcick="play()" id="q82b" name="q82" value="b">
                         <div class="label-container">
                             <label for="q82b">b. Open Software </label>
                         </div>
@@ -3383,7 +3394,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q82c" name="q82" value="c">
+                        <input type="radio" onlcick="play()" id="q82c" name="q82" value="c">
                         <div class="label-container">
                             <label for="q82c">c. Operating System </label>
                         </div>
@@ -3392,7 +3403,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q82d" name="q82" value="d">
+                        <input type="radio" onlcick="play()" id="q82d" name="q82" value="d">
                         <div class="label-container">
                             <label for="q82d"> d. Optical Sensor </label>
                         </div>
@@ -3403,7 +3414,7 @@
                     <p id="q83" class="questions">83. Entomology is the science that studies<!--add question--></p>
 
                     <div class="line">
-                        <input type="radio" id="q83a" name="q83" value="a">
+                        <input type="radio" onlcick="play()" id="q83a" name="q83" value="a">
                         <div class="label-container">
                             <label for="q83a">a.The origin and history of technical and scientific terms </label>
                         </div>
@@ -3412,7 +3423,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q83b" name="q83" value="b">
+                        <input type="radio" onlcick="play()" id="q83b" name="q83" value="b">
                         <div class="label-container">
                             <label for="q83b">b. Behavior of human beings </label>
                         </div>
@@ -3421,7 +3432,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q83c" name="q83" value="c">
+                        <input type="radio" onlcick="play()" id="q83c" name="q83" value="c">
                         <div class="label-container">
                             <label for="q83c">c. Insects </label>
                         </div>
@@ -3430,7 +3441,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q83d" name="q83" value="d">
+                        <input type="radio" onlcick="play()" id="q83d" name="q83" value="d">
                         <div class="label-container">
                             <label for="q83d"> d. Formation of Rocks </label>
                         </div>
@@ -3441,7 +3452,7 @@
                     <p id="q84" class="questions">84. Free market is a<!--add question--></p>
 
                     <div class="line">
-                        <input type="radio" id="q84a" name="q84" value="a">
+                        <input type="radio" onlcick="play()" id="q84a" name="q84" value="a">
                         <div class="label-container">
                             <label for="q84a">a. A condition jn the International
                                 market where nations do not impose
@@ -3453,7 +3464,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q84b" name="q84" value="b">
+                        <input type="radio" onlcick="play()" id="q84b" name="q84" value="b">
                         <div class="label-container">
                             <label for="q84b">b. Market where the price ot a
                                 commodity determined by free
@@ -3465,7 +3476,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q84c" name="q84" value="c">
+                        <input type="radio" onlcick="play()" id="q84c" name="q84" value="c">
                         <div class="label-container">
                             <label for="q84c">c.Ports that are exempted from
                                 payment of customs duty on articles
@@ -3477,7 +3488,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q84d" name="q84" value="d">
+                        <input type="radio" onlcick="play()" id="q84d" name="q84" value="d">
                         <div class="label-container">
                             <label for="q84d">d. None of these </label>
                         </div>
@@ -3490,7 +3501,7 @@
                         centers of ship building Industry in:<!--add question--></p>
 
                     <div class="line">
-                        <input type="radio" id="q85a" name="q85" value="a">
+                        <input type="radio" onlcick="play()" id="q85a" name="q85" value="a">
                         <div class="label-container">
                             <label for="q85a">a. Japan </label>
                         </div>
@@ -3499,7 +3510,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q85b" name="q85" value="b">
+                        <input type="radio" onlcick="play()" id="q85b" name="q85" value="b">
                         <div class="label-container">
                             <label for="q85b">b. South Korea </label>
                         </div>
@@ -3508,7 +3519,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q85c" name="q85" value="c">
+                        <input type="radio" onlcick="play()" id="q85c" name="q85" value="c">
                         <div class="label-container">
                             <label for="q85c">c. North Korea </label>
                         </div>
@@ -3517,7 +3528,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q85d" name="q85" value="d">
+                        <input type="radio" onlcick="play()" id="q85d" name="q85" value="d">
                         <div class="label-container">
                             <label for="q85d">d. China </label>
                         </div>
@@ -3532,7 +3543,7 @@
                         horizon is called<!--add question--></p>
 
                     <div class="line">
-                        <input type="radio" id="q86a" name="q86" value="a">
+                        <input type="radio" onlcick="play()" id="q86a" name="q86" value="a">
                         <div class="label-container">
                             <label for="q86a">a. Podsolosation </label>
                         </div>
@@ -3541,7 +3552,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q86b" name="q86" value="b">
+                        <input type="radio" onlcick="play()" id="q86b" name="q86" value="b">
                         <div class="label-container">
                             <label for="q86b">b. Calcification </label>
                         </div>
@@ -3550,7 +3561,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q86c" name="q86" value="c">
+                        <input type="radio" onlcick="play()" id="q86c" name="q86" value="c">
                         <div class="label-container">
                             <label for="q86c">c. Laterisation </label>
                         </div>
@@ -3559,7 +3570,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q86d" name="q86" value="d">
+                        <input type="radio" onlcick="play()" id="q86d" name="q86" value="d">
                         <div class="label-container">
                             <label for="q86d">d. Gleisation </label>
                         </div>
@@ -3572,7 +3583,7 @@
                         associated with the UNO?<!--add question--></p>
 
                     <div class="line">
-                        <input type="radio" id="q87a" name="q87" value="a">
+                        <input type="radio" onlcick="play()" id="q87a" name="q87" value="a">
                         <div class="label-container">
                             <label for="q87a">a. ILO </label>
                         </div>
@@ -3581,7 +3592,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q87b" name="q87" value="b">
+                        <input type="radio" onlcick="play()" id="q87b" name="q87" value="b">
                         <div class="label-container">
                             <label for="q87b">b. WHO </label>
                         </div>
@@ -3590,7 +3601,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q87c" name="q87" value="c">
+                        <input type="radio" onlcick="play()" id="q87c" name="q87" value="c">
                         <div class="label-container">
                             <label for="q87c">c.ASEAN </label>
                         </div>
@@ -3599,7 +3610,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q87d" name="q87" value="d">
+                        <input type="radio" onlcick="play()" id="q87d" name="q87" value="d">
                         <div class="label-container">
                             <label for="q87d">d. All of the above </label>
                         </div>
@@ -3613,7 +3624,7 @@
                         commonly called as:<!--add question--></p>
 
                     <div class="line">
-                        <input type="radio" id="q88a" name="q88" value="a">
+                        <input type="radio" onlcick="play()" id="q88a" name="q88" value="a">
                         <div class="label-container">
                             <label for="q88a"> a. Tesla Coil </label>
                         </div>
@@ -3622,7 +3633,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q88b" name="q88" value="b">
+                        <input type="radio" onlcick="play()" id="q88b" name="q88" value="b">
                         <div class="label-container">
                             <label for="q88b"> b. Fly back </label>
                         </div>
@@ -3631,7 +3642,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q88c" name="q88" value="c">
+                        <input type="radio" onlcick="play()" id="q88c" name="q88" value="c">
                         <div class="label-container">
                             <label for="q88c"> c. Yoke </label>
                         </div>
@@ -3640,7 +3651,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q88d" name="q88" value="d">
+                        <input type="radio" onlcick="play()" id="q88d" name="q88" value="d">
                         <div class="label-container">
                             <label for="q88d"> d. Van de Graaf </label>
                         </div>
@@ -3657,7 +3668,7 @@
                     </p>
 
                     <div class="line">
-                        <input type="radio" id="q89a" name="q89" value="a">
+                        <input type="radio" onlcick="play()" id="q89a" name="q89" value="a">
                         <div class="label-container">
                             <label for="q89a">a.
                                 Dhaka
@@ -3669,7 +3680,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q89b" name="q89" value="b">
+                        <input type="radio" onlcick="play()" id="q89b" name="q89" value="b">
                         <div class="label-container">
                             <label for="q89b">b.
                                 Delhi
@@ -3682,7 +3693,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q89c" name="q89" value="c">
+                        <input type="radio" onlcick="play()" id="q89c" name="q89" value="c">
                         <div class="label-container">
                             <label for="q89c">c.
                                 Colombo
@@ -3695,7 +3706,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q89d" name="q89" value="d">
+                        <input type="radio" onlcick="play()" id="q89d" name="q89" value="d">
                         <div class="label-container">
                             <label for="q89d">d.
                                 Kathmandu
@@ -3714,7 +3725,7 @@
                     </p>
 
                     <div class="line">
-                        <input type="radio" id="q90a" name="q90" value="a">
+                        <input type="radio" onlcick="play()" id="q90a" name="q90" value="a">
                         <div class="label-container">
                             <label for="q90a"> a.
 
@@ -3726,7 +3737,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q90b" name="q90" value="b">
+                        <input type="radio" onlcick="play()" id="q90b" name="q90" value="b">
                         <div class="label-container">
                             <label for="q90b"> b.
                                 Bullfights
@@ -3738,7 +3749,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q90c" name="q90" value="c">
+                        <input type="radio" onlcick="play()" id="q90c" name="q90" value="c">
                         <div class="label-container">
                             <label for="q90c"> c.
 
@@ -3750,7 +3761,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q90d" name="q90" value="d">
+                        <input type="radio" onlcick="play()" id="q90d" name="q90" value="d">
                         <div class="label-container">
                             <label for="q90d">d.
                                 Stock exchange
@@ -3770,7 +3781,7 @@
                     </p>
 
                     <div class="line">
-                        <input type="radio" id="q91a" name="q91" value="a">
+                        <input type="radio" onlcick="play()" id="q91a" name="q91" value="a">
                         <div class="label-container">
                             <label for="q91a"> a..
 
@@ -3782,7 +3793,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q91b" name="q91" value="b">
+                        <input type="radio" onlcick="play()" id="q91b" name="q91" value="b">
                         <div class="label-container">
                             <label for="q91b"> b.
                                 Waterman brothers
@@ -3794,7 +3805,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q91c" name="q91" value="c">
+                        <input type="radio" onlcick="play()" id="q91c" name="q91" value="c">
                         <div class="label-container">
                             <label for="q91c"> c.
                                 BICC brothers
@@ -3806,7 +3817,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q91d" name="q91" value="d">
+                        <input type="radio" onlcick="play()" id="q91d" name="q91" value="d">
                         <div class="label-container">
                             <label for="q91d"> d.
 
@@ -3826,7 +3837,7 @@
                     </p>
 
                     <div class="line">
-                        <input type="radio" id="q92a" name="q92" value="a">
+                        <input type="radio" onlcick="play()" id="q92a" name="q92" value="a">
                         <div class="label-container">
                             <label for="q92a">a.
                                 Bones
@@ -3838,7 +3849,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q92b" name="q92" value="b">
+                        <input type="radio" onlcick="play()" id="q92b" name="q92" value="b">
                         <div class="label-container">
                             <label for="q92b">b.
                                 Enamel
@@ -3850,7 +3861,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q92c" name="q92" value="c">
+                        <input type="radio" onlcick="play()" id="q92c" name="q92" value="c">
                         <div class="label-container">
                             <label for="q92c">c.
                                 Nails
@@ -3862,7 +3873,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q92d" name="q92" value="d">
+                        <input type="radio" onlcick="play()" id="q92d" name="q92" value="d">
                         <div class="label-container">
                             <label for="q92d"> d.
                                 Head
@@ -3882,7 +3893,7 @@
                     </p>
 
                     <div class="line">
-                        <input type="radio" id="q93a" name="q93" value="a">
+                        <input type="radio" onlcick="play()" id="q93a" name="q93" value="a">
                         <div class="label-container">
                             <label for="q93a">a.
                                 Jupiter
@@ -3893,7 +3904,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q93b" name="q93" value="b">
+                        <input type="radio" onlcick="play()" id="q93b" name="q93" value="b">
                         <div class="label-container">
                             <label for="q93b">b.
                                 Mercury
@@ -3905,7 +3916,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q93c" name="q93" value="c">
+                        <input type="radio" onlcick="play()" id="q93c" name="q93" value="c">
                         <div class="label-container">
                             <label for="q93c">c.
                                 Neptune
@@ -3917,7 +3928,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q93d" name="q93" value="d">
+                        <input type="radio" onlcick="play()" id="q93d" name="q93" value="d">
                         <div class="label-container">
                             <label for="q93d"> d.
                                 Earth
@@ -3936,7 +3947,7 @@
                     </p>
 
                     <div class="line">
-                        <input type="radio" id="q94a" name="q94" value="a">
+                        <input type="radio" onlcick="play()" id="q94a" name="q94" value="a">
                         <div class="label-container">
                             <label for="q94a">a.
                                 Isaac Newton
@@ -3948,7 +3959,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q94b" name="q94" value="b">
+                        <input type="radio" onlcick="play()" id="q94b" name="q94" value="b">
                         <div class="label-container">
                             <label for="q94b">b.
                                 Albert Einstein
@@ -3960,7 +3971,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q94c" name="q94" value="c">
+                        <input type="radio" onlcick="play()" id="q94c" name="q94" value="c">
                         <div class="label-container">
                             <label for="q94c">c.
                                 Benjamjn Franklin
@@ -3972,7 +3983,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q94d" name="q94" value="d">
+                        <input type="radio" onlcick="play()" id="q94d" name="q94" value="d">
                         <div class="label-container">
                             <label for="q94d">d.
 
@@ -3991,7 +4002,7 @@
                     </p>
 
                     <div class="line">
-                        <input type="radio" id="q95a" name="q95" value="a">
+                        <input type="radio" onlcick="play()" id="q95a" name="q95" value="a">
                         <div class="label-container">
                             <label for="q95a">a.
 
@@ -4003,7 +4014,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q95b" name="q95" value="b">
+                        <input type="radio" onlcick="play()" id="q95b" name="q95" value="b">
                         <div class="label-container">
                             <label for="q95b">b.
                                 Ram Raja Prasad Singh
@@ -4015,7 +4026,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q95c" name="q95" value="c">
+                        <input type="radio" onlcick="play()" id="q95c" name="q95" value="c">
                         <div class="label-container">
                             <label for="q95c">c.
                                 Dr Rambaran Yadav
@@ -4027,7 +4038,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q95d" name="q95" value="d">
+                        <input type="radio" onlcick="play()" id="q95d" name="q95" value="d">
                         <div class="label-container">
                             <label for="q95d">d.
 
@@ -4047,7 +4058,7 @@
                     </p>
 
                     <div class="line">
-                        <input type="radio" id="q96a" name="q96" value="a">
+                        <input type="radio" onlcick="play()" id="q96a" name="q96" value="a">
                         <div class="label-container">
                             <label for="q96a">a.
                                 Washing soda
@@ -4059,7 +4070,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q96b" name="q96" value="b">
+                        <input type="radio" onlcick="play()" id="q96b" name="q96" value="b">
                         <div class="label-container">
                             <label for="q96b">b.
                                 Baking soda
@@ -4071,7 +4082,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q96c" name="q96" value="c">
+                        <input type="radio" onlcick="play()" id="q96c" name="q96" value="c">
                         <div class="label-container">
                             <label for="q96c">c.
                                 Salt used in kitchen
@@ -4083,7 +4094,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q96d" name="q96" value="d">
+                        <input type="radio" onlcick="play()" id="q96d" name="q96" value="d">
                         <div class="label-container">
                             <label for="q96d">d.
                                 Chilli powder used in the kitchen
@@ -4103,7 +4114,7 @@
                     </p>
 
                     <div class="line">
-                        <input type="radio" id="q97a" name="q97" value="a">
+                        <input type="radio" onlcick="play()" id="q97a" name="q97" value="a">
                         <div class="label-container">
                             <label for="q97a">a.
                                 They behave more patiently With
@@ -4116,7 +4127,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q97b" name="q97" value="b">
+                        <input type="radio" onlcick="play()" id="q97b" name="q97" value="b">
                         <div class="label-container">
                             <label for="q97b">b.
                                 They are ready to work With low
@@ -4129,7 +4140,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q97c" name="q97" value="c">
+                        <input type="radio" onlcick="play()" id="q97c" name="q97" value="c">
                         <div class="label-container">
                             <label for="q97c">c.
                                 Higher qualifications not needed In
@@ -4142,7 +4153,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q97d" name="q97" value="d">
+                        <input type="radio" onlcick="play()" id="q97d" name="q97" value="d">
                         <div class="label-container">
                             <label for="q97d">d.
                                 They have less chances in other
@@ -4165,7 +4176,7 @@
                     </p>
 
                     <div class="line">
-                        <input type="radio" id="q98a" name="q98" value="a">
+                        <input type="radio" onlcick="play()" id="q98a" name="q98" value="a">
                         <div class="label-container">
                             <label for="q98a"> a.
                                 Microwave oven
@@ -4178,7 +4189,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q98b" name="q98" value="b">
+                        <input type="radio" onlcick="play()" id="q98b" name="q98" value="b">
                         <div class="label-container">
                             <label for="q98b"> b.
 
@@ -4190,7 +4201,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q98c" name="q98" value="c">
+                        <input type="radio" onlcick="play()" id="q98c" name="q98" value="c">
                         <div class="label-container">
                             <label for="q98c"> c.
                                 VCR
@@ -4202,7 +4213,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q98d" name="q98" value="d">
+                        <input type="radio" onlcick="play()" id="q98d" name="q98" value="d">
                         <div class="label-container">
                             <label for="q98d"> d.
                                 Calculator
@@ -4221,7 +4232,7 @@
                     </p>
 
                     <div class="line">
-                        <input type="radio" id="q99a" name="q99" value="a">
+                        <input type="radio" onlcick="play()" id="q99a" name="q99" value="a">
                         <div class="label-container">
                             <label for="q99a">a.
                                 ' Karnali
@@ -4233,7 +4244,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q99b" name="q99" value="b">
+                        <input type="radio" onlcick="play()" id="q99b" name="q99" value="b">
                         <div class="label-container">
                             <label for="q99b">b.
                                 Koshi
@@ -4245,7 +4256,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q99c" name="q99" value="c">
+                        <input type="radio" onlcick="play()" id="q99c" name="q99" value="c">
                         <div class="label-container">
                             <label for="q99c">c.
                                 Arun
@@ -4257,7 +4268,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q99d" name="q99" value="d">
+                        <input type="radio" onlcick="play()" id="q99d" name="q99" value="d">
                         <div class="label-container">
                             <label for="q99d">d.
                                 Trishuli
@@ -4274,7 +4285,7 @@
                     </p>
 
                     <div class="line">
-                        <input type="radio" id="q100a" name="q100" value="a">
+                        <input type="radio" onlcick="play()" id="q100a" name="q100" value="a">
                         <div class="label-container">
                             <label for="q100a"> a.
                                 Grain
@@ -4285,7 +4296,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q100b" name="q100" value="b">
+                        <input type="radio" onlcick="play()" id="q100b" name="q100" value="b">
                         <div class="label-container">
                             <label for="q100b"> b.
                                 Animal
@@ -4296,7 +4307,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q100c" name="q100" value="c">
+                        <input type="radio" onlcick="play()" id="q100c" name="q100" value="c">
                         <div class="label-container">
                             <label for="q100c"> c.
                                 Game
@@ -4307,7 +4318,7 @@
 
 
                     <div class="line">
-                        <input type="radio" id="q100d" name="q100" value="d">
+                        <input type="radio" onlcick="play()" id="q100d" name="q100" value="d">
                         <div class="label-container">
                             <label for="q100d">d.
                                 Fruit
