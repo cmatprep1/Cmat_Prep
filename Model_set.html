@@ -34,19 +34,6 @@
             90:00
         </span>
     </div>
-<!--     function to make sound on click -->
-
-    <audio id="tick-sound" src="click.wav" preload="auto"></audio>
-    
-<script>
-            function play() {
-            var sound = document.getElementById("tick-sound");
-            sound.play();
-            }
-        </script>
-        
-
-<!--     ends here -->
 
     
     <!-- timer chalaune code -->
@@ -71,6 +58,22 @@
             dec.innerHTML = m + ":" + (s < 10 ? "0" + s : s);
         }, 1000);
     </script>
+
+<!--     function to make sound on click -->
+
+    <audio id="tick-sound" src="click.wav" preload="auto" controls style="position:sticky; top:0;"></audio>
+    
+<script>
+            function play() {
+            var sound = document.getElementById("tick-sound");
+            sound.play();
+            }
+        </script>
+        
+
+<!--     ends here -->
+
+    
     <main class="question">
         <button class="btn prev"><i class="fa fa-chevron-circle-left"
                 aria-hidden="true"></i></button><!--Yaha class add xa   -->
