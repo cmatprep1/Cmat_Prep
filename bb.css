@@ -161,10 +161,8 @@ button {
 
 .timer {
   padding: 10px;
-  position:sticky;
-  top:0;
   color: #412af4;
-  margin-bottom: lepx;
+  margin-bottom: 10px;
   text-align: center;
   font-weight: bolder;
   font-size: larger;
