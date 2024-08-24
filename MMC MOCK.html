@@ -1,0 +1,4429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>CMAT 2024</title>
+    <link rel="stylesheet" href="pj.css">
+    <link rel="stylesheet" href="bb.css">
+    <script src="swiping.js" defer></script>
+    <link rel="stylesheet" href="nav.css">
+</head>
+
+<body>
+    <nav>
+
+        <div class="nav-elements">
+            <img src="pictures/cmatPrep.webp" alt="Logo of CMAT Prep" onclick="window.location.href='index.html'">
+        </div>
+        <div class="nav-elements"><a href="prospectus.html">Prospectus</a></div>
+        <div class="nav-elements"><a href="About_page.html">About Us</a></div>
+        <div class="nav-elements"><a href="contact.html">Contact</a></div>
+
+
+    </nav>
+    <audio id="start-sound" src="starter.mp3" preload="auto" autoplay></audio>
+
+    <div class="timer">
+        Time Remaining:
+        <span id="time">
+            90:00
+        </span>
+    </div>
+
+
+
+    <script>
+        let dec = document.getElementById("time");
+        let m = 90;
+        let s = 0;
+        let intervalId = setInterval(() => {
+            if (s === 0) {
+                if (m === 0) {
+                    clearInterval(intervalId);
+                    // alert("Time up");
+                    document.querySelector('.timer').style.display = 'none';
+                    submitQuiz();
+                } else {
+                    m--;
+                    s = 59;
+                }
+            } else {
+                s--;
+            }
+            dec.innerHTML = m + ":" + (s < 10 ? "0" + s : s);
+        }, 1000);
+    </script>
+
+
+
+    <audio id="tick-sound" src="click.wav" preload="auto" style="position:sticky; top:0;"></audio>
+
+    <script>
+        function play() {
+            var sound = document.getElementById("tick-sound");
+            sound.play();
+        }
+    </script>
+
+
+
+
+
+    <main class="question">
+        <button class="btn prev"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i></button>
+        <div class="main-container2">
+            <div class="slider">
+                <section class="section English">
+                    <h1 id="section_title">Verbal Ability</h1>
+                    <p id="direction">Direction: Select the words which is/are closest to the meaning of the given word
+                    </p>
+                    <p class="questions" id="q1"> 1. Quota </p>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q1a" name="q1" value="a">
+                        <div class="label-container">
+                            <label for="q1a"> a. Quotation </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q1b" name="q1" value="b">
+                        <div class="label-container">
+                            <label for="q1b"> b. Quote</label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q1c" name="q1" value="c">
+                        <div class="label-container">
+                            <label for="q1c"> c. Limited Number </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q1d" name="q1" value="d">
+                        <div class="label-container">
+                            <label for="q1d"> d. Unlimited Quantity </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <p class="questions" id="q2">2. Plump</p>
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q2a" name="q2" value="a">
+                        <div class="label-container">
+                            <label for="q2a">a. thin</label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q2b" name="q2" value="b">
+                        <div class="label-container">
+                            <label for="q2b">b. Fat</label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q2c" name="q2" value="c">
+                        <div class="label-container">
+                            <label for="q2c">c. Chubby </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q2d" name="q2" value="d">
+                        <div class="label-container">
+                            <label for="q2d"> d. Vector</label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <p class="questions" id="q3">3. Visualize
+                    </p>
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q3a" name="q3" value="a">
+                        <div class="label-container">
+                            <label for="q3a">a.
+                                To see future
+
+                            </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q3b" name="q3" value="b">
+                        <div class="label-container">
+                            <label for="q3b">b. Vision
+                            </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q3c" name="q3" value="c">
+                        <div class="label-container">
+                            <label for="q3c">c.
+                                Void
+                            </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q3d" name="q3" value="d">
+                        <div class="label-container">
+                            <label for="q3d"> d. Vector </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <p class="questions" id="q4">4. Compassion</p>
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q4a" name="q4" value="a">
+                        <div class="label-container">
+                            <label for="q4a">a. Comparison </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q4b" name="q4" value="b">
+                        <div class="label-container">
+                            <label for="q4b">b. Coat</label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q4c" name="q4" value="c">
+                        <div class="label-container">
+                            <label for="q4c">c. Love </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q4d" name="q4" value="d">
+                        <div class="label-container">
+                            <label for="q4d">d. Hate</label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <p class="questions" id="q5">5. Unison </p>
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q5a" name="q5" value="a">
+                        <div class="label-container">
+                            <label for="q5a">a. Union</label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q5b" name="q5" value="b">
+                        <div class="label-container">
+                            <label for="q5b">b. Complete </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q5c" name="q5" value="c">
+                        <div class="label-container">
+                            <label for="q5c">c. Care</label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q5d" name="q5" value="d">
+                        <div class="label-container">
+                            <label for="q5d">d. Universal</label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <p id="direction"> Direction: Complete the following sentence with the appropriate choice from among
+                        the
+                        options that follows:
+                    </p>
+                    <p class="questions" id="q6">6. All of the following are sedimentary rocks except……
+                    </p>
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q6a" name="q6" value="a">
+                        <div class="label-container">
+                            <label for="q6a">a. Mica </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q6b" name="q6" value="b">
+                        <div class="label-container">
+                            <label for="q6b">b. Gravel </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q6c" name="q6" value="c">
+                        <div class="label-container">
+                            <label for="q6c">c. Sand </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q6d" name="q6" value="d">
+                        <div class="label-container">
+                            <label for="q6d">d. Soil </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <p class="questions" id="q7">7. We lost confidence in him because he never…………The grandiose promise
+                        he made.</p>
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q7a" name="q7" value="a">
+                        <div class="label-container">
+                            <label for="q7a">a. forget </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q7b" name="q7" value="b">
+                        <div class="label-container">
+                            <label for="q7b"> b. Tried </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q7c" name="q7" value="c">
+                        <div class="label-container">
+                            <label for="q7c">c. Delivered on </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q7d" name="q7" value="d">
+                        <div class="label-container">
+                            <label for="q7d">d. Relied open </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <p class="questions" id="q8">8. Some very durable plastics…………..when exposed to sunlight
+                    </p>
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q8a" name="q8" value="a">
+                        <div class="label-container">
+                            <label for="q8a"> a. Harden </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q8b" name="q8" value="b">
+                        <div class="label-container">
+                            <label for="q8b"> b. Stagnate </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q8c" name="q8" value="c">
+                        <div class="label-container">
+                            <label for="q8c"> c. Decay </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q8d" name="q8" value="d">
+                        <div class="label-container">
+                            <label for="q8d"> d. Lofty </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <p class="questions" id="q9">9. When Hari left the cocktail party he was quite………
+                    </p>
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q9a" name="q9" value="a">
+                        <div class="label-container">
+                            <label for="q9a">a. Drunk </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q9b" name="q9" value="b">
+                        <div class="label-container">
+                            <label for="q9b"> b. Driving </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q9c" name="q9" value="c">
+                        <div class="label-container">
+                            <label for="q9c">c. Amazed </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q9d" name="q9" value="d">
+                        <div class="label-container">
+                            <label for="q9d">d. Lofty </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <p class="questions" id="q10">10. We had to pay more taxi driver brought us by a .......... route.
+                    </p>
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q10a" name="q10" value="a">
+                        <div class="label-container">
+                            <label for="q10a"> a. Short </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q10b" name="q10" value="b">
+                        <div class="label-container">
+                            <label for="q10b"> b. Longest </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q10c" name="q10" value="c">
+                        <div class="label-container">
+                            <label for="q10c"> c. Alternative </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q10d" name="q10" value="d">
+                        <div class="label-container">
+                            <label for="q10d">d. High speed </label>
+                        </div>
+                        <hr>
+                    </div>
+
+                    <p id="direction">Direction: Each of the Following sentences has a blank space, complete the
+                        sentences with the
+                        appropriate choice from the options that follows.</p>
+                    <p class="questions" id="q11">11.It is too difficult…………</p>
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q11a" name="q11" value="a">
+                        <div class="label-container">
+                            <label for="q11a"> a. problem for me </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q11b" name="q11" value="b">
+                        <div class="label-container">
+                            <label for="q11b"> b. problem to me </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q11c" name="q11" value="c">
+                        <div class="label-container">
+                            <label for="q11c"> c. a problem for me </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q11d" name="q11" value="d">
+                        <div class="label-container">
+                            <label for="q11d"> d. the problem </label>
+                        </div>
+                        <hr>
+                    </div>
+
+                    <p class="questions" id="q12">12. I am sure the clerk is preparing…………</p>
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q12a" name="q12" value="a">
+                        <div class="label-container">
+                            <label for="q12a">a. arrear bill </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q12b" name="q12" value="b">
+                        <div class="label-container">
+                            <label for="q12b"> b. the arrear bill </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q12c" name="q12" value="c">
+                        <div class="label-container">
+                            <label for="q12c">c. arrears bill </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q12d" name="q12" value="d">
+                        <div class="label-container">
+                            <label for="q12d"> d. the arrears bill </label>
+                        </div>
+                        <hr>
+                    </div>
+
+                    <p class="questions" id="q13">13. If I …………… would have helped you</p>
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q13a" name="q13" value="a">
+                        <div class="label-container">
+                            <label for="q13a">a. was him </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q13b" name="q13" value="b">
+                        <div class="label-container">
+                            <label for="q13b"> b. was he </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q13c" name="q13" value="c">
+                        <div class="label-container">
+                            <label for="q13c">c. were he </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q13d" name="q13" value="d">
+                        <div class="label-container">
+                            <label for="q13d"> d. were him</label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <p class="questions" id="q14">14. I..........for the insult.</p>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q14a" name="q14" value="a">
+                        <div class="label-container">
+                            <label for="q14a">a. averaged </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q14b" name="q14" value="b">
+                        <div class="label-container">
+                            <label for="q14b"> b. averaged myself </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q14c" name="q14" value="c">
+                        <div class="label-container">
+                            <label for="q14c">c. revenged </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q14d" name="q14" value="d">
+                        <div class="label-container">
+                            <label for="q14d">d. revenged myself</label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <p class="questions" id="q15">15. I enjoyed ………….. the holidays.
+                    </p>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q15a" name="q15" value="a">
+                        <div class="label-container">
+                            <label for="q15a"> a.during </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q15b" name="q15" value="b">
+                        <div class="label-container">
+                            <label for="q15b"> b. myself during</label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q15c" name="q15" value="c">
+                        <div class="label-container">
+                            <label for="q15c">c. myself of </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q15d" name="q15" value="d">
+                        <div class="label-container">
+                            <label for="q15d">d. myself by </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <p id="direction">Direction: in the question given below out four alternatives, choose the one which
+                        can be
+                        substituted for the given sentence.
+                    </p>
+
+                    <p class="questions" id="q16">16. That which cannot be corrected.</p>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q16a" name="q16" value="a">
+                        <div class="label-container">
+                            <label for="q16a"> a. unintelligible </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q16b" name="q16" value="b">
+                        <div class="label-container">
+                            <label for="q16b"> b. indelible </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q16c" name="q16" value="c">
+                        <div class="label-container">
+                            <label for="q16c">c. illegible </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q16d" name="q16" value="d">
+                        <div class="label-container">
+                            <label for="q16d">d. incorrigible </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <p class="questions" id="q17">17. The study of ancient societies.</p>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q17a" name="q17" value="a">
+                        <div class="label-container">
+                            <label for="q17a"> a. Archaeology </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q17b" name="q17" value="b">
+                        <div class="label-container">
+                            <label for="q17b"> b. Anthropology </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q17c" name="q17" value="c">
+                        <div class="label-container">
+                            <label for="q17c">c. History </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q17d" name="q17" value="d">
+                        <div class="label-container">
+                            <label for="q17d">d. Ethnology </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <p class="questions" id="q18">18. A person who insists on something.
+                    </p>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q18a" name="q18" value="a">
+                        <div class="label-container">
+                            <label for="q18a"> a. Disciplinarian </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q18b" name="q18" value="b">
+                        <div class="label-container">
+                            <label for="q18b"> b. Stickler </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q18c" name="q18" value="c">
+                        <div class="label-container">
+                            <label for="q18c"> c. Instantaneous </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q18d" name="q18" value="d">
+                        <div class="label-container">
+                            <label for="q18d"> d. Boaster </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <p class="questions" id="q19">19. State in which the few govern the many</p>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q19a" name="q19" value="a">
+                        <div class="label-container">
+                            <label for="q19a"> a. Plutocracy </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q19b" name="q19" value="b">
+                        <div class="label-container">
+                            <label for="q19b"> b. Autocracy </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q19c" name="q19" value="c">
+                        <div class="label-container">
+                            <label for="q19c">c. Plurocracy </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q19d" name="q19" value="d">
+                        <div class="label-container">
+                            <label for="q19d">d. Oligarchy </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <p class="questions" id="q20">20.Parts of country behind the coast or a river's blank.
+                    </p>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q20a" name="q20" value="a">
+                        <div class="label-container">
+                            <label for="q20a"> a. Archipelago </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q20b" name="q20" value="b">
+                        <div class="label-container">
+                            <label for="q20b"> b. Hinterland </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q20c" name="q20" value="c">
+                        <div class="label-container">
+                            <label for="q20c"> c. Swamps </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q20d" name="q20" value="d">
+                        <div class="label-container">
+                            <label for="q20d">d. Isthmus </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <p id="direction">Direction: The passage given below is followed by questions based on its contents.
+                        after reading
+                        the passage, choose the best answer to each question.
+                    </p>
+                    <p>It is to progress in the human science that we must look to undo the evils which have result from
+                        the
+                        knowledge of physical world hastily and superficially acquired by population unconscious of the
+                        changes in themselves that the new knowledge has imperative. The road to a happier world than
+                        any
+                        known in the past lies open before as if a atavistic destructive passion can he kept leash in
+                        leash the
+                        necessary adaptations are made.
+                        Fears are inevitable in time but hopes are equally rational and far more likely to bear good
+                        fruit. We
+                        must learn to think rather less of the dangers to be avoided than of the good that will lie
+                        within our
+                        grasp if we can believe in it and let it dominate our thoughts. Science whatever unpleasant
+                        consequences it may have by the way, is in its very nature a liberator, a liberator of weight of
+                        destructive passions. We are on the there should of utter disaster or unprecedently glorious
+                        achievement. No previous age has been fraught with problems so momentous and it to science that
+                        we
+                        must look to for a happy future.
+                    </p>
+
+                    <p class="questions" id="q21">21. What does science liberates form? It is Liberate us from</p>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q21a" name="q21" value="a">
+                        <div class="label-container">
+                            <label for="q21a"> a. Fears and destructive passions </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q21b" name="q21" value="b">
+                        <div class="label-container">
+                            <label for="q21b"> b.Slavery to physical nature and from passions</label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q21c" name="q21" value="c">
+                        <div class="label-container">
+                            <label for="q21c"> c. Bondage to physical nature</label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q21d" name="q21" value="d">
+                        <div class="label-container">
+                            <label for="q21d"> d.Idealistic hopes of glorious future </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <p class="questions" id="q22">22.Should human sciences be developed because they will</p>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q22a" name="q22" value="a">
+                        <div class="label-container">
+                            <label for="q22a"> a.Provide more knowledge of the physical word </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q22b" name="q22" value="b">
+                        <div class="label-container">
+                            <label for="q22b"> b.. Make us conscious of the changing word
+                            </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q22c" name="q22" value="c">
+                        <div class="label-container">
+                            <label for="q22c">c. Make us conscious of the changing in ourselves</label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q22d" name="q22" value="d">
+                        <div class="label-container">
+                            <label for="q22d"> d. Eliminate the destruction caused by a superficial knowledge of the
+                                physical word </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <p id="q23" class="questions">23. If man's beastial yearning is controlled</p>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q23a" name="q23" value="a">
+                        <div class="label-container">
+                            <label for="q23a"> a. The future will be tolerable </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q23b" name="q23" value="b">
+                        <div class="label-container">
+                            <label for="q23b"> b. The present will be brighter than the future</label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q23c" name="q23" value="c">
+                        <div class="label-container">
+                            <label for="q23c">c.The future will be brighter than the present</label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q23d" name="q23" value="d">
+                        <div class="label-container">
+                            <label for="q23d"> d. The present will become tolerable </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <p id="q24" class="questions">24.Fears and hopes according to the author</p>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q24a" name="q24" value="a">
+                        <div class="label-container">
+                            <label for="q24a"> a.Are closely linked with the life of modern man </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q24b" name="q24" value="b">
+                        <div class="label-container">
+                            <label for="q24b"> b. Can bear fruit </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q24c" name="q24" value="c">
+                        <div class="label-container">
+                            <label for="q24c">c.Can yield good results
+                            </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q24d" name="q24" value="d">
+                        <div class="label-container">
+                            <label for="q24d">d. Are irrational
+                            </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <p id="q25" class="questions">25. To carve out a bright future man should</p>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q25a" name="q25" value="a">
+                        <div class="label-container">
+                            <label for="q25a"> a. Analyze dangers that lie ahead </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q25b" name="q25" value="b">
+                        <div class="label-container">
+                            <label for="q25b"> b. Try to avoid dangers
+                            </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q25c" name="q25" value="c">
+                        <div class="label-container">
+                            <label for="q25c">c.Overcome fear and dangers </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q25d" name="q25" value="d">
+                        <div class="label-container">
+                            <label for="q25d">d. Cultivate a positive outlook </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+
+                </section>
+                <section class="section Quantitative">
+                    <h1 id="section_title">Quantitative Abilility</h1>
+                    <p id="direction">Select the correct options.</p>
+
+                    <p id="q26" class="questions">26. If selling price is doubled, the profit triples. Find the profit
+                        percent. </p>
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q26a" name="q26" value="a">
+                        <div class="label-container">
+                            <label for="q26a">a. 66 <sup>2</sup>/ <sub>3</sub> </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q26b" name="q26" value="b">
+                        <div class="label-container">
+                            <label for="q26b">b. 100 </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q26c" name="q26" value="c">
+                        <div class="label-container">
+                            <label for="q26c">c. 100 <sup>1</sup>/ <sub>3</sub> </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q26d" name="q26" value="d">
+                        <div class="label-container">
+                            <label for="q26d">d. 100 </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <p id="q27" class="questions">27. If the price of a book is first decreased by 25% and then
+                        increased by 20%, then the net
+                        change in the price will be:</p>
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q27a" name="q27" value="a">
+                        <div class="label-container">
+                            <label for="q27a"> a. 10 </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q27b" name="q27" value="b">
+                        <div class="label-container">
+                            <label for="q27b"> b. 20 </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q27c" name="q27" value="c">
+                        <div class="label-container">
+                            <label for="q27c">c. 30 </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q27d" name="q27" value="d">
+                        <div class="label-container">
+                            <label for="q27d">d. 40 </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <p id="q28" class="questions">28.The average weight of 16 boys in a class is 50.25 kg and that of
+                        the remaining 8 boys is 45.15 kg.
+                        Find the average weights of all the boys in the class.
+                    </p>
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q28a" name="q28" value="a">
+                        <div class="label-container">
+                            <label for="q28a"> a. 47.55 </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q28b" name="q28" value="b">
+                        <div class="label-container">
+                            <label for="q28b"> b. 48 </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q28c" name="q28" value="c">
+                        <div class="label-container">
+                            <label for="q28c"> c.48.55 </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q28d" name="q28" value="d">
+                        <div class="label-container">
+                            <label for="q28d"> d. 49.25 </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <p id="q29" class="questions">29. A & B can do a piece of work in 3 days, B & C can the same work in
+                        9 days and A & C can do it
+                        in 12 days, then find the time in which A, B & C can finish the work if they working together?
+                    </p>
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q29a" name="q29" value="a">
+                        <div class="label-container">
+                            <label for="q29a"> a. 3 <sup>15</sup>/ <sub>19</sub></label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q29b" name="q29" value="b">
+                        <div class="label-container">
+                            <label for="q29b"> b. 4 <sup>15</sup>/ <sub>19</sub> </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q29c" name="q29" value="c">
+                        <div class="label-container">
+                            <label for="q29c">c. 2 <sup>15</sup>/ <sub>19</sub> </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q29d" name="q29" value="d">
+                        <div class="label-container">
+                            <label for="q29d">d. 1 <sup>15</sup>/ <sub>19</sub> </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <p id="q30" class="questions">30. 3 pumps, working 8 hours a day, can empty a tank in 2 days. How
+                        many hours a day must 4
+                        pumps work to empty the tank in 1 day?
+                    </p>
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q30a" name="q30" value="a">
+                        <div class="label-container">
+                            <label for="q30a"> a. 9 </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q30b" name="q30" value="b">
+                        <div class="label-container">
+                            <label for="q30b"> b. 10 </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q30c" name="q30" value="c">
+                        <div class="label-container">
+                            <label for="q30c"> c. 11 </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q30d" name="q30" value="d">
+                        <div class="label-container">
+                            <label for="q30d">d. 12 </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+
+                    <p id="q31" class="questions">31. Mr. Raju invested an amount of Rs.13,900 divided in two different
+                        schemes A and B at the
+                        simple interest rate of 14% p.a. and 11% p.a. respectively. If the total amount of simple
+                        interest
+                        earned in 2 years be Rs. 3508, what was the amount invested in Scheme B?
+                    </p>
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q31a" name="q31" value="a">
+                        <div class="label-container">
+                            <label for="q31a"> a. 6400</label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q31b" name="q31" value="b">
+                        <div class="label-container">
+                            <label for="q31b"> b. 6500 </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q31c" name="q31" value="c">
+                        <div class="label-container">
+                            <label for="q31c"> c. 7200 </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q31d" name="q31" value="d">
+                        <div class="label-container">
+                            <label for="q31d"> d. 7500 </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <p id="q32" class="questions">32. Two numbers are respectively 20% and 50% more than a third number.
+                        The ratio of the two
+                        numbers is:</p>
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q32a" name="q32" value="a">
+                        <div class="label-container">
+                            <label for="q32a"> a. 2:5 </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q32b" name="q32" value="b">
+                        <div class="label-container">
+                            <label for="q32b"> b. 3:5 </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q32c" name="q32" value="c">
+                        <div class="label-container">
+                            <label for="q32c">c. 4:5 </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q32d" name="q32" value="d">
+                        <div class="label-container">
+                            <label for="q32d"> d. 6:7 </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <p id="q33" class="questions">33. <sup>469+174 <sup>2</sup>+469-174 <sup>2</sup></sup>/
+                        <sub>469*174</sub> </p>
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q33a" name="q33" value="a">
+                        <div class="label-container">
+                            <label for="q33a"> a. 2
+
+                            </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q33b" name="q33" value="b">
+                        <div class="label-container">
+                            <label for="q33b"> b. 4
+
+
+                            </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q33c" name="q33" value="c">
+                        <div class="label-container">
+                            <label for="q33c">c. 295
+
+                            </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q33d" name="q33" value="d">
+                        <div class="label-container">
+                            <label for="q33d"> d. 643
+
+
+                            </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <p id="q34" class="questions">34. . One card is drawn at random from a pack of 52 cards. What is the
+                        probability that the card drawn
+                        is a face card Jack, Queen and King only.?</p>
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q34a" name="q34" value="a">
+                        <div class="label-container">
+                            <label for="q34a"> a. <sup>1</sup>/<sub>13</sub> </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q34b" name="q34" value="b">
+                        <div class="label-container">
+                            <label for="q34b"> b. <sup>3</sup>/<sub>13</sub> </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q34c" name="q34" value="c">
+                        <div class="label-container">
+                            <label for="q34c">c.
+                                <sup>1</sup>/<sub>4</sub> </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q34d" name="q34" value="d">
+                        <div class="label-container">
+                            <label for="q34d">d. <sup>9</sup>/<sub>52</sub> </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <p id="q35" class="questions">35.The difference of two numbers is 1365. On dividing the larger
+                        number by the smaller, we get 6 as
+                        quotient and the 15 as remainder. What is the smaller number?</p>
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q35a" name="q35" value="a">
+                        <div class="label-container">
+                            <label for="q35a"> a. 270 </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q35b" name="q35" value="b">
+                        <div class="label-container">
+                            <label for="q35b"> b. 240 </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q35c" name="q35" value="c">
+                        <div class="label-container">
+                            <label for="q35c">c. 295 </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q35d" name="q35" value="d">
+                        <div class="label-container">
+                            <label for="q35d">d. 360 </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <p id="q36" class="questions">36. ? - 19657 - 33994 = 9999
+                    </p>
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q36a" name="q36" value="a">
+                        <div class="label-container">
+                            <label for="q36a"> a.63650 </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q36b" name="q36" value="b">
+                        <div class="label-container">
+                            <label for="q36b"> b. 61560 </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q36c" name="q36" value="c">
+                        <div class="label-container">
+                            <label for="q36c">c. 59640 </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q36d" name="q36" value="d">
+                        <div class="label-container">
+                            <label for="q36d">d. 53760 </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <p id="q37" class="questions">37.A and B invest in a business is the ratio 3:2. If 5% of the total
+                        profit goes to charity and A's share
+                        is Rs 855, the total profit is:
+                    </p>
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q37a" name="q37" value="a">
+                        <div class="label-container">
+                            <label for="q37a"> a. 1425 </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q37b" name="q37" value="b">
+                        <div class="label-container">
+                            <label for="q37b"> b. 1500 </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q37c" name="q37" value="c">
+                        <div class="label-container">
+                            <label for="q37c">c. 1537.50 </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q37d" name="q37" value="d">
+                        <div class="label-container">
+                            <label for="q37d">d. 1576 </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <p id="q38" class="questions">38. A man takes 5 hours 45 minutes in walking to a certain place and
+                        riding back. He would have
+                        gained 2 hours by riding both ways. The time he would take to walk both ways is:</p>
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q38a" name="q38" value="a">
+                        <div class="label-container">
+                            <label for="q38a"> a. 3 hrs 45 min </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q38b" name="q38" value="b">
+                        <div class="label-container">
+                            <label for="q38b"> b. 7 hrs 30 min </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q38c" name="q38" value="c">
+                        <div class="label-container">
+                            <label for="q38c"> c. 7 hrs 45 min </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q38d" name="q38" value="d">
+                        <div class="label-container">
+                            <label for="q38d"> d. 11 hrs 45 min </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <p id="q39" class="questions">39. What least number must be added to 1056 so that the sum is
+                        completely divisible by 23?</p>
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q39a" name="q39" value="a">
+                        <div class="label-container">
+                            <label for="q39a"> a. 3 </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q39b" name="q39" value="b">
+                        <div class="label-container">
+                            <label for="q39b"> b. 21 </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q39c" name="q39" value="c">
+                        <div class="label-container">
+                            <label for="q39c">c. 18 </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q39d" name="q39" value="d">
+                        <div class="label-container">
+                            <label for="q39d">d. 2 </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <p id="q40" class="questions">40. A library has an average of 510 visitors on Sundays and 240 on
+                        other days. The average number
+                        of visitors per day in a month of 30 days beginning with a Sunday is:
+                    </p>
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q40a" name="q40" value="a">
+                        <div class="label-container">
+                            <label for="q40a"> a. 276 </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q40b" name="q40" value="b">
+                        <div class="label-container">
+                            <label for="q40b"> b. 280 </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q40c" name="q40" value="c">
+                        <div class="label-container">
+                            <label for="q40c"> c. 285 </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q40d" name="q40" value="d">
+                        <div class="label-container">
+                            <label for="q40d">d. 250 </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <p id="q41" class="questions">41. How much is 80% of 40 is greater than 4/5 of 25? </p>
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q41a" name="q41" value="a">
+                        <div class="label-container">
+                            <label for="q41a"> a. 12</label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q41b" name="q41" value="b">
+                        <div class="label-container">
+                            <label for="q41b"> b. 11 </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q41c" name="q41" value="c">
+                        <div class="label-container">
+                            <label for="q41c"> c. 10 </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q41d" name="q41" value="d">
+                        <div class="label-container">
+                            <label for="q41d"> d. 13 </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <p id="q42" class="questions">42. The H.C.F of two number is 11 and their L.C.M is 7700. If one of
+                        the number is 275, than the
+                        other number is:</p>
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q42a" name="q42" value="a">
+                        <div class="label-container">
+                            <label for="q42a"> a. 308 </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q42b" name="q42" value="b">
+                        <div class="label-container">
+                            <label for="q42b"> b. 208 </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q42c" name="q42" value="c">
+                        <div class="label-container">
+                            <label for="q42c">c. 318</label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q42d" name="q42" value="d">
+                        <div class="label-container">
+                            <label for="q42d"> d. 283</label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <p id="q43" class="questions">43. If A: B=2:3, B:C=4:5 and C:D=5:9 than A:D is equal to:</p>
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q43a" name="q43" value="a">
+                        <div class="label-container">
+                            <label for="q43a"> a. 11:17 </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q43b" name="q43" value="b">
+                        <div class="label-container">
+                            <label for="q43b"> b. 8:27 </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q43c" name="q43" value="c">
+                        <div class="label-container">
+                            <label for="q43c">c. 5:9</label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q43d" name="q43" value="d">
+                        <div class="label-container">
+                            <label for="q43d"> d. 2:9 </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <p id="q44" class="questions">44.A cow is tied with a rope of 14 cm length at the corner of a
+                        rectangular field of dimensions 20cm
+                        * 16 cm. The area of the field where a cow can graze is:</p>
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q44a" name="q44" value="a">
+                        <div class="label-container">
+                            <label for="q44a"> a. 144 cm<sup>2</sup> </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q44b" name="q44" value="b">
+                        <div class="label-container">
+                            <label for="q44b"> b. 169 cm<sup>2</sup> </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q44c" name="q44" value="c">
+                        <div class="label-container">
+                            <label for="q44c">c. 76 cm<sup>2</sup> </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q44d" name="q44" value="d">
+                        <div class="label-container">
+                            <label for="q44d">d. 154 cm<sup>2</sup> </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <p id="q45" class="questions">45. . In a box, there are 8 red, 7 blue and 6 green balls. One ball is
+                        picked up randomly. What is the
+                        probability that it is neither red nor green?</p>
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q45a" name="q45" value="a">
+                        <div class="label-container">
+                            <label for="q45a"> a. &frac13; </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q45b" name="q45" value="b">
+                        <div class="label-container">
+                            <label for="q45b"> b. &frac34; </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q45c" name="q45" value="c">
+                        <div class="label-container">
+                            <label for="q45c">c. <sup>7</sup>/<sub>19</sub> </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q45d" name="q45" value="d">
+                        <div class="label-container">
+                            <label for="q45d">d. <sup>8</sup>/<sub>21</sub> </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <p id="q46" class="questions">46. A man buys Rs. 20 shares paying 9% dividend. The man wants to have
+                        an interest of 12% on his
+                        money. The market value of each share is:</p>
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q46a" name="q46" value="a">
+                        <div class="label-container">
+                            <label for="q46a"> a. 12 </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q46b" name="q46" value="b">
+                        <div class="label-container">
+                            <label for="q46b"> b. 15 </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q46c" name="q46" value="c">
+                        <div class="label-container">
+                            <label for="q46c">c. 18</label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q46d" name="q46" value="d">
+                        <div class="label-container">
+                            <label for="q46d">d. 21 </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <p id="q47" class="questions">47. A person crosses a 600 m long street in 5 minutes. What is his
+                        speed in km per hour?</p>
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q47a" name="q47" value="a">
+                        <div class="label-container">
+                            <label for="q47a"> a. 3.6 </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q47b" name="q47" value="b">
+                        <div class="label-container">
+                            <label for="q47b"> b. 10 </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q47c" name="q47" value="c">
+                        <div class="label-container">
+                            <label for="q47c">c. 8.4 </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q47d" name="q47" value="d">
+                        <div class="label-container">
+                            <label for="q47d">d. 7.2 </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <p id="q48" class="questions">48. The average weight of a person increases by 2.5 kg when a new
+                        person comes in place of one of
+                        them weighing 55 kg. What might be the weight of the new person?
+                    </p>
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q48a" name="q48" value="a">
+                        <div class="label-container">
+                            <label for="q48a"> a. 76 kg </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q48b" name="q48" value="b">
+                        <div class="label-container">
+                            <label for="q48b"> b. 76.5 kg </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q48c" name="q48" value="c">
+                        <div class="label-container">
+                            <label for="q48c"> c. 85 kg</label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q48d" name="q48" value="d">
+                        <div class="label-container">
+                            <label for="q48d"> d. Data Inadequate </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <p id="q49" class="questions">49. 7 years ago, the ages in years. of A and & were in the ratio 4:5
+                        and 7 years hence they will be in
+                        the ratio 5:6. The present age of B is:</p>
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q49a" name="q49" value="a">
+                        <div class="label-container">
+                            <label for="q49a"> a. 56 years </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q49b" name="q49" value="b">
+                        <div class="label-container">
+                            <label for="q49b"> b. 63 years </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q49c" name="q49" value="c">
+                        <div class="label-container">
+                            <label for="q49c">c. 70 years </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q49d" name="q49" value="d">
+                        <div class="label-container">
+                            <label for="q49d">d. 77 years </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <p id="q50" class="questions">50. There are 17 students in a Nepali class and 30 students in an
+                        English class. Find the number of
+                        students who are either in a Nepali class or in an English class, if the two classes meet at
+                        different
+                        hours and 8 students are enrolled in both courses.
+                    </p>
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q50a" name="q50" value="a">
+                        <div class="label-container">
+                            <label for="q50a"> a. 39</label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q50b" name="q50" value="b">
+                        <div class="label-container">
+                            <label for="q50b"> b. 37 </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q50c" name="q50" value="c">
+                        <div class="label-container">
+                            <label for="q50c"> c. 38 </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q50d" name="q50" value="d">
+                        <div class="label-container">
+                            <label for="q50d">d. 35</label>
+                        </div>
+                        <hr>
+                    </div>
+
+                </section>
+
+                <section class="section Logical">
+
+                    <h1 id="section_title">Logical Reasoning</h1>
+                    <p id="direction">Direction: Select the pair of words which best express the relationship similar to
+                        that expressed
+                        in the pair in bold letters.</p>
+
+                    <p id="q51" class="questions">51.Paddy : Field ::</p>
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q51a" name="q51" value="a">
+                        <div class="label-container">
+                            <label for="q51a"> a. Steel: Factory</label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q51b" name="q51" value="b">
+                        <div class="label-container">
+                            <label for="q51b">b. Wheat: Fertilizer </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q51c" name="q51" value="c">
+                        <div class="label-container">
+                            <label for="q51c">c. Wagon: Mine </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q51d" name="q51" value="d">
+                        <div class="label-container">
+                            <label for="q51d">d. Village: Farmer </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <p id="q52" class="questions">52. Dhangadi: Kailali ::</p>
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q52a" name="q52" value="a">
+                        <div class="label-container">
+                            <label for="q52a">a. Kathmandu: Nepal </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q52b" name="q52" value="b">
+                        <div class="label-container">
+                            <label for="q52b">b. Butwal: bhairahawa </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q52c" name="q52" value="c">
+                        <div class="label-container">
+                            <label for="q52c">c. Birgunj: Parsa </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q52d" name="q52" value="d">
+                        <div class="label-container">
+                            <label for="q52d"> d. Bharatpur: Ratnanagar </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <p id="q53" class="questions">53. Platform: Train ::</p>
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q53a" name="q53" value="a">
+                        <div class="label-container">
+                            <label for="q53a">a. Aeroplane: Aerodrome </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q53b" name="q53" value="b">
+                        <div class="label-container">
+                            <label for="q53b"> b. Hotel: Tourist</label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q53c" name="q53" value="c">
+                        <div class="label-container">
+                            <label for="q53c">c. Quay: Ship </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q53d" name="q53" value="d">
+                        <div class="label-container">
+                            <label for="q53d"> d. Footpath: Traveller </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <p id="q54" class="questions">54. Ink: Paper:</p>
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q54a" name="q54" value="a">
+                        <div class="label-container">
+                            <label for="q54a"> a. Door: Handle </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q54b" name="q54" value="b">
+                        <div class="label-container">
+                            <label for="q54b">b. Dog: Tail </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q54c" name="q54" value="c">
+                        <div class="label-container">
+                            <label for="q54c">c. Chalk: Blackboard </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q54d" name="q54" value="d">
+                        <div class="label-container">
+                            <label for="q54d">d. Speak: Sing</label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <p id="q55" class="questions">55. Always: Never::</p>
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q55a" name="q55" value="a">
+                        <div class="label-container">
+                            <label for="q55a">a. Occasionally: Repeatedly </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q55b" name="q55" value="b">
+                        <div class="label-container">
+                            <label for="q55b"> b. Often: Rarely
+                            </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q55c" name="q55" value="c">
+                        <div class="label-container">
+                            <label for="q55c">c. Words: Author </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q55d" name="q55" value="d">
+                        <div class="label-container">
+                            <label for="q55d">d. Humid: Hot</label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+
+
+                    <p id="q56" class="questions">56. Sugar: Sweet ::</p>
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q56a" name="q56" value="a">
+                        <div class="label-container">
+                            <label for="q56a">a. Ice: Cold </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q56b" name="q56" value="b">
+                        <div class="label-container">
+                            <label for="q56b">b. Butter: Cow </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q56c" name="q56" value="c">
+                        <div class="label-container">
+                            <label for="q56c">c. Attack: Fail </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q56d" name="q56" value="d">
+                        <div class="label-container">
+                            <label for="q56d">d. Wine: Grapes </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <p id="q57" class="questions">57. Track: Train ::</p>
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q57a" name="q57" value="a">
+                        <div class="label-container">
+                            <label for="q57a">a. Sea: Ship. </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q57b" name="q57" value="b">
+                        <div class="label-container">
+                            <label for="q57b"> b. Radiation: Bomb </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q57c" name="q57" value="c">
+                        <div class="label-container">
+                            <label for="q57c">c. Map: Terrain </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q57d" name="q57" value="d">
+                        <div class="label-container">
+                            <label for="q57d">d. Road: Car </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <p id="q58" class="questions">58. Kaski: Pokhara ::</p>
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q58a" name="q58" value="a">
+                        <div class="label-container">
+                            <label for="q58a">a. Kathamdnu: Nepal </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q58b" name="q58" value="b">
+                        <div class="label-container">
+                            <label for="q58b"> b. Butwal: Bhairahawa</label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q58c" name="q58" value="c">
+                        <div class="label-container">
+                            <label for="q58c">c. Jhapa: Bhadrapur </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q58d" name="q58" value="d">
+                        <div class="label-container">
+                            <label for="q58d">d. Biratnagar: Itahari
+                            </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+
+
+                    <p id="q59" class="questions">59. Rent: Land::</p>
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q59a" name="q59" value="a">
+                        <div class="label-container">
+                            <label for="q59a">a. Wages: Bonuses</label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q59b" name="q59" value="b">
+                        <div class="label-container">
+                            <label for="q59b">b. Interest: Capital
+                            </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q59c" name="q59" value="c">
+                        <div class="label-container">
+                            <label for="q59c">c. Share: Profit </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q59d" name="q59" value="d">
+                        <div class="label-container">
+                            <label for="q59d">d. Income: Salary </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <p id="q60" class="questions">60. Monday: Tuesday ::</p>
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q60a" name="q60" value="a">
+                        <div class="label-container">
+                            <label for="q60a">a. January: February </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q60b" name="q60" value="b">
+                        <div class="label-container">
+                            <label for="q60b">b. Working day: Holiday </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q60c" name="q60" value="c">
+                        <div class="label-container">
+                            <label for="q60c">c. December: Sunday </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q60d" name="q60" value="d">
+                        <div class="label-container">
+                            <label for="q60d">d. Winter: Summer</label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <p id="direction" id>Directions: find the odd one out</p>
+                    <p class="questions" id="q61">61. Select the odd one</p>
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q61a" name="q61" value="a">
+                        <div class="label-container">
+                            <label for="q61a">a. IBM</label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q61b" name="q61" value="b">
+                        <div class="label-container">
+                            <label for="q61b">b.Hewlett-Packard </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q61c" name="q61" value="c">
+                        <div class="label-container">
+                            <label for="q61c">c. Apple </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q61d" name="q61" value="d">
+                        <div class="label-container">
+                            <label for="q61d">d. orange </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <p class="questions" id="q62">62. Select the odd one</p>
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q62a" name="q62" value="a">
+                        <div class="label-container">
+                            <label for="q62a">a.Uncle </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q62b" name="q62" value="b">
+                        <div class="label-container">
+                            <label for="q62b">b. Aunt </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q62c" name="q62" value="c">
+                        <div class="label-container">
+                            <label for="q62c">c.Sister-in law </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q62d" name="q62" value="d">
+                        <div class="label-container">
+                            <label for="q62d">d. Brother </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <p class="questions" id="q63">63. Select the odd one.</p>
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q63a" name="q63" value="a">
+                        <div class="label-container">
+                            <label for="q63a">a.. Aero plane </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q63b" name="q63" value="b">
+                        <div class="label-container">
+                            <label for="q63">b.Rocket </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q63c" name="q63" value="c">
+                        <div class="label-container">
+                            <label for="q63c">c. Bullet Train</label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q63d" name="q63" value="d">
+                        <div class="label-container">
+                            <label for="q63d">d. Jet Plane </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <p class="questions" id="q64">64. Select the odd one. </p>
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q64a" name="q64" value="a">
+                        <div class="label-container">
+                            <label for="q64a">a. Nylon </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q64b" name="q64" value="b">
+                        <div class="label-container">
+                            <label for="q64b">b. Jute </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q64c" name="q64" value="c">
+                        <div class="label-container">
+                            <label for="q64c">c. Cotton </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q64d" name="q64" value="d">
+                        <div class="label-container">
+                            <label for="q64d">d. Wool </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <p class="questions" id="q65">65. Select the odd one.</p>
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q65a" name="q65" value="a">
+                        <div class="label-container">
+                            <label for="q65a">a. Accelerator </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q65b" name="q65" value="b">
+                        <div class="label-container">
+                            <label for="q65b">b. Petrol </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q65c" name="q65" value="c">
+                        <div class="label-container">
+                            <label for="q65c">c. Brake </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q65d" name="q65" value="d">
+                        <div class="label-container">
+                            <label for="q65d">d. Steering Wheel </label>
+                        </div>
+                        <hr>
+                    </div>
+
+                    <p id="direction">Direction: Select logically best answer for the question 66 to 70.</p>
+                    <p class="questions" id="q66">66. 'Do not take sugar because you have diabetes' is logically similar
+                        to,
+                    </p>
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q66a" name="q66" value="a">
+                        <div class="label-container">
+                            <label for="q66a">a. Do not read as you have weak sight. </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q66b" name="q66" value="b">
+                        <div class="label-container">
+                            <label for="q66b">b. Do not speak as you are not asked to speak </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q66c" name="q66" value="c">
+                        <div class="label-container">
+                            <label for="q66c">c. Do not play as you are hurt </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q66d" name="q66" value="d">
+                        <div class="label-container">
+                            <label for="q66d">d. Do not work as you are already overworked </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <p class="questions" id="q67">67.'He will not, tolerate insult because he is self-respecting' is
+                        logically similar to
+                    </p>
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q67a" name="q67" value="a">
+                        <div class="label-container">
+                            <label for="q67a">a. He can buy costly things because he is a rich man. </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q67b" name="q67" value="b">
+                        <div class="label-container">
+                            <label for="q67b">b. This is trivial so a fastidious person will not accept it. </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q67c" name="q67" value="c">
+                        <div class="label-container">
+                            <label for="q67c">c. He is unhappy as he failed.
+                            </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q67d" name="q67" value="d">
+                        <div class="label-container">
+                            <label for="q67d">d. He has compassion for all because he is conscientious </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <p class="questions" id="q68">68.'Where there is a will there is a way' is logically similar to,
+                    </p>
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q68a" name="q68" value="a">
+                        <div class="label-container">
+                            <label for="q68a">a. There is a solute to every problem</label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q68b" name="q68" value="b">
+                        <div class="label-container">
+                            <label for="q68b">b. Determined person can always find way outs for any problems </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q68c" name="q68" value="c">
+                        <div class="label-container">
+                            <label for="q68c">c. Those who pray can accomplish task.
+                            </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q68d" name="q68" value="d">
+                        <div class="label-container">
+                            <label for="q68d">d. We have to construct roads to enhance accessibility </label>
+                        </div>
+                        <hr>
+                    </div>
+
+                    <p class="questions" id="q69">69.Empty vessels make much noise' is logically similar to
+                    </p>
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q69a" name="q69" value="a">
+                        <div class="label-container">
+                            <label for="q69a">a. Wise people do not talk much </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q69b" name="q69" value="b">
+                        <div class="label-container">
+                            <label for="q69b">b. Fools generally praise themselves </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q69c" name="q69" value="c">
+                        <div class="label-container">
+                            <label for="q69c">c. Cowards die many times before their natural death </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q69d" name="q69" value="d">
+                        <div class="label-container">
+                            <label for="q69d">d. Empty vessels and people are similar </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <p class="questions" id="q70">70. 'Read In order to increase knowledge' is logically similar to,</p>
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q70a" name="q70" value="a">
+                        <div class="label-container">
+                            <label for="q70a">a. If you want to build your body, take exercise.
+                            </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q70b" name="q70" value="b">
+                        <div class="label-container">
+                            <label for="q70b">b. Speak to relieve your tension. </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q70c" name="q70" value="c">
+                        <div class="label-container">
+                            <label for="q70c">c. Pay only when you have obtained services </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q70d" name="q70" value="d">
+                        <div class="label-container">
+                            <label for="q70d">d. If you want to earn, do not cheat others </label>
+                        </div>
+                        <hr>
+                    </div>
+
+                    <p id="direction">Direction: Bucket of Question:</p>
+                    <p class="questions" id="q71">71. If 'blue' means 'green', 'green' means 'yellow', 'yellow' means
+                        'orange', 'orange' means 'black",
+                        "black" means 'white', 'white' means 'red', 'red' means 'pink', 'pink' means 'brown', 'brown'
+                        means 'grey',
+                        then what is the color of human blood? </p>
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q71a" name="q71" value="a">
+                        <div class="label-container">
+                            <label for="q71a">a. Black </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q71b" name="q71" value="b">
+                        <div class="label-container">
+                            <label for="q71b">b. Red </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q71c" name="q71" value="c">
+                        <div class="label-container">
+                            <label for="q71c">c. White </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q71d" name="q71" value="d">
+                        <div class="label-container">
+                            <label for="q71d">d.Orange </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <p class="questions" id="q72">72.If LIFE is coded as FELI, how is MORE coded as </p>
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q72a" name="q72" value="a">
+                        <div class="label-container">
+                            <label for="q72a">a. EROM </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q72b" name="q72" value="b">
+                        <div class="label-container">
+                            <label for="q72b">b. OREM </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q72c" name="q72" value="c">
+                        <div class="label-container">
+                            <label for="q72c">c. REMO </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q72d" name="q72" value="d">
+                        <div class="label-container">
+                            <label for="q72d">d. MERO </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <p class="questions" id="q73">73.Joe went 35 meters towards east from Mary's house He farms left and
+                        walks 15 meters. Now, he
+                        takes left turn and walks 50 meters. Finally, he turns left and walks for 15 meters. How far Joe
+                        is from
+                        Mary's house?
+                    </p>
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q73a" name="q73" value="a">
+                        <div class="label-container">
+                            <label for="q73a">a. 30 </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q73b" name="q73" value="b">
+                        <div class="label-container">
+                            <label for="q73b">b. 45 </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q73c" name="q73" value="c">
+                        <div class="label-container">
+                            <label for="q73c">c. 150</label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q73d" name="q73" value="d">
+                        <div class="label-container">
+                            <label for="q73d">d. 65 </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <p class="questions" id="q74">74. .Choose the number which is different from other in group.</p>
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q74a" name="q74" value="a">
+                        <div class="label-container">
+                            <label for="q74a">a. 72-12 </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q74b" name="q74" value="b">
+                        <div class="label-container">
+                            <label for="q74b">b. 48-24 </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q74c" name="q74" value="c">
+                        <div class="label-container">
+                            <label for="q74c">c. 120-74 </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q74d" name="q74" value="d">
+                        <div class="label-container">
+                            <label for="q74d">d. 98-84</label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <p class="questions" id="q75">75. Pointing to an old women, Aryan said,” Her son is my son’s uncle”.
+                        How is Aryan related to old woman?</p>
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q75a" name="q75" value="a">
+                        <div class="label-container">
+                            <label for="q75a">a. Mother </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q75b" name="q75" value="b">
+                        <div class="label-container">
+                            <label for="q75b">b. Sister </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q75c" name="q75" value="c">
+                        <div class="label-container">
+                            <label for="q75c">c. Son </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q75d" name="q75" value="d">
+                        <div class="label-container">
+                            <label for="q75d">d. Daughter</label>
+                        </div>
+                        <hr>
+                    </div>
+
+                </section>
+                <section class="section GK">
+                    <h1 id="section_title">General Awareness</h1>
+                    <p id="direction">Select the correct option from the given options.</p>
+                    <p id="q76" class="questions">76. A Who is the first ever elected president of Nepal?</p>
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q76a" name="q76" value="a">
+                        <div class="label-container">
+                            <label for="q76a">a. Ram Prit Pawan </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q76b" name="q76" value="b">
+                        <div class="label-container">
+                            <label for="q76b">b.Dr. Rambaran Yadav </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q76c" name="q76" value="c">
+                        <div class="label-container">
+                            <label for="q76c">c. Ram Raja Parsad Singh </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q76d" name="q76" value="d">
+                        <div class="label-container">
+                            <label for="q76d">d. Mrs. Shanta Shrestha </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <p id="q77" class="questions">77. Which country introduced chess for the first time?</p>
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q77a" name="q77" value="a">
+                        <div class="label-container">
+                            <label for="q77a">a. India </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q77b" name="q77" value="b">
+                        <div class="label-container">
+                            <label for="q77b">b. China </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q77c" name="q77" value="c">
+                        <div class="label-container">
+                            <label for="q77c">c. Pakistan </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q77d" name="q77" value="d">
+                        <div class="label-container">
+                            <label for="q77d">d. USA </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <p id="q78" class="questions">78. Which country of world passes budget two times in a year?</p>
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q78a" name="q78" value="a">
+                        <div class="label-container">
+                            <label for="q78a"> a. India </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q78b" name="q78" value="b">
+                        <div class="label-container">
+                            <label for="q78b"> b. France </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q78c" name="q78" value="c">
+                        <div class="label-container">
+                            <label for="q78c"> c. Sweden </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q78d" name="q78" value="d">
+                        <div class="label-container">
+                            <label for="q78d"> d. Indonesia </label>
+                        </div>
+                        <hr>
+                    </div>
+
+                   <p  id="q77" class="questions">79. Which desert is known as man-made desert?</p>
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q79a" name="q79" value="a">
+                        <div class="label-container">
+                            <label for="q79a">a. Thar </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q79b" name="q79" value="b">
+                        <div class="label-container">
+                            <label for="q79b">b. Sahara </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q79c" name="q79" value="c">
+                        <div class="label-container">
+                            <label for="q79c">c. Deccan </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q79d" name="q79" value="d">
+                        <div class="label-container">
+                            <label for="q79d">d. Colorado </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <p id="q80" class="questions">80. Who was awarded the golden boot in world cup 2022?</p>
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q80a" name="q80" value="a">
+                        <div class="label-container">
+                            <label for="q80a"> a. Snijder. W. </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q80b" name="q80" value="b">
+                        <div class="label-container">
+                            <label for="q80b"> b. David Villa</label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q80c" name="q80" value="c">
+                        <div class="label-container">
+                            <label for="q80c"> c. Leo Messi </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q80d" name="q80" value="d">
+                        <div class="label-container">
+                            <label for="q80d">d. Kylian Mbappé</label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <p id="q81" class="questions">81. Who was the first elected prime minister of Nepal?</p>
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q81a" name="q81" value="a">
+                        <div class="label-container">
+                            <label for="q81a"> a. KP Sharma Oli </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q81b" name="q81" value="b">
+                        <div class="label-container">
+                            <label for="q81b"> b. BP Koirala </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q81c" name="q81" value="c">
+                        <div class="label-container">
+                            <label for="q81c"> c. Puspa Kamal Dahal </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q81d" name="q81" value="d">
+                        <div class="label-container">
+                            <label for="q81d"> d. Susil Koirala </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <p id="q82" class="questions">82. For galvanizing Iron which of the following metals is used?
+                    </p>
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q82a" name="q82" value="a">
+                        <div class="label-container">
+                            <label for="q82a">a. Aluminum </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q82b" name="q82" value="b">
+                        <div class="label-container">
+                            <label for="q82b">b. Copper </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q82c" name="q82" value="c">
+                        <div class="label-container">
+                            <label for="q82c">c. Lead </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q82d" name="q82" value="d">
+                        <div class="label-container">
+                            <label for="q82d"> d. Zinc </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <p id="q83" class="questions">83. The Euro zone crisis is related to</p>
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q83a" name="q83" value="a">
+                        <div class="label-container">
+                            <label for="q83a">a. Current Crisis </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q83b" name="q83" value="b">
+                        <div class="label-container">
+                            <label for="q83b">b. Financial and economic crisis </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q83c" name="q83" value="c">
+                        <div class="label-container">
+                            <label for="q83c">c. Crus resulting from continued appreciation of dollar </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q83d" name="q83" value="d">
+                        <div class="label-container">
+                            <label for="q83d"> d. Sovereign debt </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <p id="q84" class="questions">84. SAARC consists of members</p>
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q84a" name="q84" value="a">
+                        <div class="label-container">
+                            <label for="q84a">a.7 </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q84b" name="q84" value="b">
+                        <div class="label-container">
+                            <label for="q84b">b. 8 </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q84c" name="q84" value="c">
+                        <div class="label-container">
+                            <label for="q84c">c.10</label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q84d" name="q84" value="d">
+                        <div class="label-container">
+                            <label for="q84d">d. 12</label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <p id="q85" class="questions">85. Which festival is celebrated by the Newar community to commemorate
+                        those who have passed
+                        away in the past year?</p>
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q85a" name="q85" value="a">
+                        <div class="label-container">
+                            <label for="q85a">a. Dashain </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q85b" name="q85" value="b">
+                        <div class="label-container">
+                            <label for="q85b">b. Tihar</label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q85c" name="q85" value="c">
+                        <div class="label-container">
+                            <label for="q85c">c. Gai Jatra </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q85d" name="q85" value="d">
+                        <div class="label-container">
+                            <label for="q85d">d. Holi </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <p id="q86" class="questions">86.
+                        The first person to climb all peaks above 8000 m is:</p>
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q86a" name="q86" value="a">
+                        <div class="label-container">
+                            <label for="q86a">a. Rinhold Messner </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q86b" name="q86" value="b">
+                        <div class="label-container">
+                            <label for="q86b">b. Babu chhiring Sherpa </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q86c" name="q86" value="c">
+                        <div class="label-container">
+                            <label for="q86c">c. U Jong T </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q86d" name="q86" value="d">
+                        <div class="label-container">
+                            <label for="q86d">d. Edmund Hillary </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <p id="q87" class="questions">87.
+                        When was the Nepal Rastra Bank established?</p>
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q87a" name="q87" value="a">
+                        <div class="label-container">
+                            <label for="q87a">a. April 26, 1956 </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q87b" name="q87" value="b">
+                        <div class="label-container">
+                            <label for="q87b">b. January 1, 1960 </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q87c" name="q87" value="c">
+                        <div class="label-container">
+                            <label for="q87c">c.March 15, 1955 </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q87d" name="q87" value="d">
+                        <div class="label-container">
+                            <label for="q87d">d. December 31, 1957 </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <p id="q88" class="questions">88.
+                        "Bulls and Bears" is a term associated with</p>
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q88a" name="q88" value="a">
+                        <div class="label-container">
+                            <label for="q88a"> a. Parliamentary affairs </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q88b" name="q88" value="b">
+                        <div class="label-container">
+                            <label for="q88b"> b. Bullfights </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q88c" name="q88" value="c">
+                        <div class="label-container">
+                            <label for="q88c"> c. Racing </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q88d" name="q88" value="d">
+                        <div class="label-container">
+                            <label for="q88d"> d. Stock exchange </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <p id="q89">
+                        89. Who invented the ballpoint pen
+
+                    </p>
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q89a" name="q89" value="a">
+                        <div class="label-container">
+                            <label for="q89a">a.
+                                Biro brothers
+
+                            </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q89b" name="q89" value="b">
+                        <div class="label-container">
+                            <label for="q89b">b.
+                                Waterman brothers
+
+
+                            </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q89c" name="q89" value="c">
+                        <div class="label-container">
+                            <label for="q89c">c.
+                                Bice brothers
+
+
+                            </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q89d" name="q89" value="d">
+                        <div class="label-container">
+                            <label for="q89d">d.
+                                Write brothers
+
+
+                            </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <p id="q90" class="questions"> 90.
+                        The hardest metal of the human body is
+
+                    </p>
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q90a" name="q90" value="a">
+                        <div class="label-container">
+                            <label for="q90a"> a.
+
+                                Bones
+                            </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q90b" name="q90" value="b">
+                        <div class="label-container">
+                            <label for="q90b"> b.
+                                Enamel
+
+                            </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q90c" name="q90" value="c">
+                        <div class="label-container">
+                            <label for="q90c"> c.
+
+                                Nails
+                            </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q90d" name="q90" value="d">
+                        <div class="label-container">
+                            <label for="q90d">d.
+                                Head
+
+                            </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <p id="q91" class="questions">
+                        91.
+                        Which is the coldest planet?
+
+
+
+                    </p>
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q91a" name="q91" value="a">
+                        <div class="label-container">
+                            <label for="q91a"> a..
+
+                                Jupiter
+                            </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q91b" name="q91" value="b">
+                        <div class="label-container">
+                            <label for="q91b"> b.
+                                Mercury
+
+                            </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q91c" name="q91" value="c">
+                        <div class="label-container">
+                            <label for="q91c"> c.
+                                Neptune
+
+                            </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q91d" name="q91" value="d">
+                        <div class="label-container">
+                            <label for="q91d"> d.
+
+                                Earth
+                            </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <p id="q92" class="questions">
+
+                        92.Which scientist discovered the radioactive element radium?
+
+
+                    </p>
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q92a" name="q92" value="a">
+                        <div class="label-container">
+                            <label for="q92a">a.
+                                Isaac Newton
+
+                            </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q92b" name="q92" value="b">
+                        <div class="label-container">
+                            <label for="q92b">b.
+                                Albert Einstein
+
+                            </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q92c" name="q92" value="c">
+                        <div class="label-container">
+                            <label for="q92c">c.
+                                Benjamin Franklin
+
+                            </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q92d" name="q92" value="d">
+                        <div class="label-container">
+                            <label for="q92d"> d.
+                                Marie Curie
+
+
+                            </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <p id="q93" class="questions">
+                        93.
+                        Which city hosted the 2024 Olympics?
+
+
+                    </p>
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q93a" name="q93" value="a">
+                        <div class="label-container">
+                            <label for="q93a">a.
+                                Paris
+                            </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q93b" name="q93" value="b">
+                        <div class="label-container">
+                            <label for="q93b">b.
+                                Rome
+
+                            </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q93c" name="q93" value="c">
+                        <div class="label-container">
+                            <label for="q93c">c.
+                                Los Angeles
+
+                            </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q93d" name="q93" value="d">
+                        <div class="label-container">
+                            <label for="q93d"> d.
+                                Geneva
+
+                            </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <p id="q94" class="questions">
+                        94. What is the S.I unit of Pressure Energy?
+
+
+                    </p>
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q94a" name="q94" value="a">
+                        <div class="label-container">
+                            <label for="q94a">a.
+                                Nm
+
+                            </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q94b" name="q94" value="b">
+                        <div class="label-container">
+                            <label for="q94b">b.
+                                Watt
+
+                            </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q94c" name="q94" value="c">
+                        <div class="label-container">
+                            <label for="q94c">c.
+                                Joule
+                            </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q94d" name="q94" value="d">
+                        <div class="label-container">
+                            <label for="q94d">d.
+                                No units
+                            </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <p id="q95" class="questions">
+
+                        How many bits is a byte?
+
+
+                    </p>
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q95a" name="q95" value="a">
+                        <div class="label-container">
+                            <label for="q95a">a.
+
+                                4
+                            </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q95b" name="q95" value="b">
+                        <div class="label-container">
+                            <label for="q95b">b.
+                                8
+
+                            </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q95c" name="q95" value="c">
+                        <div class="label-container">
+                            <label for="q95c">c.
+                                16
+
+                            </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q95d" name="q95" value="d">
+                        <div class="label-container">
+                            <label for="q95d">d.
+                                32
+                            </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <p id="q96" class="questions">
+                        96.
+                        How many permanent members are there in the Security Council of UN?
+
+
+                    </p>
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q96a" name="q96" value="a">
+                        <div class="label-container">
+                            <label for="q96a">a.
+                                10
+
+                            </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q96b" name="q96" value="b">
+                        <div class="label-container">
+                            <label for="q96b">b.
+                                7
+
+                            </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q96c" name="q96" value="c">
+                        <div class="label-container">
+                            <label for="q96c">c.
+                                5
+
+                            </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q96d" name="q96" value="d">
+                        <div class="label-container">
+                            <label for="q96d">d.
+                                3
+
+                            </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <p id="q97" class="questions">
+                        97. Sun rays yield vitamin
+
+
+
+                    </p>
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q97a" name="q97" value="a">
+                        <div class="label-container">
+                            <label for="q97a">a.
+                                A
+
+                            </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q97b" name="q97" value="b">
+                        <div class="label-container">
+                            <label for="q97b">b.
+                                B
+
+                            </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q97c" name="q97" value="c">
+                        <div class="label-container">
+                            <label for="q97c">c.
+                                C
+                            </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q97d" name="q97" value="d">
+                        <div class="label-container">
+                            <label for="q97d">d.
+                                D
+
+                            </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <p id="q98" class="questions">
+                        98.
+                        The longest river in the world
+
+
+                    </p>
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q98a" name="q98" value="a">
+                        <div class="label-container">
+                            <label for="q98a"> a.
+                                Indus
+
+
+                            </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q98b" name="q98" value="b">
+                        <div class="label-container">
+                            <label for="q98b"> b.
+                                Nile
+                            </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q98c" name="q98" value="c">
+                        <div class="label-container">
+                            <label for="q98c"> c.
+                                Ganga
+
+                            </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q98d" name="q98" value="d">
+                        <div class="label-container">
+                            <label for="q98d"> d.
+                                Amazon
+
+                            </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <p id="q99" class="questions">
+                        99.
+                        Where is the Hindukush mountain range located?
+
+
+                    </p>
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q99a" name="q99" value="a">
+                        <div class="label-container">
+                            <label for="q99a">a.
+                                India
+
+                            </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q99b" name="q99" value="b">
+                        <div class="label-container">
+                            <label for="q99b">b.
+                                Pakistan
+
+                            </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q99c" name="q99" value="c">
+                        <div class="label-container">
+                            <label for="q99c">c.
+                                Nepal
+
+                            </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q99d" name="q99" value="d">
+                        <div class="label-container">
+                            <label for="q99d">d.
+                                Indonesia
+
+                            </label>
+                        </div>
+                        <hr>
+                    </div>
+
+                    <p id="q100" class="questions">
+                        100.
+                        What is the value of π (pi) to two decimal places?
+
+                    </p>
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q100a" name="q100" value="a">
+                        <div class="label-container">
+                            <label for="q100a"> a.
+                                3.12
+                            </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q100b" name="q100" value="b">
+                        <div class="label-container">
+                            <label for="q100b"> b.
+                                3.14
+                            </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q100c" name="q100" value="c">
+                        <div class="label-container">
+                            <label for="q100c"> c.
+                                3.16
+                            </label>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="line">
+                        <input type="radio" onclick="play()" id="q100d" name="q100" value="d">
+                        <div class="label-container">
+                            <label for="q100d">d.
+                                3.18
+                            </label>
+                        </div>
+                        <hr>
+                    </div>
+
+                    <div class="buttons">
+                        <button type="button" onclick="submitQuiz()">Submit</button>
+                        <button type="button" onclick="window.location.href = 'past-questions.html'">Restart</button>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+        <button class="btn next"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></button>
+    </main>
+    <div id="container" style="display: none;">
+        <p id="instructions">
+            <mark>
+                Green highlights indicate correct answers, and red highlights indicate incorrect answers.
+            </mark>
+        </p>
+        <p id="score"></p>
+    </div>
+
+
+
+
+    </section>
+    <script>
+        const answers = {
+            q1: "c",
+            q2: "a",
+            q3: "b",
+            q4: "c",
+            q5: "d",
+            q6: "d",
+            q7: "b",
+            q8: "b",
+            q9: "a",
+            q10: "c",
+            q11: "a",
+            q12: "a",
+            q13: "d",
+            q14: "c",
+            q15: "a",
+            q16: "d",
+            q17: "a",
+            q18: "d",
+            q19: "b",
+            q20: "c",
+            q21: "c",
+            q22: "d",
+            q23: "c",
+            q24: "a",
+            q25: "c",
+            q26: "c",
+            q27: "a",
+            q28: "c",
+            q29: "a",
+            q30: "d",
+            q31: "a",
+            q32: "c",
+            q33: "b",
+            q34: "b",
+            q35: "a",
+            q36: "a",
+            q37: "b",
+            q38: "b",
+            q39: "d",
+            q40: "c",
+            q41: "a",
+            q42: "a",
+            q43: "b",
+            q44: "d",
+            q45: "a",
+            q46: "b",
+            q47: "d",
+            q48: "c",
+            q49: "d",
+            q50: "a",
+            q51: "a",
+            q52: "c",
+            q53: "c",
+            q54: "c",
+            q55: "b",
+            q56: "a",
+            q57: "d",
+            q58: "c",
+            q59: "b",
+            q60: "a",
+            q61: "d",
+            q62: "c",
+            q63: "c",
+            q64: "b",
+            q65: "b",
+            q66: "c",
+            q67: "d",
+            q68: "b",
+            q69: "b",
+            q70: "a",
+            q71: "c",
+            q72: "c",
+            q73: "b",
+            q74: "c",
+            q75: "c",
+            q76: "b",
+            q77: "a",
+            q78: "b",
+            q79: "d",
+            q80: "d",
+            q81: "b",
+            q82: "d",
+            q83: "b",
+            q84: "b",
+            q85: "c",
+            q86: "a",
+            q87: "a",
+            q88: "d",
+            q89: "a",
+            q90: "b",
+            q91: "c",
+            q92: "d",
+            q93: "a",
+            q94: "c",
+            q95: "b",
+            q96: "c",
+            q97: "d",
+            q98: "b",
+            q99: "b",
+            q100: "b"
+        };
+
+
+        function submitQuiz() {
+            let score = 0;
+            let totalQuestions = 100;
+            document.querySelectorAll('input[type="radio"]').forEach(radio => radio.disabled = true);
+            for (let question in answers) {
+                const selected = document.querySelector(`input[name="${question}"]:checked`);
+                const correctAnswer = answers[question];
+
+                const correctLabel = document.querySelector(`label[for="${question}${correctAnswer}"]`);
+
+                if (selected) {
+                    const selectedLabel = document.querySelector(`label[for="${selected.id}"]`);
+                    if (selected.value === correctAnswer) {
+                        score++;
+                        if (selectedLabel) {
+                            selectedLabel.classList.add('correct');
+                        }
+                    } else {
+                        if (selectedLabel) {
+                            selectedLabel.classList.add('incorrect');
+                        }
+                        if (correctLabel) {
+                            correctLabel.classList.add('correct');
+                        }
+                    }
+                } else {
+                    if (correctLabel) {
+                        correctLabel.classList.add('correct');
+                    }
+                }
+            }
+
+            document.getElementById('score').textContent = `Your score is ${score} out of ${totalQuestions}.`;
+            document.getElementById('container').style.display = 'block';
+        }
+    </script>
+
+    <footer>
+        <p>&copy; 2024 CMAT Prep. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
