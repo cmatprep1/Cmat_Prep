@@ -1,5 +1,8 @@
 /* styles2.css */
-
+*{
+  margin: 0%;
+  padding: 0%;
+}
 body {
   font-family: sans-serif;
   /* margin: 1px;
@@ -131,6 +134,7 @@ label {
 
 .questions {
   font-weight: bold;
+  margin-top: 1vh;
 }
 
 .passage {
@@ -260,5 +264,13 @@ footer {
     width: 30vw;
     display: inline-block;
     vertical-align: middle;
+  }
+  .label-container{
+    margin-top:1vh;
+    
+  }
+  .questions{
+    margin-bottom: 0%;
+    padding-bottom: 0%;
   }
 }

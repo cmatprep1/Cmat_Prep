@@ -95,22 +95,27 @@
         height: 100%;
         box-sizing: border-box;
         overflow: scroll;
+        
     }
 
     .English {
-        border: 3px red solid;
+        border: 1.5px blue solid;
+        border-right: none;
     }
 
     .Quantitative {
-        border: 3px cornflowerblue solid;
+        border: 1.5px rgb(17, 17, 116) solid;
+        border-right: none;
     }
 
     .Logical {
-        border: 3px greenyellow solid;
+        border: 1.5px blue solid;
+        border-right: none;
     }
 
     .GK {
-        border: 3px palevioletred solid;
+        border: 1.5px rgb(2, 2, 49) solid;
+        border-right: none;
     }
 
 
