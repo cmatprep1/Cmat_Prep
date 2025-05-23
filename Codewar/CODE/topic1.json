@@ -1,0 +1,857 @@
+[
+  {
+    "qno": 2,
+    "difficulty": "easy",
+    "question": "2. What is the output when a program prints the result of 7 % 3?\n Answer: 1\n Explanation: Modulo operator returns the remainder after division."
+  },
+  {
+    "qno": 3,
+    "difficulty": "easy",
+    "question": "3. You are given x = 2 and y = 3. What is the result of the expression x * y + x?\n Answer: 8\n Explanation: 2 * 3 = 6, 6 + 2 = 8"
+  },
+  {
+    "qno": 4,
+    "difficulty": "easy",
+    "question": "4. A program reads an integer and prints whether it\u2019s odd or even. What logic should be used?\n Answer: Check if number % 2 == 0\n Explanation: Even numbers are divisible by 2 without remainder."
+  },
+  {
+    "qno": 5,
+    "difficulty": "easy",
+    "question": "5.\n Which loop structure is best if the number of iterations is known beforehand?\n Answer: for loop\n Explanation: for loops are used when the count is known.\n6.What will be printed? a = 10; b = a++; print(b);\n Answer: 10\n Explanation: Post-increment returns value before incrementing.\n7.What happens when a program reads a string and directly prints it?\n Answer: It prints the exact string\n Explanation: Input and output operations simply relay data unless altered.\n8.What is the default value of an uninitialized integer in most languages?\n Answer: Undefined / Garbage value\n Explanation: Unless initialized, values in memory are unpredictable.\n9.Which operator is used for logical AND in most languages?\n Answer: &&\n Explanation: && returns true if both operands are true.\n10.Which one is a correct variable name?\na) 2value\nb) value2\nc) value-2\n Answer: b) value2\n Explanation: Variable names cannot start with digits or include special symbols like -."
+  },
+  {
+    "qno": 11,
+    "difficulty": "easy",
+    "question": "11. Which keyword is used to define a constant value in most languages?\n Answer: const or final\n Explanation: These keywords prevent variable modification."
+  },
+  {
+    "qno": 12,
+    "difficulty": "easy",
+    "question": "12. What is the result of: True AND False?\n Answer: False\n Explanation: Logical AND is only true if both operands are true."
+  },
+  {
+    "qno": 13,
+    "difficulty": "easy",
+    "question": "13. What is the result of 3 + 4 * 2?\n Answer: 11\n Explanation: Multiplication has higher precedence \u2192 3 + (4*2)"
+  },
+  {
+    "qno": 14,
+    "difficulty": "easy",
+    "question": "14. What does an if statement do?\nAnswer: Executes a block of code if the condition is true\n Explanation: Conditional execution logic."
+  },
+  {
+    "qno": 15,
+    "difficulty": "easy",
+    "question": "15. Which of the following is a floating-point literal?\na) 10\nb) 10.0\nc) '10'\n Answer: b) 10.0\n Explanation: Decimal indicates float."
+  },
+  {
+    "qno": 16,
+    "difficulty": "easy",
+    "question": "16. What does != operator mean?\n Answer: Not equal\n Explanation: Used to compare inequality between values."
+  },
+  {
+    "qno": 17,
+    "difficulty": "easy",
+    "question": "17. Which symbol is typically used to end a statement in C-like languages?\n Answer: ; (semicolon)\n Explanation: Terminates a statement."
+  },
+  {
+    "qno": 18,
+    "difficulty": "easy",
+    "question": "18. What is the correct syntax for reading user input in general pseudocode?\n Answer: Read variableName\n Explanation: Input operations read from user into a variable."
+  },
+  {
+    "qno": 19,
+    "difficulty": "easy",
+    "question": "19. Which of these is not a valid data type?\na) Integer\nb) Real\nc) Word\n Answer: c) Word\n Explanation: \u201cWord\u201d is not commonly a standard data type."
+  },
+  {
+    "qno": 20,
+    "difficulty": "easy",
+    "question": "20. What will be printed? x = 5; print(x == 5)\n Answer: True\n Explanation: == is a comparison operator."
+  },
+  {
+    "qno": 21,
+    "difficulty": "easy",
+    "question": "21.\n What is the result of not(True)?\n Answer: False\n Explanation: not inverts the truth value."
+  },
+  {
+    "qno": 22,
+    "difficulty": "easy",
+    "question": "22. Which loop checks the condition after executing the body?\n Answer: do-while\n Explanation: do-while ensures one execution before checking."
+  },
+  {
+    "qno": 23,
+    "difficulty": "easy",
+    "question": "23. How many times will this loop run: for i = 1 to 5?\n Answer: 5 times\n Explanation: Iterates from 1 to 5 inclusive."
+  },
+  {
+    "qno": 24,
+    "difficulty": "easy",
+    "question": "24. What is a variable?\n Answer: A named location in memory to store data\n Explanation: Used to store and manipulate data in programs."
+  },
+  {
+    "qno": 25,
+    "difficulty": "easy",
+    "question": "25. What is the output? print(10 / 3) in a language with float division\n Answer: Approximately 3.333\n Explanation: Division returns float.\n26.What is an algorithm?\n Answer: A step-by-step method to solve a problem\n Explanation: Foundation of problem-solving in programming."
+  },
+  {
+    "qno": 27,
+    "difficulty": "easy",
+    "question": "27.\n Which symbol is used for single-line comments in most languages?\n Answer: //\n Explanation: Used for inline documentation."
+  },
+  {
+    "qno": 28,
+    "difficulty": "easy",
+    "question": "28. What will be the output? a = 3; b = 5; print(a > b)\n Answer: False\n Explanation: 3 is not greater than 5."
+  },
+  {
+    "qno": 29,
+    "difficulty": "easy",
+    "question": "29. How can you make a program pause for user input before closing?\n Answer: Use an input/read statement at the end\n Explanation: Prevents immediate exit by waiting for input."
+  },
+  {
+    "qno": 30,
+    "difficulty": "easy",
+    "question": "30. What type of loop is best for reading input until a condition is met?\n Answer: while loop\n Explanation: Ideal for unknown number of repetitions."
+  },
+  {
+    "qno": 31,
+    "difficulty": "easy",
+    "question": "31. What is the output of: print(\"3\" + \"2\")?\n Answer: \"32\"\n Explanation: String concatenation, not numeric addition."
+  },
+  {
+    "qno": 32,
+    "difficulty": "easy",
+    "question": "32. What is a syntax error?\n Answer: Error due to violation of language grammar rules\n Explanation: Happens during compilation or parsing."
+  },
+  {
+    "qno": 33,
+    "difficulty": "easy",
+    "question": "33. Which of these is a Boolean value?\na) 5\nb) True\nc) \"False\"\n Answer: b) True\n Explanation: Boolean values are True or False."
+  },
+  {
+    "qno": 34,
+    "difficulty": "easy",
+    "question": "34. What is a program?\n Answer: A set of instructions for a computer to execute\n Explanation: Describes how to solve a problem.\n35.What is a loop that never ends called?\n Answer: Infinite loop\n Explanation: Has no termination condition."
+  },
+  {
+    "qno": 36,
+    "difficulty": "easy",
+    "question": "36. Which operator increases a number by one?\n Answer: ++ (in C-style languages)\n Explanation: Increment operator"
+  },
+  {
+    "qno": 37,
+    "difficulty": "easy",
+    "question": "37. What data type is best for representing true/false?\n Answer: Boolean\n Explanation: Stores logical values."
+  },
+  {
+    "qno": 38,
+    "difficulty": "easy",
+    "question": "38. What\u2019s wrong with this: if x = 5:?\n Answer: = should be == for comparison\n Explanation: = assigns, == compares.\n39.What is an identifier?\n Answer: Name used for variables, functions, etc.\n Explanation: Should follow naming rules."
+  },
+  {
+    "qno": 40,
+    "difficulty": "easy",
+    "question": "40. Which of the following is a valid loop structure?\na) if-else\nb) for\nc) check\n Answer: b) for\n Explanation: for is a loop; if-else is a conditional."
+  },
+  {
+    "qno": 41,
+    "difficulty": "easy",
+    "question": "41. How are comments ignored by the compiler?\n Answer: Marked by comment symbols like // or #\n Explanation: Comments are not executed."
+  },
+  {
+    "qno": 42,
+    "difficulty": "easy",
+    "question": "42. Which of the following data types can store decimal numbers?\n Answer: Float / Double\n Explanation: Used for real numbers."
+  },
+  {
+    "qno": 43,
+    "difficulty": "easy",
+    "question": "43. What is indentation used for in programming?\n Answer: To define code blocks (especially in Python)\n Explanation: Improves readability and structure."
+  },
+  {
+    "qno": 44,
+    "difficulty": "easy",
+    "question": "44.\n How to swap values of two variables a and b?\n Answer: Use a temporary variable or tuple swap\n Explanation: temp = a; a = b; b = temp"
+  },
+  {
+    "qno": 45,
+    "difficulty": "easy",
+    "question": "45. What will be the output of print(True or False)?\n Answer: True\n Explanation: or is true if at least one operand is true."
+  },
+  {
+    "qno": 46,
+    "difficulty": "easy",
+    "question": "46. Which of these is a loop control statement?\n Answer: break\n Explanation: Immediately exits a loop.\n47.What\u2019s the purpose of continue in a loop?\n Answer: Skips current iteration and moves to next\n Explanation: Bypasses rest of loop body temporarily."
+  },
+  {
+    "qno": 48,
+    "difficulty": "easy",
+    "question": "48. What is type casting?\n Answer: Converting one data type into another\n Explanation: Like int to float, string to int, etc."
+  },
+  {
+    "qno": 49,
+    "difficulty": "easy",
+    "question": "49. Which of these is used for string input in pseudocode?\n Answer: Read name\n Explanation: Generic structure to represent input reading."
+  },
+  {
+    "qno": 50,
+    "difficulty": "easy",
+    "question": "50. Which type of error is caused at runtime?\n Answer: Runtime error (e.g., divide by zero)\n Explanation: Happens during program execution."
+  },
+  {
+    "qno": 51,
+    "difficulty": "easy",
+    "question": "51. What is the output?\nLet x = 2, y = 4. Evaluate: x * (y + 3)\nAnswer: 14\n Explanation: 2 * (4 + 3) = 2 * 7 = 14\n52.Write a program to add two numbers and print the result.\nExpected Output:\nEnter first number: 5\nEnter second number: 7\nSum = 12\nExplanation: Read two numbers \u2192 Add \u2192 Print result"
+  },
+  {
+    "qno": 53,
+    "difficulty": "easy",
+    "question": "53. Which keyword is used to define a block of reusable code (function)?\nAnswer: function or def\n Explanation: Used to declare functions/methods."
+  },
+  {
+    "qno": 54,
+    "difficulty": "easy",
+    "question": "54. Write a program to take a user\u2019s name and print a greeting message.\nExpected Output:\nEnter your name: Alex\nHello, Alex!\nExplanation: Input \u2192 String concatenation \u2192 Output"
+  },
+  {
+    "qno": 55,
+    "difficulty": "easy",
+    "question": "55. What does the == operator do?\nAnswer: Compares two values for equality\n Explanation: Returns true if values match."
+  },
+  {
+    "qno": 56,
+    "difficulty": "easy",
+    "question": "56. Write a program to check if a number is negative or positive.\nExpected Output:\nEnter a number: -3\nIt is negative.\nExplanation: Use if-else to check sign."
+  },
+  {
+    "qno": 57,
+    "difficulty": "easy",
+    "question": "57. What does the print() function do?\n Answer: Displays output on screen\n Explanation: Used for displaying text or results."
+  },
+  {
+    "qno": 58,
+    "difficulty": "easy",
+    "question": "58. Write a program to calculate and display the square of a number.\nExpected Output:\nEnter a number: 4\nSquare = 16\nExplanation: square = number * number"
+  },
+  {
+    "qno": 59,
+    "difficulty": "easy",
+    "question": "59. What data type should be used for storing someone\u2019s age?\nAnswer: Integer\n Explanation: Age is a whole number."
+  },
+  {
+    "qno": 60,
+    "difficulty": "easy",
+    "question": "60. Write a program to find the remainder when one number is divided by another.\nExpected Output:\nEnter two numbers: 10 3\nRemainder = 1\nExplanation: Use the % operator."
+  },
+  {
+    "qno": 61,
+    "difficulty": "easy",
+    "question": "61. Which control structure allows a program to make decisions?\nAnswer: if-else\n Explanation: Executes blocks based on conditions."
+  },
+  {
+    "qno": 62,
+    "difficulty": "easy",
+    "question": "62. Write a program to check whether a number is divisible by 5.\nExpected Output:\nEnter a number: 20\nDivisible by 5.\nExplanation: if number % 5 == 0"
+  },
+  {
+    "qno": 63,
+    "difficulty": "easy",
+    "question": "63. How many times will this loop run? for i = 1 to 4\n Answer: 4 times\n Explanation: Includes both start and end."
+  },
+  {
+    "qno": 64,
+    "difficulty": "easy",
+    "question": "64. Write a program to find the sum of first 10 natural numbers.\nExpected Output: Sum = 55\n Explanation: Loop from 1 to 10 and add."
+  },
+  {
+    "qno": 65,
+    "difficulty": "easy",
+    "question": "65. What is the output of: print(\"5\" + 5) in most languages?\nAnswer: Error (Type mismatch)\n Explanation: Cannot mix string and integer without conversion."
+  },
+  {
+    "qno": 66,
+    "difficulty": "easy",
+    "question": "66. Write a program that prints numbers from 1 to 5 using a loop.\n Expected Output: 1 2 3 4 5\n Explanation: Use for or while loop."
+  },
+  {
+    "qno": 67,
+    "difficulty": "easy",
+    "question": "67. What keyword exits a loop early?\nAnswer: break\n Explanation: Terminates loop execution."
+  },
+  {
+    "qno": 68,
+    "difficulty": "easy",
+    "question": "68. Write a program to multiply two numbers entered by the user.\nExpected Output:\nEnter two numbers: 6 7\nProduct = 42\nExplanation: Multiply input values."
+  },
+  {
+    "qno": 69,
+    "difficulty": "easy",
+    "question": "69. What does the following expression do: x += 3?\nAnswer: Adds 3 to x\n Explanation: Short for x = x + 3"
+  },
+  {
+    "qno": 70,
+    "difficulty": "easy",
+    "question": "70. Write a program that accepts age and prints whether the person is adult (18+).\nExpected Output:\nEnter age: 20\nYou are an adult.\nExplanation: Use if age >= 18"
+  },
+  {
+    "qno": 71,
+    "difficulty": "easy",
+    "question": "71. What is the result of: True and not False?\nAnswer: True\n Explanation: not False \u2192 True; True and True \u2192 True"
+  },
+  {
+    "qno": 72,
+    "difficulty": "easy",
+    "question": "72. Write a program that reads 3 numbers and prints the largest.\nExpected Output: Largest = ...\n Explanation: Use if-else or max logic."
+  },
+  {
+    "qno": 73,
+    "difficulty": "easy",
+    "question": "73. What happens if a variable is used without declaring it?\n Answer: Error or undefined behavior\n Explanation: Most languages require prior declaration."
+  },
+  {
+    "qno": 74,
+    "difficulty": "easy",
+    "question": "74. Write a program to check if a number is even or odd.\nExpected Output: Even or Odd\n Explanation: Use number % 2"
+  },
+  {
+    "qno": 75,
+    "difficulty": "easy",
+    "question": "75. What is the default starting index of an array in most languages?\nAnswer: 0\n Explanation: Indexing starts from 0."
+  },
+  {
+    "qno": 76,
+    "difficulty": "easy",
+    "question": "76. Write a program that calculates area of a rectangle.\nExpected Output:\nEnter length and breadth: 5 3\nArea = 15\nExplanation: Multiply length * breadth"
+  },
+  {
+    "qno": 77,
+    "difficulty": "easy",
+    "question": "77. What is the result of 7 >= 7?\nAnswer: True\n Explanation: 7 is equal to 7."
+  },
+  {
+    "qno": 78,
+    "difficulty": "easy",
+    "question": "78. Write a program to convert temperature from Celsius to Fahrenheit.\nExpected Output:\nEnter temp in C: 0\nTemp in F = 32.0\nExplanation: Use formula F = C * 9/5 + 32"
+  },
+  {
+    "qno": 79,
+    "difficulty": "easy",
+    "question": "79. What is an infinite loop?\nAnswer: A loop that never ends\n Explanation: Lacks a terminating condition."
+  },
+  {
+    "qno": 80,
+    "difficulty": "easy",
+    "question": "80. Write a program to count from 10 down to 1 using a loop.\n Expected Output: 10 9 8 ... 1\n Explanation: Use a for or while loop with decrement."
+  },
+  {
+    "qno": 81,
+    "difficulty": "easy",
+    "question": "81. What does input() function generally do?\nAnswer: Reads data from user\n Explanation: Used for interactive input."
+  },
+  {
+    "qno": 82,
+    "difficulty": "easy",
+    "question": "82. Write a program that swaps values of two variables.\nExpected Output:\nBefore: a = 5, b = 10\nAfter: a = 10, b = 5\nExplanation: Use a temp variable."
+  },
+  {
+    "qno": 83,
+    "difficulty": "easy",
+    "question": "83. Which operator is used to compare if two values are not equal?\nAnswer: !=\n Explanation: Used for inequality check."
+  },
+  {
+    "qno": 84,
+    "difficulty": "easy",
+    "question": "84. Write a program to print all even numbers from 1 to 10.\n Expected Output: 2 4 6 8 10\n Explanation: Loop + % operator"
+  },
+  {
+    "qno": 85,
+    "difficulty": "easy",
+    "question": "85. What will False or True and False evaluate to?\nAnswer: False\n Explanation: True and False \u2192 False, False or False \u2192 False"
+  },
+  {
+    "qno": 86,
+    "difficulty": "easy",
+    "question": "86. Write a program to calculate the average of 3 numbers.\nExpected Output: Average = (a + b + c) / 3\n Explanation: Sum then divide."
+  },
+  {
+    "qno": 87,
+    "difficulty": "easy",
+    "question": "87. What is a block of code that only runs when called?\nAnswer: A function\n Explanation: Enables reuse."
+  },
+  {
+    "qno": 88,
+    "difficulty": "easy",
+    "question": "88. Write a program to find the square root of a number.\nExpected Output:\nEnter number: 9\nSquare root = 3.0\nExplanation: Use exponent 0.5 or sqrt method."
+  },
+  {
+    "qno": 89,
+    "difficulty": "easy",
+    "question": "89. What is a comment in programming?\nAnswer: Non-executing text for explanations\n Explanation: Ignored by compiler."
+  },
+  {
+    "qno": 90,
+    "difficulty": "easy",
+    "question": "90. Write a program that checks if a number is less than 100.\nExpected Output:\nEnter number: 45\nLess than 100\nExplanation: Use simple if statement."
+  },
+  {
+    "qno": 91,
+    "difficulty": "easy",
+    "question": "91. What will be the result of 3 + 4 * 2 without parentheses?\nAnswer: 11\n Explanation: Multiplication has higher precedence: 4*2 = 8, 3+8 = 11"
+  },
+  {
+    "qno": 92,
+    "difficulty": "easy",
+    "question": "92. Write a program to determine whether a year is a leap year.\nExpected Output:\nEnter year: 2024\nLeap year\nExplanation: A leap year is divisible by 4 and (not divisible by 100 or divisible by 400)"
+  },
+  {
+    "qno": 93,
+    "difficulty": "easy",
+    "question": "93. What keyword is commonly used to repeat a block of code while a condition is true?\nAnswer: while\n Explanation: Repeats execution as long as the condition holds true."
+  },
+  {
+    "qno": 94,
+    "difficulty": "easy",
+    "question": "94. Write a program that prints the multiplication table of a given number.\nExpected Output:\nEnter number: 3\n3 x 1 = 3\n3 x 2 = 6\n...\n3 x 10 = 30\nExplanation: Loop from 1 to 10, multiply, print."
+  },
+  {
+    "qno": 95,
+    "difficulty": "easy",
+    "question": "95. What is the value of the expression: 10 // 3 in most languages?\nAnswer: 3\n Explanation: // performs floor division (integer result only)."
+  },
+  {
+    "qno": 96,
+    "difficulty": "easy",
+    "question": "96. Write a program to convert days into weeks and days.\nExpected Output:\nEnter total days: 17\n2 week(s) and 3 day(s)\nExplanation: Use division and modulus: weeks = days // 7, remaining = days % 7"
+  },
+  {
+    "qno": 97,
+    "difficulty": "easy",
+    "question": "97. Which logical operator means \"either condition can be true\"?\nAnswer: or\n Explanation: Returns true if any condition is true."
+  },
+  {
+    "qno": 98,
+    "difficulty": "easy",
+    "question": "98. Write a program to take the user's first and last name and print the full name.\nEnter first name: John\nEnter last name: Doe\nFull Name: John Doe\nExplanation: Concatenate strings with a space."
+  },
+  {
+    "qno": 99,
+    "difficulty": "easy",
+    "question": "99. What does a syntax error indicate in programming?\nAnswer: The code violates the language grammar rules.\n Explanation: Common example: missing semicolon, parentheses, etc."
+  },
+  {
+    "qno": 100,
+    "difficulty": "easy",
+    "question": "100. Write a program that prints whether a character is a vowel or consonant.\nEnter a character: e\nIt is a vowel.\nExplanation: Check if character is in the set ['a', 'e', 'i', 'o', 'u']"
+  },
+  {
+    "qno": 101,
+    "difficulty": "medium",
+    "question": "101.\u00a0Write a program to find the maximum of two numbers entered by the user.\n Expected Output:\nEnter two numbers: 12 9\nMaximum = 12\nExplanation: Use an\u00a0if-else\u00a0or ternary operator to compare."
+  },
+  {
+    "qno": 102,
+    "difficulty": "medium",
+    "question": "102.\u00a0What will be the output of the following logic?\nx = 10\nif x > 5 and x < 15:\nprint(\"In range\")\nelse:\nprint(\"Out of range\")\nAnswer:\u00a0In range\n Explanation: Both conditions are true."
+  },
+  {
+    "qno": 103,
+    "difficulty": "medium",
+    "question": "103.\n\u00a0Write a program to check if a number is divisible by both 3 and 5.\n Expected Output:\nEnter number: 15\nDivisible by both 3 and 5\nExplanation: Use\u00a0if number % 3 == 0 and number % 5 == 0."
+  },
+  {
+    "qno": 104,
+    "difficulty": "medium",
+    "question": "104.\u00a0What is the output of this loop?\nfor i in range(1, 6):\nif i == 3:\ncontinue\nprint(i)\nAnswer:\n1\n2\n4\n5\nExplanation:\u00a0continue\u00a0skips printing 3."
+  },
+  {
+    "qno": 105,
+    "difficulty": "medium",
+    "question": "105.\u00a0Write a program to calculate the factorial of a number using a loop.\nExpected Output:\nEnter number: 5\nFactorial = 120\nExplanation: Multiply numbers from 1 to n using a loop."
+  },
+  {
+    "qno": 106,
+    "difficulty": "medium",
+    "question": "106.\u00a0What is the output of this code?\nx = 0\nwhile x < 3:\nprint(x)\nx += 1\nAnswer:\n0\n1\n2\nExplanation: Loop runs while x is less than 3.\n107.Write a program to print the sum of all even numbers from 1 to 50.\nExpected Output:\u00a0Sum = 650\n Explanation: Loop through 1 to 50, add if number is even."
+  },
+  {
+    "qno": 108,
+    "difficulty": "medium",
+    "question": "108.\u00a0What is the output of this nested condition?\nx = 7\nif x > 5:\nif x < 10:\nprint(\"Valid\")\nelse:\nprint(\"Too big\")\nelse:\nprint(\"Too small\")\nAnswer:\u00a0Valid\nExplanation: x satisfies both conditions."
+  },
+  {
+    "qno": 109,
+    "difficulty": "medium",
+    "question": "109.\u00a0Write a program to check if a number is a multiple of 4 or 6.\n Expected Output:\nEnter number: 12\nMultiple of 4 or 6\nExplanation: Use\u00a0if number % 4 == 0 or number % 6 == 0."
+  },
+  {
+    "qno": 110,
+    "difficulty": "medium",
+    "question": "110.\u00a0What is the output of this loop?\nfor i in range(5, 0, -1):\nprint(i)\nAnswer:\n5\n4\n3\n2\n1\nExplanation: Loop counts down from 5 to 1."
+  },
+  {
+    "qno": 111,
+    "difficulty": "medium",
+    "question": "111.\u00a0Write a program to check whether a number is prime.\n Expected Output:\nEnter number: 7\nPrime number\nExplanation: A prime number has only two divisors: 1 and itself."
+  },
+  {
+    "qno": 112,
+    "difficulty": "medium",
+    "question": "112.\u00a0What is the output of this loop?\nx = 1\nwhile x < 10:\nx *= 2\nprint(x)\nAnswer:\u00a016\n Explanation: x becomes 2 \u2192 4 \u2192 8 \u2192 16, then loop exits."
+  },
+  {
+    "qno": 113,
+    "difficulty": "medium",
+    "question": "113.\n\u00a0Write a program to reverse the digits of a number.\n Expected Output:\nEnter number: 1234\nReversed: 4321\nExplanation: Use loop and modulus/division to extract digits."
+  },
+  {
+    "qno": 114,
+    "difficulty": "medium",
+    "question": "114.\n\u00a0What is the output of this code?\nx = 5\ny = 10\nif x > y:\nprint(\"X\")\nelse:\nprint(\"Y\")\nAnswer:\u00a0Y\n Explanation: x is not greater than y."
+  },
+  {
+    "qno": 115,
+    "difficulty": "medium",
+    "question": "115.\u00a0Write a program to count the number of digits in a number.\nExpected Output:\nEnter number: 4567\nDigits: 4\nExplanation: Use loop or convert to string and count length."
+  },
+  {
+    "qno": 116,
+    "difficulty": "medium",
+    "question": "116.\u00a0What is the output of this nested loop?\nfor i in range(1, 3):\nfor j in range(1, 3):\nprint(i, j)\nAnswer:\n1 1\n1 2\n2 1\n2 2\nExplanation: Inner loop runs fully for each outer loop iteration.\n117.Write a program to check if a number is a palindrome.\nExpected Output:\nEnter number: 121\nPalindrome\nExplanation: A number is a palindrome if it reads the same backward."
+  },
+  {
+    "qno": 118,
+    "difficulty": "medium",
+    "question": "118.\u00a0What is the output of this logic?\nx = 3\ny = 4\nif x == 3 or y == 5:\nprint(\"Yes\")\nelse:\nprint(\"No\")\nAnswer:\u00a0Yes\n Explanation: One condition is true, so\u00a0or\u00a0returns true."
+  },
+  {
+    "qno": 119,
+    "difficulty": "medium",
+    "question": "119.\u00a0Write a program to calculate the sum of digits of a number.\nExpected Output:\nEnter number: 123\nSum = 6\nExplanation: 1 + 2 + 3 = 6"
+  },
+  {
+    "qno": 120,
+    "difficulty": "medium",
+    "question": "120.\u00a0What is the output of this loop?\nfor i in range(2, 10, 3):\nprint(i)\nAnswer:\n2\n5\n8\nExplanation: Starts at 2, increments by 3."
+  },
+  {
+    "qno": 121,
+    "difficulty": "medium",
+    "question": "121.\u00a0Write a program to print all numbers between 1 and 100 that are divisible by 7.\nExpected Output:\n7 14 21 28 ... 98\nExplanation: Use a loop and check\u00a0number % 7 == 0."
+  },
+  {
+    "qno": 122,
+    "difficulty": "medium",
+    "question": "122.\u00a0What is the output of this logic?\nx = 8\nif x % 2 == 0:\nprint(\"Even\")\nelse:\nprint(\"Odd\")\nAnswer:\u00a0Even\n Explanation: 8 is divisible by 2."
+  },
+  {
+    "qno": 123,
+    "difficulty": "medium",
+    "question": "123.\u00a0Write a program to calculate the power of a number (a^b) using a loop.\n Expected Output:\nEnter base: 2\nEnter exponent: 3\nResult = 8\nExplanation: Multiply base by itself exponent times."
+  },
+  {
+    "qno": 124,
+    "difficulty": "medium",
+    "question": "124.\u00a0What is the output of this code?\nx = 10\ny = 5\nif x > y:\nprint(\"x is greater\")\nelif x == y:\nprint(\"Equal\")\nelse:\nprint(\"y is greater\")\nAnswer:\u00a0x is greater\n Explanation: x > y is true."
+  },
+  {
+    "qno": 125,
+    "difficulty": "medium",
+    "question": "125.\u00a0Write a program to print the first 10 multiples of a number.\n Expected Output:\nEnter number: 4\n4 8 12 16 20 24 28 32 36 40\nExplanation: Loop from 1 to 10 and multiply."
+  },
+  {
+    "qno": 126,
+    "difficulty": "medium",
+    "question": "126.\u00a0What is the output of this loop?\nfor i in range(1, 6):\nif i == 4:\nbreak\nprint(i)\nAnswer:\n1\n2\n3\nExplanation: Loop breaks when i equals 4."
+  },
+  {
+    "qno": 127,
+    "difficulty": "medium",
+    "question": "127.\u00a0Write a program to check if a number is a perfect square.\n Expected Output:\nEnter number: 16\nPerfect square\nExplanation: A number is a perfect square if its square root is an integer."
+  },
+  {
+    "qno": 128,
+    "difficulty": "medium",
+    "question": "128.\u00a0What is the output of this logic?\nx = 3\ny = 9\nif x * 3 == y:\nprint(\"Match\")\nelse:\nprint(\"No match\")\nAnswer:\u00a0Match\nExplanation: 3 * 3 = 9"
+  },
+  {
+    "qno": 129,
+    "difficulty": "medium",
+    "question": "129.\u00a0Write a program to print the sum of all odd numbers from 1 to 50.\n Expected Output:\u00a0Sum = 625\n Explanation: Loop through 1 to 50, add if number is odd."
+  },
+  {
+    "qno": 130,
+    "difficulty": "medium",
+    "question": "130.\u00a0What is the output of this nested loop?\nfor i in range(1, 4):\nfor j in range(i):\nprint(\"*\", end=\"\")\nprint()\nAnswer:\n*\n**\n***\nExplanation: Inner loop prints stars based on outer loop index."
+  },
+  {
+    "qno": 131,
+    "difficulty": "medium",
+    "question": "131.\u00a0Write a program to check whether a number is an Armstrong number (3-digit).\nExpected Output:\nEnter number: 153\nArmstrong number\nExplanation:\u00a013+53+33=15313+53+33=153"
+  },
+  {
+    "qno": 132,
+    "difficulty": "medium",
+    "question": "132.\u00a0What is the output of this logic?\nx = 6\nif x % 2 == 0 and x % 3 == 0:\nprint(\"Divisible by both\")\nAnswer:\u00a0Divisible by both\n Explanation: 6 is divisible by both 2 and 3."
+  },
+  {
+    "qno": 133,
+    "difficulty": "medium",
+    "question": "133.\u00a0Write a program to print the Fibonacci series up to n terms.\n Expected Output:\nEnter n: 5\n0 1 1 2 3\nExplanation: Each term is the sum of the previous two."
+  },
+  {
+    "qno": 134,
+    "difficulty": "medium",
+    "question": "134.\u00a0What is the output of this code?\nx = 10\ny = 20\nz = 30\nif x < y and y < z:\nprint(\"Increasing\")\nAnswer:\u00a0Increasing\n Explanation: All conditions are true."
+  },
+  {
+    "qno": 135,
+    "difficulty": "medium",
+    "question": "135.\u00a0Write a program to check if a number is a palindrome (without converting to string).\n Expected Output:\nEnter number: 121\nPalindrome\nExplanation: Reverse the number using modulus and division."
+  },
+  {
+    "qno": 136,
+    "difficulty": "medium",
+    "question": "136.\u00a0What is the output of this loop?\nfor i in range(1, 6):\nif i % 2 == 0:\nprint(i)\nAnswer:\n2\n4\nExplanation: Prints only even numbers."
+  },
+  {
+    "qno": 137,
+    "difficulty": "medium",
+    "question": "137.\u00a0Write a program to find the GCD (Greatest Common Divisor) of two numbers.\nExpected Output:\nEnter two numbers: 12 18\nGCD = 6\nExplanation: Use Euclidean algorithm or loop."
+  },
+  {
+    "qno": 138,
+    "difficulty": "medium",
+    "question": "138.\u00a0What is the output of this logic?\nx = 5\ny = 10\nif not (x > y):\nprint(\"Correct\")\nAnswer:\u00a0Correct\n Explanation: x is not greater than y \u2192\u00a0not False\u00a0=\u00a0True"
+  },
+  {
+    "qno": 139,
+    "difficulty": "medium",
+    "question": "139.\u00a0Write a program to find the LCM (Least Common Multiple) of two numbers.\n Expected Output:\nEnter two numbers: 4 6\nLCM = 12\nExplanation: Use formula: LCM = (a*b)/GCD"
+  },
+  {
+    "qno": 140,
+    "difficulty": "medium",
+    "question": "140.\u00a0What is the output of this nested loop?\nfor i in range(1, 4):\nfor j in range(1, i+1):\nprint(j, end=\"\")\nprint()\nAnswer:\n1\n12\n123\nExplanation: Inner loop prints numbers from 1 to i."
+  },
+  {
+    "qno": 141,
+    "difficulty": "medium",
+    "question": "141.\u00a0Write a program to count how many times a digit appears in a number.\nExpected Output:\nEnter number: 122334\nEnter digit to count: 3\nCount = 2\nExplanation: Loop through digits and count matches."
+  },
+  {
+    "qno": 142,
+    "difficulty": "medium",
+    "question": "142.\u00a0What is the output of this logic?\nx = 4\ny = 2\nif x % y == 0:\nprint(\"Divisible\")\nelse:\nprint(\"Not divisible\")\nAnswer:\u00a0Divisible\n Explanation: 4 is divisible by 2."
+  },
+  {
+    "qno": 143,
+    "difficulty": "medium",
+    "question": "143.\u00a0Write a program to print all prime numbers between 1 and 50.\nExpected Output:\n2 3 5 7 11 13 17 19 23 29 31 37 41 43 47\nExplanation: Use nested loops to check primality."
+  },
+  {
+    "qno": 144,
+    "difficulty": "medium",
+    "question": "144.\u00a0What is the output of this loop?\nfor i in range(1, 6):\nprint(i * i)\nAnswer:\n1\n4\n9\n16\n25\nExplanation: Prints square of each number.\n145.Write a program to find the sum of digits of a number until a single digit is obtained.\n Expected Output:\nEnter number: 9875\nResult = 2\nExplanation: 9+8+7+5 = 29 \u2192 2+9 = 11 \u2192 1+1 = 2"
+  },
+  {
+    "qno": 146,
+    "difficulty": "medium",
+    "question": "146.\u00a0What is the output of this logic?\nx = 7\nif x % 2 == 0:\nprint(\"Even\")\nelse:\nprint(\"Odd\")\nAnswer:\u00a0Odd\n Explanation: 7 is not divisible by 2."
+  },
+  {
+    "qno": 147,
+    "difficulty": "medium",
+    "question": "147.\u00a0Write a program to print the pattern:\n*\n**\n***\n****\n*****\nExplanation: Use nested loops to print increasing stars."
+  },
+  {
+    "qno": 148,
+    "difficulty": "medium",
+    "question": "148.\u00a0What is the output of this logic?\nx = 3\ny = 4\nz = 5\nif x + y > z:\nprint(\"Triangle possible\")\nAnswer:\u00a0Triangle possible\n Explanation: Triangle inequality holds."
+  },
+  {
+    "qno": 149,
+    "difficulty": "medium",
+    "question": "149.\u00a0Write a program to print the reverse of a string.\n Expected Output:\nEnter string: hello\nReverse: olleh\nExplanation: Use loop or slicing to reverse."
+  },
+  {
+    "qno": 150,
+    "difficulty": "medium",
+    "question": "150.\u00a0What is the output of this loop?\nfor i in range(1, 6):\nif i == 3:\ncontinue\nprint(i, end=\" \")\nAnswer:\u00a01 2 4 5\n Explanation: Skips 3 using\u00a0continue."
+  },
+  {
+    "qno": 151,
+    "difficulty": "medium",
+    "question": "151.\u00a0Write a program to count the number of vowels in a string.\nExpected Output:\nEnter string: education\nVowels = 5\nExplanation: Check each character against ['a', 'e', 'i', 'o', 'u']."
+  },
+  {
+    "qno": 152,
+    "difficulty": "medium",
+    "question": "152.\u00a0What is the output of this logic?\nx = 10\nif x % 2 == 0 and x % 5 == 0:\nprint(\"Divisible by 10\")\nAnswer:\u00a0Divisible by 10\nExplanation: 10 is divisible by both 2 and 5."
+  },
+  {
+    "qno": 153,
+    "difficulty": "medium",
+    "question": "153.\u00a0Write a program to print the ASCII value of a character.\n Expected Output:\nEnter character: A\nASCII = 65\nExplanation: Use built-in function to get ASCII code."
+  },
+  {
+    "qno": 154,
+    "difficulty": "medium",
+    "question": "154.\u00a0What is the output of this loop?\nfor i in range(1, 6):\nprint(i, end=\"-\")\nAnswer:\u00a01-2-3-4-5-\n Explanation: Prints numbers with hyphen separator."
+  },
+  {
+    "qno": 155,
+    "difficulty": "medium",
+    "question": "155.\u00a0Write a program to check if a number is a strong number (sum of factorial of digits = number).\nExpected Output:\nEnter number: 145\nStrong number\nExplanation: 1! + 4! + 5! = 145"
+  },
+  {
+    "qno": 156,
+    "difficulty": "medium",
+    "question": "156.\u00a0What is the output of this logic?\nx = 0\nif not x:\nprint(\"Zero\")\nAnswer:\u00a0Zero\n Explanation:\u00a0not 0\u00a0is\u00a0True."
+  },
+  {
+    "qno": 157,
+    "difficulty": "medium",
+    "question": "157.\u00a0Write a program to print the cube of all numbers from 1 to n.\nExpected Output:\nEnter n: 3\n1 8 27\nExplanation: Use loop and cube each number."
+  },
+  {
+    "qno": 158,
+    "difficulty": "medium",
+    "question": "158.\u00a0What is the output of this logic?\nx = 5\ny = 2\nif x // y == 2:\nprint(\"Yes\")\nAnswer:\u00a0Yes\n Explanation: Integer division 5 // 2 = 2"
+  },
+  {
+    "qno": 159,
+    "difficulty": "medium",
+    "question": "159.\u00a0Write a program to count the number of uppercase and lowercase letters in a string.\nExpected Output:\nEnter string: HelloWorld\nUppercase = 2\nLowercase = 8\nExplanation: Use character checks in a loop."
+  },
+  {
+    "qno": 160,
+    "difficulty": "medium",
+    "question": "160.\u00a0What is the output of this loop?\nfor i in range(5):\nprint(i + 1)\nAnswer:\n1\n2\n3\n4\n5\nExplanation: Loop runs from 0 to 4, adds 1 to each."
+  },
+  {
+    "qno": 161,
+    "difficulty": "medium",
+    "question": "161.\u00a0Write a program to check if a string is a palindrome (case-insensitive).\n Expected Output:\nEnter string: Level\nPalindrome\nExplanation: Convert to lowercase and compare with reverse."
+  },
+  {
+    "qno": 162,
+    "difficulty": "medium",
+    "question": "162.\u00a0What is the output of this logic?\nx = 15\nif x % 3 == 0 and x % 5 == 0:\nprint(\"FizzBuzz\")\nAnswer:\u00a0FizzBuzz\n Explanation: 15 is divisible by both 3 and 5."
+  },
+  {
+    "qno": 163,
+    "difficulty": "medium",
+    "question": "163.\u00a0Write a program to print the sum of the first n odd numbers.\n Expected Output:\nEnter n: 5\nSum = 25\nExplanation: First 5 odd numbers: 1+3+5+7+9 = 25"
+  },
+  {
+    "qno": 164,
+    "difficulty": "medium",
+    "question": "164.\u00a0What is the output of this loop?\nfor i in range(1, 6):\nprint(i * 10)\nAnswer:\n10\n20\n30\n40\n50\nExplanation: Multiplies each number by 10."
+  },
+  {
+    "qno": 165,
+    "difficulty": "medium",
+    "question": "165.\u00a0Write a program to count how many words are in a sentence.\n Expected Output:\nEnter sentence: Hello world from Nepal\nWords = 4\nExplanation: Split the string by spaces and count."
+  },
+  {
+    "qno": 166,
+    "difficulty": "medium",
+    "question": "166.\u00a0What is the output of this logic?\nx = 2\ny = 3\nz = 4\nif x + y > z and y + z > x and x + z > y:\nprint(\"Valid triangle\")\nAnswer:\u00a0Valid triangle\nExplanation: Satisfies triangle inequality."
+  },
+  {
+    "qno": 167,
+    "difficulty": "medium",
+    "question": "167.\u00a0Write a program to print the factorial of a number using recursion.\nExpected Output:\nEnter number: 4\nFactorial = 24\nExplanation: Recursive function:\u00a0fact(n) = n * fact(n-1)"
+  },
+  {
+    "qno": 168,
+    "difficulty": "medium",
+    "question": "168.\u00a0What is the output of this loop?\nfor i in range(1, 4):\nfor j in range(1, 4):\nprint(i + j, end=\" \")\nprint()\nAnswer:\n2 3 4\n3 4 5\n4 5 6\nExplanation: Adds outer and inner loop counters."
+  },
+  {
+    "qno": 169,
+    "difficulty": "medium",
+    "question": "169.\u00a0Write a program to print the sum of squares of the first n natural numbers.\nExpected Output:\nEnter n: 3\nSum = 14\nExplanation: 1\u00b2 + 2\u00b2 + 3\u00b2 = 14"
+  },
+  {
+    "qno": 170,
+    "difficulty": "medium",
+    "question": "170.\u00a0What is the output of this logic?\nx = 5\ny = 10\nif x != y:\nprint(\"Not equal\")\nAnswer:\u00a0Not equal\n Explanation: 5 is not equal to 10."
+  },
+  {
+    "qno": 171,
+    "difficulty": "hard",
+    "question": "171.\n\u00a0Write a program to find the second largest number in a list of n numbers without using built-in sort functions.\n Expected Output:\nEnter n: 5\nEnter numbers: 10 20 5 8 15\nSecond largest = 15\nExplanation: Track both max and second max during iteration."
+  },
+  {
+    "qno": 172,
+    "difficulty": "hard",
+    "question": "172.\u00a0What is the output of this logic?\nx = 5\ny = 10\nz = 15\nif x + y > z and y + z > x and x + z > y:\nprint(\"Triangle possible\")\nelse:\nprint(\"Not possible\")\nAnswer:\u00a0Triangle possible\n Explanation: Satisfies triangle inequality."
+  },
+  {
+    "qno": 173,
+    "difficulty": "hard",
+    "question": "173.\u00a0Write a program to check if a number is a perfect number (sum of its divisors equals the number).\nExpected Output:\nEnter number: 28\nPerfect number\nExplanation: 1 + 2 + 4 + 7 + 14 = 28"
+  },
+  {
+    "qno": 174,
+    "difficulty": "hard",
+    "question": "174.\u00a0What is the output of this nested loop?\nfor i in range(1, 4):\nfor j in range(1, 4):\nif i == j:\ncontinue\nprint(i, j)\nAnswer:\n1 2\n1 3\n2 1\n2 3\n3 1\n3 2\nExplanation: Skips when i equals j."
+  },
+  {
+    "qno": 175,
+    "difficulty": "hard",
+    "question": "175.\u00a0Write a program to find the smallest and largest digits in a number.\n Expected Output:\nEnter number: 58329\nSmallest = 2, Largest = 9\nExplanation: Extract digits and compare."
+  },
+  {
+    "qno": 176,
+    "difficulty": "hard",
+    "question": "176.\u00a0What is the output of this logic?\nx = 3\ny = 4\nz = 5\nif x**2 + y**2 == z**2:\nprint(\"Pythagorean triplet\")\nAnswer:\u00a0Pythagorean triplet\n Explanation: 3\u00b2 + 4\u00b2 = 9 + 16 = 25 = 5\u00b2"
+  },
+  {
+    "qno": 177,
+    "difficulty": "hard",
+    "question": "177.\u00a0Write a program to find the first non-repeating digit in a number.\n Expected Output:\nEnter number: 1213453\nFirst non-repeating digit = 2\nExplanation: Count frequency of each digit, return first with count 1."
+  },
+  {
+    "qno": 178,
+    "difficulty": "hard",
+    "question": "178.\u00a0What is the output of this logic?\nx = 0\nfor i in range(1, 6):\nx += i\nif x > 10:\nbreak\nprint(x)\nAnswer:\u00a015\n Explanation: x = 1+2+3+4+5 = 15, then breaks."
+  },
+  {
+    "qno": 179,
+    "difficulty": "hard",
+    "question": "179.\u00a0Write a program to check if a number is a Harshad number (divisible by sum of its digits).\n Expected Output:\nEnter number: 18\nHarshad number\nExplanation: 1 + 8 = 9, and 18 % 9 == 0"
+  },
+  {
+    "qno": 180,
+    "difficulty": "hard",
+    "question": "180.\u00a0What is the output of this logic?\nx = 123\nsum = 0\nwhile x > 0:\ndigit = x % 10\nsum += digit\nx //= 10\nprint(sum)\nAnswer:\u00a06\n Explanation: 1 + 2 + 3 = 6"
+  },
+  {
+    "qno": 191,
+    "difficulty": "hard",
+    "question": "191. \u00a0Write a program that asks the user to enter multiple lines of text and saves them to a file. Then read the file and display its contents.\nConcepts: File I/O, loops, strings\n192.Write a program to print a pyramid pattern of stars for a given number of rows.\n Example Output (for 4 rows):\n*\n***\n*****\n*******\nConcepts: Nested loops, spacing logic"
+  },
+  {
+    "qno": 193,
+    "difficulty": "hard",
+    "question": "193.\u00a0Write a program to print a symbolic representation of the Nepalese flag using stars\u00a0*.\nConcepts: Creative formatting, nested loops, conditionals"
+  },
+  {
+    "qno": 194,
+    "difficulty": "hard",
+    "question": "194.  *Write a program that repeatedly asks the user to enter two numbers and an operator (+, -,\u00a0, /). Perform the operation and display the result. Ask if the user wants to continue. Exit if the user types \u201cno\u201d.\n Concepts: Loops, conditionals, user input, arithmetic"
+  },
+  {
+    "qno": 195,
+    "difficulty": "hard",
+    "question": "195. Write a program that reads a text file and counts the number of words in it.\nConcepts: File reading, string splitting, counting"
+  },
+  {
+    "qno": 196,
+    "difficulty": "hard",
+    "question": "196. Write a program to print a diamond pattern of stars for a given number of rows.\nExample Output (for 3 rows):\n*\n***\n*****\n***\n*\nConcepts: Nested loops, symmetry, spacing\n197Write a program that reads content from one file and writes it into another file.\nConcepts: File reading, writing, file operations\n198.Write a program to print a hollow rectangle of stars for given rows and columns.\nExample Output (3 rows, 5 columns):\n*****\n*   *\n*****\nConcepts: Nested loops, conditionals\n199\u00a0Write a program that generates and prints the multiplication table for a number up to 10.\nExample Output (for 5):\n5 x 1 = 5\n5 x 2 = 10\n...\n5 x 10 = 50\nConcepts: Loops, arithmetic\n200.Write a program to print a right-aligned triangle of stars.\nExample Output (for 4 rows):\n*\n**\n***\n****\nConcepts: Nested loops, alignment logic"
+  }
+]
