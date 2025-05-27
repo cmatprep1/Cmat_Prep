@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Questions Hub</title>
+  <link rel="stylesheet" href="qhub.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+<header class="navbar">
+  <div class="logo"> <a href="qhub.html" style="text-decoration: none;">Questions Hub</a></div>
+  <div class="header-controls">
+    <button id="theme-toggle" title="Toggle Theme">🌓</button>
+    <button class="nav-btn" onclick="window.location.href='https://cmatprep.vercel.app'">Back to Cmat</button>
+    <button class="nav-btn" onclick="window.open('https://chat.whatsapp.com/L05TFT026dF0ZCE9PqeCL7', '_blank')">Contact</button>
+    <button id="hamburger">&#9776;</button>
+  </div>
+</header>
+
+  <div class="container">
+    <aside class="sidebar" id="sidebar">
+      <h2>Topics</h2>
+      <div class="topic" onclick="toggleDropdown('basic')">Basic Programming
+        <div id="basic" class="difficulty-dropdown">
+          <button onclick="loadQuestions('basic_programming', 'Easy')">Easy</button>
+          <button onclick="loadQuestions('basic_programming', 'Medium')">Medium</button>
+          <button onclick="loadQuestions('basic_programming', 'Hard')">Hard</button>
+        </div>
+      </div>
+
+      <div class="topic" onclick="toggleDropdown('array')">Array
+        <div id="array" class="difficulty-dropdown">
+          <button onclick="loadQuestions('array', 'Easy')">Easy</button>
+          <button onclick="loadQuestions('array', 'Medium')">Medium</button>
+          <button onclick="loadQuestions('array', 'Hard')">Hard</button>
+        </div>
+      </div>
+
+      <div class="topic" onclick="toggleDropdown('string')">String
+        <div id="string" class="difficulty-dropdown">
+          <button onclick="loadQuestions('string', 'Easy')">Easy</button>
+          <button onclick="loadQuestions('string', 'Medium')">Medium</button>
+          <button onclick="loadQuestions('string', 'Hard')">Hard</button>
+        </div>
+      </div>
+
+      <div class="topic" onclick="toggleDropdown('linked')">Linked List
+        <div id="linked" class="difficulty-dropdown">
+          <button onclick="loadQuestions('linked', 'Easy')">Easy</button>
+          <button onclick="loadQuestions('linked', 'Medium')">Medium</button>
+          <button onclick="loadQuestions('linked', 'Hard')">Hard</button>
+        </div>
+      </div>
+    </aside>
+
+    <main id="question-container">
+      <section class="dashboard">
+        <h1>🚀 Welcome to the CodeWar 1.0 Prep Dashboard</h1>
+
+        <p>
+          This site is <strong>built specifically to give you hints about the type of questions you’ll face on Day 1 of CodeWar 1.0.</strong>
+        </p>
+
+        <p>
+          It’s <em>not a full practice platform</em> — it’s a <strong>guided space</strong> designed to help you understand what kind of basic programming questions to expect so you don’t walk into the event feeling lost or unprepared.
+        </p>
+
+        <h2>🧩 What can you do here?</h2>
+        <ul>
+          <li>Browse through a variety of beginner-friendly programming questions.</li>
+          <li>Try solving them on your own — even partial attempts will help!</li>
+          <li>If stuck, <strong>copy the question and ask ChatGPT</strong> for hints, explanations, or even code suggestions.</li>
+          <li>Use the question formats to train your brain for how problems will be asked in CodeWar 1.0.</li>
+        </ul>
+
+        <blockquote>
+          🔍 <strong>The goal is simple:</strong> Make sure you don’t feel like “I don’t know anything.”
+        </blockquote>
+
+        <p>
+          We’re not testing you here — we’re preparing you. This dashboard is your <strong>first step</strong> toward building problem-solving confidence.
+        </p>
+
+        <hr />
+
+        <footer class="dashboard-footer">
+          <p>🛑 <strong>Don't just rely on this site only.</strong></p>
+          <p>
+            To strengthen your preparation, explore more problems, techniques, and concepts from other reliable sources:
+          </p>
+          <ul class="resource-links">
+            <li><a href="https://www.geeksforgeeks.org/" target="_blank" rel="noopener noreferrer">GeeksForGeeks</a></li>
+            <li><a href="https://leetcode.com/" target="_blank" rel="noopener noreferrer">LeetCode</a></li>
+            <li><a href="https://www.hackerrank.com/" target="_blank" rel="noopener noreferrer">HackerRank</a></li>
+            <li><a href="https://codeforces.com/" target="_blank" rel="noopener noreferrer">Codeforces</a></li>
+          </ul>
+          <p>
+            We recommend reviewing common coding problems, basic algorithms, and core data structures. These platforms offer hands-on challenges to sharpen your skills.
+          </p>
+          <p>
+            🤝 <strong>Work with teammates</strong>, share doubts, discuss logic, and learn together — teamwork is a vital part of CodeWar too!
+          </p>
+
+          <p class="final-note">
+            🌱 <em>Final Note:</em> It’s okay not to know everything — the point is to start. And with this dashboard, you already have. Keep exploring, keep practicing — you’ve got this!
+          </p>
+        </footer>
+      </section>
+    </main>
+  </div>
+
+  <footer class="site-footer">
+    <p>&copy; 2025 Questions Hub. All rights reserved.</p>
+  </footer>
+
+  <script src="qhubscript.js"></script>
+  <script src="qhubui.js"></script>
+</body>
+</html>

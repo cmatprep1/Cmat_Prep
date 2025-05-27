@@ -1,0 +1,1338 @@
+{
+  "Easy": [
+    {
+      "qno": "1",
+      "question": "Find the sum of all elements in an array. Input: [1, 2, 3, 4, 5]",
+      "expected output": "15",
+      "explanations": "Traverse the array and keep adding each element to a sum variable.",
+      "answer": "15"
+    },
+    {
+      "qno": "2",
+      "question": "Find the average of numbers in an array. Input: [2, 4, 6, 8, 10]",
+      "expected output": "6",
+      "explanations": "Calculate sum of all elements and divide by the number of elements.",
+      "answer": "6"
+    },
+    {
+      "qno": "3",
+      "question": "Find the smallest number in an array. Input: [5, 3, 8, 1, 9]",
+      "expected output": "1",
+      "explanations": "Iterate through the array comparing elements to find the minimum.",
+      "answer": "1"
+    },
+    {
+      "qno": "4",
+      "question": "Print the elements of an array in order. Input: [7, 2, 5, 3]",
+      "expected output": "[7, 2, 5, 3]",
+      "explanations": "Traverse the array and print each element.",
+      "answer": "[7, 2, 5, 3]"
+    },
+    {
+      "qno": "5",
+      "question": "Count the number of elements in an array. Input: [10, 20, 30, 40]",
+      "expected output": "4",
+      "explanations": "The count is the total number of elements in the array.",
+      "answer": "4"
+    },
+    {
+      "qno": "6",
+      "question": "Find the second smallest number in an array. Input: [4, 2, 9, 1, 7]",
+      "expected output": "2",
+      "explanations": "Sort the array or find the smallest and then the next smallest element.",
+      "answer": "2"
+    },
+    {
+      "qno": "7",
+      "question": "Check if an array contains a given number. Input: [1, 3, 5, 7], number = 3",
+      "expected output": "true",
+      "explanations": "Traverse the array and compare each element to the number.",
+      "answer": "true"
+    },
+    {
+      "qno": "8",
+      "question": "Find the product of all elements in an array. Input: [1, 2, 3, 4]",
+      "expected output": "24",
+      "explanations": "Multiply each element together to get the product.",
+      "answer": "24"
+    },
+    {
+      "qno": "9",
+      "question": "Print the array elements in reverse order. Input: [5, 10, 15, 20]",
+      "expected output": "[20, 15, 10, 5]",
+      "explanations": "Traverse the array from the last index to the first.",
+      "answer": "[20, 15, 10, 5]"
+    },
+    {
+      "qno": "10",
+      "question": "Find the difference between the largest and smallest numbers in an array. Input: [8, 3, 5, 1, 9]",
+      "expected output": "8",
+      "explanations": "Find max and min values and subtract min from max.",
+      "answer": "8"
+    },
+    {
+      "qno": "11",
+      "question": "Find the count of even numbers in an array. Input: [1, 2, 3, 4, 5, 6]",
+      "expected output": "3",
+      "explanations": "Traverse the array and count elements divisible by 2.",
+      "answer": "3"
+    },
+    {
+      "qno": "12",
+      "question": "Find the count of odd numbers in an array. Input: [1, 2, 3, 4, 5]",
+      "expected output": "3",
+      "explanations": "Traverse the array and count elements not divisible by 2.",
+      "answer": "3"
+    },
+    {
+      "qno": "13",
+      "question": "Find the maximum number in an array. Input: [12, 45, 7, 34, 23]",
+      "expected output": "45",
+      "explanations": "Iterate through the array to find the largest element.",
+      "answer": "45"
+    },
+    {
+      "qno": "14",
+      "question": "Find the minimum number in an array. Input: [12, 45, 7, 34, 23]",
+      "expected output": "7",
+      "explanations": "Iterate through the array to find the smallest element.",
+      "answer": "7"
+    },
+    {
+      "qno": "15",
+      "question": "Print the first element of an array. Input: [10, 20, 30]",
+      "expected output": "10",
+      "explanations": "Access the element at index 0.",
+      "answer": "10"
+    },
+    {
+      "qno": "16",
+      "question": "Print the last element of an array. Input: [10, 20, 30]",
+      "expected output": "30",
+      "explanations": "Access the element at the last index (length-1).",
+      "answer": "30"
+    },
+    {
+      "qno": "17",
+      "question": "Replace all negative numbers in an array with zero. Input: [1, -2, 3, -4]",
+      "expected output": "[1, 0, 3, 0]",
+      "explanations": "Traverse the array and replace any negative value with zero.",
+      "answer": "[1, 0, 3, 0]"
+    },
+    {
+      "qno": "18",
+      "question": "Find the sum of elements at even indices in an array. Input: [10, 20, 30, 40, 50]",
+      "expected output": "90",
+      "explanations": "Add elements at indices 0, 2, 4.",
+      "answer": "90"
+    },
+    {
+      "qno": "19",
+      "question": "Find the sum of elements at odd indices in an array. Input: [10, 20, 30, 40, 50]",
+      "expected output": "60",
+      "explanations": "Add elements at indices 1, 3.",
+      "answer": "60"
+    },
+    {
+      "qno": "20",
+      "question": "Check if all elements in an array are positive. Input: [1, 2, 3, 4]",
+      "expected output": "true",
+      "explanations": "Verify that no element is less than or equal to zero.",
+      "answer": "true"
+    },
+    {
+      "qno": "21",
+      "question": "Find the frequency of a given number in an array. Input: [1, 2, 3, 2, 4, 2], number = 2",
+      "expected output": "3",
+      "explanations": "Count how many times the given number appears in the array.",
+      "answer": "3"
+    },
+    {
+      "qno": "22",
+      "question": "Check if an array is sorted in ascending order. Input: [1, 2, 3, 4, 5]",
+      "expected output": "true",
+      "explanations": "Compare each element with the next; if all are less or equal, return true.",
+      "answer": "true"
+    },
+    {
+      "qno": "23",
+      "question": "Find the sum of the first three elements in an array. Input: [5, 10, 15, 20, 25]",
+      "expected output": "30",
+      "explanations": "Add the elements at indices 0, 1, and 2.",
+      "answer": "30"
+    },
+    {
+      "qno": "24",
+      "question": "Print all odd numbers from an array. Input: [1, 2, 3, 4, 5, 6]",
+      "expected output": "[1, 3, 5]",
+      "explanations": "Traverse the array and collect elements which are not divisible by 2.",
+      "answer": "[1, 3, 5]"
+    },
+    {
+      "qno": "25",
+      "question": "Find the index of the first occurrence of a number in an array. Input: [4, 2, 7, 2, 9], number = 2",
+      "expected output": "1",
+      "explanations": "Traverse array and return the index where the number appears first.",
+      "answer": "1"
+    },
+    {
+      "qno": "26",
+      "question": "Replace all occurrences of a number with another number. Input: [1, 2, 3, 2], replace 2 with 5",
+      "expected output": "[1, 5, 3, 5]",
+      "explanations": "Traverse the array and replace matching elements with the new number.",
+      "answer": "[1, 5, 3, 5]"
+    },
+    {
+      "qno": "27",
+      "question": "Find the sum of positive numbers in an array. Input: [-1, 2, -3, 4, 5]",
+      "expected output": "11",
+      "explanations": "Add only numbers greater than zero.",
+      "answer": "11"
+    },
+    {
+      "qno": "28",
+      "question": "Check if an array contains any negative numbers. Input: [1, 2, 3, -4, 5]",
+      "expected output": "true",
+      "explanations": "Traverse the array and check if any element is less than zero.",
+      "answer": "true"
+    },
+    {
+      "qno": "29",
+      "question": "Count how many elements are greater than a given number. Input: [5, 8, 2, 9, 1], number = 4",
+      "expected output": "3",
+      "explanations": "Count elements in the array which are greater than the given number.",
+      "answer": "3"
+    },
+    {
+      "qno": "30",
+      "question": "Print elements at even indices from an array. Input: [10, 20, 30, 40, 50]",
+      "expected output": "[10, 30, 50]",
+      "explanations": "Collect elements at indices 0, 2, 4.",
+      "answer": "[10, 30, 50]"
+    },
+    {
+      "qno": "31",
+      "question": "Find the number of elements divisible by 3 in an array. Input: [3, 5, 6, 9, 10]",
+      "expected output": "3",
+      "explanations": "Count elements that give zero remainder when divided by 3.",
+      "answer": "3"
+    },
+    {
+      "qno": "32",
+      "question": "Find the sum of the last three elements in an array. Input: [1, 2, 3, 4, 5, 6]",
+      "expected output": "15",
+      "explanations": "Add elements at indices length-3, length-2, and length-1.",
+      "answer": "15"
+    },
+    {
+      "qno": "33",
+      "question": "Check if all elements in an array are unique. Input: [1, 2, 3, 4]",
+      "expected output": "true",
+      "explanations": "Check if any element repeats by comparing with others or using a set.",
+      "answer": "true"
+    },
+    {
+      "qno": "34",
+      "question": "Find the sum of digits of all numbers in an array. Input: [12, 34, 5]",
+      "expected output": "15",
+      "explanations": "Sum digits of each number individually and then add all sums together.",
+      "answer": "15"
+    },
+    {
+      "qno": "35",
+      "question": "Print all numbers greater than 10 in an array. Input: [5, 12, 18, 7, 10]",
+      "expected output": "[12, 18]",
+      "explanations": "Traverse and collect elements strictly greater than 10.",
+      "answer": "[12, 18]"
+    },
+    {
+      "qno": "36",
+      "question": "Replace all zeroes in an array with one. Input: [0, 1, 0, 2, 3]",
+      "expected output": "[1, 1, 1, 2, 3]",
+      "explanations": "Traverse array and change every 0 to 1.",
+      "answer": "[1, 1, 1, 2, 3]"
+    },
+    {
+      "qno": "37",
+      "question": "Find the difference between the sum of even and odd elements in an array. Input: [1, 2, 3, 4, 5]",
+      "expected output": "-3",
+      "explanations": "Sum even elements and sum odd elements, then subtract odd sum from even sum.",
+      "answer": "-3"
+    },
+    {
+      "qno": "38",
+      "question": "Find the index of the largest element in an array. Input: [3, 7, 2, 9, 5]",
+      "expected output": "3",
+      "explanations": "Identify the max element and return its first index.",
+      "answer": "3"
+    },
+    {
+      "qno": "39",
+      "question": "Check if an array contains duplicates. Input: [1, 2, 3, 2, 4]",
+      "expected output": "true",
+      "explanations": "Check if any element repeats more than once.",
+      "answer": "true"
+    },
+    {
+      "qno": "40",
+      "question": "Print the elements of an array after adding 5 to each element. Input: [1, 2, 3]",
+      "expected output": "[6, 7, 8]",
+      "explanations": "Add 5 to each element and print the new array.",
+      "answer": "[6, 7, 8]"
+    },
+    {
+      "qno": "41",
+      "question": "Find the smallest number in an array. Input: [4, 2, 7, 1, 9]",
+      "expected output": "1",
+      "explanations": "Traverse the array and find the minimum value.",
+      "answer": "1"
+    },
+    {
+      "qno": "42",
+      "question": "Count the number of even elements in an array. Input: [2, 5, 8, 9, 10]",
+      "expected output": "3",
+      "explanations": "Count elements divisible by 2.",
+      "answer": "3"
+    },
+    {
+      "qno": "43",
+      "question": "Calculate the average of all elements in an array. Input: [10, 20, 30, 40]",
+      "expected output": "25",
+      "explanations": "Sum all elements and divide by number of elements.",
+      "answer": "25"
+    },
+    {
+      "qno": "44",
+      "question": "Find the product of all elements in an array. Input: [1, 2, 3, 4]",
+      "expected output": "24",
+      "explanations": "Multiply all elements together.",
+      "answer": "24"
+    },
+    {
+      "qno": "45",
+      "question": "Check if a given number exists in an array. Input: [3, 6, 9, 12], number = 6",
+      "expected output": "true",
+      "explanations": "Traverse array to find the number; return true if found.",
+      "answer": "true"
+    },
+    {
+      "qno": "46",
+      "question": "Print all elements of an array in reverse order. Input: [1, 2, 3, 4]",
+      "expected output": "[4, 3, 2, 1]",
+      "explanations": "Traverse the array from the last element to the first.",
+      "answer": "[4, 3, 2, 1]"
+    },
+    {
+      "qno": "47",
+      "question": "Find the sum of elements at odd indices. Input: [10, 20, 30, 40, 50]",
+      "expected output": "60",
+      "explanations": "Add elements at indices 1, 3, etc.",
+      "answer": "60"
+    },
+    {
+      "qno": "48",
+      "question": "Replace negative numbers with zero in an array. Input: [-5, 3, -2, 8]",
+      "expected output": "[0, 3, 0, 8]",
+      "explanations": "Traverse and change negative values to zero.",
+      "answer": "[0, 3, 0, 8]"
+    },
+    {
+      "qno": "49",
+      "question": "Count how many elements are greater than or equal to 10. Input: [5, 10, 15, 20]",
+      "expected output": "3",
+      "explanations": "Count elements >= 10.",
+      "answer": "3"
+    },
+    {
+      "qno": "50",
+      "question": "Print elements at indices divisible by 3. Input: [0, 1, 2, 3, 4, 5, 6]",
+      "expected output": "[0, 3, 6]",
+      "explanations": "Select elements where index % 3 == 0.",
+      "answer": "[0, 3, 6]"
+    },
+    {
+      "qno": "51",
+      "question": "Calculate the difference between the largest and smallest elements. Input: [8, 3, 10, 2]",
+      "expected output": "8",
+      "explanations": "Subtract min element from max element.",
+      "answer": "8"
+    },
+    {
+      "qno": "52",
+      "question": "Check if all elements in an array are positive. Input: [1, 2, 3, 4]",
+      "expected output": "true",
+      "explanations": "Verify no element is zero or negative.",
+      "answer": "true"
+    },
+    {
+      "qno": "53",
+      "question": "Find the second largest element in an array. Input: [5, 9, 2, 8]",
+      "expected output": "8",
+      "explanations": "Identify the largest and second largest elements.",
+      "answer": "8"
+    },
+    {
+      "qno": "54",
+      "question": "Print all prime numbers from an array. Input: [2, 3, 4, 5, 6]",
+      "expected output": "[2, 3, 5]",
+      "explanations": "Check each number for primality and print if prime.",
+      "answer": "[2, 3, 5]"
+    },
+    {
+      "qno": "55",
+      "question": "Sum all odd numbers in an array. Input: [1, 2, 3, 4, 5]",
+      "expected output": "9",
+      "explanations": "Add elements that are odd numbers.",
+      "answer": "9"
+    },
+    {
+      "qno": "56",
+      "question": "Count the total number of elements in an array.",
+      "expected output": "5",
+      "explanations": "Return the length of the array.",
+      "answer": "5"
+    },
+    {
+      "qno": "57",
+      "question": "Find the sum of squares of elements. Input: [1, 2, 3]",
+      "expected output": "14",
+      "explanations": "Calculate sum of each element squared.",
+      "answer": "14"
+    },
+    {
+      "qno": "58",
+      "question": "Check if an array is symmetric. Input: [1, 2, 3, 2, 1]",
+      "expected output": "true",
+      "explanations": "Compare elements from start and end moving to center.",
+      "answer": "true"
+    },
+    {
+      "qno": "59",
+      "question": "Print the cumulative sum of elements in an array. Input: [1, 2, 3]",
+      "expected output": "[1, 3, 6]",
+      "explanations": "Add elements cumulatively: first element, first+second, etc.",
+      "answer": "[1, 3, 6]"
+    },
+    {
+      "qno": "60",
+      "question": "Find the count of zeros in an array. Input: [0, 1, 0, 2, 0]",
+      "expected output": "3",
+      "explanations": "Count elements equal to zero.",
+      "answer": "3"
+    },
+    {
+      "qno": "61",
+      "question": "Find the first positive number in an array. Input: [-3, -2, 0, 4, 5]",
+      "expected output": "4",
+      "explanations": "Traverse and return the first element greater than 0.",
+      "answer": "4"
+    },
+    {
+      "qno": "62",
+      "question": "Find how many elements are multiples of 3. Input: [3, 6, 7, 8, 9]",
+      "expected output": "3",
+      "explanations": "Count elements where element % 3 == 0.",
+      "answer": "3"
+    },
+    {
+      "qno": "63",
+      "question": "Swap the first and last elements of the array. Input: [1, 2, 3, 4]",
+      "expected output": "[4, 2, 3, 1]",
+      "explanations": "Exchange element at index 0 with last index.",
+      "answer": "[4, 2, 3, 1]"
+    },
+    {
+      "qno": "64",
+      "question": "Print every alternate element in the array. Input: [10, 20, 30, 40, 50]",
+      "expected output": "[10, 30, 50]",
+      "explanations": "Print elements at index 0, 2, 4, etc.",
+      "answer": "[10, 30, 50]"
+    },
+    {
+      "qno": "65",
+      "question": "Check if the array contains duplicate elements. Input: [1, 2, 3, 2]",
+      "expected output": "true",
+      "explanations": "Check for repeated values in the array.",
+      "answer": "true"
+    },
+    {
+      "qno": "66",
+      "question": "Find the element with maximum frequency in array. Input: [4, 5, 4, 6, 4]",
+      "expected output": "4",
+      "explanations": "Count frequencies and return element with highest count.",
+      "answer": "4"
+    },
+    {
+      "qno": "67",
+      "question": "Find the sum of the first and last elements. Input: [5, 3, 2, 8]",
+      "expected output": "13",
+      "explanations": "Add the first and last elements of the array.",
+      "answer": "13"
+    },
+    {
+      "qno": "68",
+      "question": "Print only negative numbers from an array. Input: [-2, 4, -1, 3]",
+      "expected output": "[-2, -1]",
+      "explanations": "Filter and print elements less than 0.",
+      "answer": "[-2, -1]"
+    },
+    {
+      "qno": "69",
+      "question": "Reverse an array in-place. Input: [1, 2, 3, 4]",
+      "expected output": "[4, 3, 2, 1]",
+      "explanations": "Swap elements from ends moving to center.",
+      "answer": "[4, 3, 2, 1]"
+    },
+    {
+      "qno": "70",
+      "question": "Count the number of single-digit elements. Input: [2, 11, 5, 123]",
+      "expected output": "2",
+      "explanations": "Count elements with only one digit (0–9).",
+      "answer": "2"
+    },
+    {
+      "qno": "71",
+      "question": "Find total number of elements divisible by both 2 and 5. Input: [10, 20, 3, 4]",
+      "expected output": "2",
+      "explanations": "Check divisibility by both 2 and 5.",
+      "answer": "2"
+    },
+    {
+      "qno": "72",
+      "question": "Shift all elements one position to the right. Input: [1, 2, 3]",
+      "expected output": "[3, 1, 2]",
+      "explanations": "Rotate array to right by one position.",
+      "answer": "[3, 1, 2]"
+    },
+    {
+      "qno": "73",
+      "question": "Calculate the sum of digits of all elements. Input: [12, 34]",
+      "expected output": "10",
+      "explanations": "Sum digits of 12 (1+2) and 34 (3+4).",
+      "answer": "10"
+    },
+    {
+      "qno": "74",
+      "question": "Count the number of odd-indexed even numbers. Input: [2, 4, 6, 8]",
+      "expected output": "2",
+      "explanations": "Even numbers at indices 1 and 3.",
+      "answer": "2"
+    },
+    {
+      "qno": "75",
+      "question": "Print elements greater than their index. Input: [0, 2, 1, 4]",
+      "expected output": "[2, 4]",
+      "explanations": "Check if value > index.",
+      "answer": "[2, 4]"
+    },
+    {
+      "qno": "76",
+      "question": "Replace each element with its square. Input: [1, 2, 3]",
+      "expected output": "[1, 4, 9]",
+      "explanations": "Square each element in array.",
+      "answer": "[1, 4, 9]"
+    },
+    {
+      "qno": "77",
+      "question": "Count elements with 2 digits. Input: [1, 12, 34, 5]",
+      "expected output": "2",
+      "explanations": "Identify and count numbers between 10 and 99.",
+      "answer": "2"
+    },
+    {
+      "qno": "78",
+      "question": "Find the first even number in the array. Input: [1, 3, 5, 6]",
+      "expected output": "6",
+      "explanations": "Return first number divisible by 2.",
+      "answer": "6"
+    },
+    {
+      "qno": "79",
+      "question": "Double the value of each odd number. Input: [1, 2, 3]",
+      "expected output": "[2, 2, 6]",
+      "explanations": "Multiply only odd numbers by 2.",
+      "answer": "[2, 2, 6]"
+    },
+    {
+      "qno": "80",
+      "question": "Find the maximum difference between two elements. Input: [2, 8, 3, 1]",
+      "expected output": "7",
+      "explanations": "Difference between max and min values.",
+      "answer": "7"
+    },
+     {
+      "qno": "81",
+      "question": "Find how many elements are greater than 50. Input: [10, 60, 55, 45]",
+      "expected output": "2",
+      "explanations": "Check for values > 50.",
+      "answer": "2"
+    },
+    {
+      "qno": "82",
+      "question": "Print all indices where the value is even. Input: [1, 4, 6, 7]",
+      "expected output": "[1, 2]",
+      "explanations": "Check which indices have even values.",
+      "answer": "[1, 2]"
+    },
+    {
+      "qno": "83",
+      "question": "Find the average of the first three elements. Input: [3, 6, 9, 12]",
+      "expected output": "6",
+      "explanations": "Average = (3 + 6 + 9) / 3 = 6.",
+      "answer": "6"
+    },
+    {
+      "qno": "84",
+      "question": "Add 5 to all elements and print new array. Input: [1, 2, 3]",
+      "expected output": "[6, 7, 8]",
+      "explanations": "Add 5 to each element.",
+      "answer": "[6, 7, 8]"
+    },
+    {
+      "qno": "85",
+      "question": "Find smallest element at an odd index. Input: [9, 4, 7, 2]",
+      "expected output": "2",
+      "explanations": "Elements at odd indices are 4 and 2; min is 2.",
+      "answer": "2"
+    },
+    {
+      "qno": "86",
+      "question": "Replace even numbers with 0. Input: [2, 3, 4, 5]",
+      "expected output": "[0, 3, 0, 5]",
+      "explanations": "Only even numbers are replaced with 0.",
+      "answer": "[0, 3, 0, 5]"
+    },
+    {
+      "qno": "87",
+      "question": "Print elements that are perfect squares. Input: [1, 2, 3, 4, 5, 9]",
+      "expected output": "[1, 4, 9]",
+      "explanations": "Check if sqrt(element) is integer.",
+      "answer": "[1, 4, 9]"
+    },
+    {
+      "qno": "88",
+      "question": "Find the difference between sum of even and odd numbers. Input: [1, 2, 3, 4]",
+      "expected output": "2",
+      "explanations": "Even sum = 6, odd sum = 4, diff = 2.",
+      "answer": "2"
+    },
+    {
+      "qno": "89",
+      "question": "Count how many elements are negative. Input: [-1, 0, 2, -3]",
+      "expected output": "2",
+      "explanations": "Count elements less than 0.",
+      "answer": "2"
+    },
+    {
+      "qno": "90",
+      "question": "Check if all elements are non-negative. Input: [1, 2, 3, 0]",
+      "expected output": "true",
+      "explanations": "No negative elements present.",
+      "answer": "true"
+    },
+    {
+      "qno": "91",
+      "question": "Find the sum of alternate elements starting from index 1. Input: [5, 10, 15, 20]",
+      "expected output": "30",
+      "explanations": "10 + 20 = 30.",
+      "answer": "30"
+    },
+    {
+      "qno": "92",
+      "question": "Print elements that are prime numbers. Input: [1, 2, 3, 4, 5]",
+      "expected output": "[2, 3, 5]",
+      "explanations": "Only 2, 3, 5 are primes.",
+      "answer": "[2, 3, 5]"
+    },
+    {
+      "qno": "93",
+      "question": "Print last 3 elements of array. Input: [10, 20, 30, 40, 50]",
+      "expected output": "[30, 40, 50]",
+      "explanations": "Select elements from length - 3 onward.",
+      "answer": "[30, 40, 50]"
+    },
+    {
+      "qno": "94",
+      "question": "Replace each number with 1 if it's odd and 0 if it's even. Input: [1, 2, 3, 4]",
+      "expected output": "[1, 0, 1, 0]",
+      "explanations": "Check parity of each element.",
+      "answer": "[1, 0, 1, 0]"
+    },
+    {
+      "qno": "95",
+      "question": "Multiply each number by its index. Input: [5, 5, 5]",
+      "expected output": "[0, 5, 10]",
+      "explanations": "Element[i] = element[i] * i.",
+      "answer": "[0, 5, 10]"
+    },
+    {
+      "qno": "96",
+      "question": "Print only two-digit numbers. Input: [3, 10, 99, 100]",
+      "expected output": "[10, 99]",
+      "explanations": "Check if number >= 10 and <= 99.",
+      "answer": "[10, 99]"
+    },
+    {
+      "qno": "97",
+      "question": "Print number of times the last element appears. Input: [1, 2, 3, 2]",
+      "expected output": "2",
+      "explanations": "Last element is 2, which occurs twice.",
+      "answer": "2"
+    },
+    {
+      "qno": "98",
+      "question": "Replace all numbers divisible by 3 with their square. Input: [3, 4, 6]",
+      "expected output": "[9, 4, 36]",
+      "explanations": "Only 3 and 6 are divisible by 3.",
+      "answer": "[9, 4, 36]"
+    },
+    {
+      "qno": "99",
+      "question": "Find element with minimum frequency. Input: [1, 2, 2, 3, 3, 3]",
+      "expected output": "1",
+      "explanations": "1 occurs only once.",
+      "answer": "1"
+    },
+    {
+      "qno": "100",
+      "question": "Calculate product of all odd numbers. Input: [1, 2, 3, 4]",
+      "expected output": "3",
+      "explanations": "Only 1 and 3 are odd; product = 3.",
+      "answer": "3"
+    }
+  ],
+  "Medium": [
+    {
+      "qno": "1",
+      "question": "Find the second largest element in the array. Input: [12, 35, 1, 10, 34, 1]",
+      "expected output": "34",
+      "explanations": "Sort the array or traverse twice to identify the second maximum.",
+      "answer": "34"
+    },
+    {
+      "qno": "2",
+      "question": "Rotate the array to the right by 2 positions. Input: [1, 2, 3, 4, 5]",
+      "expected output": "[4, 5, 1, 2, 3]",
+      "explanations": "Elements are shifted right and wrap around to the start.",
+      "answer": "[4, 5, 1, 2, 3]"
+    },
+    {
+      "qno": "3",
+      "question": "Count the number of duplicate elements in the array. Input: [1, 2, 2, 3, 4, 4, 4]",
+      "expected output": "2",
+      "explanations": "Duplicates are 2 and 4. Count unique values that appear more than once.",
+      "answer": "2"
+    },
+    {
+      "qno": "4",
+      "question": "Check if the array is sorted in ascending order. Input: [1, 2, 3, 4, 5]",
+      "expected output": "true",
+      "explanations": "Compare each element with the next to verify order.",
+      "answer": "true"
+    },
+    {
+      "qno": "5",
+      "question": "Find the row with the maximum sum in a 2D array. Input: [[1,2,3],[4,5,6],[7,8,9]]",
+      "expected output": "2",
+      "explanations": "Row 2 has the sum 24, which is the highest.",
+      "answer": "2"
+    },
+    {
+      "qno": "6",
+      "question": "Calculate the sum of diagonal elements in a 2D square matrix. Input: [[1,2,3],[4,5,6],[7,8,9]]",
+      "expected output": "15",
+      "explanations": "Main diagonal elements are 1, 5, and 9. Their sum is 15.",
+      "answer": "15"
+    },
+    {
+      "qno": "7",
+      "question": "Find the frequency of each element in the array. Input: [2, 3, 2, 4, 4, 4]",
+      "expected output": "{2:2, 3:1, 4:3}",
+      "explanations": "Count occurrences of each unique number.",
+      "answer": "{2:2, 3:1, 4:3}"
+    },
+    {
+      "qno": "8",
+      "question": "Transpose a 2D matrix. Input: [[1,2,3],[4,5,6]]",
+      "expected output": "[[1,4],[2,5],[3,6]]",
+      "explanations": "Convert rows to columns and columns to rows.",
+      "answer": "[[1,4],[2,5],[3,6]]"
+    },
+    {
+      "qno": "9",
+      "question": "Print all elements of a 3D array with dimensions 2x2x2. Input: [[[1,2],[3,4]],[[5,6],[7,8]]]",
+      "expected output": "1 2 3 4 5 6 7 8",
+      "explanations": "Flatten the 3D array using nested loops and print each element.",
+      "answer": "1 2 3 4 5 6 7 8"
+    },
+    {
+      "qno": "10",
+      "question": "Find the sum of elements in each column of a 2D array. Input: [[1,2,3],[4,5,6],[7,8,9]]",
+      "expected output": "[12, 15, 18]",
+      "explanations": "Sum vertically across each column index.",
+      "answer": "[12, 15, 18]"
+    },
+    {
+      "qno": "11",
+      "question": "Reverse the array without using built-in functions. Input: [1, 2, 3, 4, 5]",
+      "expected output": "[5, 4, 3, 2, 1]",
+      "explanations": "Use two-pointer approach to swap elements from both ends.",
+      "answer": "[5, 4, 3, 2, 1]"
+    },
+    {
+      "qno": "12",
+      "question": "Merge two sorted arrays into one sorted array. Input: [1,3,5], [2,4,6]",
+      "expected output": "[1,2,3,4,5,6]",
+      "explanations": "Compare elements one-by-one and place in result array maintaining order.",
+      "answer": "[1,2,3,4,5,6]"
+    },
+    {
+      "qno": "13",
+      "question": "Find the maximum element in each row of a 2D array. Input: [[1,2],[3,4],[5,6]]",
+      "expected output": "[2,4,6]",
+      "explanations": "Traverse each row and find maximum.",
+      "answer": "[2,4,6]"
+    },
+    {
+      "qno": "14",
+      "question": "Shift all zeros to the end of the array. Input: [1, 0, 2, 0, 3]",
+      "expected output": "[1, 2, 3, 0, 0]",
+      "explanations": "Reorder non-zero elements while counting zeros to append later.",
+      "answer": "[1, 2, 3, 0, 0]"
+    },
+    {
+      "qno": "15",
+      "question": "Replace every element with the greatest element on its right. Input: [16, 17, 4, 3, 5, 2]",
+      "expected output": "[17, 5, 5, 5, 2, -1]",
+      "explanations": "Traverse from end, updating each element with the max value found so far to its right.",
+      "answer": "[17, 5, 5, 5, 2, -1]"
+    },
+    {
+      "qno": "16",
+      "question": "Count total positive numbers in a 2D array. Input: [[-1,2,3],[-4,5,6]]",
+      "expected output": "4",
+      "explanations": "Count elements greater than 0 by iterating through the 2D array.",
+      "answer": "4"
+    },
+    {
+      "qno": "17",
+      "question": "Flatten a 2D array into a 1D array. Input: [[1,2],[3,4],[5,6]]",
+      "expected output": "[1,2,3,4,5,6]",
+      "explanations": "Append each inner list element into one array.",
+      "answer": "[1,2,3,4,5,6]"
+    },
+    {
+      "qno": "18",
+      "question": "Swap the first and last row of a 2D matrix. Input: [[1,2],[3,4],[5,6]]",
+      "expected output": "[[5,6],[3,4],[1,2]]",
+      "explanations": "Exchange the first and last lists in the matrix.",
+      "answer": "[[5,6],[3,4],[1,2]]"
+    },
+    {
+      "qno": "19",
+      "question": "Check if all elements in a 1D array are unique. Input: [1, 2, 3, 4, 5]",
+      "expected output": "true",
+      "explanations": "Use a temporary structure to track duplicates while iterating.",
+      "answer": "true"
+    },
+    {
+      "qno": "20",
+      "question": "Find the largest element in a 3D array. Input: [[[1,2],[3,4]],[[5,6],[7,8]]]",
+      "expected output": "8",
+      "explanations": "Traverse every level and compare each element.",
+      "answer": "8"
+    },
+    {
+      "qno": "21",
+      "question": "Find the average of all elements in a 2D array. Input: [[2,4],[6,8]]",
+      "expected output": "5.0",
+      "explanations": "Total sum is 20, number of elements is 4. Average = 20/4 = 5.0",
+      "answer": "5.0"
+    },
+    {
+      "qno": "22",
+      "question": "Check if two arrays are equal (same elements in same order). Input: [1,2,3], [1,2,3]",
+      "expected output": "true",
+      "explanations": "Compare lengths and elements one by one.",
+      "answer": "true"
+    },
+    {
+      "qno": "23",
+      "question": "Find the difference between the sums of diagonals in a square matrix. Input: [[1,2,3],[4,5,6],[7,8,9]]",
+      "expected output": "0",
+      "explanations": "Sum of main diagonal: 1+5+9=15, secondary diagonal: 3+5+7=15. Difference: 0",
+      "answer": "0"
+    },
+    {
+      "qno": "24",
+      "question": "Insert an element at a specific position in an array. Input: [1,2,4,5], Element: 3, Position: 2",
+      "expected output": "[1,2,3,4,5]",
+      "explanations": "Shift elements from position 2 to right and insert 3.",
+      "answer": "[1,2,3,4,5]"
+    },
+    {
+      "qno": "25",
+      "question": "Find all pairs in the array whose sum is equal to 6. Input: [1, 5, 7, -1, 5]",
+      "expected output": "3",
+      "explanations": "Pairs are (1,5), (1,5), and (7,-1).",
+      "answer": "3"
+    },
+    {
+      "qno": "26",
+      "question": "Print boundary elements of a 2D matrix. Input: [[1,2,3],[4,5,6],[7,8,9]]",
+      "expected output": "[1,2,3,6,9,8,7,4]",
+      "explanations": "Collect top row, last column, bottom row in reverse, and first column (excluding corners again).",
+      "answer": "[1,2,3,6,9,8,7,4]"
+    },
+    {
+      "qno": "27",
+      "question": "Search for an element in a 2D array. Input: [[1,2],[3,4]], Element: 3",
+      "expected output": "true",
+      "explanations": "Traverse row by row and compare each element with target.",
+      "answer": "true"
+    },
+    {
+      "qno": "28",
+      "question": "Count total number of even and odd elements in a 2D array. Input: [[1,2,3],[4,5,6]]",
+      "expected output": "Even: 3, Odd: 3",
+      "explanations": "Count elements based on modulo division.",
+      "answer": "Even: 3, Odd: 3"
+    },
+    {
+      "qno": "29",
+      "question": "Find the minimum element in each column of a 2D array. Input: [[3,2,1],[6,5,4],[9,8,7]]",
+      "expected output": "[3,2,1]",
+      "explanations": "Traverse columns to find minimum in each.",
+      "answer": "[3,2,1]"
+    },
+    {
+      "qno": "30",
+      "question": "Calculate the sum of each layer in a 3D array. Input: [[[1,2],[3,4]],[[5,6],[7,8]]]",
+      "expected output": "[10, 26]",
+      "explanations": "Sum all numbers in each 2D layer separately.",
+      "answer": "[10, 26]"
+    },
+    {
+      "qno": "31",
+      "question": "Determine if an array is a palindrome. Input: [1,2,3,2,1]",
+      "expected output": "true",
+      "explanations": "Check if array reads the same forward and backward.",
+      "answer": "true"
+    },
+    {
+      "qno": "32",
+      "question": "Move all negative numbers to the beginning of array. Input: [1,-2,3,-4,5]",
+      "expected output": "[-2,-4,1,3,5]",
+      "explanations": "Partition array by checking sign of element.",
+      "answer": "[-2,-4,1,3,5]"
+    },
+    {
+      "qno": "33",
+      "question": "Find intersection of two arrays. Input: [1,2,3,4], [3,4,5,6]",
+      "expected output": "[3,4]",
+      "explanations": "Collect elements present in both arrays.",
+      "answer": "[3,4]"
+    },
+    {
+      "qno": "34",
+      "question": "Find the element with highest frequency. Input: [1,3,2,1,4,1]",
+      "expected output": "1",
+      "explanations": "Track frequency and return the most frequent element.",
+      "answer": "1"
+    },
+    {
+      "qno": "35",
+      "question": "Convert 3D array to 1D array. Input: [[[1,2],[3,4]],[[5,6],[7,8]]]",
+      "expected output": "[1,2,3,4,5,6,7,8]",
+      "explanations": "Use nested loops to access and flatten the structure.",
+      "answer": "[1,2,3,4,5,6,7,8]"
+    },
+    {
+      "qno": "36",
+      "question": "Sort each row of a 2D array individually. Input: [[3,1,2],[6,5,4]]",
+      "expected output": "[[1,2,3],[4,5,6]]",
+      "explanations": "Sort inner lists independently.",
+      "answer": "[[1,2,3],[4,5,6]]"
+    },
+    {
+      "qno": "37",
+      "question": "Find the longest increasing subarray. Input: [1,2,2,3,4,5,1]",
+      "expected output": "[2,3,4,5]",
+      "explanations": "Track increasing sequences and store the longest.",
+      "answer": "[2,3,4,5]"
+    },
+    {
+      "qno": "38",
+      "question": "Check if two 2D matrices are identical. Input: [[1,2],[3,4]], [[1,2],[3,4]]",
+      "expected output": "true",
+      "explanations": "Compare dimensions and all corresponding elements.",
+      "answer": "true"
+    },
+    {
+      "qno": "39",
+      "question": "Convert lower triangular part of matrix to 0. Input: [[1,2,3],[4,5,6],[7,8,9]]",
+      "expected output": "[[1,2,3],[0,5,6],[0,0,9]]",
+      "explanations": "Set all elements below main diagonal to 0.",
+      "answer": "[[1,2,3],[0,5,6],[0,0,9]]"
+    },
+    {
+      "qno": "40",
+      "question": "Multiply all elements of a 1D array. Input: [1,2,3,4]",
+      "expected output": "24",
+      "explanations": "1*2*3*4 = 24",
+      "answer": "24"
+    },
+    {
+      "qno": "41",
+      "question": "Print all prime numbers in a 1D array. Input: [2, 3, 4, 5, 6, 7, 8]",
+      "expected output": "[2, 3, 5, 7]",
+      "explanations": "Check each element for primality using simple divisibility test.",
+      "answer": "[2, 3, 5, 7]"
+    },
+    {
+      "qno": "42",
+      "question": "Find the transpose of a matrix. Input: [[1,2,3],[4,5,6]]",
+      "expected output": "[[1,4],[2,5],[3,6]]",
+      "explanations": "Swap rows with columns.",
+      "answer": "[[1,4],[2,5],[3,6]]"
+    },
+    {
+      "qno": "43",
+      "question": "Reverse each column in a 2D array. Input: [[1,2],[3,4],[5,6]]",
+      "expected output": "[[5,6],[3,4],[1,2]]",
+      "explanations": "Swap top and bottom elements of each column.",
+      "answer": "[[5,6],[3,4],[1,2]]"
+    },
+    {
+      "qno": "44",
+      "question": "Determine whether a 3D array is symmetric along all 2D planes. Input: [[[1,2],[2,1]],[[3,4],[4,3]]]",
+      "expected output": "true",
+      "explanations": "Check if every 2D layer is a mirror of itself along the diagonal.",
+      "answer": "true"
+    },
+    {
+      "qno": "45",
+      "question": "Find the row with the maximum sum in a 2D array. Input: [[1,2,3],[4,5,6],[7,8,9]]",
+      "expected output": "2",
+      "explanations": "Row 2 sum = 24 is highest.",
+      "answer": "2"
+    },
+    {
+      "qno": "46",
+      "question": "Replace every element in an array with the sum of its previous and next. Input: [2, 4, 6, 8]",
+      "expected output": "[2, 8, 12, 8]",
+      "explanations": "First and last elements remain same; others are sum of neighbors.",
+      "answer": "[2, 8, 12, 8]"
+    },
+    {
+      "qno": "47",
+      "question": "Sort the boundary of a 2D matrix in clockwise direction. Input: [[4,3,2],[5,1,0],[6,7,8]]",
+      "expected output": "[0,2,3,4,5,6,7,8]",
+      "explanations": "Extract boundary, sort, and place back.",
+      "answer": "[0,2,3,4,5,6,7,8]"
+    },
+    {
+      "qno": "48",
+      "question": "Count total zero elements in a 3D array. Input: [[[1,0],[0,1]],[[1,0],[0,0]]]",
+      "expected output": "5",
+      "explanations": "Traverse each layer and count zeroes.",
+      "answer": "5"
+    },
+    {
+      "qno": "49",
+      "question": "Find index of smallest positive element in an array. Input: [-2, 0, 5, 3, -1]",
+      "expected output": "3",
+      "explanations": "Smallest positive is 3 at index 3.",
+      "answer": "3"
+    },
+    {
+      "qno": "50",
+      "question": "Count frequency of each element in an array. Input: [1,2,2,3,3,3]",
+      "expected output": "{1:1, 2:2, 3:3}",
+      "explanations": "Use a count map or nested loop to count frequency.",
+      "answer": "{1:1, 2:2, 3:3}"
+    },
+    {
+      "qno": "51",
+      "question": "Replace diagonal of square matrix with 0. Input: [[5,6,7],[8,9,10],[11,12,13]]",
+      "expected output": "[[0,6,7],[8,0,10],[11,12,0]]",
+      "explanations": "Replace elements where row index equals column index.",
+      "answer": "[[0,6,7],[8,0,10],[11,12,0]]"
+    },
+    {
+      "qno": "52",
+      "question": "Shift array elements circularly to the right by 2. Input: [1,2,3,4,5]",
+      "expected output": "[4,5,1,2,3]",
+      "explanations": "Last 2 elements moved to the front.",
+      "answer": "[4,5,1,2,3]"
+    },
+    {
+      "qno": "53",
+      "question": "Replace every even number in array with its square. Input: [1,2,3,4]",
+      "expected output": "[1,4,3,16]",
+      "explanations": "Only 2 and 4 are even, squared to 4 and 16.",
+      "answer": "[1,4,3,16]"
+    },
+    {
+      "qno": "54",
+      "question": "Rotate a square matrix 90 degrees clockwise. Input: [[1,2,3],[4,5,6],[7,8,9]]",
+      "expected output": "[[7,4,1],[8,5,2],[9,6,3]]",
+      "explanations": "Transpose + reverse rows.",
+      "answer": "[[7,4,1],[8,5,2],[9,6,3]]"
+    },
+    {
+      "qno": "55",
+      "question": "Find common elements in all rows of a 2D matrix. Input: [[1,2,3],[4,2,5],[6,2,9]]",
+      "expected output": "[2]",
+      "explanations": "2 is present in all rows.",
+      "answer": "[2]"
+    },
+    {
+      "qno": "56",
+      "question": "Sum all diagonal elements in a 3D cube matrix. Input: [[[1,0,0],[0,2,0],[0,0,3]],[[4,0,0],[0,5,0],[0,0,6]]]",
+      "expected output": "21",
+      "explanations": "Diagonal elements: 1+2+3+4+5+6 = 21",
+      "answer": "21"
+    },
+    {
+      "qno": "57",
+      "question": "Replace every element in a 2D array with 1 if it is non-zero, else 0. Input: [[0,2],[3,0]]",
+      "expected output": "[[0,1],[1,0]]",
+      "explanations": "Conditional replacement based on non-zero status.",
+      "answer": "[[0,1],[1,0]]"
+    },
+    {
+      "qno": "58",
+      "question": "Find the second largest element in array. Input: [10, 20, 15, 25]",
+      "expected output": "20",
+      "explanations": "First sort or track first and second largest using logic.",
+      "answer": "20"
+    },
+    {
+      "qno": "59",
+      "question": "Find the maximum sum among all diagonals in a square matrix. Input: [[1,2,3],[4,5,6],[7,8,9]]",
+      "expected output": "15",
+      "explanations": "Both diagonals have sum 15.",
+      "answer": "15"
+    },
+    {
+      "qno": "60",
+      "question": "Count how many rows have strictly increasing values. Input: [[1,2,3],[4,4,4],[5,6,7]]",
+      "expected output": "2",
+      "explanations": "Rows 1 and 3 have increasing values.",
+      "answer": "2"
+    }
+  ],
+  "Hard": [
+    {
+      "qno": "1",
+      "question": "Find the maximum sum of a subarray using Kadane’s algorithm. Input: [-2,1,-3,4,-1,2,1,-5,4]",
+      "expected output": "6",
+      "explanations": "Use Kadane’s algorithm to find the max sum of any contiguous subarray.",
+      "answer": "6"
+    },
+    {
+      "qno": "2",
+      "question": "Find the number of unique elements in a 2D matrix. Input: [[1,2,2],[3,4,1],[5,2,4]]",
+      "expected output": "5",
+      "explanations": "Count distinct elements across all rows and columns.",
+      "answer": "5"
+    },
+    {
+      "qno": "3",
+      "question": "Rotate a 2D matrix by 90 degrees clockwise. Input: [[1,2,3],[4,5,6],[7,8,9]]",
+      "expected output": "[[7,4,1],[8,5,2],[9,6,3]]",
+      "explanations": "Transpose matrix and reverse each row.",
+      "answer": "[[7,4,1],[8,5,2],[9,6,3]]"
+    },
+    {
+      "qno": "4",
+      "question": "Find the median of two sorted arrays of equal size. Input: [1,3,5], [2,4,6]",
+      "expected output": "3.5",
+      "explanations": "Merge both arrays and find the middle average.",
+      "answer": "3.5"
+    },
+    {
+      "qno": "5",
+      "question": "Find the length of the longest increasing subarray. Input: [1,2,2,3,4,1,2]",
+      "expected output": "3",
+      "explanations": "Track maximum length of strictly increasing contiguous elements.",
+      "answer": "3"
+    },
+    {
+      "qno": "6",
+      "question": "Find the sum of all elements in the 3D array. Input: [[[1,2],[3,4]], [[5,6],[7,8]]]",
+      "expected output": "36",
+      "explanations": "Sum elements across all 3 dimensions.",
+      "answer": "36"
+    },
+    {
+      "qno": "7",
+      "question": "Find the maximum element after rotating a sorted array. Input: [4,5,6,1,2,3]",
+      "expected output": "6",
+      "explanations": "Find max element even if array is rotated.",
+      "answer": "6"
+    },
+    {
+      "qno": "8",
+      "question": "Find the index of a target in a rotated sorted array. Input: [4,5,6,1,2,3], target=2",
+      "expected output": "4",
+      "explanations": "Use modified binary search to find target index.",
+      "answer": "4"
+    },
+    {
+      "qno": "9",
+      "question": "Find the subarray with the minimum sum. Input: [3,-4,2,-3,-1,7,-5]",
+      "expected output": "-6",
+      "explanations": "Use variation of Kadane’s algorithm to find minimum sum.",
+      "answer": "-6"
+    },
+    {
+      "qno": "10",
+      "question": "Check if a 2D matrix is symmetric (equal to its transpose). Input: [[1,2,3],[2,4,5],[3,5,6]]",
+      "expected output": "true",
+      "explanations": "Matrix is symmetric if element (i,j) equals (j,i) for all i,j.",
+      "answer": "true"
+    },
+    {
+      "qno": "11",
+      "question": "Find the maximum product of two elements in an array. Input: [3, 5, -2, 9, -7]",
+      "expected output": "63",
+      "explanations": "Check products of all pairs; max product may involve two negatives.",
+      "answer": "63"
+    },
+    {
+      "qno": "12",
+      "question": "Flatten a 2D array into a 1D array. Input: [[1, 2], [3, 4], [5, 6]]",
+      "expected output": "[1, 2, 3, 4, 5, 6]",
+      "explanations": "Concatenate all rows into a single list.",
+      "answer": "[1, 2, 3, 4, 5, 6]"
+    },
+    {
+      "qno": "13",
+      "question": "Find the number of zero-sum subarrays in an array. Input: [1, -1, 2, -2, 3]",
+      "expected output": "2",
+      "explanations": "Count all subarrays whose sum is zero.",
+      "answer": "2"
+    },
+    {
+      "qno": "14",
+      "question": "Find the row with maximum sum in a 2D matrix. Input: [[1,2,3],[4,5,6],[7,8,9]]",
+      "expected output": "2",
+      "explanations": "Calculate sums of each row and find the index of max sum row.",
+      "answer": "2"
+    },
+    {
+      "qno": "15",
+      "question": "Find the number of distinct islands in a 2D grid of 0s and 1s. Input: [[1,1,0,0],[1,0,0,1],[0,0,1,1],[0,1,1,0]]",
+      "expected output": "3",
+      "explanations": "Use DFS/BFS to count connected components of 1s.",
+      "answer": "3"
+    },
+    {
+      "qno": "16",
+      "question": "Count the number of times a target appears in a sorted array. Input: [1,2,2,2,3,4,4], target=2",
+      "expected output": "3",
+      "explanations": "Use binary search to find first and last occurrence.",
+      "answer": "3"
+    },
+    {
+      "qno": "17",
+      "question": "Find the sum of the border elements in a 2D matrix. Input: [[1,2,3],[4,5,6],[7,8,9]]",
+      "expected output": "40",
+      "explanations": "Sum elements in first/last row and first/last column without double counting corners.",
+      "answer": "40"
+    },
+    {
+      "qno": "18",
+      "question": "Find the maximum difference between two elements such that larger element comes after smaller. Input: [2,3,10,6,4,8,1]",
+      "expected output": "8",
+      "explanations": "Track min element so far and max difference while traversing.",
+      "answer": "8"
+    },
+    {
+      "qno": "19",
+      "question": "Determine if two arrays are permutations of each other. Input: [1,2,3], [3,2,1]",
+      "expected output": "true",
+      "explanations": "Check if both arrays contain same elements in any order.",
+      "answer": "true"
+    },
+    {
+      "qno": "20",
+      "question": "Find the number of elements greater than all elements to their left in an array. Input: [2, 3, 1, 5, 4]",
+      "expected output": "3",
+      "explanations": "Count elements larger than the maximum seen so far from left.",
+      "answer": "3"
+    },
+    {
+      "qno": "21",
+      "question": "Find the kth smallest element in an unsorted array. Input: [7, 10, 4, 3, 20, 15], k=3",
+      "expected output": "7",
+      "explanations": "Sort the array or use selection algorithms to find kth smallest.",
+      "answer": "7"
+    },
+    {
+      "qno": "22",
+      "question": "Rotate a 2D matrix 90 degrees clockwise. Input: [[1,2,3],[4,5,6],[7,8,9]]",
+      "expected output": "[[7,4,1],[8,5,2],[9,6,3]]",
+      "explanations": "Transpose the matrix and then reverse each row.",
+      "answer": "[[7,4,1],[8,5,2],[9,6,3]]"
+    },
+    {
+      "qno": "23",
+      "question": "Find the longest increasing subarray length. Input: [1, 2, 2, 3, 4, 1, 2]",
+      "expected output": "3",
+      "explanations": "Track length of increasing sequences and return max length found.",
+      "answer": "3"
+    },
+    {
+      "qno": "24",
+      "question": "Find the median of two sorted arrays of same size. Input: [1, 3, 5], [2, 4, 6]",
+      "expected output": "3.5",
+      "explanations": "Merge arrays or use binary search to find median.",
+      "answer": "3.5"
+    },
+    {
+      "qno": "25",
+      "question": "Find the sum of elements in the main diagonal of a square matrix. Input: [[1,2,3],[4,5,6],[7,8,9]]",
+      "expected output": "15",
+      "explanations": "Sum elements where row index equals column index.",
+      "answer": "15"
+    },
+    {
+      "qno": "26",
+      "question": "Find the maximum sum rectangle in a 2D matrix. Input: [[1,-2,-1,4],[1,5,1,-3],[-1,-2,3,2]]",
+      "expected output": "8",
+      "explanations": "Use Kadane’s algorithm extended to 2D.",
+      "answer": "8"
+    },
+    {
+      "qno": "27",
+      "question": "Find the number of distinct elements in every window of size k in an array. Input: [1,2,1,3,4,2,3], k=4",
+      "expected output": "[3,4,4,3]",
+      "explanations": "Use a sliding window with a frequency map to count distinct elements.",
+      "answer": "[3,4,4,3]"
+    },
+    {
+      "qno": "28",
+      "question": "Find the maximum length of a subarray with equal number of 0s and 1s. Input: [0,1,0,1,0,0,1,1]",
+      "expected output": "6",
+      "explanations": "Use prefix sums and hashmap to track balanced subarrays.",
+      "answer": "6"
+    },
+    {
+      "qno": "29",
+      "question": "Find the missing number in an array of size n with numbers from 1 to n+1. Input: [1, 2, 4, 5]",
+      "expected output": "3",
+      "explanations": "Calculate expected sum and subtract actual sum to find missing number.",
+      "answer": "3"
+    },
+    {
+      "qno": "30",
+      "question": "Find the kth largest element in a max heap represented as an array. Input: [9,7,6,5,4,3,2], k=3",
+      "expected output": "6",
+      "explanations": "Extract max k times or use partial sorting.",
+      "answer": "6"
+    }
+  ]
+}

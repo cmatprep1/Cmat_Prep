@@ -1,0 +1,144 @@
+{
+    "Easy": [
+        {
+            "qno": "1",
+            "question": "Find the length of the string. Input: \"OpenAI\"",
+            "expected output": "6",
+            "explanations": "Count all characters in the string.",
+            "answer": "6"
+        },
+        {
+            "qno": "2",
+            "question": "Concatenate two strings. Inputs: \"Hello\" and \"World\"",
+            "expected output": "\"HelloWorld\"",
+            "explanations": "Join the two strings without any separator.",
+            "answer": "\"HelloWorld\""
+        },
+        {
+            "qno": "3",
+            "question": "Find the first character of a string. Input: \"Nepal\"",
+            "expected output": "\"N\"",
+            "explanations": "Access the character at index 0.",
+            "answer": "\"N\""
+        },
+        {
+            "qno": "4",
+            "question": "Find the last character of a string. Input: \"Apple\"",
+            "expected output": "\"e\"",
+            "explanations": "Access the character at index length - 1.",
+            "answer": "\"e\""
+        },
+        {
+            "qno": "5",
+            "question": "Convert a string to uppercase. Input: \"cat\"",
+            "expected output": "\"CAT\"",
+            "explanations": "Change all lowercase characters to uppercase.",
+            "answer": "\"CAT\""
+        },
+        {
+            "qno": "6",
+            "question": "Convert a string to lowercase. Input: \"DOG\"",
+            "expected output": "\"dog\"",
+            "explanations": "Change all uppercase characters to lowercase.",
+            "answer": "\"dog\""
+        },
+        {
+            "qno": "7",
+            "question": "Extract the first three characters. Input: \"Elephant\"",
+            "expected output": "\"Ele\"",
+            "explanations": "Take characters from index 0 to 2.",
+            "answer": "\"Ele\""
+        },
+        {
+            "qno": "8",
+            "question": "Count how many times 'a' appears. Input: \"banana\"",
+            "expected output": "3",
+            "explanations": "Loop through the string and count 'a' characters.",
+            "answer": "3"
+        },
+        {
+            "qno": "9",
+            "question": "Check if string starts with 'Hi'. Input: \"Hi there\"",
+            "expected output": "true",
+            "explanations": "Compare the first two characters of the string.",
+            "answer": "true"
+        },
+        {
+            "qno": "10",
+            "question": "Replace spaces with underscores. Input: \"good morning\"",
+            "expected output": "\"good_morning\"",
+            "explanations": "Replace every space with an underscore.",
+            "answer": "\"good_morning\""
+        },
+        {
+            "qno": "11",
+            "question": "Reverse a 3-letter word. Input: \"cat\"",
+            "expected output": "\"tac\"",
+            "explanations": "Print characters from last to first.",
+            "answer": "\"tac\""
+        },
+        {
+            "qno": "12",
+            "question": "Compare two strings. Inputs: \"apple\", \"apple\"",
+            "expected output": "true",
+            "explanations": "Check if both strings are exactly the same.",
+            "answer": "true"
+        },
+        {
+            "qno": "13",
+            "question": "Get the middle character. Input: \"open\"",
+            "expected output": "\"p\"",
+            "explanations": "Return the character at index length/2 for even-length strings (or just left of center).",
+            "answer": "\"p\""
+        },
+        {
+            "qno": "14",
+            "question": "Check if the string contains the letter 'x'. Input: \"extra\"",
+            "expected output": "true",
+            "explanations": "Scan the string for 'x'.",
+            "answer": "true"
+        },
+        {
+            "qno": "15",
+            "question": "Repeat a string twice. Input: \"Hi\"",
+            "expected output": "\"HiHi\"",
+            "explanations": "Concatenate the same string twice.",
+            "answer": "\"HiHi\""
+        },
+        {
+            "qno": "16",
+            "question": "Join three characters: 'a', 'b', 'c'",
+            "expected output": "\"abc\"",
+            "explanations": "Create a string by appending the three characters.",
+            "answer": "\"abc\""
+        },
+        {
+            "qno": "17",
+            "question": "Print string without first character. Input: \"Tiger\"",
+            "expected output": "\"iger\"",
+            "explanations": "Skip the character at index 0.",
+            "answer": "\"iger\""
+        },
+        {
+            "qno": "18",
+            "question": "Print string without last character. Input: \"Lion\"",
+            "expected output": "\"Lio\"",
+            "explanations": "Ignore the character at the last index.",
+            "answer": "\"Lio\""
+        },
+        {
+            "qno": "19",
+            "question": "Check if a string is empty. Input: \"\"",
+            "expected output": "true",
+            "explanations": "An empty string has length zero.",
+            "answer": "true"
+        },
+        {
+            "qno": "20",
+            "question": "Print string in reverse order. Input: \"bat\"",
+            "expected output": "\"tab\"",
+            "explanations": "Loop from last index to first and print characters.",
+            "answer": "\"tab\""
+        }
+    ]
+}

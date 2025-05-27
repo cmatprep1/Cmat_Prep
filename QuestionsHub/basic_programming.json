@@ -1,0 +1,1408 @@
+{
+  "Easy": [
+    {
+      "qno": "1",
+      "question": "Declare two integers and print their sum. Input: 3, 5",
+      "expected output": "8",
+      "explanations": "Add two integers using the + operator.",
+      "answer": "8"
+    },
+    {
+      "qno": "2",
+      "question": "Write a program to check if a number is even. Input: 6",
+      "expected output": "true",
+      "explanations": "A number is even if it is divisible by 2.",
+      "answer": "true"
+    },
+    {
+      "qno": "3",
+      "question": "Take input of a string and print it. Input: \"Hello\"",
+      "expected output": "\"Hello\"",
+      "explanations": "Use input/output functions to read and print the value.",
+      "answer": "\"Hello\""
+    },
+    {
+      "qno": "4",
+      "question": "Write a program to swap two numbers. Input: 4, 7",
+      "expected output": "7 4",
+      "explanations": "Use a temporary variable or tuple swapping.",
+      "answer": "7 4"
+    },
+    {
+      "qno": "5",
+      "question": "Check if a number is positive. Input: 10",
+      "expected output": "true",
+      "explanations": "A number is positive if it is greater than zero.",
+      "answer": "true"
+    },
+    {
+      "qno": "6",
+      "question": "Print the square of a number. Input: 4",
+      "expected output": "16",
+      "explanations": "Multiply the number by itself.",
+      "answer": "16"
+    },
+    {
+      "qno": "7",
+      "question": "Write a program to check if a number is divisible by 3. Input: 9",
+      "expected output": "true",
+      "explanations": "Use modulo operator to check divisibility by 3.",
+      "answer": "true"
+    },
+    {
+      "qno": "8",
+      "question": "Print the result of integer division. Input: 10 / 3",
+      "expected output": "3",
+      "explanations": "Use integer division operator (//).",
+      "answer": "3"
+    },
+    {
+      "qno": "9",
+      "question": "Get remainder of a division. Input: 10 % 4",
+      "expected output": "2",
+      "explanations": "Use modulus operator to find remainder.",
+      "answer": "2"
+    },
+    {
+      "qno": "10",
+      "question": "Increment a number by 1. Input: 7",
+      "expected output": "8",
+      "explanations": "Add 1 to the given number.",
+      "answer": "8"
+    },
+    {
+      "qno": "11",
+      "question": "Decrement a number by 1. Input: 5",
+      "expected output": "4",
+      "explanations": "Subtract 1 from the given number.",
+      "answer": "4"
+    },
+    {
+      "qno": "12",
+      "question": "Print the cube of a number. Input: 3",
+      "expected output": "27",
+      "explanations": "Cube is the number raised to the power 3.",
+      "answer": "27"
+    },
+    {
+      "qno": "13",
+      "question": "Compare two numbers using greater than operator. Input: 10, 5",
+      "expected output": "true",
+      "explanations": "Check if the first number is greater than the second.",
+      "answer": "true"
+    },
+    {
+      "qno": "14",
+      "question": "Compare two numbers using less than operator. Input: 3, 8",
+      "expected output": "true",
+      "explanations": "Check if the first number is less than the second.",
+      "answer": "true"
+    },
+    {
+      "qno": "15",
+      "question": "Check equality of two numbers. Input: 4, 4",
+      "expected output": "true",
+      "explanations": "Use == operator to check equality.",
+      "answer": "true"
+    },
+    {
+      "qno": "16",
+      "question": "Check inequality of two numbers. Input: 4, 5",
+      "expected output": "true",
+      "explanations": "Use != operator to check inequality.",
+      "answer": "true"
+    },
+    {
+      "qno": "17",
+      "question": "Multiply two numbers. Input: 7, 6",
+      "expected output": "42",
+      "explanations": "Use * operator to multiply.",
+      "answer": "42"
+    },
+    {
+      "qno": "18",
+      "question": "Divide two floating point numbers. Input: 7 / 2",
+      "expected output": "3.5",
+      "explanations": "Use / operator for float division.",
+      "answer": "3.5"
+    },
+    {
+      "qno": "19",
+      "question": "Check if number is divisible by 5. Input: 25",
+      "expected output": "true",
+      "explanations": "Use modulus operator with 5.",
+      "answer": "true"
+    },
+    {
+      "qno": "20",
+      "question": "Find the average of two numbers. Input: 6, 8",
+      "expected output": "7.0",
+      "explanations": "Add the two numbers and divide by 2.",
+      "answer": "7.0"
+    },
+    {
+      "qno": "21",
+      "question": "Check if a number is odd. Input: 9",
+      "expected output": "true",
+      "explanations": "A number is odd if it gives remainder 1 when divided by 2.",
+      "answer": "true"
+    },
+    {
+      "qno": "22",
+      "question": "Print a greeting message with a name. Input: \"Alice\"",
+      "expected output": "\"Hello, Alice!\"",
+      "explanations": "Use string concatenation or formatting to include the name.",
+      "answer": "\"Hello, Alice!\""
+    },
+    {
+      "qno": "23",
+      "question": "Print the ASCII value of a character. Input: 'A'",
+      "expected output": "65",
+      "explanations": "Use a function like ord() to get ASCII value.",
+      "answer": "65"
+    },
+    {
+      "qno": "24",
+      "question": "Convert temperature from Celsius to Fahrenheit. Input: 0",
+      "expected output": "32.0",
+      "explanations": "Use formula (C × 9/5) + 32.",
+      "answer": "32.0"
+    },
+    {
+      "qno": "25",
+      "question": "Check if a year is a leap year. Input: 2020",
+      "expected output": "true",
+      "explanations": "Leap years are divisible by 4, not by 100 unless also divisible by 400.",
+      "answer": "true"
+    },
+    {
+      "qno": "26",
+      "question": "Convert kilometers to miles. Input: 5",
+      "expected output": "3.106855",
+      "explanations": "Use conversion 1 km = 0.621371 miles.",
+      "answer": "3.106855"
+    },
+    {
+      "qno": "27",
+      "question": "Check if a number is a multiple of 10. Input: 30",
+      "expected output": "true",
+      "explanations": "Use modulo operator to check if remainder is 0 when divided by 10.",
+      "answer": "true"
+    },
+    {
+      "qno": "28",
+      "question": "Round a floating number to nearest integer. Input: 3.7",
+      "expected output": "4",
+      "explanations": "Use the round() function.",
+      "answer": "4"
+    },
+    {
+      "qno": "29",
+      "question": "Take two inputs and find the bigger one. Input: 5, 8",
+      "expected output": "8",
+      "explanations": "Use conditional statements or max().",
+      "answer": "8"
+    },
+    {
+      "qno": "30",
+      "question": "Calculate simple interest. Input: P=1000, R=5, T=2",
+      "expected output": "100.0",
+      "explanations": "Use formula SI = (P×R×T)/100.",
+      "answer": "100.0"
+    },
+    {
+      "qno": "31",
+      "question": "Check if a character is a vowel. Input: 'e'",
+      "expected output": "true",
+      "explanations": "Compare character with vowels: a, e, i, o, u.",
+      "answer": "true"
+    },
+    {
+      "qno": "32",
+      "question": "Find the smallest of three numbers. Input: 4, 2, 9",
+      "expected output": "2",
+      "explanations": "Use min() function or if-else logic.",
+      "answer": "2"
+    },
+    {
+      "qno": "33",
+      "question": "Print the last digit of a number. Input: 139",
+      "expected output": "9",
+      "explanations": "Use num % 10 to get the last digit.",
+      "answer": "9"
+    },
+    {
+      "qno": "34",
+      "question": "Print number of digits in an integer. Input: 12345",
+      "expected output": "5",
+      "explanations": "Convert to string and count length or divide repeatedly.",
+      "answer": "5"
+    },
+    {
+      "qno": "35",
+      "question": "Check if a number is zero. Input: 0",
+      "expected output": "true",
+      "explanations": "Compare the number directly with 0.",
+      "answer": "true"
+    },
+    {
+      "qno": "36",
+      "question": "Add decimal numbers. Input: 2.5 + 3.7",
+      "expected output": "6.2",
+      "explanations": "Add float values normally.",
+      "answer": "6.2"
+    },
+    {
+      "qno": "37",
+      "question": "Concatenate two strings. Input: \"Good\" and \"Morning\"",
+      "expected output": "\"GoodMorning\"",
+      "explanations": "Use + operator for concatenation.",
+      "answer": "\"GoodMorning\""
+    },
+    {
+      "qno": "38",
+      "question": "Check if a number lies between 1 and 100. Input: 75",
+      "expected output": "true",
+      "explanations": "Use logical AND: 1 <= num <= 100.",
+      "answer": "true"
+    },
+    {
+      "qno": "39",
+      "question": "Multiply a number by 10 using shorthand. Input: 7",
+      "expected output": "70",
+      "explanations": "Use *= operator.",
+      "answer": "70"
+    },
+    {
+      "qno": "40",
+      "question": "Print first digit of a 3-digit number. Input: 543",
+      "expected output": "5",
+      "explanations": "Use integer division: num // 100.",
+      "answer": "5"
+    },
+    {
+      "qno": "41",
+      "question": "Check if a number is positive. Input: 15",
+      "expected output": "true",
+      "explanations": "A number is positive if it is greater than 0.",
+      "answer": "true"
+    },
+    {
+      "qno": "42",
+      "question": "Swap values of two variables. Input: a = 5, b = 3",
+      "expected output": "a = 3, b = 5",
+      "explanations": "Use a temporary variable or simultaneous assignment.",
+      "answer": "a = 3, b = 5"
+    },
+    {
+      "qno": "43",
+      "question": "Calculate area of a rectangle. Input: length=10, breadth=4",
+      "expected output": "40",
+      "explanations": "Area = length × breadth.",
+      "answer": "40"
+    },
+    {
+      "qno": "44",
+      "question": "Convert hours to minutes. Input: 2 hours",
+      "expected output": "120",
+      "explanations": "1 hour = 60 minutes, so multiply by 60.",
+      "answer": "120"
+    },
+    {
+      "qno": "45",
+      "question": "Check if a number is divisible by 3 and 5. Input: 15",
+      "expected output": "true",
+      "explanations": "Use modulo operator: num % 3 == 0 and num % 5 == 0.",
+      "answer": "true"
+    },
+    {
+      "qno": "46",
+      "question": "Find the square of a number. Input: 8",
+      "expected output": "64",
+      "explanations": "Multiply the number by itself.",
+      "answer": "64"
+    },
+    {
+      "qno": "47",
+      "question": "Print numbers from 1 to 5 using loop.",
+      "expected output": "1 2 3 4 5",
+      "explanations": "Use a loop from 1 to 5.",
+      "answer": "1 2 3 4 5"
+    },
+    {
+      "qno": "48",
+      "question": "Calculate average of 3 numbers. Input: 4, 5, 6",
+      "expected output": "5.0",
+      "explanations": "Add numbers and divide by 3.",
+      "answer": "5.0"
+    },
+    {
+      "qno": "49",
+      "question": "Print even numbers from 1 to 10.",
+      "expected output": "2 4 6 8 10",
+      "explanations": "Use loop and check if number is divisible by 2.",
+      "answer": "2 4 6 8 10"
+    },
+    {
+      "qno": "50",
+      "question": "Find cube of a number. Input: 3",
+      "expected output": "27",
+      "explanations": "Multiply the number three times.",
+      "answer": "27"
+    },
+    {
+      "qno": "51",
+      "question": "Print the square root of a number. Input: 49",
+      "expected output": "7.0",
+      "explanations": "Use sqrt() or raise to power 0.5.",
+      "answer": "7.0"
+    },
+    {
+      "qno": "52",
+      "question": "Check if a number is single-digit. Input: 7",
+      "expected output": "true",
+      "explanations": "A single-digit number is between 0 and 9.",
+      "answer": "true"
+    },
+    {
+      "qno": "53",
+      "question": "Convert days to hours. Input: 3",
+      "expected output": "72",
+      "explanations": "1 day = 24 hours, multiply days by 24.",
+      "answer": "72"
+    },
+    {
+      "qno": "54",
+      "question": "Print the product of two decimal numbers. Input: 2.5, 4.0",
+      "expected output": "10.0",
+      "explanations": "Multiply the two float values.",
+      "answer": "10.0"
+    },
+    {
+      "qno": "55",
+      "question": "Convert a lowercase character to uppercase. Input: 'b'",
+      "expected output": "'B'",
+      "explanations": "Use upper() method or ASCII conversion.",
+      "answer": "'B'"
+    },
+    {
+      "qno": "56",
+      "question": "Count total characters in a string. Input: \"BIM\"",
+      "expected output": "3",
+      "explanations": "Use len() function.",
+      "answer": "3"
+    },
+    {
+      "qno": "57",
+      "question": "Print multiplication table of 2 up to 10 terms.",
+      "expected output": "2 4 6 8 10 12 14 16 18 20",
+      "explanations": "Use loop and multiply 2 by index.",
+      "answer": "2 4 6 8 10 12 14 16 18 20"
+    },
+    {
+      "qno": "58",
+      "question": "Check if a number is greater than 100. Input: 120",
+      "expected output": "true",
+      "explanations": "Use if statement to compare number with 100.",
+      "answer": "true"
+    },
+    {
+      "qno": "59",
+      "question": "Get the middle character of a string. Input: \"apple\"",
+      "expected output": "\"p\"",
+      "explanations": "Middle index is len(s)//2 if string is odd length.",
+      "answer": "\"p\""
+    },
+    {
+      "qno": "60",
+      "question": "Print the first 5 natural numbers using a while loop.",
+      "expected output": "1 2 3 4 5",
+      "explanations": "Initialize counter and increment inside loop.",
+      "answer": "1 2 3 4 5"
+    },
+    {
+      "qno": "61",
+      "question": "Convert Celsius to Fahrenheit. Input: 0°C",
+      "expected output": "32.0",
+      "explanations": "Use formula: F = (C × 9/5) + 32.",
+      "answer": "32.0"
+    },
+    {
+      "qno": "62",
+      "question": "Convert Fahrenheit to Celsius. Input: 212°F",
+      "expected output": "100.0",
+      "explanations": "Use formula: C = (F - 32) × 5/9.",
+      "answer": "100.0"
+    },
+    {
+      "qno": "63",
+      "question": "Print the last digit of a number. Input: 237",
+      "expected output": "7",
+      "explanations": "Use modulo 10 to get the last digit.",
+      "answer": "7"
+    },
+    {
+      "qno": "64",
+      "question": "Print characters of a string individually. Input: \"abc\"",
+      "expected output": "a b c",
+      "explanations": "Use loop to iterate each character.",
+      "answer": "a b c"
+    },
+    {
+      "qno": "65",
+      "question": "Sum of first 10 natural numbers.",
+      "expected output": "55",
+      "explanations": "Use formula: n(n+1)/2 or loop up to 10.",
+      "answer": "55"
+    },
+    {
+      "qno": "66",
+      "question": "Check if a string contains the word 'BIM'. Input: \"I study BIM\"",
+      "expected output": "true",
+      "explanations": "Use 'in' keyword or find method.",
+      "answer": "true"
+    },
+    {
+      "qno": "67",
+      "question": "Check if a number is not zero. Input: 4",
+      "expected output": "true",
+      "explanations": "Check if the number != 0.",
+      "answer": "true"
+    },
+    {
+      "qno": "68",
+      "question": "Get ASCII value of character. Input: 'A'",
+      "expected output": "65",
+      "explanations": "Use ord() function in Python.",
+      "answer": "65"
+    },
+    {
+      "qno": "69",
+      "question": "Convert ASCII to character. Input: 97",
+      "expected output": "'a'",
+      "explanations": "Use chr() function in Python.",
+      "answer": "'a'"
+    },
+    {
+      "qno": "70",
+      "question": "Concatenate two strings. Input: \"Hi\", \"There\"",
+      "expected output": "\"HiThere\"",
+      "explanations": "Use '+' operator to join strings.",
+      "answer": "\"HiThere\""
+    },
+    {
+      "qno": "71",
+      "question": "Print numbers from 10 to 1 using loop.",
+      "expected output": "10 9 8 7 6 5 4 3 2 1",
+      "explanations": "Use a loop with decrement.",
+      "answer": "10 9 8 7 6 5 4 3 2 1"
+    },
+    {
+      "qno": "72",
+      "question": "Check if a number is zero. Input: 0",
+      "expected output": "true",
+      "explanations": "Use if number == 0.",
+      "answer": "true"
+    },
+    {
+      "qno": "73",
+      "question": "Print sum of squares of two numbers. Input: 2 and 3",
+      "expected output": "13",
+      "explanations": "2² + 3² = 4 + 9 = 13.",
+      "answer": "13"
+    },
+    {
+      "qno": "74",
+      "question": "Check if a string is empty. Input: \"\"",
+      "expected output": "true",
+      "explanations": "Use if not string.",
+      "answer": "true"
+    },
+    {
+      "qno": "75",
+      "question": "Extract first character of a string. Input: \"Nepal\"",
+      "expected output": "\"N\"",
+      "explanations": "Access using index 0.",
+      "answer": "\"N\""
+    },
+    {
+      "qno": "76",
+      "question": "Print the sum of odd numbers from 1 to 10.",
+      "expected output": "25",
+      "explanations": "Sum of 1 + 3 + 5 + 7 + 9 = 25.",
+      "answer": "25"
+    },
+    {
+      "qno": "77",
+      "question": "Check if two numbers are equal. Input: 4 and 4",
+      "expected output": "true",
+      "explanations": "Use == operator.",
+      "answer": "true"
+    },
+    {
+      "qno": "78",
+      "question": "Find the absolute value of a number. Input: -12",
+      "expected output": "12",
+      "explanations": "Use abs() function.",
+      "answer": "12"
+    },
+    {
+      "qno": "79",
+      "question": "Check if input is a digit. Input: '5'",
+      "expected output": "true",
+      "explanations": "Use isdigit() method.",
+      "answer": "true"
+    },
+    {
+      "qno": "80",
+      "question": "Repeat a string 3 times. Input: 'Hi'",
+      "expected output": "\"HiHiHi\"",
+      "explanations": "Use multiplication operator for strings.",
+      "answer": "\"HiHiHi\""
+    },
+    {
+      "qno": "81",
+      "question": "Calculate the cube of a number. Input: 4",
+      "expected output": "64",
+      "explanations": "Cube is calculated as number^3.",
+      "answer": "64"
+    },
+    {
+      "qno": "82",
+      "question": "Swap values of two variables. Input: a=2, b=3",
+      "expected output": "a=3, b=2",
+      "explanations": "Use a temporary variable or tuple unpacking.",
+      "answer": "a=3, b=2"
+    },
+    {
+      "qno": "83",
+      "question": "Check if a character is uppercase. Input: 'M'",
+      "expected output": "true",
+      "explanations": "Use isupper() function.",
+      "answer": "true"
+    },
+    {
+      "qno": "84",
+      "question": "Check if a character is lowercase. Input: 'm'",
+      "expected output": "true",
+      "explanations": "Use islower() function.",
+      "answer": "true"
+    },
+    {
+      "qno": "85",
+      "question": "Extract the domain from an email. Input: \"user@example.com\"",
+      "expected output": "\"example.com\"",
+      "explanations": "Split using '@' and return the second part.",
+      "answer": "\"example.com\""
+    },
+    {
+      "qno": "86",
+      "question": "Round a floating-point number. Input: 3.765",
+      "expected output": "4",
+      "explanations": "Use round() function.",
+      "answer": "4"
+    },
+    {
+      "qno": "87",
+      "question": "Calculate area of a triangle. Input: base=4, height=5",
+      "expected output": "10.0",
+      "explanations": "Use formula: 0.5 × base × height.",
+      "answer": "10.0"
+    },
+    {
+      "qno": "88",
+      "question": "Calculate area of a circle. Input: radius=7",
+      "expected output": "153.93804002589985",
+      "explanations": "Use π × r², π ≈ 3.14159.",
+      "answer": "153.93804002589985"
+    },
+    {
+      "qno": "89",
+      "question": "Check if number is positive. Input: 5",
+      "expected output": "true",
+      "explanations": "Number is positive if > 0.",
+      "answer": "true"
+    },
+    {
+      "qno": "90",
+      "question": "Check if number is negative. Input: -2",
+      "expected output": "true",
+      "explanations": "Number is negative if < 0.",
+      "answer": "true"
+    },
+    {
+      "qno": "91",
+      "question": "Convert string to integer. Input: \"123\"",
+      "expected output": "123",
+      "explanations": "Use int() function.",
+      "answer": "123"
+    },
+    {
+      "qno": "92",
+      "question": "Convert string to float. Input: \"3.14\"",
+      "expected output": "3.14",
+      "explanations": "Use float() function.",
+      "answer": "3.14"
+    },
+    {
+      "qno": "93",
+      "question": "Check if a number is divisible by both 3 and 5. Input: 15",
+      "expected output": "true",
+      "explanations": "Check if num % 3 == 0 and num % 5 == 0.",
+      "answer": "true"
+    },
+    {
+      "qno": "94",
+      "question": "Print a simple multiplication table of 4 (1–5).",
+      "expected output": "4 8 12 16 20",
+      "explanations": "Multiply 4 with numbers 1 to 5 using a loop.",
+      "answer": "4 8 12 16 20"
+    },
+    {
+      "qno": "95",
+      "question": "Check if a number is between 10 and 20. Input: 15",
+      "expected output": "true",
+      "explanations": "Use condition 10 <= num <= 20.",
+      "answer": "true"
+    },
+    {
+      "qno": "96",
+      "question": "Extract middle character from odd-length string. Input: \"hello\"",
+      "expected output": "\"l\"",
+      "explanations": "Middle index for odd string = len // 2.",
+      "answer": "\"l\""
+    },
+    {
+      "qno": "97",
+      "question": "Print even indexed characters. Input: \"abcdef\"",
+      "expected output": "\"ace\"",
+      "explanations": "Use slicing with step size 2.",
+      "answer": "\"ace\""
+    },
+    {
+      "qno": "98",
+      "question": "Print odd indexed characters. Input: \"abcdef\"",
+      "expected output": "\"bdf\"",
+      "explanations": "Use slicing with step size 2 starting from index 1.",
+      "answer": "\"bdf\""
+    },
+    {
+      "qno": "99",
+      "question": "Check if a number is single-digit. Input: 9",
+      "expected output": "true",
+      "explanations": "Check if number is between 0 and 9.",
+      "answer": "true"
+    },
+    {
+      "qno": "100",
+      "question": "Print reverse of digits in a number. Input: 321",
+      "expected output": "123",
+      "explanations": "Convert to string, reverse, then back to int.",
+      "answer": "123"
+    }
+  ],
+  "Medium": [
+    {
+      "qno": "1",
+      "question": "Write a program to find the largest of three numbers. Input: 7, 12, 9",
+      "expected output": "12",
+      "explanations": "Compare all three numbers; switch case can simplify multiple conditions.",
+      "answer": "12"
+    },
+    {
+      "qno": "2",
+      "question": "Check whether a number is positive, negative or zero. Input: -5",
+      "expected output": "Negative",
+      "explanations": "Use conditional checks; switch case can help categorize values.",
+      "answer": "Negative"
+    },
+    {
+      "qno": "3",
+      "question": "Calculate the sum of digits of a given number. Input: 1234",
+      "expected output": "10",
+      "explanations": "Extract digits using modulus and division in a loop.",
+      "answer": "10"
+    },
+    {
+      "qno": "4",
+      "question": "Print the day of the week for a given number (1-7). Input: 3",
+      "expected output": "Wednesday",
+      "explanations": "Map number to day name; switch case is an efficient way for mapping.",
+      "answer": "Wednesday"
+    },
+    {
+      "qno": "5",
+      "question": "Find the average of numbers from 1 to N. Input: 5",
+      "expected output": "3.0",
+      "explanations": "Sum numbers from 1 to N and divide by N.",
+      "answer": "3.0"
+    },
+    {
+      "qno": "6",
+      "question": "Check if a given year is a leap year. Input: 2024",
+      "expected output": "true",
+      "explanations": "Year divisible by 4 and not by 100 unless divisible by 400.",
+      "answer": "true"
+    },
+    {
+      "qno": "7",
+      "question": "Convert a character to uppercase. Input: 'g'",
+      "expected output": "G",
+      "explanations": "Add/subtract ASCII value difference; switch case can help with character ranges.",
+      "answer": "G"
+    },
+    {
+      "qno": "8",
+      "question": "Print all multiples of 5 between 1 and N. Input: 20",
+      "expected output": "5 10 15 20",
+      "explanations": "Iterate through 1 to N, print if divisible by 5.",
+      "answer": "5 10 15 20"
+    },
+    {
+      "qno": "9",
+      "question": "Calculate the power of a number using a loop. Input: base=2, exponent=3",
+      "expected output": "8",
+      "explanations": "Multiply base exponent times in a loop.",
+      "answer": "8"
+    },
+    {
+      "qno": "10",
+      "question": "Print a simple menu for user choice and output the choice selected. Input: 2",
+      "expected output": "You selected option 2",
+      "explanations": "Use switch case to match input to menu option.",
+      "answer": "You selected option 2"
+    },
+    {
+      "qno": "11",
+      "question": "Check whether a character is a vowel or consonant. Input: 'e'",
+      "expected output": "Vowel",
+      "explanations": "Check character against vowels; switch case simplifies multiple comparisons.",
+      "answer": "Vowel"
+    },
+    {
+      "qno": "12",
+      "question": "Calculate the sum of all odd numbers between 1 and N. Input: 7",
+      "expected output": "16",
+      "explanations": "Loop through 1 to N and sum numbers where number % 2 != 0.",
+      "answer": "16"
+    },
+    {
+      "qno": "13",
+      "question": "Print the multiplication table of a number up to 10. Input: 3",
+      "expected output": "3 6 9 12 15 18 21 24 27 30",
+      "explanations": "Loop from 1 to 10 and multiply the base number.",
+      "answer": "3 6 9 12 15 18 21 24 27 30"
+    },
+    {
+      "qno": "14",
+      "question": "Find the remainder when a number is divided by 7. Input: 50",
+      "expected output": "1",
+      "explanations": "Use modulus operator to get remainder.",
+      "answer": "1"
+    },
+    {
+      "qno": "15",
+      "question": "Determine the grade based on marks (A: >= 90, B: >= 75, C: >= 50, F: < 50). Input: 82",
+      "expected output": "B",
+      "explanations": "Use conditional ranges; switch case can be used after mapping ranges.",
+      "answer": "B"
+    },
+    {
+      "qno": "16",
+      "question": "Check if a number is even or odd without using modulus operator. Input: 13",
+      "expected output": "Odd",
+      "explanations": "Use bitwise AND with 1 to check even or odd.",
+      "answer": "Odd"
+    },
+    {
+      "qno": "17",
+      "question": "Convert a lowercase character to uppercase without built-in functions. Input: 'r'",
+      "expected output": "R",
+      "explanations": "Subtract ASCII difference between lowercase and uppercase letters.",
+      "answer": "R"
+    },
+    {
+      "qno": "18",
+      "question": "Find the smallest number in an array. Input: [10, 3, 6, 2, 8]",
+      "expected output": "2",
+      "explanations": "Iterate array to find minimum value.",
+      "answer": "2"
+    },
+    {
+      "qno": "19",
+      "question": "Calculate the sum of the first N natural numbers. Input: 10",
+      "expected output": "55",
+      "explanations": "Use formula N*(N+1)/2 or loop sum.",
+      "answer": "55"
+    },
+    {
+      "qno": "20",
+      "question": "Print first N even numbers. Input: 5",
+      "expected output": "2 4 6 8 10",
+      "explanations": "Loop from 1 to N, multiply by 2.",
+      "answer": "2 4 6 8 10"
+    },
+    {
+      "qno": "21",
+      "question": "Calculate the absolute value of a number. Input: -15",
+      "expected output": "15",
+      "explanations": "If number is negative, multiply by -1; otherwise return the number as is.",
+      "answer": "15"
+    },
+    {
+      "qno": "22",
+      "question": "Find the sum of digits of an integer using recursion. Input: 456",
+      "expected output": "15",
+      "explanations": "Recursively extract last digit and add it to sum of remaining digits.",
+      "answer": "15"
+    },
+    {
+      "qno": "23",
+      "question": "Print 'Hello' N times using a loop. Input: 3",
+      "expected output": "Hello Hello Hello",
+      "explanations": "Use a for loop to print 'Hello' N times.",
+      "answer": "Hello Hello Hello"
+    },
+    {
+      "qno": "24",
+      "question": "Check if a character is a digit. Input: '7'",
+      "expected output": "true",
+      "explanations": "Check if ASCII value lies between '0' and '9'.",
+      "answer": "true"
+    },
+    {
+      "qno": "25",
+      "question": "Find the second largest number in an array. Input: [10, 20, 30, 25, 15]",
+      "expected output": "25",
+      "explanations": "Sort or iterate to find the largest and second largest numbers.",
+      "answer": "25"
+    },
+    {
+      "qno": "26",
+      "question": "Print the number of digits in an integer. Input: 12345",
+      "expected output": "5",
+      "explanations": "Count digits by dividing the number by 10 until it reaches 0.",
+      "answer": "5"
+    },
+    {
+      "qno": "27",
+      "question": "Find the sum of the first N even numbers. Input: 4",
+      "expected output": "20",
+      "explanations": "Sum even numbers using loop or formula: N*(N+1).",
+      "answer": "20"
+    },
+    {
+      "qno": "28",
+      "question": "Check if a given character is uppercase. Input: 'A'",
+      "expected output": "true",
+      "explanations": "Check ASCII range for uppercase letters.",
+      "answer": "true"
+    },
+    {
+      "qno": "29",
+      "question": "Calculate the product of two numbers without using the * operator. Input: 4, 5",
+      "expected output": "20",
+      "explanations": "Use repeated addition in a loop.",
+      "answer": "20"
+    },
+    {
+      "qno": "30",
+      "question": "Print the reverse of a number. Input: 1234",
+      "expected output": "4321",
+      "explanations": "Extract digits and build reversed number.",
+      "answer": "4321"
+    },
+    {
+      "qno": "31",
+      "question": "Find the ASCII value of a given character. Input: 'Z'",
+      "expected output": "90",
+      "explanations": "Return the integer representation of the character.",
+      "answer": "90"
+    },
+    {
+      "qno": "32",
+      "question": "Print all prime numbers up to N. Input: 10",
+      "expected output": "2 3 5 7",
+      "explanations": "Check divisibility for each number from 2 to N.",
+      "answer": "2 3 5 7"
+    },
+    {
+      "qno": "33",
+      "question": "Check whether a given number is divisible by both 3 and 5. Input: 30",
+      "expected output": "true",
+      "explanations": "Use modulus operator to check divisibility.",
+      "answer": "true"
+    },
+    {
+      "qno": "34",
+      "question": "Find the sum of elements at even indices in an array. Input: [5, 8, 3, 10, 7]",
+      "expected output": "15",
+      "explanations": "Sum elements where index % 2 == 0.",
+      "answer": "15"
+    },
+    {
+      "qno": "35",
+      "question": "Print the first N Fibonacci numbers. Input: 5",
+      "expected output": "0 1 1 2 3",
+      "explanations": "Use iterative method to generate Fibonacci sequence.",
+      "answer": "0 1 1 2 3"
+    },
+    {
+      "qno": "36",
+      "question": "Determine if a number is a perfect square. Input: 16",
+      "expected output": "true",
+      "explanations": "Check if the square root is an integer.",
+      "answer": "true"
+    },
+    {
+      "qno": "37",
+      "question": "Print numbers from N down to 1. Input: 4",
+      "expected output": "4 3 2 1",
+      "explanations": "Use a loop decrementing from N to 1.",
+      "answer": "4 3 2 1"
+    },
+    {
+      "qno": "38",
+      "question": "Calculate the greatest common divisor (GCD) of two numbers. Input: 12, 18",
+      "expected output": "6",
+      "explanations": "Use Euclidean algorithm to find GCD.",
+      "answer": "6"
+    },
+    {
+      "qno": "39",
+      "question": "Find the factorial of a number using recursion. Input: 4",
+      "expected output": "24",
+      "explanations": "Multiply number by factorial of (number-1) recursively.",
+      "answer": "24"
+    },
+    {
+      "qno": "40",
+      "question": "Convert a number from Celsius to Fahrenheit. Input: 0",
+      "expected output": "32",
+      "explanations": "Use formula: F = (C * 9/5) + 32.",
+      "answer": "32"
+    },
+    {
+      "qno": "41",
+      "question": "Find the minimum number in an array. Input: [5, 3, 9, 1, 7]",
+      "expected output": "1",
+      "explanations": "Iterate through array to find smallest value.",
+      "answer": "1"
+    },
+    {
+      "qno": "42",
+      "question": "Check if a number is prime. Input: 29",
+      "expected output": "true",
+      "explanations": "Test divisibility from 2 to sqrt(number).",
+      "answer": "true"
+    },
+    {
+      "qno": "43",
+      "question": "Print the sum of odd numbers between 1 and N. Input: 7",
+      "expected output": "16",
+      "explanations": "Sum all odd numbers from 1 to N using a loop.",
+      "answer": "16"
+    },
+    {
+      "qno": "44",
+      "question": "Calculate power of a number (x^y) using a loop. Input: 2, 3",
+      "expected output": "8",
+      "explanations": "Multiply x by itself y times using a loop.",
+      "answer": "8"
+    },
+    {
+      "qno": "45",
+      "question": "Check if a given year is a leap year. Input: 2020",
+      "expected output": "true",
+      "explanations": "Year divisible by 4 and not by 100, or divisible by 400.",
+      "answer": "true"
+    },
+    {
+      "qno": "46",
+      "question": "Find the sum of the digits of a number. Input: 1234",
+      "expected output": "10",
+      "explanations": "Extract digits and add them iteratively.",
+      "answer": "10"
+    },
+    {
+      "qno": "47",
+      "question": "Swap two numbers without using a temporary variable. Input: 5, 10",
+      "expected output": "10, 5",
+      "explanations": "Use arithmetic operations to swap values.",
+      "answer": "10, 5"
+    },
+    {
+      "qno": "48",
+      "question": "Check if a number is even or odd. Input: 11",
+      "expected output": "odd",
+      "explanations": "Use modulus operator to determine parity.",
+      "answer": "odd"
+    },
+    {
+      "qno": "49",
+      "question": "Find the average of numbers in an array. Input: [2, 4, 6, 8]",
+      "expected output": "5",
+      "explanations": "Sum elements and divide by number of elements.",
+      "answer": "5"
+    },
+    {
+      "qno": "50",
+      "question": "Print multiplication table of a number up to 10. Input: 3",
+      "expected output": "3 6 9 12 15 18 21 24 27 30",
+      "explanations": "Multiply the number by 1 to 10 in a loop.",
+      "answer": "3 6 9 12 15 18 21 24 27 30"
+    },
+    {
+      "qno": "51",
+      "question": "Find the length of a string without using built-in functions. Input: \"test\"",
+      "expected output": "4",
+      "explanations": "Iterate over characters until the end is reached.",
+      "answer": "4"
+    },
+    {
+      "qno": "52",
+      "question": "Check if a character is a vowel or consonant. Input: 'e'",
+      "expected output": "vowel",
+      "explanations": "Compare character against vowels set.",
+      "answer": "vowel"
+    },
+    {
+      "qno": "53",
+      "question": "Print the first N natural numbers. Input: 5",
+      "expected output": "1 2 3 4 5",
+      "explanations": "Use a loop to print numbers from 1 to N.",
+      "answer": "1 2 3 4 5"
+    },
+    {
+      "qno": "54",
+      "question": "Find the sum of squares of first N numbers. Input: 3",
+      "expected output": "14",
+      "explanations": "Sum i^2 for i=1 to N in a loop.",
+      "answer": "14"
+    },
+    {
+      "qno": "55",
+      "question": "Determine the sign of a number. Input: -10",
+      "expected output": "negative",
+      "explanations": "Check if number is less than, greater than, or equal to zero.",
+      "answer": "negative"
+    },
+    {
+      "qno": "56",
+      "question": "Print the ASCII values for characters 'a' to 'e'.",
+      "expected output": "97 98 99 100 101",
+      "explanations": "Use a loop to print ASCII values of consecutive characters.",
+      "answer": "97 98 99 100 101"
+    },
+    {
+      "qno": "57",
+      "question": "Find the remainder when one number is divided by another. Input: 17, 5",
+      "expected output": "2",
+      "explanations": "Use modulus operator to get remainder.",
+      "answer": "2"
+    },
+    {
+      "qno": "58",
+      "question": "Print numbers divisible by 3 between 1 and N. Input: 10",
+      "expected output": "3 6 9",
+      "explanations": "Check divisibility with modulus in a loop.",
+      "answer": "3 6 9"
+    },
+    {
+      "qno": "59",
+      "question": "Calculate the sum of the first N odd numbers. Input: 4",
+      "expected output": "16",
+      "explanations": "Sum odd numbers using formula or loop.",
+      "answer": "16"
+    },
+    {
+      "qno": "60",
+      "question": "Check if a string contains only digits. Input: \"1234\"",
+      "expected output": "true",
+      "explanations": "Verify each character is between '0' and '9'.",
+      "answer": "true"
+    },
+    {
+      "qno": "61",
+      "question": "Find the greatest common divisor (GCD) of two numbers. Input: 48, 18",
+      "expected output": "6",
+      "explanations": "Use Euclidean algorithm to find GCD.",
+      "answer": "6"
+    },
+    {
+      "qno": "62",
+      "question": "Convert temperature from Celsius to Fahrenheit. Input: 25",
+      "expected output": "77",
+      "explanations": "Use formula F = (C × 9/5) + 32.",
+      "answer": "77"
+    },
+    {
+      "qno": "63",
+      "question": "Find the sum of all digits of a number until the sum is a single digit. Input: 9875",
+      "expected output": "2",
+      "explanations": "Repeat sum of digits until one digit remains.",
+      "answer": "2"
+    },
+    {
+      "qno": "64",
+      "question": "Check if a given character is uppercase or lowercase. Input: 'G'",
+      "expected output": "uppercase",
+      "explanations": "Compare ASCII values to determine case.",
+      "answer": "uppercase"
+    },
+    {
+      "qno": "65",
+      "question": "Calculate the sum of the first N natural even numbers. Input: 5",
+      "expected output": "30",
+      "explanations": "Sum even numbers: 2 + 4 + 6 + 8 + 10.",
+      "answer": "30"
+    },
+    {
+      "qno": "66",
+      "question": "Find the ASCII value of a given character. Input: 'Z'",
+      "expected output": "90",
+      "explanations": "Use built-in functions or type casting to find ASCII value.",
+      "answer": "90"
+    },
+    {
+      "qno": "67",
+      "question": "Calculate the simple interest for given principal, rate and time. Input: principal=1000, rate=5, time=2",
+      "expected output": "100",
+      "explanations": "Use formula SI = (P × R × T) / 100.",
+      "answer": "100"
+    },
+    {
+      "qno": "68",
+      "question": "Check if a number is a perfect square. Input: 49",
+      "expected output": "true",
+      "explanations": "Check if the square root of the number is an integer.",
+      "answer": "true"
+    },
+    {
+      "qno": "69",
+      "question": "Find the sum of integers between two numbers inclusive. Input: 3, 7",
+      "expected output": "25",
+      "explanations": "Sum all numbers from the first to the second input.",
+      "answer": "25"
+    },
+    {
+      "qno": "70",
+      "question": "Print all prime numbers up to N. Input: 10",
+      "expected output": "2 3 5 7",
+      "explanations": "Check primality of each number from 2 to N.",
+      "answer": "2 3 5 7"
+    }
+  ],
+  "Hard": [
+    {
+      "qno": "1",
+      "question": "Write a program to find the second largest number in an array. Input: [5, 3, 9, 7, 9]",
+      "expected output": "7",
+      "explanations": "Find the largest number, then find the largest number less than it. Handle duplicates.",
+      "answer": "7"
+    },
+    {
+      "qno": "2",
+      "question": "Given a number, print its binary representation without using built-in functions. Input: 13",
+      "expected output": "1101",
+      "explanations": "Use repeated division by 2 and collect remainders.",
+      "answer": "1101"
+    },
+    {
+      "qno": "3",
+      "question": "Check if a given year is a leap year. Input: 2000",
+      "expected output": "true",
+      "explanations": "Year divisible by 400 or divisible by 4 but not 100 is leap year.",
+      "answer": "true"
+    },
+    {
+      "qno": "4",
+      "question": "Implement a simple calculator that supports addition, subtraction, multiplication, and division. Input: 6, 3, operator '/'",
+      "expected output": "2",
+      "explanations": "Use conditional statements or switch cases to perform operations based on operator input.",
+      "answer": "2"
+    },
+    {
+      "qno": "5",
+      "question": "Find the sum of digits of a number using recursion. Input: 1234",
+      "expected output": "10",
+      "explanations": "Recursively extract last digit and add to sum of remaining digits.",
+      "answer": "10"
+    },
+    {
+      "qno": "6",
+      "question": "Print the Fibonacci sequence up to N terms without using arrays. Input: 7",
+      "expected output": "0 1 1 2 3 5 8",
+      "explanations": "Use variables to track the previous two terms and print iteratively.",
+      "answer": "0 1 1 2 3 5 8"
+    },
+    {
+      "qno": "7",
+      "question": "Find the factorial of a number using iteration. Input: 6",
+      "expected output": "720",
+      "explanations": "Multiply numbers from 1 to N in a loop.",
+      "answer": "720"
+    },
+    {
+      "qno": "8",
+      "question": "Determine if a number is a palindrome. Input: 1221",
+      "expected output": "true",
+      "explanations": "Reverse the number and compare with original.",
+      "answer": "true"
+    },
+    {
+      "qno": "9",
+      "question": "Find the sum of all odd numbers between two integers inclusive. Input: 3, 9",
+      "expected output": "36",
+      "explanations": "Loop through range and add numbers that are odd.",
+      "answer": "36"
+    },
+    {
+      "qno": "10",
+      "question": "Swap two numbers without using a temporary variable. Input: 5, 8",
+      "expected output": "8 5",
+      "explanations": "Use arithmetic operations or bitwise XOR to swap values.",
+      "answer": "8 5"
+    },
+    {
+      "qno": "11",
+      "question": "Find the greatest common divisor (GCD) and least common multiple (LCM) of two numbers. Input: 12, 18",
+      "expected output": "GCD: 6, LCM: 36",
+      "explanations": "Use Euclidean algorithm for GCD and formula LCM = (a*b)/GCD.",
+      "answer": "GCD: 6, LCM: 36"
+    },
+    {
+      "qno": "12",
+      "question": "Print the multiplication table of a given number up to 10. Input: 7",
+      "expected output": "7 14 21 28 35 42 49 56 63 70",
+      "explanations": "Use a loop from 1 to 10 and multiply with the input number.",
+      "answer": "7 14 21 28 35 42 49 56 63 70"
+    },
+    {
+      "qno": "13",
+      "question": "Check if a number is an Armstrong number. Input: 153",
+      "expected output": "true",
+      "explanations": "Sum of cubes of digits equals the number itself.",
+      "answer": "true"
+    },
+    {
+      "qno": "14",
+      "question": "Find the sum of squares of first N natural numbers. Input: 5",
+      "expected output": "55",
+      "explanations": "Sum of squares formula or loop calculation.",
+      "answer": "55"
+    },
+    {
+      "qno": "15",
+      "question": "Convert a decimal number to hexadecimal. Input: 254",
+      "expected output": "FE",
+      "explanations": "Repeated division by 16 and mapping remainders to hex digits.",
+      "answer": "FE"
+    },
+    {
+      "qno": "16",
+      "question": "Check if a given character is a vowel or consonant. Input: 'e'",
+      "expected output": "vowel",
+      "explanations": "Check against vowel set (a, e, i, o, u) ignoring case.",
+      "answer": "vowel"
+    },
+    {
+      "qno": "17",
+      "question": "Calculate the power of a number using a loop. Input: base=3, exponent=4",
+      "expected output": "81",
+      "explanations": "Multiply base exponent times iteratively.",
+      "answer": "81"
+    },
+    {
+      "qno": "18",
+      "question": "Find the length of the longest increasing subsequence in an array. Input: [10, 22, 9, 33, 21, 50, 41, 60]",
+      "expected output": "5",
+      "explanations": "Use dynamic programming or iteration to find LIS length.",
+      "answer": "5"
+    },
+    {
+      "qno": "19",
+      "question": "Implement a basic number guessing game where the user guesses a secret number between 1 to 100.",
+      "expected output": "Correct if guess matches secret number",
+      "explanations": "Use loops and conditionals to check and give feedback.",
+      "answer": "Correct if guess matches secret number"
+    },
+    {
+      "qno": "20",
+      "question": "Reverse the digits of a number without converting it to a string. Input: 12345",
+      "expected output": "54321",
+      "explanations": "Extract digits with modulo and build reversed number mathematically.",
+      "answer": "54321"
+    },
+    {
+      "qno": "21",
+      "question": "Find the sum of all prime numbers up to N. Input: 10",
+      "expected output": "17",
+      "explanations": "Check each number up to N for primality and sum the primes.",
+      "answer": "17"
+    },
+    {
+      "qno": "22",
+      "question": "Determine the day of the week for a given date. Input: 2025-05-27",
+      "expected output": "Tuesday",
+      "explanations": "Use Zeller’s congruence or similar algorithm for day calculation.",
+      "answer": "Tuesday"
+    },
+    {
+      "qno": "23",
+      "question": "Find the missing number in an array containing numbers from 1 to N with one missing. Input: [1, 2, 4, 5]",
+      "expected output": "3",
+      "explanations": "Use sum formula or XOR approach to find the missing number.",
+      "answer": "3"
+    },
+    {
+      "qno": "24",
+      "question": "Check if two strings are anagrams of each other. Input: \"listen\", \"silent\"",
+      "expected output": "true",
+      "explanations": "Sort both strings or compare character counts.",
+      "answer": "true"
+    },
+    {
+      "qno": "25",
+      "question": "Calculate the digital root of a number (sum of digits repeatedly until one digit). Input: 9875",
+      "expected output": "2",
+      "explanations": "Sum digits repeatedly or use digital root formula.",
+      "answer": "2"
+    },
+    {
+      "qno": "26",
+      "question": "Print the Pascal’s triangle up to N rows. Input: 5",
+      "expected output": "1\n1 1\n1 2 1\n1 3 3 1\n1 4 6 4 1",
+      "explanations": "Use combination formula or build each row from previous one.",
+      "answer": "1\n1 1\n1 2 1\n1 3 3 1\n1 4 6 4 1"
+    },
+    {
+      "qno": "27",
+      "question": "Count the frequency of each character in a string. Input: \"hello\"",
+      "expected output": "{'h':1, 'e':1, 'l':2, 'o':1}",
+      "explanations": "Use a dictionary or array to count occurrences.",
+      "answer": "{'h':1, 'e':1, 'l':2, 'o':1}"
+    },
+    {
+      "qno": "28",
+      "question": "Print all prime factors of a number. Input: 84",
+      "expected output": "2 2 3 7",
+      "explanations": "Divide number by primes starting from 2 repeatedly.",
+      "answer": "2 2 3 7"
+    },
+    {
+      "qno": "29",
+      "question": "Check if a number is a perfect number (sum of divisors equals number). Input: 28",
+      "expected output": "true",
+      "explanations": "Sum all divisors excluding the number and compare.",
+      "answer": "true"
+    },
+    {
+      "qno": "30",
+      "question": "Find the sum of the digits at even positions in a number. Input: 123456",
+      "expected output": "12",
+      "explanations": "Extract digits at even indices (considering right to left) and sum.",
+      "answer": "12"
+    }
+  ]
+}
