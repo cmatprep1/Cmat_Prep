@@ -419,6 +419,1270 @@
             "expected output": "1 ↔ 2 ↔ 4 ↔ 3",
             "explanations": "Adjust pointers to insert node properly.",
             "answer": "1 ↔ 2 ↔ 4 ↔ 3"
+        },
+        {
+            "qno": "61",
+            "question": "Create a linked list with three nodes containing 5, 10, and 15. What is the data in the second node?",
+            "expected output": "10",
+            "explanations": "The second node in the sequence holds the value 10.",
+            "answer": "10"
+        },
+        {
+            "qno": "62",
+            "question": "Insert a node with value 20 at the start of the list [10, 30, 40]. What is the new head value?",
+            "expected output": "20",
+            "explanations": "Inserting at the start changes the head node to 20.",
+            "answer": "20"
+        },
+        {
+            "qno": "63",
+            "question": "Given a list [5, 15, 25], what will the list look like after deleting the first node?",
+            "expected output": "[15, 25]",
+            "explanations": "Removing the head leaves the next two nodes.",
+            "answer": "[15, 25]"
+        },
+        {
+            "qno": "64",
+            "question": "Find the sum of all elements in a linked list: [1, 2, 3, 4, 5]",
+            "expected output": "15",
+            "explanations": "1 + 2 + 3 + 4 + 5 = 15",
+            "answer": "15"
+        },
+        {
+            "qno": "65",
+            "question": "If a list has one node with value 100, and we delete that node, what is the result?",
+            "expected output": "Empty list",
+            "explanations": "Deleting the only node results in an empty list.",
+            "answer": "Empty list"
+        },
+        {
+            "qno": "66",
+            "question": "Insert a node with value 7 at the end of list [1, 2, 3]",
+            "expected output": "[1, 2, 3, 7]",
+            "explanations": "Adding at the end appends 7 after 3.",
+            "answer": "[1, 2, 3, 7]"
+        },
+        {
+            "qno": "67",
+            "question": "Find the number of nodes in the list [9, 8, 7, 6]",
+            "expected output": "4",
+            "explanations": "There are four elements, hence four nodes.",
+            "answer": "4"
+        },
+        {
+            "qno": "68",
+            "question": "What value is at the tail of the list [10, 20, 30, 40]?",
+            "expected output": "40",
+            "explanations": "The tail node is the last node in the list.",
+            "answer": "40"
+        },
+        {
+            "qno": "69",
+            "question": "Traverse and print the list [2, 4, 6]",
+            "expected output": "2 4 6",
+            "explanations": "Each node is visited in order from head to tail.",
+            "answer": "2 4 6"
+        },
+        {
+            "qno": "70",
+            "question": "Create a list with values from 1 to 3. What is the value at index 1?",
+            "expected output": "2",
+            "explanations": "Indexing starts from 0, so index 1 is the second element.",
+            "answer": "2"
+        },
+        {
+            "qno": "71",
+            "question": "Insert 50 at the second position in [10, 20, 30]",
+            "expected output": "[10, 50, 20, 30]",
+            "explanations": "New node is inserted after the first node.",
+            "answer": "[10, 50, 20, 30]"
+        },
+        {
+            "qno": "72",
+            "question": "Delete the last node in the list [7, 8, 9]",
+            "expected output": "[7, 8]",
+            "explanations": "The last node (9) is removed.",
+            "answer": "[7, 8]"
+        },
+        {
+            "qno": "73",
+            "question": "What will be the result after inserting 0 at the beginning of [1, 2, 3]?",
+            "expected output": "[0, 1, 2, 3]",
+            "explanations": "Insert before the current head.",
+            "answer": "[0, 1, 2, 3]"
+        },
+        {
+            "qno": "74",
+            "question": "Find the second node in [9, 8, 7, 6]",
+            "expected output": "8",
+            "explanations": "The second element in the list is 8.",
+            "answer": "8"
+        },
+        {
+            "qno": "75",
+            "question": "How many nodes are there in an empty list?",
+            "expected output": "0",
+            "explanations": "No nodes in an empty list.",
+            "answer": "0"
+        },
+        {
+            "qno": "76",
+            "question": "Given list [4, 5, 6], what value will be left after deleting node 4?",
+            "expected output": "[5, 6]",
+            "explanations": "Deleting head leaves the rest.",
+            "answer": "[5, 6]"
+        },
+        {
+            "qno": "77",
+            "question": "Append value 99 to the list [77]",
+            "expected output": "[77, 99]",
+            "explanations": "New node added at the end.",
+            "answer": "[77, 99]"
+        },
+        {
+            "qno": "78",
+            "question": "In a list [3, 6, 9], what is the data of the third node?",
+            "expected output": "9",
+            "explanations": "Index 2 corresponds to the third node.",
+            "answer": "9"
+        },
+        {
+            "qno": "79",
+            "question": "Find the data in the middle node of the list [11, 22, 33]",
+            "expected output": "22",
+            "explanations": "Middle of 3-node list is the second node.",
+            "answer": "22"
+        },
+        {
+            "qno": "80",
+            "question": "Insert node 12 after the node with value 10 in [10, 20, 30]",
+            "expected output": "[10, 12, 20, 30]",
+            "explanations": "12 is inserted right after 10.",
+            "answer": "[10, 12, 20, 30]"
+        },
+        {
+            "qno": "81",
+            "question": "What is the result after deleting node 20 in [10, 20, 30]?",
+            "expected output": "[10, 30]",
+            "explanations": "Node with 20 is removed.",
+            "answer": "[10, 30]"
+        },
+        {
+            "qno": "82",
+            "question": "Add 1 to an empty list. What is the result?",
+            "expected output": "[1]",
+            "explanations": "The single element becomes the head.",
+            "answer": "[1]"
+        },
+        {
+            "qno": "83",
+            "question": "What value follows node with value 5 in [5, 6, 7]?",
+            "expected output": "6",
+            "explanations": "Node 6 is next to 5.",
+            "answer": "6"
+        },
+        {
+            "qno": "84",
+            "question": "What is the head of the list [2, 4, 6, 8]?",
+            "expected output": "2",
+            "explanations": "Head is the first element.",
+            "answer": "2"
+        },
+        {
+            "qno": "85",
+            "question": "Print all elements of the list [1, 3, 5]",
+            "expected output": "1 3 5",
+            "explanations": "Traverse the list and print each node.",
+            "answer": "1 3 5"
+        },
+        {
+            "qno": "86",
+            "question": "Given list [1, 2, 3], insert 4 after 3",
+            "expected output": "[1, 2, 3, 4]",
+            "explanations": "4 is added after the last node.",
+            "answer": "[1, 2, 3, 4]"
+        },
+        {
+            "qno": "87",
+            "question": "In [6, 7, 8], what is the previous node to 8?",
+            "expected output": "7",
+            "explanations": "Node 7 points to 8.",
+            "answer": "7"
+        },
+        {
+            "qno": "88",
+            "question": "Create a list [2, 4], then delete 4. What remains?",
+            "expected output": "[2]",
+            "explanations": "Only node 2 remains.",
+            "answer": "[2]"
+        },
+        {
+            "qno": "89",
+            "question": "If [1, 2, 3] is reversed, what is the new list?",
+            "expected output": "[3, 2, 1]",
+            "explanations": "Reversing changes the order.",
+            "answer": "[3, 2, 1]"
+        },
+        {
+            "qno": "90",
+            "question": "If a node points to NULL, what does that mean?",
+            "expected output": "It's the last node",
+            "explanations": "NULL indicates the end of the list.",
+            "answer": "It's the last node"
+        },
+        {
+            "qno": "91",
+            "question": "Find the value at index 2 in [10, 20, 30, 40]",
+            "expected output": "30",
+            "explanations": "Index 2 is the third element.",
+            "answer": "30"
+        },
+        {
+            "qno": "92",
+            "question": "Insert 5 between 2 and 4 in [2, 4, 6]",
+            "expected output": "[2, 5, 4, 6]",
+            "explanations": "5 is added between 2 and 4.",
+            "answer": "[2, 5, 4, 6]"
+        },
+        {
+            "qno": "93",
+            "question": "Find the index of value 6 in [3, 6, 9]",
+            "expected output": "1",
+            "explanations": "6 is at the second position (index 1).",
+            "answer": "1"
+        },
+        {
+            "qno": "94",
+            "question": "Remove node 3 from list [1, 2, 3, 4]",
+            "expected output": "[1, 2, 4]",
+            "explanations": "3 is removed from the middle.",
+            "answer": "[1, 2, 4]"
+        },
+        {
+            "qno": "95",
+            "question": "If a list is [9, 8, 7], what comes before 7?",
+            "expected output": "8",
+            "explanations": "8 is the previous node to 7.",
+            "answer": "8"
+        },
+        {
+            "qno": "96",
+            "question": "Create a list with one node: 25. What is its next pointer?",
+            "expected output": "NULL",
+            "explanations": "Only one node, so next is NULL.",
+            "answer": "NULL"
+        },
+        {
+            "qno": "97",
+            "question": "Traverse [11, 22, 33] and return sum",
+            "expected output": "66",
+            "explanations": "11 + 22 + 33 = 66",
+            "answer": "66"
+        },
+        {
+            "qno": "98",
+            "question": "What is the last value in [13, 14, 15, 16]?",
+            "expected output": "16",
+            "explanations": "Tail of the list is the last node.",
+            "answer": "16"
+        },
+        {
+            "qno": "99",
+            "question": "If a list has [7, 8, 9], what value is at index 0?",
+            "expected output": "7",
+            "explanations": "Indexing starts from 0.",
+            "answer": "7"
+        },
+        {
+            "qno": "100",
+            "question": "What is the new list after deleting node 6 from [5, 6, 7]?",
+            "expected output": "[5, 7]",
+            "explanations": "Node 6 is removed.",
+            "answer": "[5, 7]"
+        }
+    ],
+    "Medium": [
+        {
+            "qno": "1",
+            "question": "Reverse a singly linked list and return the new head.",
+            "expected output": "Head of reversed list",
+            "explanations": "Traverse and rewire the links using three pointers: prev, curr, next.",
+            "answer": "New head points to the last original node"
+        },
+        {
+            "qno": "2",
+            "question": "Find the nth node from the end in a singly linked list. Input: n = 3",
+            "expected output": "Value at nth node from end",
+            "explanations": "Use two pointers with a gap of n nodes between them.",
+            "answer": "Returns the value at the required position"
+        },
+        {
+            "qno": "3",
+            "question": "Check if there are duplicate values in a singly linked list.",
+            "expected output": "true or false",
+            "explanations": "Use nested loops or a temporary set to track duplicates.",
+            "answer": "true (if duplicate found) or false"
+        },
+        {
+            "qno": "4",
+            "question": "Find the middle node in a singly linked list.",
+            "expected output": "Value of middle node",
+            "explanations": "Use slow and fast pointer technique.",
+            "answer": "Middle value"
+        },
+        {
+            "qno": "5",
+            "question": "Insert a node at the beginning of a singly linked list.",
+            "expected output": "Updated list with new head",
+            "explanations": "Create new node and set its next to current head.",
+            "answer": "New node becomes the head"
+        },
+        {
+            "qno": "6",
+            "question": "Insert a node at the end of a singly linked list.",
+            "expected output": "Updated list with new tail",
+            "explanations": "Traverse to the end and link the new node.",
+            "answer": "New node becomes the last node"
+        },
+        {
+            "qno": "7",
+            "question": "Delete a node with a specific value from a singly linked list.",
+            "expected output": "List without the node",
+            "explanations": "Track previous node and update next pointer to skip the node.",
+            "answer": "List with that node removed"
+        },
+        {
+            "qno": "8",
+            "question": "Count the total number of nodes in a singly linked list.",
+            "expected output": "Count",
+            "explanations": "Traverse the list and increment a counter.",
+            "answer": "Number of nodes"
+        },
+        {
+            "qno": "9",
+            "question": "Search for a value in a singly linked list.",
+            "expected output": "true or false",
+            "explanations": "Traverse the list comparing each node’s data.",
+            "answer": "true (if found) or false"
+        },
+        {
+            "qno": "10",
+            "question": "Check if a singly linked list is sorted in ascending order.",
+            "expected output": "true or false",
+            "explanations": "Compare each node’s data with the next one.",
+            "answer": "true or false"
+        },
+        {
+            "qno": "11",
+            "question": "Find the maximum value in a singly linked list.",
+            "expected output": "Maximum value",
+            "explanations": "Keep track of max value while traversing.",
+            "answer": "Largest element in the list"
+        },
+        {
+            "qno": "12",
+            "question": "Find the sum of all node values in a singly linked list.",
+            "expected output": "Sum",
+            "explanations": "Add each node’s data to a cumulative sum.",
+            "answer": "Total sum"
+        },
+        {
+            "qno": "13",
+            "question": "Delete the first node of a singly linked list.",
+            "expected output": "List without head node",
+            "explanations": "Move the head pointer to the second node.",
+            "answer": "Updated head"
+        },
+        {
+            "qno": "14",
+            "question": "Delete the last node of a singly linked list.",
+            "expected output": "List without last node",
+            "explanations": "Traverse to second last node and set its next to NULL.",
+            "answer": "Tail removed"
+        },
+        {
+            "qno": "15",
+            "question": "Check if the linked list length is even or odd.",
+            "expected output": "\"Even\" or \"Odd\"",
+            "explanations": "Traverse and count nodes, check if count % 2 == 0.",
+            "answer": "\"Even\" or \"Odd\""
+        },
+        {
+            "qno": "16",
+            "question": "Move the last node of a singly linked list to the front.",
+            "expected output": "Updated list with last node at beginning",
+            "explanations": "Find the second-last node, update pointers accordingly.",
+            "answer": "Last becomes head"
+        },
+        {
+            "qno": "17",
+            "question": "Insert a node at a specific position (e.g., 3rd index).",
+            "expected output": "Updated list",
+            "explanations": "Traverse to the position, insert new node by linking properly.",
+            "answer": "Node inserted at desired position"
+        },
+        {
+            "qno": "18",
+            "question": "Count the frequency of a specific value in a linked list.",
+            "expected output": "Count",
+            "explanations": "Check each node’s value and count matches.",
+            "answer": "Number of times value occurs"
+        },
+        {
+            "qno": "19",
+            "question": "Split a singly linked list into two halves.",
+            "expected output": "Two separate lists",
+            "explanations": "Use slow-fast pointer and separate after mid.",
+            "answer": "First and second halves"
+        },
+        {
+            "qno": "20",
+            "question": "Remove duplicates from an unsorted singly linked list.",
+            "expected output": "List with unique values",
+            "explanations": "Use nested loops or set to detect and remove duplicates.",
+            "answer": "No repeated values"
+        },
+        {
+            "qno": "21",
+            "question": "Insert a node at the beginning of a doubly linked list.",
+            "expected output": "DLL with new head",
+            "explanations": "Create a new node, set its next to head, and update head’s prev.",
+            "answer": "New node becomes head"
+        },
+        {
+            "qno": "22",
+            "question": "Insert a node at the end of a doubly linked list.",
+            "expected output": "DLL with new tail",
+            "explanations": "Traverse to last node and update pointers accordingly.",
+            "answer": "New node becomes tail"
+        },
+        {
+            "qno": "23",
+            "question": "Delete the first node in a doubly linked list.",
+            "expected output": "DLL without head",
+            "explanations": "Move head to next node and update its prev to NULL.",
+            "answer": "List updated"
+        },
+        {
+            "qno": "24",
+            "question": "Delete the last node in a doubly linked list.",
+            "expected output": "DLL without tail",
+            "explanations": "Traverse to second-last node and set its next to NULL.",
+            "answer": "List updated"
+        },
+        {
+            "qno": "25",
+            "question": "Insert a node at a specific index (e.g., position 2) in DLL.",
+            "expected output": "DLL with node inserted",
+            "explanations": "Adjust next and prev pointers of surrounding nodes.",
+            "answer": "New node placed at desired index"
+        },
+        {
+            "qno": "26",
+            "question": "Reverse a doubly linked list.",
+            "expected output": "DLL reversed",
+            "explanations": "Swap next and prev for all nodes and reset head.",
+            "answer": "Tail becomes new head"
+        },
+        {
+            "qno": "27",
+            "question": "Delete a node with a specific value in a doubly linked list.",
+            "expected output": "DLL without target node",
+            "explanations": "Update prev and next of surrounding nodes.",
+            "answer": "Node removed"
+        },
+        {
+            "qno": "28",
+            "question": "Count the number of nodes in a doubly linked list.",
+            "expected output": "Count",
+            "explanations": "Traverse using next pointers and count.",
+            "answer": "Node count"
+        },
+        {
+            "qno": "29",
+            "question": "Search for a value in a doubly linked list.",
+            "expected output": "true or false",
+            "explanations": "Traverse and compare each node’s data.",
+            "answer": "true (if found) or false"
+        },
+        {
+            "qno": "30",
+            "question": "Print elements of a doubly linked list in reverse.",
+            "expected output": "Values from tail to head",
+            "explanations": "Traverse to tail then print using prev pointers.",
+            "answer": "Reversed order print"
+        },
+        {
+            "qno": "31",
+            "question": "Find the middle element of a doubly linked list.",
+            "expected output": "Middle node value",
+            "explanations": "Use slow and fast pointer logic.",
+            "answer": "Value of middle node"
+        },
+        {
+            "qno": "32",
+            "question": "Check if a doubly linked list is a palindrome.",
+            "expected output": "true or false",
+            "explanations": "Use two pointers: one from head, one from tail.",
+            "answer": "true if same forward and backward"
+        },
+        {
+            "qno": "33",
+            "question": "Find the maximum value in a doubly linked list.",
+            "expected output": "Maximum value",
+            "explanations": "Track max while traversing forward.",
+            "answer": "Highest node value"
+        },
+        {
+            "qno": "34",
+            "question": "Find the sum of all elements in a doubly linked list.",
+            "expected output": "Sum",
+            "explanations": "Accumulate sum while traversing.",
+            "answer": "Sum of values"
+        },
+        {
+            "qno": "35",
+            "question": "Swap two nodes (not data) in a doubly linked list.",
+            "expected output": "Nodes switched",
+            "explanations": "Update all surrounding next and prev pointers.",
+            "answer": "Nodes are interchanged"
+        },
+        {
+            "qno": "36",
+            "question": "Sort a doubly linked list using insertion sort logic.",
+            "expected output": "Sorted DLL",
+            "explanations": "Use classic insertion sort with pointer adjustments.",
+            "answer": "List sorted in ascending order"
+        },
+        {
+            "qno": "37",
+            "question": "Merge two sorted doubly linked lists.",
+            "expected output": "One sorted DLL",
+            "explanations": "Use merging logic while maintaining prev-next consistency.",
+            "answer": "Merged sorted list"
+        },
+        {
+            "qno": "38",
+            "question": "Count the frequency of a specific value in DLL.",
+            "expected output": "Count",
+            "explanations": "Traverse and compare values.",
+            "answer": "Frequency of that value"
+        },
+        {
+            "qno": "39",
+            "question": "Split a doubly linked list into two equal halves.",
+            "expected output": "Two DLL halves",
+            "explanations": "Find midpoint, set its next to NULL and second’s prev to NULL.",
+            "answer": "Two separate lists"
+        },
+        {
+            "qno": "40",
+            "question": "Remove duplicate values from a doubly linked list.",
+            "expected output": "DLL with unique values",
+            "explanations": "Use nested traversal or set for detection and deletion.",
+            "answer": "List without repeats"
+        },
+        {
+            "qno": "41",
+            "question": "Insert a node before a specific value in DLL.",
+            "expected output": "DLL with inserted node",
+            "explanations": "Find node, insert before by adjusting pointers.",
+            "answer": "Node placed before target"
+        },
+        {
+            "qno": "42",
+            "question": "Insert a node after a specific value in DLL.",
+            "expected output": "DLL with inserted node",
+            "explanations": "Find node, insert after and adjust pointers.",
+            "answer": "Node placed after target"
+        },
+        {
+            "qno": "43",
+            "question": "Find the second largest value in a doubly linked list.",
+            "expected output": "Second largest value",
+            "explanations": "Track max and second max while traversing.",
+            "answer": "Second highest value"
+        },
+        {
+            "qno": "44",
+            "question": "Count nodes with even values in DLL.",
+            "expected output": "Count",
+            "explanations": "Check each value modulo 2 during traversal.",
+            "answer": "Number of even nodes"
+        },
+        {
+            "qno": "45",
+            "question": "Delete all nodes with a specific value in DLL.",
+            "expected output": "DLL without those nodes",
+            "explanations": "Traverse and adjust surrounding node pointers.",
+            "answer": "Cleaned list"
+        },
+        {
+            "qno": "46",
+            "question": "Swap first and last nodes in a doubly linked list.",
+            "expected output": "DLL with first and last swapped",
+            "explanations": "Adjust head and tail pointers, including next and prev.",
+            "answer": "Swapped head and tail"
+        },
+        {
+            "qno": "47",
+            "question": "Find total number of odd valued nodes in DLL.",
+            "expected output": "Count of odd nodes",
+            "explanations": "Traverse and count odd numbers.",
+            "answer": "Odd count"
+        },
+        {
+            "qno": "48",
+            "question": "Create a copy of a doubly linked list.",
+            "expected output": "Cloned DLL",
+            "explanations": "Create new nodes and preserve original sequence and links.",
+            "answer": "New identical DLL"
+        },
+        {
+            "qno": "49",
+            "question": "Convert DLL to array.",
+            "expected output": "Array of elements",
+            "explanations": "Traverse and insert node data into array.",
+            "answer": "Array containing DLL values"
+        },
+        {
+            "qno": "50",
+            "question": "Convert array to doubly linked list.",
+            "expected output": "DLL created from array",
+            "explanations": "Create nodes for each array value and link using next and prev.",
+            "answer": "DLL formed"
+        },
+        {
+            "qno": "51",
+            "question": "Insert a node at the beginning of a circular singly linked list.",
+            "expected output": "CLL with new head",
+            "explanations": "Update last node's next to new node, and new node's next to head.",
+            "answer": "New node becomes head"
+        },
+        {
+            "qno": "52",
+            "question": "Insert a node at the end of a circular singly linked list.",
+            "expected output": "CLL with new tail",
+            "explanations": "Update last node’s next to new node and new node’s next to head.",
+            "answer": "New node added at end"
+        },
+        {
+            "qno": "53",
+            "question": "Delete the head node of a circular singly linked list.",
+            "expected output": "CLL with new head",
+            "explanations": "Move head to next and update last node’s next to new head.",
+            "answer": "Head updated"
+        },
+        {
+            "qno": "54",
+            "question": "Delete the last node in a circular singly linked list.",
+            "expected output": "CLL without last node",
+            "explanations": "Find second last node and update its next to head.",
+            "answer": "Last node removed"
+        },
+        {
+            "qno": "55",
+            "question": "Traverse and print all elements in a circular singly linked list.",
+            "expected output": "All node values once",
+            "explanations": "Use do-while style traversal until head is revisited.",
+            "answer": "List printed circularly"
+        },
+        {
+            "qno": "56",
+            "question": "Insert a node at a specific index in circular singly linked list.",
+            "expected output": "Node inserted",
+            "explanations": "Navigate to index, insert node, and maintain circular link.",
+            "answer": "Node added at index"
+        },
+        {
+            "qno": "57",
+            "question": "Delete a node with a specific value from CLL.",
+            "expected output": "CLL without that node",
+            "explanations": "Find and update previous node’s next to skip the target.",
+            "answer": "Node deleted"
+        },
+        {
+            "qno": "58",
+            "question": "Check if the circular list contains a specific value.",
+            "expected output": "true or false",
+            "explanations": "Traverse till value is found or head is revisited.",
+            "answer": "true if found, else false"
+        },
+        {
+            "qno": "59",
+            "question": "Count the number of nodes in a circular singly linked list.",
+            "expected output": "Count",
+            "explanations": "Loop until we revisit head, counting each node.",
+            "answer": "Total number of nodes"
+        },
+        {
+            "qno": "60",
+            "question": "Reverse a circular singly linked list.",
+            "expected output": "CLL reversed",
+            "explanations": "Use pointer reversal, finally point last node to new head.",
+            "answer": "Reversed list"
+        },
+        {
+            "qno": "61",
+            "question": "Insert a node in sorted order in a circular singly linked list.",
+            "expected output": "CLL with sorted node inserted",
+            "explanations": "Traverse to find correct location and insert while preserving circularity.",
+            "answer": "Node inserted in order"
+        },
+        {
+            "qno": "62",
+            "question": "Split a circular singly linked list into two halves.",
+            "expected output": "Two circular linked lists",
+            "explanations": "Use slow-fast pointers to find mid and split list into two circles.",
+            "answer": "Two halves formed"
+        },
+        {
+            "qno": "63",
+            "question": "Concatenate two circular singly linked lists.",
+            "expected output": "Combined circular list",
+            "explanations": "Link last of first to head of second, and second's tail to first head.",
+            "answer": "One merged CLL"
+        },
+        {
+            "qno": "64",
+            "question": "Find the maximum value in a circular singly linked list.",
+            "expected output": "Max value",
+            "explanations": "Traverse and compare values till head is revisited.",
+            "answer": "Largest value"
+        },
+        {
+            "qno": "65",
+            "question": "Find the minimum value in a circular singly linked list.",
+            "expected output": "Min value",
+            "explanations": "Compare each node’s value while traversing circularly.",
+            "answer": "Smallest value"
+        },
+        {
+            "qno": "66",
+            "question": "Search for a node and return its position in a CLL.",
+            "expected output": "Position index",
+            "explanations": "Maintain index count while checking each node.",
+            "answer": "Index or -1"
+        },
+        {
+            "qno": "67",
+            "question": "Insert a node after a given value in a CLL.",
+            "expected output": "Node inserted after match",
+            "explanations": "Find node with value and insert after it.",
+            "answer": "Node added"
+        },
+        {
+            "qno": "68",
+            "question": "Insert a node before a given value in CLL.",
+            "expected output": "Node inserted before match",
+            "explanations": "Track previous node and insert between prev and match.",
+            "answer": "Inserted before value"
+        },
+        {
+            "qno": "69",
+            "question": "Count how many even values are in a CLL.",
+            "expected output": "Count",
+            "explanations": "Modulo check while traversing.",
+            "answer": "Even count"
+        },
+        {
+            "qno": "70",
+            "question": "Delete all nodes with duplicate values in a CLL.",
+            "expected output": "CLL with unique values",
+            "explanations": "Use nested traversal and value comparison.",
+            "answer": "Duplicates removed"
+        },
+        {
+            "qno": "71",
+            "question": "Check if a CLL has only one node.",
+            "expected output": "true or false",
+            "explanations": "Only one node if head.next == head.",
+            "answer": "true/false"
+        },
+        {
+            "qno": "72",
+            "question": "Implement Josephus problem using CLL for k=2.",
+            "expected output": "Last surviving node",
+            "explanations": "Skip and delete every second node till one remains.",
+            "answer": "Survivor node"
+        },
+        {
+            "qno": "73",
+            "question": "Copy a circular singly linked list.",
+            "expected output": "New identical CLL",
+            "explanations": "Create new nodes and link as per original structure.",
+            "answer": "CLL cloned"
+        },
+        {
+            "qno": "74",
+            "question": "Delete all nodes of a circular singly linked list.",
+            "expected output": "Empty list",
+            "explanations": "Free each node till head is reached again.",
+            "answer": "List deleted"
+        },
+        {
+            "qno": "75",
+            "question": "Convert circular linked list to linear linked list.",
+            "expected output": "Linear SLL",
+            "explanations": "Find last node and set its next to NULL.",
+            "answer": "Converted to SLL"
+        },
+        {
+            "qno": "76",
+            "question": "Find the length of loop in a CLL.",
+            "expected output": "Length of loop",
+            "explanations": "Traverse until head is met again counting steps.",
+            "answer": "Loop size"
+        },
+        {
+            "qno": "77",
+            "question": "Move last node to the beginning of a CLL.",
+            "expected output": "Tail becomes head",
+            "explanations": "Adjust last node to point to head and update head.",
+            "answer": "New head assigned"
+        },
+        {
+            "qno": "78",
+            "question": "Check whether two circular linked lists are identical.",
+            "expected output": "true or false",
+            "explanations": "Compare nodes and their order.",
+            "answer": "true/false"
+        },
+        {
+            "qno": "79",
+            "question": "Find second smallest value in a circular singly linked list.",
+            "expected output": "Second min value",
+            "explanations": "Track smallest and second smallest.",
+            "answer": "Second minimum"
+        },
+        {
+            "qno": "80",
+            "question": "Print CLL in reverse order without changing the list.",
+            "expected output": "Values in reverse",
+            "explanations": "Use recursion or stack during traversal.",
+            "answer": "Printed in reverse"
+        },
+        {
+            "qno": "81",
+            "question": "Explain the difference between singly and doubly linked lists in terms of structure and performance.",
+            "expected output": "Clear distinction with pros/cons",
+            "explanations": "DLL uses extra pointer for backward traversal, more memory but efficient for backward operations.",
+            "answer": "DLL has prev and next pointers; SLL only has next"
+        },
+        {
+            "qno": "82",
+            "question": "List real-life examples where circular linked list is more suitable than singly linked list.",
+            "expected output": "At least two valid examples",
+            "explanations": "Examples: round-robin CPU scheduling, multiplayer turn-based games.",
+            "answer": "Round-robin, turn-based cycles"
+        },
+        {
+            "qno": "83",
+            "question": "What is the time complexity of inserting a node at the end of a singly linked list (with and without tail pointer)?",
+            "expected output": "Two time complexities",
+            "explanations": "With tail pointer: O(1); without: O(n) due to traversal.",
+            "answer": "O(n) and O(1)"
+        },
+        {
+            "qno": "84",
+            "question": "Describe the advantage of using dummy (sentinel) nodes in linked lists.",
+            "expected output": "Improved insertion/deletion explanation",
+            "explanations": "Reduces edge cases for empty list/head manipulations.",
+            "answer": "Simplifies operations at boundaries"
+        },
+        {
+            "qno": "85",
+            "question": "How can a stack be implemented using a singly linked list?",
+            "expected output": "Push/pop logic using SLL",
+            "explanations": "Use head as top of stack; push: insert at beginning, pop: delete from beginning.",
+            "answer": "Use head for LIFO operations"
+        },
+        {
+            "qno": "86",
+            "question": "What are the benefits of using a doubly linked list over a singly linked list in real-world applications?",
+            "expected output": "At least two benefits",
+            "explanations": "DLL allows backward traversal and efficient deletion with only pointer to node.",
+            "answer": "Bidirectional traversal, easy deletion"
+        },
+        {
+            "qno": "87",
+            "question": "Compare memory usage of singly and doubly linked lists.",
+            "expected output": "Comparison with node structure",
+            "explanations": "DLL nodes use more memory due to extra pointer.",
+            "answer": "DLL uses more memory"
+        },
+        {
+            "qno": "88",
+            "question": "Explain how a queue can be implemented using a singly linked list.",
+            "expected output": "Front/rear logic for enqueue and dequeue",
+            "explanations": "Maintain front and rear pointers; enqueue at rear, dequeue at front.",
+            "answer": "Use two ends for FIFO"
+        },
+        {
+            "qno": "89",
+            "question": "In what situations would you prefer using a linked list over an array?",
+            "expected output": "Examples with reasoning",
+            "explanations": "When frequent insertions/deletions are needed or size is unknown.",
+            "answer": "Dynamic size, frequent operations"
+        },
+        {
+            "qno": "90",
+            "question": "Why does a circular linked list never point to NULL?",
+            "expected output": "Reason based on structure",
+            "explanations": "Last node connects back to head to form a cycle.",
+            "answer": "Circular nature eliminates NULL"
+        },
+        {
+            "qno": "91",
+            "question": "How would you detect a loop in a singly linked list?",
+            "expected output": "Valid detection method",
+            "explanations": "Use Floyd’s cycle detection (slow and fast pointers).",
+            "answer": "Floyd’s algorithm"
+        },
+        {
+            "qno": "92",
+            "question": "What is the main limitation of a singly linked list compared to an array?",
+            "expected output": "Conceptual limitation",
+            "explanations": "No direct index-based access; requires traversal.",
+            "answer": "No random access"
+        },
+        {
+            "qno": "93",
+            "question": "Give a scenario where circular doubly linked list is most efficient.",
+            "expected output": "Practical example",
+            "explanations": "Multidirectional navigation apps (e.g., browsers with back/forward).",
+            "answer": "Browser history, media players"
+        },
+        {
+            "qno": "94",
+            "question": "How would you sort a singly linked list without using extra space?",
+            "expected output": "Conceptual sorting method",
+            "explanations": "Use in-place merge sort or insertion sort with pointer manipulations.",
+            "answer": "Pointer-based sorting"
+        },
+        {
+            "qno": "95",
+            "question": "Compare the deletion time complexity of a given node in DLL vs SLL (assuming pointer to node is given).",
+            "expected output": "Time complexity comparison",
+            "explanations": "DLL: O(1); SLL: O(n) as we need previous pointer.",
+            "answer": "DLL O(1), SLL O(n)"
+        },
+        {
+            "qno": "96",
+            "question": "Explain the importance of 'head' pointer in linked list operations.",
+            "expected output": "Head pointer's role",
+            "explanations": "It marks the starting point for traversal, insertion, and deletion.",
+            "answer": "Entry to list"
+        },
+        {
+            "qno": "97",
+            "question": "How would you merge two sorted singly linked lists into one sorted list?",
+            "expected output": "Merged sorted list logic",
+            "explanations": "Use two pointers, pick smaller node and link.",
+            "answer": "Iterative merge"
+        },
+        {
+            "qno": "98",
+            "question": "What is a dummy head node and how does it simplify operations?",
+            "expected output": "Purpose of dummy node",
+            "explanations": "Helps avoid edge case for insert/delete at start.",
+            "answer": "Simplifies edge cases"
+        },
+        {
+            "qno": "99",
+            "question": "How would you find the intersection point of two singly linked lists?",
+            "expected output": "Intersection logic",
+            "explanations": "Use length difference adjustment or two-pointer switching technique.",
+            "answer": "Two-pointer or length method"
+        },
+        {
+            "qno": "100",
+            "question": "What are the consequences of losing the head pointer in a singly linked list?",
+            "expected output": "Effect of losing head",
+            "explanations": "Entire list becomes inaccessible unless backed up.",
+            "answer": "Data loss"
+        },
+        {
+            "qno": "101",
+            "question": "Why are circular linked lists preferred in token passing systems?",
+            "expected output": "Reason with real-world mapping",
+            "explanations": "They allow continuous rotation without endpoint.",
+            "answer": "Endless loop suitability"
+        },
+        {
+            "qno": "102",
+            "question": "What is the difference in reversing a singly and a doubly linked list?",
+            "expected output": "Reversal logic",
+            "explanations": "SLL needs full pointer flip; DLL just swap next and prev.",
+            "answer": "Different complexity"
+        },
+        {
+            "qno": "103",
+            "question": "Can a doubly linked list be circular? How?",
+            "expected output": "Circular DLL structure",
+            "explanations": "Last node points to first, and first’s prev to last.",
+            "answer": "Yes, both directions loop"
+        },
+        {
+            "qno": "104",
+            "question": "What is the advantage of having a tail pointer in singly linked list?",
+            "expected output": "Operational benefit",
+            "explanations": "Quick access for insertions at end.",
+            "answer": "Faster appending"
+        },
+        {
+            "qno": "105",
+            "question": "Explain how memory is allocated for nodes in a linked list.",
+            "expected output": "Dynamic memory allocation",
+            "explanations": "Each node is created in heap using dynamic allocation.",
+            "answer": "Malloc-based nodes"
+        },
+        {
+            "qno": "106",
+            "question": "Why can't binary search be applied to a linked list efficiently?",
+            "expected output": "Traversal issue",
+            "explanations": "No direct indexing; middle access is O(n).",
+            "answer": "Inefficient due to linear access"
+        },
+        {
+            "qno": "107",
+            "question": "What is the difference between deleting a node by value vs by position?",
+            "expected output": "Operational difference",
+            "explanations": "Value: search then delete; Position: direct count traversal.",
+            "answer": "Search-based vs index-based"
+        },
+        {
+            "qno": "108",
+            "question": "How does a self-referencing pointer enable linked list chaining?",
+            "expected output": "Pointer logic",
+            "explanations": "It stores address of same type, chaining same structures.",
+            "answer": "Recursive structure"
+        },
+        {
+            "qno": "109",
+            "question": "List disadvantages of linked list compared to arrays.",
+            "expected output": "At least two drawbacks",
+            "explanations": "Higher memory usage, slower indexing.",
+            "answer": "More memory, no indexing"
+        },
+        {
+            "qno": "110",
+            "question": "Why is it risky to perform operations on an empty linked list without checking?",
+            "expected output": "Logical error or crash",
+            "explanations": "Accessing NULL can cause segmentation fault or undefined behavior.",
+            "answer": "Crash risk"
+        }
+    ],
+    "Hard": [
+        {
+            "qno": "1",
+            "question": "Detect if a singly linked list has a loop.",
+            "expected output": "true or false",
+            "explanations": "Use Floyd’s cycle-finding algorithm (tortoise and hare) to detect a loop.",
+            "answer": "true or false depending on list"
+        },
+        {
+            "qno": "2",
+            "question": "Remove a loop from a linked list if it exists.",
+            "expected output": "Linked list without loop",
+            "explanations": "Detect loop and remove the cycle by adjusting next pointers.",
+            "answer": "Linked list with loop removed"
+        },
+        {
+            "qno": "3",
+            "question": "Merge two sorted singly linked lists into one sorted list.",
+            "expected output": "Merged sorted linked list",
+            "explanations": "Iterate both lists and merge nodes in sorted order.",
+            "answer": "Merged sorted linked list"
+        },
+        {
+            "qno": "4",
+            "question": "Find the intersection point of two singly linked lists.",
+            "expected output": "Data of intersection node or -1 if none",
+            "explanations": "Use length difference method or hash set to find intersecting node.",
+            "answer": "Node data or -1"
+        },
+        {
+            "qno": "5",
+            "question": "Flatten a multilevel doubly linked list where nodes may have a child list.",
+            "expected output": "Flattened doubly linked list",
+            "explanations": "Traverse and integrate child lists into main list recursively.",
+            "answer": "Flattened list"
+        },
+        {
+            "qno": "6",
+            "question": "Reverse a doubly linked list in groups of size k.",
+            "expected output": "Partially reversed doubly linked list",
+            "explanations": "Reverse every k nodes by pointer manipulation in DLL.",
+            "answer": "Partially reversed list"
+        },
+        {
+            "qno": "7",
+            "question": "Check if a circular singly linked list is circular or linear.",
+            "expected output": "true if circular, false otherwise",
+            "explanations": "Traverse nodes and check if next points back to head.",
+            "answer": "true or false"
+        },
+        {
+            "qno": "8",
+            "question": "Delete nodes from a circular doubly linked list based on a condition.",
+            "expected output": "Modified circular doubly linked list",
+            "explanations": "Traverse carefully and adjust pointers to delete nodes without breaking the circle.",
+            "answer": "Modified list"
+        },
+        {
+            "qno": "9",
+            "question": "Split a circular singly linked list into two halves.",
+            "expected output": "Two circular linked lists",
+            "explanations": "Use slow and fast pointers to find midpoint and split list.",
+            "answer": "Two halves as circular lists"
+        },
+        {
+            "qno": "10",
+            "question": "Detect and remove duplicates in an unsorted singly linked list.",
+            "expected output": "List without duplicates",
+            "explanations": "Use hashing or nested loops to remove duplicate nodes.",
+            "answer": "List with unique nodes"
+        },
+        {
+            "qno": "11",
+            "question": "Reverse nodes of a singly linked list in groups of size k.",
+            "expected output": "Linked list with nodes reversed in k-sized groups",
+            "explanations": "Reverse each k-group by pointer manipulation; handle last group if smaller than k.",
+            "answer": "Modified linked list"
+        },
+        {
+            "qno": "12",
+            "question": "Find the starting node of a loop in a linked list, if any.",
+            "expected output": "Data of the starting node or -1 if no loop",
+            "explanations": "Use Floyd’s cycle detection and move pointers to find loop start.",
+            "answer": "Node data or -1"
+        },
+        {
+            "qno": "13",
+            "question": "Rotate a singly linked list by k nodes.",
+            "expected output": "Rotated linked list",
+            "explanations": "Break list at k-th node and reattach the parts accordingly.",
+            "answer": "Rotated list"
+        },
+        {
+            "qno": "14",
+            "question": "Add two numbers represented by two linked lists.",
+            "expected output": "Linked list representing sum of two numbers",
+            "explanations": "Traverse both lists, sum digits with carry, and create new nodes.",
+            "answer": "Sum list"
+        },
+        {
+            "qno": "15",
+            "question": "Convert a binary number represented as a linked list to decimal.",
+            "expected output": "Decimal integer",
+            "explanations": "Traverse list, multiply accumulated value by 2 and add current node data.",
+            "answer": "Decimal value"
+        },
+        {
+            "qno": "16",
+            "question": "Implement a function to check if a linked list is a palindrome.",
+            "expected output": "true or false",
+            "explanations": "Find middle, reverse second half, compare both halves.",
+            "answer": "true or false"
+        },
+        {
+            "qno": "17",
+            "question": "Merge k sorted linked lists into one sorted list.",
+            "expected output": "Single merged sorted linked list",
+            "explanations": "Use min-heap or repeated merge of two lists.",
+            "answer": "Merged list"
+        },
+        {
+            "qno": "18",
+            "question": "Find the length of the longest palindrome list within a linked list.",
+            "expected output": "Length of longest palindrome sublist",
+            "explanations": "Check palindromic sublists at every node by expanding outwards.",
+            "answer": "Length integer"
+        },
+        {
+            "qno": "19",
+            "question": "Delete the middle node of a linked list.",
+            "expected output": "Linked list without the middle node",
+            "explanations": "Use slow and fast pointers to find middle and delete it.",
+            "answer": "Modified list"
+        },
+        {
+            "qno": "20",
+            "question": "Clone a linked list with next and random pointers.",
+            "expected output": "Deep copy of the linked list",
+            "explanations": "Copy nodes and set next and random pointers accordingly.",
+            "answer": "Cloned list"
+        },
+        {
+            "qno": "21",
+            "question": "Flatten a multilevel linked list where nodes can have child linked lists.",
+            "expected output": "Single-level flattened linked list",
+            "explanations": "Traverse and append child lists in place using recursion or stack.",
+            "answer": "Flattened list"
+        },
+        {
+            "qno": "22",
+            "question": "Detect and remove loop in a linked list without losing nodes.",
+            "expected output": "Linked list without loop",
+            "explanations": "Use Floyd’s cycle detection and remove the loop by adjusting pointers.",
+            "answer": "List with no loop"
+        },
+        {
+            "qno": "23",
+            "question": "Find intersection point of two singly linked lists.",
+            "expected output": "Data of intersection node or -1 if no intersection",
+            "explanations": "Traverse both lists and find node where they merge.",
+            "answer": "Intersection node data or -1"
+        },
+        {
+            "qno": "24",
+            "question": "Add one to a number represented as a linked list.",
+            "expected output": "Linked list representing number after adding one",
+            "explanations": "Reverse list, add one, handle carry, reverse back.",
+            "answer": "Updated list"
+        },
+        {
+            "qno": "25",
+            "question": "Check if two linked lists are identical.",
+            "expected output": "true or false",
+            "explanations": "Traverse both simultaneously comparing nodes.",
+            "answer": "true or false"
+        },
+        {
+            "qno": "26",
+            "question": "Sort a linked list using merge sort.",
+            "expected output": "Sorted linked list",
+            "explanations": "Recursively divide list and merge sorted halves.",
+            "answer": "Sorted list"
+        },
+        {
+            "qno": "27",
+            "question": "Remove duplicates from an unsorted linked list.",
+            "expected output": "Linked list without duplicates",
+            "explanations": "Use hash set or nested loops to remove duplicate nodes.",
+            "answer": "List with unique elements"
+        },
+        {
+            "qno": "28",
+            "question": "Swap nodes in pairs in a linked list.",
+            "expected output": "Linked list with nodes swapped pairwise",
+            "explanations": "Swap data or pointers for every two adjacent nodes.",
+            "answer": "Modified list"
+        },
+        {
+            "qno": "29",
+            "question": "Convert a sorted linked list to a balanced binary search tree.",
+            "expected output": "Root node of BST",
+            "explanations": "Use recursive approach with slow and fast pointers to find mid.",
+            "answer": "BST root"
+        },
+        {
+            "qno": "30",
+            "question": "Implement LRU cache using a doubly linked list and hash map.",
+            "expected output": "Cache that supports get and put operations",
+            "explanations": "Use DLL for ordering and hashmap for O(1) access.",
+            "answer": "LRU cache"
         }
     ]
 }
