@@ -1,0 +1,424 @@
+{
+    "Easy": [
+        {
+            "qno": "1",
+            "question": "Write a function to create a singly linked list with given elements. Input: [1, 2, 3, 4]",
+            "expected output": "Linked list created with nodes 1 → 2 → 3 → 4",
+            "explanations": "Create nodes one by one and link them sequentially.",
+            "answer": "Linked list created with nodes 1 → 2 → 3 → 4"
+        },
+        {
+            "qno": "2",
+            "question": "Write a function to traverse and print all elements of a singly linked list.",
+            "expected output": "For linked list 1 → 2 → 3, output: 1 2 3",
+            "explanations": "Start from head and visit each node until null.",
+            "answer": "1 2 3"
+        },
+        {
+            "qno": "3",
+            "question": "Insert a new node with value 5 at the beginning of a linked list 1 → 2 → 3.",
+            "expected output": "5 → 1 → 2 → 3",
+            "explanations": "Create new node and point its next to current head, update head to new node.",
+            "answer": "5 → 1 → 2 → 3"
+        },
+        {
+            "qno": "4",
+            "question": "Insert a new node with value 10 at the end of a linked list 1 → 2 → 3.",
+            "expected output": "1 → 2 → 3 → 10",
+            "explanations": "Traverse to last node and point its next to new node.",
+            "answer": "1 → 2 → 3 → 10"
+        },
+        {
+            "qno": "5",
+            "question": "Delete the first node from the linked list 1 → 2 → 3.",
+            "expected output": "2 → 3",
+            "explanations": "Update head pointer to the second node.",
+            "answer": "2 → 3"
+        },
+        {
+            "qno": "6",
+            "question": "Delete the last node from the linked list 1 → 2 → 3.",
+            "expected output": "1 → 2",
+            "explanations": "Traverse to second last node and update its next pointer to null.",
+            "answer": "1 → 2"
+        },
+        {
+            "qno": "7",
+            "question": "Count the number of nodes in a linked list 1 → 2 → 3 → 4.",
+            "expected output": "4",
+            "explanations": "Traverse through all nodes and keep a counter.",
+            "answer": "4"
+        },
+        {
+            "qno": "8",
+            "question": "Search for a value 3 in the linked list 1 → 2 → 3 → 4.",
+            "expected output": "Found at position 3",
+            "explanations": "Traverse nodes and compare each node's value with target.",
+            "answer": "Found at position 3"
+        },
+        {
+            "qno": "9",
+            "question": "Insert a node with value 7 at position 3 in linked list 1 → 2 → 3 → 4.",
+            "expected output": "1 → 2 → 7 → 3 → 4",
+            "explanations": "Traverse to position 2 and insert the new node after it.",
+            "answer": "1 → 2 → 7 → 3 → 4"
+        },
+        {
+            "qno": "10",
+            "question": "Delete a node at position 2 in linked list 1 → 2 → 3 → 4.",
+            "expected output": "1 → 3 → 4",
+            "explanations": "Traverse to position 1 and update its next to skip the node at position 2.",
+            "answer": "1 → 3 → 4"
+        },
+        {
+            "qno": "11",
+            "question": "Check if a linked list 1 → 2 → 3 → 4 is empty.",
+            "expected output": "false",
+            "explanations": "Check if head pointer is null.",
+            "answer": "false"
+        },
+        {
+            "qno": "12",
+            "question": "Create a linked list with a single node 5.",
+            "expected output": "5",
+            "explanations": "Create a node and point head to it.",
+            "answer": "5"
+        },
+        {
+            "qno": "13",
+            "question": "Write a function to print the last node's value of a linked list 1 → 2 → 3.",
+            "expected output": "3",
+            "explanations": "Traverse to the last node and print its data.",
+            "answer": "3"
+        },
+        {
+            "qno": "14",
+            "question": "Find the sum of all elements in linked list 1 → 2 → 3 → 4.",
+            "expected output": "10",
+            "explanations": "Traverse and accumulate node values.",
+            "answer": "10"
+        },
+        {
+            "qno": "15",
+            "question": "Find the average of elements in linked list 1 → 2 → 3 → 4.",
+            "expected output": "2.5",
+            "explanations": "Sum all elements and divide by number of nodes.",
+            "answer": "2.5"
+        },
+        {
+            "qno": "16",
+            "question": "Check if a linked list has only one node. Example: 5",
+            "expected output": "true",
+            "explanations": "Check if head is not null and head.next is null.",
+            "answer": "true"
+        },
+        {
+            "qno": "17",
+            "question": "Find if a linked list 1 → 2 → 3 contains duplicate values (example: 1 → 2 → 2 → 3).",
+            "expected output": "true",
+            "explanations": "Traverse nodes and compare current value with next nodes.",
+            "answer": "true"
+        },
+        {
+            "qno": "18",
+            "question": "Print elements of linked list in reverse order using recursion. Input: 1 → 2 → 3",
+            "expected output": "3 2 1",
+            "explanations": "Use recursive call to reach end and print on unwinding.",
+            "answer": "3 2 1"
+        },
+        {
+            "qno": "19",
+            "question": "Convert an array [1, 2, 3] into a linked list.",
+            "expected output": "1 → 2 → 3",
+            "explanations": "Create nodes for each array element and link sequentially.",
+            "answer": "1 → 2 → 3"
+        },
+        {
+            "qno": "20",
+            "question": "Write a function to clear/delete entire linked list.",
+            "expected output": "Linked list deleted",
+            "explanations": "Iteratively delete nodes or set head to null.",
+            "answer": "Linked list deleted"
+        },
+        {
+            "qno": "21",
+            "question": "Write a function to find the middle element of a linked list 1 → 2 → 3 → 4 → 5.",
+            "expected output": "3",
+            "explanations": "Use slow and fast pointer technique to reach the middle node.",
+            "answer": "3"
+        },
+        {
+            "qno": "22",
+            "question": "Check whether a linked list is circular or not.",
+            "expected output": "false",
+            "explanations": "Traverse nodes and check if any node’s next points back to the head or any previous node.",
+            "answer": "false"
+        },
+        {
+            "qno": "23",
+            "question": "Write a function to reverse a linked list 1 → 2 → 3 → 4.",
+            "expected output": "4 → 3 → 2 → 1",
+            "explanations": "Iteratively change the next pointers of nodes to previous nodes.",
+            "answer": "4 → 3 → 2 → 1"
+        },
+        {
+            "qno": "24",
+            "question": "Insert a node with value 9 after the node with value 3 in linked list 1 → 2 → 3 → 4.",
+            "expected output": "1 → 2 → 3 → 9 → 4",
+            "explanations": "Traverse to node with value 3 and insert new node after it.",
+            "answer": "1 → 2 → 3 → 9 → 4"
+        },
+        {
+            "qno": "25",
+            "question": "Delete node with value 2 in linked list 1 → 2 → 3 → 4.",
+            "expected output": "1 → 3 → 4",
+            "explanations": "Traverse to node before value 2 and update its next pointer to skip node with value 2.",
+            "answer": "1 → 3 → 4"
+        },
+        {
+            "qno": "26",
+            "question": "Count how many times a value 2 appears in linked list 1 → 2 → 3 → 2 → 4.",
+            "expected output": "2",
+            "explanations": "Traverse and count nodes matching the target value.",
+            "answer": "2"
+        },
+        {
+            "qno": "27",
+            "question": "Find the maximum value in linked list 1 → 5 → 3 → 2.",
+            "expected output": "5",
+            "explanations": "Traverse nodes and track the maximum value found.",
+            "answer": "5"
+        },
+        {
+            "qno": "28",
+            "question": "Find the minimum value in linked list 1 → 5 → 3 → 2.",
+            "expected output": "1",
+            "explanations": "Traverse nodes and track the minimum value found.",
+            "answer": "1"
+        },
+        {
+            "qno": "29",
+            "question": "Write a function to merge two sorted linked lists: 1 → 3 → 5 and 2 → 4 → 6.",
+            "expected output": "1 → 2 → 3 → 4 → 5 → 6",
+            "explanations": "Compare nodes from both lists and insert nodes in sorted order.",
+            "answer": "1 → 2 → 3 → 4 → 5 → 6"
+        },
+        {
+            "qno": "30",
+            "question": "Write a function to remove duplicates from sorted linked list 1 → 1 → 2 → 3 → 3.",
+            "expected output": "1 → 2 → 3",
+            "explanations": "Traverse and remove nodes with same value as next node.",
+            "answer": "1 → 2 → 3"
+        },
+        {
+            "qno": "31",
+            "question": "Write a function to print the linked list elements at even positions only from 1 → 2 → 3 → 4 → 5.",
+            "expected output": "2 4",
+            "explanations": "Traverse nodes with index and print nodes at even indices.",
+            "answer": "2 4"
+        },
+        {
+            "qno": "32",
+            "question": "Write a function to print the linked list elements at odd positions only from 1 → 2 → 3 → 4 → 5.",
+            "expected output": "1 3 5",
+            "explanations": "Traverse nodes with index and print nodes at odd indices.",
+            "answer": "1 3 5"
+        },
+        {
+            "qno": "33",
+            "question": "Write a function to split linked list 1 → 2 → 3 → 4 → 5 into two lists at the middle.",
+            "expected output": "List 1: 1 → 2 → 3, List 2: 4 → 5",
+            "explanations": "Use slow and fast pointers to find middle and split.",
+            "answer": "List 1: 1 → 2 → 3, List 2: 4 → 5"
+        },
+        {
+            "qno": "34",
+            "question": "Write a function to find the nth node from the end in linked list 1 → 2 → 3 → 4 → 5, where n=2.",
+            "expected output": "4",
+            "explanations": "Use two pointers; move first pointer n steps ahead, then move both till first reaches end.",
+            "answer": "4"
+        },
+        {
+            "qno": "35",
+            "question": "Write a function to swap two nodes with given values 2 and 4 in linked list 1 → 2 → 3 → 4 → 5.",
+            "expected output": "1 → 4 → 3 → 2 → 5",
+            "explanations": "Locate nodes and swap their links without swapping data.",
+            "answer": "1 → 4 → 3 → 2 → 5"
+        },
+        {
+            "qno": "36",
+            "question": "Write a function to check if a linked list is a palindrome: 1 → 2 → 3 → 2 → 1.",
+            "expected output": "true",
+            "explanations": "Use two pointers or reverse second half and compare.",
+            "answer": "true"
+        },
+        {
+            "qno": "37",
+            "question": "Write a function to remove all nodes with a specific value 3 from linked list 1 → 3 → 2 → 3 → 4.",
+            "expected output": "1 → 2 → 4",
+            "explanations": "Traverse and unlink nodes with target value.",
+            "answer": "1 → 2 → 4"
+        },
+        {
+            "qno": "38",
+            "question": "Write a function to find the sum of nodes at odd positions in linked list 1 → 2 → 3 → 4 → 5.",
+            "expected output": "9",
+            "explanations": "Traverse and accumulate data of nodes at odd indices.",
+            "answer": "9"
+        },
+        {
+            "qno": "39",
+            "question": "Write a function to find the sum of nodes at even positions in linked list 1 → 2 → 3 → 4 → 5.",
+            "expected output": "6",
+            "explanations": "Traverse and accumulate data of nodes at even indices.",
+            "answer": "6"
+        },
+        {
+            "qno": "40",
+            "question": "Write a function to delete the entire linked list and free memory.",
+            "expected output": "Linked list deleted",
+            "explanations": "Iteratively delete nodes and set head to null.",
+            "answer": "Linked list deleted"
+        },
+        {
+            "qno": "41",
+            "question": "Write a function to create a circular singly linked list from 1 → 2 → 3.",
+            "expected output": "Circular linked list with last node pointing to first node.",
+            "explanations": "Link the last node's next pointer to the head node.",
+            "answer": "Circular linked list with last node pointing to first node."
+        },
+        {
+            "qno": "42",
+            "question": "Write a function to detect if a linked list contains a loop.",
+            "expected output": "false",
+            "explanations": "Use Floyd’s cycle-finding algorithm (slow and fast pointers).",
+            "answer": "false"
+        },
+        {
+            "qno": "43",
+            "question": "Write a function to find the length of a circular linked list 1 → 2 → 3 (circular).",
+            "expected output": "3",
+            "explanations": "Traverse till you reach the head again, count nodes.",
+            "answer": "3"
+        },
+        {
+            "qno": "44",
+            "question": "Write a function to insert a node at the beginning of a circular linked list.",
+            "expected output": "Node inserted and head updated properly.",
+            "explanations": "Adjust last node's next pointer to new head.",
+            "answer": "Node inserted and head updated properly."
+        },
+        {
+            "qno": "45",
+            "question": "Write a function to delete the head node of a circular linked list.",
+            "expected output": "Head node deleted and list updated.",
+            "explanations": "Update last node's next pointer and head pointer.",
+            "answer": "Head node deleted and list updated."
+        },
+        {
+            "qno": "46",
+            "question": "Write a function to insert a node at the end of a circular linked list.",
+            "expected output": "Node inserted at end and linked to head.",
+            "explanations": "Adjust pointers to keep list circular.",
+            "answer": "Node inserted at end and linked to head."
+        },
+        {
+            "qno": "47",
+            "question": "Write a function to search for a value in circular linked list 1 → 2 → 3.",
+            "expected output": "Found at position 2",
+            "explanations": "Traverse till you reach head again or value found.",
+            "answer": "Found at position 2"
+        },
+        {
+            "qno": "48",
+            "question": "Write a function to find the middle node of circular linked list 1 → 2 → 3 → 4 → 5.",
+            "expected output": "3",
+            "explanations": "Use slow and fast pointers considering circular nature.",
+            "answer": "3"
+        },
+        {
+            "qno": "49",
+            "question": "Write a function to reverse a circular linked list.",
+            "expected output": "Circular list reversed properly.",
+            "explanations": "Reverse links and maintain circular condition.",
+            "answer": "Circular list reversed properly."
+        },
+        {
+            "qno": "50",
+            "question": "Write a function to split a circular linked list into two halves.",
+            "expected output": "Two circular linked lists from original.",
+            "explanations": "Use slow and fast pointers and adjust pointers for two lists.",
+            "answer": "Two circular linked lists from original."
+        },
+        {
+            "qno": "51",
+            "question": "Write a function to create a doubly linked list with nodes 1 ↔ 2 ↔ 3.",
+            "expected output": "Doubly linked list created",
+            "explanations": "Create nodes with next and prev pointers linking both directions.",
+            "answer": "Doubly linked list created"
+        },
+        {
+            "qno": "52",
+            "question": "Write a function to traverse a doubly linked list forward and print all nodes.",
+            "expected output": "1 2 3",
+            "explanations": "Start from head and traverse using next pointers.",
+            "answer": "1 2 3"
+        },
+        {
+            "qno": "53",
+            "question": "Write a function to traverse a doubly linked list backward and print all nodes.",
+            "expected output": "3 2 1",
+            "explanations": "Traverse to last node and traverse backward using prev pointers.",
+            "answer": "3 2 1"
+        },
+        {
+            "qno": "54",
+            "question": "Write a function to insert a node at the beginning of a doubly linked list.",
+            "expected output": "Node inserted at beginning",
+            "explanations": "Create new node and adjust head and prev pointers.",
+            "answer": "Node inserted at beginning"
+        },
+        {
+            "qno": "55",
+            "question": "Write a function to delete the last node of a doubly linked list.",
+            "expected output": "Last node deleted",
+            "explanations": "Traverse to last node and update previous node’s next pointer.",
+            "answer": "Last node deleted"
+        },
+        {
+            "qno": "56",
+            "question": "Write a function to search for a value in doubly linked list 1 ↔ 2 ↔ 3.",
+            "expected output": "Found at position 2",
+            "explanations": "Traverse from head and compare values.",
+            "answer": "Found at position 2"
+        },
+        {
+            "qno": "57",
+            "question": "Write a function to reverse a doubly linked list 1 ↔ 2 ↔ 3.",
+            "expected output": "3 ↔ 2 ↔ 1",
+            "explanations": "Swap next and prev pointers of each node.",
+            "answer": "3 ↔ 2 ↔ 1"
+        },
+        {
+            "qno": "58",
+            "question": "Write a function to find the length of a doubly linked list 1 ↔ 2 ↔ 3.",
+            "expected output": "3",
+            "explanations": "Traverse using next pointers and count nodes.",
+            "answer": "3"
+        },
+        {
+            "qno": "59",
+            "question": "Write a function to delete a node at position 2 in doubly linked list 1 ↔ 2 ↔ 3.",
+            "expected output": "1 ↔ 3",
+            "explanations": "Adjust next and prev pointers to remove node.",
+            "answer": "1 ↔ 3"
+        },
+        {
+            "qno": "60",
+            "question": "Write a function to insert a node with value 4 after node with value 2 in doubly linked list 1 ↔ 2 ↔ 3.",
+            "expected output": "1 ↔ 2 ↔ 4 ↔ 3",
+            "explanations": "Adjust pointers to insert node properly.",
+            "answer": "1 ↔ 2 ↔ 4 ↔ 3"
+        }
+    ]
+}
