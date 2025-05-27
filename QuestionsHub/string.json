@@ -139,6 +139,1550 @@
             "expected output": "\"tab\"",
             "explanations": "Loop from last index to first and print characters.",
             "answer": "\"tab\""
+        },
+        {
+            "qno": "21",
+            "question": "Check if the string ends with 'ing'. Input: \"playing\"",
+            "expected output": "true",
+            "explanations": "Check the last three characters of the string.",
+            "answer": "true"
+        },
+        {
+            "qno": "22",
+            "question": "Convert the first character to uppercase. Input: \"hello\"",
+            "expected output": "\"Hello\"",
+            "explanations": "Change the first letter to uppercase, keep the rest as is.",
+            "answer": "\"Hello\""
+        },
+        {
+            "qno": "23",
+            "question": "Remove all vowels from string. Input: \"education\"",
+            "expected output": "\"dctn\"",
+            "explanations": "Eliminate 'a', 'e', 'i', 'o', 'u'.",
+            "answer": "\"dctn\""
+        },
+        {
+            "qno": "24",
+            "question": "Find the number of words in the string. Input: \"Good morning everyone\"",
+            "expected output": "3",
+            "explanations": "Count how many words separated by spaces.",
+            "answer": "3"
+        },
+        {
+            "qno": "25",
+            "question": "Capitalize the last letter. Input: \"car\"",
+            "expected output": "\"caR\"",
+            "explanations": "Change the last character to uppercase.",
+            "answer": "\"caR\""
+        },
+        {
+            "qno": "26",
+            "question": "Count how many digits in string. Input: \"a1b2c3\"",
+            "expected output": "3",
+            "explanations": "Check each character and count numeric ones.",
+            "answer": "3"
+        },
+        {
+            "qno": "27",
+            "question": "Check if all characters are lowercase. Input: \"openai\"",
+            "expected output": "true",
+            "explanations": "Verify each character is in lowercase.",
+            "answer": "true"
+        },
+        {
+            "qno": "28",
+            "question": "Print ASCII of first character. Input: \"Z\"",
+            "expected output": "90",
+            "explanations": "Use ASCII chart to get numeric value.",
+            "answer": "90"
+        },
+        {
+            "qno": "29",
+            "question": "Change all spaces to hyphens. Input: \"I love AI\"",
+            "expected output": "\"I-love-AI\"",
+            "explanations": "Replace each space with a '-'.",
+            "answer": "\"I-love-AI\""
+        },
+        {
+            "qno": "30",
+            "question": "Find how many times 'e' appears. Input: \"eleven\"",
+            "expected output": "3",
+            "explanations": "Loop through and count 'e'.",
+            "answer": "3"
+        },
+        {
+            "qno": "31",
+            "question": "Print the string with characters in alternate case. Input: \"hello\"",
+            "expected output": "\"HeLlO\"",
+            "explanations": "Capitalize even indexed characters.",
+            "answer": "\"HeLlO\""
+        },
+        {
+            "qno": "32",
+            "question": "Check if string contains numbers only. Input: \"12345\"",
+            "expected output": "true",
+            "explanations": "Loop through characters and verify they’re all digits.",
+            "answer": "true"
+        },
+        {
+            "qno": "33",
+            "question": "Count uppercase letters. Input: \"OpenAI Rocks\"",
+            "expected output": "3",
+            "explanations": "Count all capital letters in the string.",
+            "answer": "3"
+        },
+        {
+            "qno": "34",
+            "question": "Remove all digits. Input: \"a1b2c3d4\"",
+            "expected output": "\"abcd\"",
+            "explanations": "Filter out characters that are digits.",
+            "answer": "\"abcd\""
+        },
+        {
+            "qno": "35",
+            "question": "Print every second character. Input: \"abcdef\"",
+            "expected output": "\"bdf\"",
+            "explanations": "Start from index 1 and take every second character.",
+            "answer": "\"bdf\""
+        },
+        {
+            "qno": "36",
+            "question": "Convert string to title case. Input: \"this is it\"",
+            "expected output": "\"This Is It\"",
+            "explanations": "Capitalize the first letter of each word.",
+            "answer": "\"This Is It\""
+        },
+        {
+            "qno": "37",
+            "question": "Replace all vowels with '*'. Input: \"Input\"",
+            "expected output": "\"*np*t\"",
+            "explanations": "Replace a, e, i, o, u with '*'.",
+            "answer": "\"*np*t\""
+        },
+        {
+            "qno": "38",
+            "question": "Check if string is palindrome. Input: \"madam\"",
+            "expected output": "true",
+            "explanations": "A string is a palindrome if it reads same forward and backward.",
+            "answer": "true"
+        },
+        {
+            "qno": "39",
+            "question": "Count number of special characters. Input: \"abc@123#\"",
+            "expected output": "2",
+            "explanations": "Count characters that are not digits or alphabets.",
+            "answer": "2"
+        },
+        {
+            "qno": "40",
+            "question": "Print string without spaces. Input: \"space here\"",
+            "expected output": "\"spacehere\"",
+            "explanations": "Remove all space characters from the string.",
+            "answer": "\"spacehere\""
+        },
+        {
+            "qno": "41",
+            "question": "Count the number of consonants in a string. Input: \"hello world\"",
+            "expected output": "7",
+            "explanations": "Count alphabets that are not vowels (a, e, i, o, u).",
+            "answer": "7"
+        },
+        {
+            "qno": "42",
+            "question": "Find the length of the string without using built-in length function. Input: \"hello\"",
+            "expected output": "5",
+            "explanations": "Iterate through the string until the end to count characters.",
+            "answer": "5"
+        },
+        {
+            "qno": "43",
+            "question": "Print the middle character of a string. Input: \"python\"",
+            "expected output": "\"h\"",
+            "explanations": "For even length, choose the character at length/2 index (0-based).",
+            "answer": "\"h\""
+        },
+        {
+            "qno": "44",
+            "question": "Check if two strings are equal. Input: \"test\", \"test\"",
+            "expected output": "true",
+            "explanations": "Compare each character of both strings.",
+            "answer": "true"
+        },
+        {
+            "qno": "45",
+            "question": "Print the string in reverse without using built-in reverse. Input: \"abcde\"",
+            "expected output": "\"edcba\"",
+            "explanations": "Traverse the string backward and print characters.",
+            "answer": "\"edcba\""
+        },
+        {
+            "qno": "46",
+            "question": "Check if string contains only alphabets. Input: \"HelloWorld\"",
+            "expected output": "true",
+            "explanations": "Verify all characters are between a-z or A-Z.",
+            "answer": "true"
+        },
+        {
+            "qno": "47",
+            "question": "Print the first 3 characters of a string. Input: \"programming\"",
+            "expected output": "\"pro\"",
+            "explanations": "Extract substring from index 0 to 2.",
+            "answer": "\"pro\""
+        },
+        {
+            "qno": "48",
+            "question": "Count how many times a substring appears. Input: \"banana\", substring \"an\"",
+            "expected output": "2",
+            "explanations": "Search and count overlapping occurrences.",
+            "answer": "2"
+        },
+        {
+            "qno": "49",
+            "question": "Replace all occurrences of 'a' with 'x'. Input: \"banana\"",
+            "expected output": "\"bxnxnx\"",
+            "explanations": "Traverse and replace each 'a' with 'x'.",
+            "answer": "\"bxnxnx\""
+        },
+        {
+            "qno": "50",
+            "question": "Check if string starts with 'pre'. Input: \"prefix\"",
+            "expected output": "true",
+            "explanations": "Compare first three characters with 'pre'.",
+            "answer": "true"
+        },
+        {
+            "qno": "51",
+            "question": "Print every third character of a string. Input: \"abcdefghijklmnopqrstuvwxyz\"",
+            "expected output": "\"cfilorux\"",
+            "explanations": "Start at index 2 and take every third character.",
+            "answer": "\"cfilorux\""
+        },
+        {
+            "qno": "52",
+            "question": "Count how many spaces are in a string. Input: \"I am learning C programming\"",
+            "expected output": "4",
+            "explanations": "Count number of space characters.",
+            "answer": "4"
+        },
+        {
+            "qno": "53",
+            "question": "Remove the first and last character from a string. Input: \"example\"",
+            "expected output": "\"xampl\"",
+            "explanations": "Print substring excluding first and last characters.",
+            "answer": "\"xampl\""
+        },
+        {
+            "qno": "54",
+            "question": "Find the index of first occurrence of 'o'. Input: \"hello world\"",
+            "expected output": "4",
+            "explanations": "Traverse until first 'o' is found and return index.",
+            "answer": "4"
+        },
+        {
+            "qno": "55",
+            "question": "Check if a string contains both uppercase and lowercase letters. Input: \"OpenAI\"",
+            "expected output": "true",
+            "explanations": "Verify presence of at least one uppercase and one lowercase character.",
+            "answer": "true"
+        },
+        {
+            "qno": "56",
+            "question": "Remove duplicate characters from a string. Input: \"banana\"",
+            "expected output": "\"ban\"",
+            "explanations": "Keep only first occurrence of each character.",
+            "answer": "\"ban\""
+        },
+        {
+            "qno": "57",
+            "question": "Concatenate two strings. Input: \"Hello\", \"World\"",
+            "expected output": "\"HelloWorld\"",
+            "explanations": "Join the two strings without spaces.",
+            "answer": "\"HelloWorld\""
+        },
+        {
+            "qno": "58",
+            "question": "Check if string contains special characters. Input: \"hello!\"",
+            "expected output": "true",
+            "explanations": "Check if any character is not alphanumeric or space.",
+            "answer": "true"
+        },
+        {
+            "qno": "59",
+            "question": "Print string in uppercase. Input: \"hello\"",
+            "expected output": "\"HELLO\"",
+            "explanations": "Convert each character to uppercase.",
+            "answer": "\"HELLO\""
+        },
+        {
+            "qno": "60",
+            "question": "Print string in lowercase. Input: \"WORLD\"",
+            "expected output": "\"world\"",
+            "explanations": "Convert each character to lowercase.",
+            "answer": "\"world\""
+        },
+        {
+            "qno": "61",
+            "question": "Count the number of digits in a string. Input: \"abc12345xyz\"",
+            "expected output": "5",
+            "explanations": "Count characters between '0' and '9'.",
+            "answer": "5"
+        },
+        {
+            "qno": "62",
+            "question": "Check if a string ends with 'ing'. Input: \"learning\"",
+            "expected output": "true",
+            "explanations": "Compare last three characters with 'ing'.",
+            "answer": "true"
+        },
+        {
+            "qno": "63",
+            "question": "Print the first word from a sentence. Input: \"Hello world from C\"",
+            "expected output": "\"Hello\"",
+            "explanations": "Extract characters until first space.",
+            "answer": "\"Hello\""
+        },
+        {
+            "qno": "64",
+            "question": "Convert all vowels in a string to uppercase. Input: \"hello world\"",
+            "expected output": "\"hEllO wOrld\"",
+            "explanations": "Check each character and convert vowels to uppercase.",
+            "answer": "\"hEllO wOrld\""
+        },
+        {
+            "qno": "65",
+            "question": "Remove all vowels from a string. Input: \"education\"",
+            "expected output": "\"dctn\"",
+            "explanations": "Skip vowels while traversing the string.",
+            "answer": "\"dctn\""
+        },
+        {
+            "qno": "66",
+            "question": "Count number of words in a string. Input: \"C programming is fun\"",
+            "expected output": "4",
+            "explanations": "Count spaces plus one assuming words separated by single spaces.",
+            "answer": "4"
+        },
+        {
+            "qno": "67",
+            "question": "Check if a string is numeric. Input: \"12345\"",
+            "expected output": "true",
+            "explanations": "Verify all characters are digits from '0' to '9'.",
+            "answer": "true"
+        },
+        {
+            "qno": "68",
+            "question": "Print characters at even indices. Input: \"abcdef\"",
+            "expected output": "\"ace\"",
+            "explanations": "Select characters at 0, 2, 4, ... indices.",
+            "answer": "\"ace\""
+        },
+        {
+            "qno": "69",
+            "question": "Print characters at odd indices. Input: \"abcdef\"",
+            "expected output": "\"bdf\"",
+            "explanations": "Select characters at 1, 3, 5, ... indices.",
+            "answer": "\"bdf\""
+        },
+        {
+            "qno": "70",
+            "question": "Swap the case of each character. Input: \"Hello World\"",
+            "expected output": "\"hELLO wORLD\"",
+            "explanations": "Convert uppercase to lowercase and vice versa.",
+            "answer": "\"hELLO wORLD\""
+        },
+        {
+            "qno": "71",
+            "question": "Find the second largest word length in a sentence. Input: \"I love programming in C\"",
+            "expected output": "11",
+            "explanations": "Find lengths of all words and get the second highest.",
+            "answer": "11"
+        },
+        {
+            "qno": "72",
+            "question": "Remove all spaces from a string. Input: \"a b c d e\"",
+            "expected output": "\"abcde\"",
+            "explanations": "Skip spaces while copying characters.",
+            "answer": "\"abcde\""
+        },
+        {
+            "qno": "73",
+            "question": "Check if a string is a valid identifier (starts with letter or underscore). Input: \"_var1\"",
+            "expected output": "true",
+            "explanations": "First character must be alphabet or underscore; others alphanumeric or underscore.",
+            "answer": "true"
+        },
+        {
+            "qno": "74",
+            "question": "Print the string after removing all punctuation marks. Input: \"Hello, world!\"",
+            "expected output": "\"Hello world\"",
+            "explanations": "Skip characters like ',', '!', '.', '?', etc.",
+            "answer": "\"Hello world\""
+        },
+        {
+            "qno": "75",
+            "question": "Count how many times letter 'e' appears in a string. Input: \"experience\"",
+            "expected output": "3",
+            "explanations": "Count occurrences of 'e' regardless of case.",
+            "answer": "3"
+        },
+        {
+            "qno": "76",
+            "question": "Print the string without vowels. Input: \"OpenAI\"",
+            "expected output": "\"pn\"",
+            "explanations": "Remove vowels from the string.",
+            "answer": "\"pn\""
+        },
+        {
+            "qno": "77",
+            "question": "Find the longest palindrome substring of length 1 or more. Input: \"racecar\"",
+            "expected output": "\"racecar\"",
+            "explanations": "Entire string is palindrome.",
+            "answer": "\"racecar\""
+        },
+        {
+            "qno": "78",
+            "question": "Check if string contains any digits. Input: \"Hello2World\"",
+            "expected output": "true",
+            "explanations": "Check presence of any characters between '0' and '9'.",
+            "answer": "true"
+        },
+        {
+            "qno": "79",
+            "question": "Print all uppercase letters from a string. Input: \"HeLLo WoRLd\"",
+            "expected output": "\"HLLWRL\"",
+            "explanations": "Traverse and collect only uppercase characters.",
+            "answer": "\"HLLWRL\""
+        },
+        {
+            "qno": "80",
+            "question": "Print all lowercase letters from a string. Input: \"HeLLo WoRLd\"",
+            "expected output": "\"eood\"",
+            "explanations": "Traverse and collect only lowercase characters.",
+            "answer": "\"eood\""
+        },
+        {
+            "qno": "81",
+            "question": "Check if all characters in string are same. Input: \"aaaaa\"",
+            "expected output": "true",
+            "explanations": "Compare each character with first character.",
+            "answer": "true"
+        },
+        {
+            "qno": "82",
+            "question": "Print the ASCII values of each character in a string. Input: \"ABC\"",
+            "expected output": "[65, 66, 67]",
+            "explanations": "Print ASCII code of each character.",
+            "answer": "[65, 66, 67]"
+        },
+        {
+            "qno": "83",
+            "question": "Convert all lowercase letters to uppercase. Input: \"hello\"",
+            "expected output": "\"HELLO\"",
+            "explanations": "Change case by subtracting 32 from ASCII codes of lowercase letters.",
+            "answer": "\"HELLO\""
+        },
+        {
+            "qno": "84",
+            "question": "Convert all uppercase letters to lowercase. Input: \"WORLD\"",
+            "expected output": "\"world\"",
+            "explanations": "Change case by adding 32 to ASCII codes of uppercase letters.",
+            "answer": "\"world\""
+        },
+        {
+            "qno": "85",
+            "question": "Count how many vowels are at even indices. Input: \"education\"",
+            "expected output": "3",
+            "explanations": "Check vowels at positions 0, 2, 4, ...",
+            "answer": "3"
+        },
+        {
+            "qno": "86",
+            "question": "Print the first half of a string. Input: \"abcdef\"",
+            "expected output": "\"abc\"",
+            "explanations": "Print characters from start up to length/2 (not inclusive).",
+            "answer": "\"abc\""
+        },
+        {
+            "qno": "87",
+            "question": "Print the second half of a string. Input: \"abcdef\"",
+            "expected output": "\"def\"",
+            "explanations": "Print characters from length/2 to end.",
+            "answer": "\"def\""
+        },
+        {
+            "qno": "88",
+            "question": "Check if string has any whitespace characters. Input: \"Hello World\"",
+            "expected output": "true",
+            "explanations": "Check for space, tab, newline, etc.",
+            "answer": "true"
+        },
+        {
+            "qno": "89",
+            "question": "Print only alphabets from a string. Input: \"123abc456\"",
+            "expected output": "\"abc\"",
+            "explanations": "Skip digits and other characters.",
+            "answer": "\"abc\""
+        },
+        {
+            "qno": "90",
+            "question": "Count how many times a character appears. Input: string = \"hello\", character = 'l'",
+            "expected output": "2",
+            "explanations": "Traverse string and count matching characters.",
+            "answer": "2"
+        },
+        {
+            "qno": "91",
+            "question": "Check if a string is empty. Input: \"\"",
+            "expected output": "true",
+            "explanations": "If length is zero, string is empty.",
+            "answer": "true"
+        },
+        {
+            "qno": "92",
+            "question": "Print string with spaces replaced by underscores. Input: \"hello world\"",
+            "expected output": "\"hello_world\"",
+            "explanations": "Replace all spaces with '_'.",
+            "answer": "\"hello_world\""
+        },
+        {
+            "qno": "93",
+            "question": "Print all characters before first digit. Input: \"abc123\"",
+            "expected output": "\"abc\"",
+            "explanations": "Traverse string until digit found, then stop.",
+            "answer": "\"abc\""
+        },
+        {
+            "qno": "94",
+            "question": "Check if a string is a valid email format (basic check for '@' and '.'). Input: \"test@example.com\"",
+            "expected output": "true",
+            "explanations": "Check for presence of '@' and '.' after '@'.",
+            "answer": "true"
+        },
+        {
+            "qno": "95",
+            "question": "Count total uppercase letters in a string. Input: \"Hello World\"",
+            "expected output": "2",
+            "explanations": "Count characters from 'A' to 'Z'.",
+            "answer": "2"
+        },
+        {
+            "qno": "96",
+            "question": "Count total lowercase letters in a string. Input: \"Hello World\"",
+            "expected output": "8",
+            "explanations": "Count characters from 'a' to 'z'.",
+            "answer": "8"
+        },
+        {
+            "qno": "97",
+            "question": "Print the reverse of each word in a sentence. Input: \"Hello World\"",
+            "expected output": "\"olleH dlroW\"",
+            "explanations": "Split sentence into words, reverse each, then join.",
+            "answer": "\"olleH dlroW\""
+        },
+        {
+            "qno": "98",
+            "question": "Find the first repeated character in a string. Input: \"swiss\"",
+            "expected output": "\"s\"",
+            "explanations": "Track characters and find first repetition.",
+            "answer": "\"s\""
+        },
+        {
+            "qno": "99",
+            "question": "Print all vowels in a string. Input: \"education\"",
+            "expected output": "\"euaio\"",
+            "explanations": "Traverse and print vowels only.",
+            "answer": "\"euaio\""
+        },
+        {
+            "qno": "100",
+            "question": "Check if two strings are anagrams. Input: \"listen\", \"silent\"",
+            "expected output": "true",
+            "explanations": "Sort both strings and compare.",
+            "answer": "true"
+        }
+    ],
+    "Medium": [
+        {
+            "qno": "1",
+            "question": "Find the number of times a substring appears in a string. Input: \"banana\", substring: \"ana\"",
+            "expected output": "1",
+            "explanations": "Check occurrences of the substring by scanning the string.",
+            "answer": "1"
+        },
+        {
+            "qno": "2",
+            "question": "Check if a string is a rotation of another. Input: \"waterbottle\", \"erbottlewat\"",
+            "expected output": "true",
+            "explanations": "Concatenate the first string to itself and check if second string is a substring.",
+            "answer": "true"
+        },
+        {
+            "qno": "3",
+            "question": "Count the number of uppercase letters in a string. Input: \"Hello World\"",
+            "expected output": "2",
+            "explanations": "Iterate and count characters between 'A' and 'Z'.",
+            "answer": "2"
+        },
+        {
+            "qno": "4",
+            "question": "Find the longest prefix that is also a suffix in a string. Input: \"ababcab\"",
+            "expected output": "\"ab\"",
+            "explanations": "Find longest substring that is both prefix and suffix, excluding the whole string.",
+            "answer": "\"ab\""
+        },
+        {
+            "qno": "5",
+            "question": "Replace all spaces in a string with '%20'. Input: \"Mr John Smith\"",
+            "expected output": "\"Mr%20John%20Smith\"",
+            "explanations": "Traverse the string and replace each space with '%20'.",
+            "answer": "\"Mr%20John%20Smith\""
+        },
+        {
+            "qno": "6",
+            "question": "Check if two strings are anagrams ignoring case. Input: \"Listen\", \"Silent\"",
+            "expected output": "true",
+            "explanations": "Convert to same case, sort characters, and compare.",
+            "answer": "true"
+        },
+        {
+            "qno": "7",
+            "question": "Find the first non-repeating character in a string. Input: \"swiss\"",
+            "expected output": "\"w\"",
+            "explanations": "Track frequency of characters and return first with count 1.",
+            "answer": "\"w\""
+        },
+        {
+            "qno": "8",
+            "question": "Convert a string to camelCase. Input: \"hello world program\"",
+            "expected output": "\"helloWorldProgram\"",
+            "explanations": "Lowercase first word, capitalize first letter of subsequent words and remove spaces.",
+            "answer": "\"helloWorldProgram\""
+        },
+        {
+            "qno": "9",
+            "question": "Count vowels and consonants separately in a string. Input: \"OpenAI\"",
+            "expected output": "{\"vowels\": 3, \"consonants\": 3}",
+            "explanations": "Classify letters as vowels (a,e,i,o,u) or consonants and count.",
+            "answer": "{\"vowels\": 3, \"consonants\": 3}"
+        },
+        {
+            "qno": "10",
+            "question": "Check if a string contains only digits. Input: \"12345\"",
+            "expected output": "true",
+            "explanations": "Verify every character is between '0' and '9'.",
+            "answer": "true"
+        },
+        {
+            "qno": "11",
+            "question": "Find the length of the longest substring without repeating characters. Input: \"abcabcbb\"",
+            "expected output": "3",
+            "explanations": "Use sliding window technique to track longest unique substring.",
+            "answer": "3"
+        },
+        {
+            "qno": "12",
+            "question": "Check if a string is a palindrome ignoring case and spaces. Input: \"A man a plan a canal Panama\"",
+            "expected output": "true",
+            "explanations": "Normalize string by removing spaces and case, then check palindrome.",
+            "answer": "true"
+        },
+        {
+            "qno": "13",
+            "question": "Remove all duplicate characters from a string. Input: \"programming\"",
+            "expected output": "\"progamin\"",
+            "explanations": "Track characters seen and build new string without duplicates.",
+            "answer": "\"progamin\""
+        },
+        {
+            "qno": "14",
+            "question": "Find the index of the nth occurrence of a character in a string. Input: string=\"banana\", char='a', n=2",
+            "expected output": "3",
+            "explanations": "Scan string and track occurrences until nth found.",
+            "answer": "3"
+        },
+        {
+            "qno": "15",
+            "question": "Count how many times each character appears in a string. Input: \"hello\"",
+            "expected output": "{\"h\":1, \"e\":1, \"l\":2, \"o\":1}",
+            "explanations": "Use a frequency map to count occurrences of each character.",
+            "answer": "{\"h\":1, \"e\":1, \"l\":2, \"o\":1}"
+        },
+        {
+            "qno": "16",
+            "question": "Check if a string contains only alphabetic characters. Input: \"OpenAI\"",
+            "expected output": "true",
+            "explanations": "Verify each character is between 'A'-'Z' or 'a'-'z'.",
+            "answer": "true"
+        },
+        {
+            "qno": "17",
+            "question": "Find all positions of a substring in a string. Input: string=\"abracadabra\", substring=\"abra\"",
+            "expected output": "[0, 7]",
+            "explanations": "Search string and record starting indices of each occurrence.",
+            "answer": "[0, 7]"
+        },
+        {
+            "qno": "18",
+            "question": "Convert a string to uppercase without using built-in functions. Input: \"hello\"",
+            "expected output": "\"HELLO\"",
+            "explanations": "Convert each lowercase character by adjusting ASCII value.",
+            "answer": "\"HELLO\""
+        },
+        {
+            "qno": "19",
+            "question": "Check if a string contains balanced brackets of types (), {}, []. Input: \"{[()]}\"",
+            "expected output": "true",
+            "explanations": "Use stack to match opening and closing brackets properly.",
+            "answer": "true"
+        },
+        {
+            "qno": "20",
+            "question": "Sort characters in a string in ascending order. Input: \"dcba\"",
+            "expected output": "\"abcd\"",
+            "explanations": "Extract characters, sort them, and recombine into string.",
+            "answer": "\"abcd\""
+        },
+        {
+            "qno": "21",
+            "question": "Remove all vowels from a string. Input: \"education\"",
+            "expected output": "\"dctn\"",
+            "explanations": "Traverse string and exclude vowels (a,e,i,o,u).",
+            "answer": "\"dctn\""
+        },
+        {
+            "qno": "22",
+            "question": "Check if a string ends with another string. Input: string=\"HelloWorld\", suffix=\"World\"",
+            "expected output": "true",
+            "explanations": "Compare the ending segment of the first string with the suffix.",
+            "answer": "true"
+        },
+        {
+            "qno": "23",
+            "question": "Find the frequency of each word in a sentence. Input: \"to be or not to be\"",
+            "expected output": "{\"to\":2, \"be\":2, \"or\":1, \"not\":1}",
+            "explanations": "Split sentence into words and count each occurrence.",
+            "answer": "{\"to\":2, \"be\":2, \"or\":1, \"not\":1}"
+        },
+        {
+            "qno": "24",
+            "question": "Check if a string is a pangram (contains every alphabet letter). Input: \"The quick brown fox jumps over the lazy dog\"",
+            "expected output": "true",
+            "explanations": "Verify presence of all letters from 'a' to 'z'.",
+            "answer": "true"
+        },
+        {
+            "qno": "25",
+            "question": "Find the shortest word in a sentence. Input: \"I love programming challenges\"",
+            "expected output": "\"I\"",
+            "explanations": "Split sentence and compare lengths to find shortest word.",
+            "answer": "\"I\""
+        },
+        {
+            "qno": "26",
+            "question": "Convert all digits in a string to words. Input: \"I have 2 apples\"",
+            "expected output": "\"I have two apples\"",
+            "explanations": "Replace digits with corresponding word representations.",
+            "answer": "\"I have two apples\""
+        },
+        {
+            "qno": "27",
+            "question": "Count the number of sentences in a paragraph. Input: \"Hello! How are you? I am fine.\"",
+            "expected output": "3",
+            "explanations": "Count sentence-ending punctuation marks like '.', '!', '?'.",
+            "answer": "3"
+        },
+        {
+            "qno": "28",
+            "question": "Remove all duplicate words from a sentence. Input: \"this is is a test test sentence\"",
+            "expected output": "\"this is a test sentence\"",
+            "explanations": "Track words seen and build a sentence without duplicates.",
+            "answer": "\"this is a test sentence\""
+        },
+        {
+            "qno": "29",
+            "question": "Find the longest word in a sentence. Input: \"I enjoy solving complex problems\"",
+            "expected output": "\"solving\"",
+            "explanations": "Split sentence and select the word with maximum length.",
+            "answer": "\"solving\""
+        },
+        {
+            "qno": "30",
+            "question": "Count the number of digits in a string. Input: \"User1234\"",
+            "expected output": "4",
+            "explanations": "Traverse string and count characters between '0' and '9'.",
+            "answer": "4"
+        },
+        {
+            "qno": "31",
+            "question": "Check if two strings are rotations of each other. Input: \"abcd\", \"cdab\"",
+            "expected output": "true",
+            "explanations": "Concatenate one string to itself and check for the other as substring.",
+            "answer": "true"
+        },
+        {
+            "qno": "32",
+            "question": "Capitalize the first letter of each sentence. Input: \"hello world. this is chatgpt.\"",
+            "expected output": "\"Hello world. This is chatgpt.\"",
+            "explanations": "Identify sentence boundaries and capitalize first letters.",
+            "answer": "\"Hello world. This is chatgpt.\""
+        },
+        {
+            "qno": "33",
+            "question": "Count how many words start with a vowel in a sentence. Input: \"An example of an apple\"",
+            "expected output": "3",
+            "explanations": "Split sentence and check first letter of each word for vowels.",
+            "answer": "3"
+        },
+        {
+            "qno": "34",
+            "question": "Replace all occurrences of a word in a sentence. Input: \"the cat sat on the mat\", word to replace: \"the\", replacement: \"a\"",
+            "expected output": "\"a cat sat on a mat\"",
+            "explanations": "Scan sentence and replace matching words with new word.",
+            "answer": "\"a cat sat on a mat\""
+        },
+        {
+            "qno": "35",
+            "question": "Check if a string contains any special characters (non-alphanumeric). Input: \"Hello@123\"",
+            "expected output": "true",
+            "explanations": "Check each character and return true if non-alphanumeric found.",
+            "answer": "true"
+        },
+        {
+            "qno": "36",
+            "question": "Find the sum of digits in a string. Input: \"abc123xyz\"",
+            "expected output": "6",
+            "explanations": "Extract digits and add their integer values.",
+            "answer": "6"
+        },
+        {
+            "qno": "37",
+            "question": "Count the number of words in a string. Input: \"Hello world from ChatGPT\"",
+            "expected output": "4",
+            "explanations": "Split the string by spaces and count the parts.",
+            "answer": "4"
+        },
+        {
+            "qno": "38",
+            "question": "Reverse each word in a sentence individually. Input: \"Hello world\"",
+            "expected output": "\"olleH dlrow\"",
+            "explanations": "Split sentence, reverse each word, then join again.",
+            "answer": "\"olleH dlrow\""
+        },
+        {
+            "qno": "39",
+            "question": "Check if a string contains only whitespace characters. Input: \"   \"",
+            "expected output": "true",
+            "explanations": "Verify all characters are spaces or tabs.",
+            "answer": "true"
+        },
+        {
+            "qno": "40",
+            "question": "Convert snake_case string to camelCase. Input: \"this_is_snake_case\"",
+            "expected output": "\"thisIsSnakeCase\"",
+            "explanations": "Split by '_', lowercase first word, capitalize subsequent first letters.",
+            "answer": "\"thisIsSnakeCase\""
+        },
+        {
+            "qno": "41",
+            "question": "Check if a string is a rotation of another string. Input: \"waterbottle\", \"erbottlewat\"",
+            "expected output": "true",
+            "explanations": "Concatenate first string with itself and check if second string is a substring.",
+            "answer": "true"
+        },
+        {
+            "qno": "42",
+            "question": "Remove all spaces from a string. Input: \"Hello World\"",
+            "expected output": "\"HelloWorld\"",
+            "explanations": "Traverse string and exclude all space characters.",
+            "answer": "\"HelloWorld\""
+        },
+        {
+            "qno": "43",
+            "question": "Count occurrences of a character in a string. Input: string=\"hello\", character='l'",
+            "expected output": "2",
+            "explanations": "Traverse string and count how many times the character appears.",
+            "answer": "2"
+        },
+        {
+            "qno": "44",
+            "question": "Check if a string contains only digits. Input: \"12345\"",
+            "expected output": "true",
+            "explanations": "Verify every character is between '0' and '9'.",
+            "answer": "true"
+        },
+        {
+            "qno": "45",
+            "question": "Replace all vowels in a string with '*'. Input: \"hello world\"",
+            "expected output": "\"h*ll* w*rld\"",
+            "explanations": "Traverse string, replace vowels (a,e,i,o,u) with '*'.",
+            "answer": "\"h*ll* w*rld\""
+        },
+        {
+            "qno": "46",
+            "question": "Find the first repeated character in a string. Input: \"swiss\"",
+            "expected output": "\"s\"",
+            "explanations": "Track characters seen, return the first one encountered twice.",
+            "answer": "\"s\""
+        },
+        {
+            "qno": "47",
+            "question": "Convert all uppercase letters in a string to lowercase. Input: \"Hello World\"",
+            "expected output": "\"hello world\"",
+            "explanations": "Convert each uppercase letter by adjusting ASCII values or using built-in methods.",
+            "answer": "\"hello world\""
+        },
+        {
+            "qno": "48",
+            "question": "Find the count of words starting with capital letters in a sentence. Input: \"Hello World from ChatGPT\"",
+            "expected output": "3",
+            "explanations": "Split sentence and count words with uppercase first letter.",
+            "answer": "3"
+        },
+        {
+            "qno": "49",
+            "question": "Find the index of the first occurrence of a substring. Input: string=\"hello world\", substring=\"world\"",
+            "expected output": "6",
+            "explanations": "Traverse string to locate the substring's starting position.",
+            "answer": "6"
+        },
+        {
+            "qno": "50",
+            "question": "Check if a string is a valid identifier (starts with letter or underscore, contains letters, digits, or underscores). Input: \"_var123\"",
+            "expected output": "true",
+            "explanations": "Verify first character and allowable characters following it.",
+            "answer": "true"
+        },
+        {
+            "qno": "51",
+            "question": "Count the number of uppercase letters in a string. Input: \"Hello World\"",
+            "expected output": "2",
+            "explanations": "Traverse string and count letters between 'A' and 'Z'.",
+            "answer": "2"
+        },
+        {
+            "qno": "52",
+            "question": "Reverse the order of words in a sentence. Input: \"Hello World from ChatGPT\"",
+            "expected output": "\"ChatGPT from World Hello\"",
+            "explanations": "Split sentence by spaces and reverse the list of words.",
+            "answer": "\"ChatGPT from World Hello\""
+        },
+        {
+            "qno": "53",
+            "question": "Count how many times a substring appears in a string. Input: string=\"abababa\", substring=\"aba\"",
+            "expected output": "3",
+            "explanations": "Traverse string and count overlapping substring occurrences.",
+            "answer": "3"
+        },
+        {
+            "qno": "54",
+            "question": "Convert camelCase string to snake_case. Input: \"thisIsCamelCase\"",
+            "expected output": "\"this_is_camel_case\"",
+            "explanations": "Insert underscores before uppercase letters and convert them to lowercase.",
+            "answer": "\"this_is_camel_case\""
+        },
+        {
+            "qno": "55",
+            "question": "Remove trailing and leading whitespace from a string. Input: \"  Hello World  \"",
+            "expected output": "\"Hello World\"",
+            "explanations": "Ignore whitespace at beginning and end when extracting the string.",
+            "answer": "\"Hello World\""
+        },
+        {
+            "qno": "56",
+            "question": "Find the number of special characters in a string. Input: \"Hello@2023!\"",
+            "expected output": "2",
+            "explanations": "Count characters that are not letters or digits.",
+            "answer": "2"
+        },
+        {
+            "qno": "57",
+            "question": "Check if a string is numeric (digits only) or not. Input: \"1234a\"",
+            "expected output": "false",
+            "explanations": "Return false if any character is not a digit.",
+            "answer": "false"
+        },
+        {
+            "qno": "58",
+            "question": "Count the number of consonants in a string. Input: \"Hello World\"",
+            "expected output": "7",
+            "explanations": "Count alphabetic characters excluding vowels.",
+            "answer": "7"
+        },
+        {
+            "qno": "59",
+            "question": "Check if two strings are anagrams. Input: \"listen\", \"silent\"",
+            "expected output": "true",
+            "explanations": "Compare sorted characters of both strings.",
+            "answer": "true"
+        },
+        {
+            "qno": "60",
+            "question": "Insert a character at a given position in a string. Input: string=\"hello\", char='X', position=2",
+            "expected output": "\"heXllo\"",
+            "explanations": "Split string at position and insert the character.",
+            "answer": "\"heXllo\""
+        },
+        {
+            "qno": "61",
+            "question": "Count number of words with even length in a sentence. Input: \"This is a simple test\"",
+            "expected output": "2",
+            "explanations": "Split sentence and count words where length is even.",
+            "answer": "2"
+        },
+        {
+            "qno": "62",
+            "question": "Remove all non-alphabet characters from a string. Input: \"He110 W0rld!\"",
+            "expected output": "\"HeWrld\"",
+            "explanations": "Traverse string and include only alphabet letters.",
+            "answer": "\"HeWrld\""
+        },
+        {
+            "qno": "63",
+            "question": "Find the second largest word by length in a sentence. Input: \"We love programming challenges\"",
+            "expected output": "\"programming\"",
+            "explanations": "Sort words by length and pick the second longest.",
+            "answer": "\"programming\""
+        },
+        {
+            "qno": "64",
+            "question": "Check if a string contains all digits from 0 to 9 at least once. Input: \"0123456789abc\"",
+            "expected output": "true",
+            "explanations": "Verify presence of each digit character in the string.",
+            "answer": "true"
+        },
+        {
+            "qno": "65",
+            "question": "Count how many words end with a vowel in a sentence. Input: \"I love to code\"",
+            "expected output": "2",
+            "explanations": "Check last character of each word for vowels.",
+            "answer": "2"
+        },
+        {
+            "qno": "66",
+            "question": "Replace all digits in a string with '#'. Input: \"User1234\"",
+            "expected output": "\"User####\"",
+            "explanations": "Traverse string and replace digits with '#'.",
+            "answer": "\"User####\""
+        },
+        {
+            "qno": "67",
+            "question": "Find the longest palindrome substring in a string. Input: \"babad\"",
+            "expected output": "\"bab\"",
+            "explanations": "Check substrings and track longest palindrome found.",
+            "answer": "\"bab\""
+        },
+        {
+            "qno": "68",
+            "question": "Count the number of words in a string ignoring multiple spaces. Input: \"Hello   World  from   ChatGPT\"",
+            "expected output": "4",
+            "explanations": "Split by spaces ignoring empty splits and count words.",
+            "answer": "4"
+        },
+        {
+            "qno": "69",
+            "question": "Check if all characters in a string are unique. Input: \"abcdef\"",
+            "expected output": "true",
+            "explanations": "Track characters and ensure no duplicates.",
+            "answer": "true"
+        },
+        {
+            "qno": "70",
+            "question": "Convert all uppercase letters to lowercase and vice versa. Input: \"Hello World\"",
+            "expected output": "\"hELLO wORLD\"",
+            "explanations": "Traverse string and switch case of each alphabetic character.",
+            "answer": "\"hELLO wORLD\""
+        },
+        {
+            "qno": "71",
+            "question": "Find the smallest word in a sentence ignoring punctuation. Input: \"This, is a test.\"",
+            "expected output": "\"a\"",
+            "explanations": "Remove punctuation, split, then find shortest word.",
+            "answer": "\"a\""
+        },
+        {
+            "qno": "72",
+            "question": "Check if a string is a palindrome ignoring case and spaces. Input: \"A man a plan a canal Panama\"",
+            "expected output": "true",
+            "explanations": "Normalize string by removing spaces and case, then check palindrome.",
+            "answer": "true"
+        },
+        {
+            "qno": "73",
+            "question": "Count vowels in a string ignoring case. Input: \"Education\"",
+            "expected output": "5",
+            "explanations": "Convert to lower case and count vowels.",
+            "answer": "5"
+        },
+        {
+            "qno": "74",
+            "question": "Find the difference between two strings by character count. Input: \"abcde\", \"abfgh\"",
+            "expected output": "4",
+            "explanations": "Count characters present in one string but not the other.",
+            "answer": "4"
+        },
+        {
+            "qno": "75",
+            "question": "Check if a string contains any digit. Input: \"Hello123\"",
+            "expected output": "true",
+            "explanations": "Traverse string and check for digit characters.",
+            "answer": "true"
+        },
+        {
+            "qno": "76",
+            "question": "Find the sum of ASCII values of all characters in a string. Input: \"ABC\"",
+            "expected output": "198",
+            "explanations": "Sum ASCII codes of all characters.",
+            "answer": "198"
+        },
+        {
+            "qno": "77",
+            "question": "Remove all duplicate characters from a string. Input: \"programming\"",
+            "expected output": "\"progamin\"",
+            "explanations": "Traverse string and keep first occurrence of each character.",
+            "answer": "\"progamin\""
+        },
+        {
+            "qno": "78",
+            "question": "Count how many words have length greater than 4 in a sentence. Input: \"I love programming challenges\"",
+            "expected output": "2",
+            "explanations": "Split and count words longer than 4 characters.",
+            "answer": "2"
+        },
+        {
+            "qno": "79",
+            "question": "Replace every space in a string with '%20'. Input: \"Hello World\"",
+            "expected output": "\"Hello%20World\"",
+            "explanations": "Traverse string replacing spaces with '%20'.",
+            "answer": "\"Hello%20World\""
+        },
+        {
+            "qno": "80",
+            "question": "Check if a string contains any uppercase letters. Input: \"helloWorld\"",
+            "expected output": "true",
+            "explanations": "Traverse string checking for uppercase characters.",
+            "answer": "true"
+        },
+        {
+            "qno": "81",
+            "question": "Find the total number of vowels and consonants in a string. Input: \"Hello World\"",
+            "expected output": "Vowels: 3, Consonants: 7",
+            "explanations": "Traverse string and count vowels (a,e,i,o,u) and consonants separately.",
+            "answer": "Vowels: 3, Consonants: 7"
+        },
+        {
+            "qno": "82",
+            "question": "Check if a string is a palindrome after removing all non-alphanumeric characters and ignoring case. Input: \"A man, a plan, a canal: Panama\"",
+            "expected output": "true",
+            "explanations": "Normalize string by removing non-alphanumeric characters, convert to lower case, then check palindrome.",
+            "answer": "true"
+        },
+        {
+            "qno": "83",
+            "question": "Count the number of uppercase letters followed immediately by a lowercase letter in a string. Input: \"HeLLo WoRLd\"",
+            "expected output": "3",
+            "explanations": "Traverse string and count occurrences where an uppercase letter is followed by a lowercase letter.",
+            "answer": "3"
+        },
+        {
+            "qno": "84",
+            "question": "Find the length of the longest substring without repeating characters. Input: \"abcabcbb\"",
+            "expected output": "3",
+            "explanations": "Use a sliding window approach to track longest substring without duplicate characters.",
+            "answer": "3"
+        },
+        {
+            "qno": "85",
+            "question": "Check if a string contains at least one uppercase letter, one lowercase letter, and one digit. Input: \"Hello123\"",
+            "expected output": "true",
+            "explanations": "Traverse string and flag presence of uppercase, lowercase, and digit characters.",
+            "answer": "true"
+        },
+        {
+            "qno": "86",
+            "question": "Replace all occurrences of 'is' with 'was' in a string. Input: \"This is a test. This is simple.\"",
+            "expected output": "\"Thwas was a test. Thwas was simple.\"",
+            "explanations": "Traverse string and replace substring 'is' with 'was'.",
+            "answer": "\"Thwas was a test. Thwas was simple.\""
+        },
+        {
+            "qno": "87",
+            "question": "Find the first non-repeated character in a string. Input: \"swiss\"",
+            "expected output": "\"w\"",
+            "explanations": "Track counts of characters, then find the first character with count 1.",
+            "answer": "\"w\""
+        },
+        {
+            "qno": "88",
+            "question": "Count how many words start and end with the same letter. Input: \"Anna went to Alaska\"",
+            "expected output": "2",
+            "explanations": "Split sentence and count words where first and last letter match.",
+            "answer": "2"
+        },
+        {
+            "qno": "89",
+            "question": "Check if one string is a subsequence of another. Input: s1=\"abc\", s2=\"aebdc\"",
+            "expected output": "true",
+            "explanations": "Check if all characters of s1 appear in s2 in the same order.",
+            "answer": "true"
+        },
+        {
+            "qno": "90",
+            "question": "Find the maximum occurring character in a string. Input: \"programming\"",
+            "expected output": "\"g\"",
+            "explanations": "Count frequency of each character and find the max frequency character.",
+            "answer": "\"g\""
+        },
+        {
+            "qno": "91",
+            "question": "Split a string by commas and print the parts. Input: \"apple,banana,grape\"",
+            "expected output": "[\"apple\", \"banana\", \"grape\"]",
+            "explanations": "Split string on commas and list parts.",
+            "answer": "[\"apple\", \"banana\", \"grape\"]"
+        },
+        {
+            "qno": "92",
+            "question": "Check if a string is a valid binary number (only contains 0 and 1). Input: \"101010\"",
+            "expected output": "true",
+            "explanations": "Verify all characters are either '0' or '1'.",
+            "answer": "true"
+        },
+        {
+            "qno": "93",
+            "question": "Find the length of the shortest word in a sentence. Input: \"I love programming\"",
+            "expected output": "1",
+            "explanations": "Split sentence and find the shortest word length.",
+            "answer": "1"
+        },
+        {
+            "qno": "94",
+            "question": "Count the number of digits in a string. Input: \"abc123def456\"",
+            "expected output": "6",
+            "explanations": "Traverse string and count digit characters.",
+            "answer": "6"
+        },
+        {
+            "qno": "95",
+            "question": "Convert a string with words separated by underscores to camelCase. Input: \"this_is_camel_case\"",
+            "expected output": "\"thisIsCamelCase\"",
+            "explanations": "Split by underscores, capitalize first letter of words except first, then join.",
+            "answer": "\"thisIsCamelCase\""
+        },
+        {
+            "qno": "96",
+            "question": "Find the number of occurrences of each character in a string. Input: \"hello\"",
+            "expected output": "{\"h\":1, \"e\":1, \"l\":2, \"o\":1}",
+            "explanations": "Count frequency of each character.",
+            "answer": "{\"h\":1, \"e\":1, \"l\":2, \"o\":1}"
+        },
+        {
+            "qno": "97",
+            "question": "Check if a string contains only alphabets. Input: \"HelloWorld\"",
+            "expected output": "true",
+            "explanations": "Verify all characters are letters.",
+            "answer": "true"
+        },
+        {
+            "qno": "98",
+            "question": "Remove the last character from a string. Input: \"Hello\"",
+            "expected output": "\"Hell\"",
+            "explanations": "Extract substring excluding last character.",
+            "answer": "\"Hell\""
+        },
+        {
+            "qno": "99",
+            "question": "Find the total number of characters excluding spaces in a string. Input: \"Hello World\"",
+            "expected output": "10",
+            "explanations": "Traverse string and count all characters except spaces.",
+            "answer": "10"
+        },
+        {
+            "qno": "100",
+            "question": "Check if a string contains any special characters (non-alphanumeric). Input: \"Hello@2023\"",
+            "expected output": "true",
+            "explanations": "Traverse string and check for any character that is not a letter or digit.",
+            "answer": "true"
+        }
+    ],
+    "Hard": [
+        {
+            "qno": "1",
+            "question": "Find the longest palindromic substring in a given string. Input: \"babad\"",
+            "expected output": "\"bab\" or \"aba\"",
+            "explanations": "Check all substrings and find the longest one that reads the same forwards and backwards.",
+            "answer": "\"bab\""
+        },
+        {
+            "qno": "2",
+            "question": "Calculate the minimum number of edits (insert, delete, replace) required to convert string A to string B. Input: A = \"kitten\", B = \"sitting\"",
+            "expected output": "3",
+            "explanations": "Use dynamic programming to find Levenshtein distance, counting minimum edits.",
+            "answer": "3"
+        },
+        {
+            "qno": "3",
+            "question": "Find all anagrams of a pattern string within a text string. Input: text = \"cbaebabacd\", pattern = \"abc\"",
+            "expected output": "[0, 6]",
+            "explanations": "Check substrings of text that are permutations of pattern; output starting indices.",
+            "answer": "[0, 6]"
+        },
+        {
+            "qno": "4",
+            "question": "Given a string with characters '(', ')', '{', '}', '[' and ']', check if it is balanced. Input: \"[{()}]\"",
+            "expected output": "true",
+            "explanations": "Use a stack to ensure every opening bracket has a corresponding closing bracket in correct order.",
+            "answer": "true"
+        },
+        {
+            "qno": "5",
+            "question": "Generate all permutations of a string. Input: \"abc\"",
+            "expected output": "[\"abc\", \"acb\", \"bac\", \"bca\", \"cab\", \"cba\"]",
+            "explanations": "Use recursion or backtracking to generate all unique orderings of characters.",
+            "answer": "[\"abc\", \"acb\", \"bac\", \"bca\", \"cab\", \"cba\"]"
+        },
+        {
+            "qno": "6",
+            "question": "Check if two strings are anagrams of each other. Input: \"listen\", \"silent\"",
+            "expected output": "true",
+            "explanations": "Sort both strings and compare or count character frequencies.",
+            "answer": "true"
+        },
+        {
+            "qno": "7",
+            "question": "Implement run-length encoding for a string. Input: \"aaabbc\"",
+            "expected output": "\"a3b2c1\"",
+            "explanations": "Count consecutive repeating characters and output character followed by count.",
+            "answer": "\"a3b2c1\""
+        },
+        {
+            "qno": "8",
+            "question": "Find the longest substring without repeating characters. Input: \"abcabcbb\"",
+            "expected output": "3",
+            "explanations": "Use sliding window technique to track unique characters and update maximum length.",
+            "answer": "3"
+        },
+        {
+            "qno": "9",
+            "question": "Check if a string contains only digits. Input: \"123456\"",
+            "expected output": "true",
+            "explanations": "Check each character if it is between '0' and '9'.",
+            "answer": "true"
+        },
+        {
+            "qno": "10",
+            "question": "Count number of substrings that start and end with the same character. Input: \"abcab\"",
+            "expected output": "7",
+            "explanations": "Count substrings where first and last characters match using frequency analysis.",
+            "answer": "7"
+        },
+        {
+            "qno": "11",
+            "question": "Check if a string is a permutation of a palindrome. Input: \"carrace\"",
+            "expected output": "true",
+            "explanations": "A palindrome permutation has at most one character with odd frequency.",
+            "answer": "true"
+        },
+        {
+            "qno": "12",
+            "question": "Find all distinct substrings of a string. Input: \"abc\"",
+            "expected output": "[\"a\", \"b\", \"c\", \"ab\", \"bc\", \"abc\"]",
+            "explanations": "Generate all substrings and remove duplicates.",
+            "answer": "[\"a\", \"b\", \"c\", \"ab\", \"bc\", \"abc\"]"
+        },
+        {
+            "qno": "13",
+            "question": "Implement basic pattern matching where '*' matches zero or more characters and '?' matches one character. Input: pattern = \"a*?c\", string = \"axyzc\"",
+            "expected output": "true",
+            "explanations": "Use backtracking to check match considering wildcards '*' and '?'.",
+            "answer": "true"
+        },
+        {
+            "qno": "14",
+            "question": "Find the longest common prefix among an array of strings. Input: [\"flower\", \"flow\", \"flight\"]",
+            "expected output": "\"fl\"",
+            "explanations": "Compare characters of strings until mismatch.",
+            "answer": "\"fl\""
+        },
+        {
+            "qno": "15",
+            "question": "Implement string addition for large numbers represented as strings. Input: \"123456789\", \"987654321\"",
+            "expected output": "\"1111111110\"",
+            "explanations": "Add digit by digit from end, carry over as needed.",
+            "answer": "\"1111111110\""
+        },
+        {
+            "qno": "16",
+            "question": "Check if a string contains all unique characters. Input: \"abcdefg\"",
+            "expected output": "true",
+            "explanations": "Use a set or boolean array to track characters and detect duplicates.",
+            "answer": "true"
+        },
+        {
+            "qno": "17",
+            "question": "Count the number of palindromic substrings in a string. Input: \"aaa\"",
+            "expected output": "6",
+            "explanations": "Check all substrings and count those that are palindromes.",
+            "answer": "6"
+        },
+        {
+            "qno": "18",
+            "question": "Remove duplicate characters from a string. Input: \"banana\"",
+            "expected output": "\"ban\"",
+            "explanations": "Use a set to track seen characters and build a new string.",
+            "answer": "\"ban\""
+        },
+        {
+            "qno": "19",
+            "question": "Check if two strings are one edit distance apart (insert, delete, or replace one character). Input: \"pale\", \"ple\"",
+            "expected output": "true",
+            "explanations": "Check for one mismatch or one insertion/deletion.",
+            "answer": "true"
+        },
+        {
+            "qno": "20",
+            "question": "Decode a run-length encoded string. Input: \"a3b2c1\"",
+            "expected output": "\"aaabbc\"",
+            "explanations": "Expand each character by its following count.",
+            "answer": "\"aaabbc\""
+        },
+        {
+            "qno": "21",
+            "question": "Find the minimum window substring of S that contains all characters of T. Input: S = \"ADOBECODEBANC\", T = \"ABC\"",
+            "expected output": "\"BANC\"",
+            "explanations": "Use sliding window and frequency maps to find smallest substring containing all T's characters.",
+            "answer": "\"BANC\""
+        },
+        {
+            "qno": "22",
+            "question": "Check if a string is a valid number (integers, decimals, with optional + or - signs). Input: \"-123.45\"",
+            "expected output": "true",
+            "explanations": "Parse characters ensuring only one decimal point, optional sign at start, digits present.",
+            "answer": "true"
+        },
+        {
+            "qno": "23",
+            "question": "Find the kth most frequent word in a list of words. Input: words = [\"apple\", \"banana\", \"apple\", \"orange\", \"banana\", \"banana\"], k=2",
+            "expected output": "\"apple\"",
+            "explanations": "Count frequencies, sort by frequency descending, return kth.",
+            "answer": "\"apple\""
+        },
+        {
+            "qno": "24",
+            "question": "Find the first non-repeating character in a string. Input: \"swiss\"",
+            "expected output": "\"w\"",
+            "explanations": "Use frequency count and return first character with count 1.",
+            "answer": "\"w\""
+        },
+        {
+            "qno": "25",
+            "question": "Check if a string is a valid IPv4 address. Input: \"192.168.1.1\"",
+            "expected output": "true",
+            "explanations": "Split by '.', check each part is number between 0-255 with no leading zeros.",
+            "answer": "true"
+        },
+        {
+            "qno": "26",
+            "question": "Find the longest substring with at most two distinct characters. Input: \"eceba\"",
+            "expected output": "\"ece\"",
+            "explanations": "Use sliding window to maintain substring with <= 2 distinct chars and track max length.",
+            "answer": "\"ece\""
+        },
+        {
+            "qno": "27",
+            "question": "Find the length of the longest valid parentheses substring. Input: \")()())\"",
+            "expected output": "4",
+            "explanations": "Use stack to track indices and calculate max valid substring length.",
+            "answer": "4"
+        },
+        {
+            "qno": "28",
+            "question": "Convert a string representing a Roman numeral to an integer. Input: \"MCMXCIV\"",
+            "expected output": "1994",
+            "explanations": "Map Roman symbols to values, subtract when smaller numeral precedes larger.",
+            "answer": "1994"
+        },
+        {
+            "qno": "29",
+            "question": "Check if a string can be segmented into a space-separated sequence of dictionary words. Input: s = \"leetcode\", dict = [\"leet\", \"code\"]",
+            "expected output": "true",
+            "explanations": "Use dynamic programming to check segmentations.",
+            "answer": "true"
+        },
+        {
+            "qno": "30",
+            "question": "Find the shortest palindrome by adding characters in front of a given string. Input: \"aacecaaa\"",
+            "expected output": "\"aaacecaaa\"",
+            "explanations": "Find longest palindromic prefix and add reversed suffix in front.",
+            "answer": "\"aaacecaaa\""
+        },
+        {
+            "qno": "31",
+            "question": "Check if two strings are scrambled versions of each other. Input: \"great\", \"rgeat\"",
+            "expected output": "true",
+            "explanations": "Recursively check partitions and swaps to verify scrambling.",
+            "answer": "true"
+        },
+        {
+            "qno": "32",
+            "question": "Find the maximum number of vowels in any substring of given length k. Input: s = \"abciiidef\", k=3",
+            "expected output": "3",
+            "explanations": "Use sliding window and count vowels.",
+            "answer": "3"
+        },
+        {
+            "qno": "33",
+            "question": "Check if a string matches a pattern with '.' and '*', where '.' matches any single char and '*' zero or more of previous char. Input: s=\"aab\", p=\"c*a*b\"",
+            "expected output": "true",
+            "explanations": "Use recursion or DP to handle pattern matching.",
+            "answer": "true"
+        },
+        {
+            "qno": "34",
+            "question": "Find the number of distinct subsequences of string S which equals string T. Input: S=\"rabbbit\", T=\"rabbit\"",
+            "expected output": "3",
+            "explanations": "Use DP to count subsequences matching T.",
+            "answer": "3"
+        },
+        {
+            "qno": "35",
+            "question": "Find the length of the longest substring where every character appears at least k times. Input: s=\"aaabb\", k=3",
+            "expected output": "3",
+            "explanations": "Use divide and conquer to split on chars with frequency < k.",
+            "answer": "3"
+        },
+        {
+            "qno": "36",
+            "question": "Given a string with only lowercase letters, remove k characters to get the lexicographically smallest string. Input: s=\"abcde\", k=2",
+            "expected output": "\"abc\"",
+            "explanations": "Use a stack and greedy approach to remove characters.",
+            "answer": "\"abc\""
+        },
+        {
+            "qno": "37",
+            "question": "Find all palindrome pairs in a list of unique words. Input: [\"bat\", \"tab\", \"cat\"]",
+            "expected output": "[[0,1],[1,0]]",
+            "explanations": "Check pairs of words concatenated to form palindrome.",
+            "answer": "[[0,1],[1,0]]"
+        },
+        {
+            "qno": "38",
+            "question": "Find the longest repeated substring in a string. Input: \"banana\"",
+            "expected output": "\"ana\"",
+            "explanations": "Use suffix array or suffix trie/tree for efficient solution.",
+            "answer": "\"ana\""
+        },
+        {
+            "qno": "39",
+            "question": "Implement strstr (find substring index). Input: haystack = \"hello\", needle = \"ll\"",
+            "expected output": "2",
+            "explanations": "Check each position for needle; return first occurrence index or -1.",
+            "answer": "2"
+        },
+        {
+            "qno": "40",
+            "question": "Find the length of the longest substring that contains at most k distinct characters. Input: \"eceba\", k=2",
+            "expected output": "3",
+            "explanations": "Use sliding window and frequency map.",
+            "answer": "3"
         }
     ]
 }
