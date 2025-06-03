@@ -53,7 +53,7 @@ function loadQuestions(topicFileName, difficulty) {
 function askAI(questionEncoded) {
   const question = decodeURIComponent(questionEncoded);
 
-  const prompt = 
+  // const prompt = 
   
   // `Solve the following programming problem in C language:${question}
 
@@ -78,7 +78,7 @@ function askAI(questionEncoded) {
 // Restricted Functions: Any function not allowed by the Geeks for Geeks platform. Usage of such restricted functions may lead to penalties or disqualification.
 
 // After providing the C solution, please ask if the user would like the solution in any other programming languages.
-Solve the following programming problem but IMPORTANT: Before answering, please ask the user:
+  const prompt = `Solve the following programming problem. But ⚠️ IMPORTANT: Before answering, please ask the user:
 
 “Which programming language would you like the solution in? (e.g., C, C++, Java, Python)”
 
@@ -90,10 +90,10 @@ For the given question, please follow the typical GFG-style approach:
 
 ---
 
-### About GFG Solution Format and main() in Python:
+### About GFG Solution Format and 'main()' in Python:
 
 - GFG evaluates solutions by calling a **specific function inside a class** (usually named in the problem).
-- You **do not need to write or use a main() function in Python** because GFG’s online judge runs the test harness itself and directly invokes your class method.
+- You **do not need to write or use a 'main()' function in Python** because GFG’s online judge runs the test harness itself and directly invokes your class method.
 - Your solution should only implement the required function inside the prescribed class, matching the signature exactly.
 - Avoid extra input/output handling; focus on the function logic.
 - This keeps your code clean and compatible with GFG’s automated testing system.
@@ -109,7 +109,7 @@ Your solution should fully satisfy what GFG or CodeWar judges expect:
 - ✔️ **Coding Standards:**
   - Use only allowed functions and libraries (e.g., no STL in C unless allowed).
   - Follow the exact function signature given.
-  - **Do not use main() unless explicitly required**.
+  - **Do not use 'main()'' unless explicitly required**.
 - ✔️ **Clean & Commented Code:** Proper formatting, meaningful variable names, and minimal comments explaining key logic.
 - ✔️ **Conceptual Explanation:** Before code, provide a beginner-friendly explanation of the algorithm, step-by-step.
 
@@ -124,11 +124,11 @@ This version should demonstrate common mistakes that cause low or zero scores, s
 - Ignoring problem constraints or given function signatures.
 - Using disallowed functions or libraries.
 - Missing handling of edge cases.
-- Including unnecessary code like input/output statements or main() in Python when not required.
+- Including unnecessary code like input/output statements or 'main()' in Python when not required.
 
 After this incorrect version, explain clearly:
 
-**This solution is not acceptable because...**
+**"This solution is not acceptable because..."**
 
 ---
 
